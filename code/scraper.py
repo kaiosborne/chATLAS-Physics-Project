@@ -1,6 +1,7 @@
 import re
 import requests
 from bs4 import BeautifulSoup
+import json
 
 class MetaData:
     def __init__(self,imageData,paperDirectory):
@@ -45,11 +46,11 @@ class MetaData:
     def findLegend(self):
         #if data contains a legend store it, otherwise change isImageData
         
-        d = str(self.imageData["class"][0])
-        if d == "legend":
+        if str(self.imageData["class"][0]) == "legend":
             legendText = self.imageData.get_text()
             newLineList = re.findall("\n.*",str(legendText))
             self.legend = max(newLineList, key=len).strip()
+            self.findDictionary()
         else:
             self.isImageData = False
 
@@ -63,6 +64,9 @@ class MetaData:
         print("Legend = " + str(self.legend))
         print("File Location = " + self.directory)
 
+    def findDictionary(self):
+        self.dictionary = { "Plots": self.paperDirectory, "caption": self.legend, "mentioned": "", "web location": self.directory}
+
 site = 'https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-17/'
 
 response = requests.get(site)
@@ -72,6 +76,8 @@ tdElements = soup.find_all('td')
 
 dataList = [MetaData(e,site) for e in tdElements]
 imageData = [d for d in dataList if d.isImageData]
+ 
+with open("sample.json", "w") as outfile:
+    for d in imageData:
+        outfile.write(json.dumps(d.dictionary, indent=4))
 
-for x in imageData:
-    print(x.printInfo())
