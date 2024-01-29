@@ -1,0 +1,60 @@
+import re
+import os
+
+def extract_figures(file_path):
+    """
+    Extracts figures and their captions from a given text file.
+
+    Args:
+    file_path (str): The path to the text file.
+
+    Returns:
+    dict: A dictionary with figure numbers as keys and their captions as values.
+    """
+    pattern = r'^Figure (\d+):'
+    figures = {}
+    
+    try:
+        with open(file_path, 'r') as file:
+            for line in file:
+                if re.match(pattern, line):
+                    figure_number = re.search(pattern, line).group(1)
+                    figures[f'Figure {figure_number}'] = line.strip()
+    except FileNotFoundError:
+        print(f"The file {file_path} was not found.")
+        return {}
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return {}
+
+    return figures
+
+# File path
+file_path = 'enter_your_file_path.txt'
+
+# Extract figures and their texts
+figures = extract_figures(file_path)
+
+# Print the results
+for figure, text in figures.items():
+    print(f'{figure}: {text}')
+
+# Define the main subfolder name
+main_subfolder = 'captions'
+os.makedirs(main_subfolder, exist_ok=True)
+
+# Save each caption in its own subfolder inside the main subfolder
+for figure, text in figures.items():
+    # Create a specific subfolder for the current figure
+    figure_subfolder = os.path.join(main_subfolder, figure)
+    os.makedirs(figure_subfolder, exist_ok=True)
+    
+    # Define the filename for the current figure
+    filename = os.path.join(figure_subfolder, f'{figure}_caption.txt')
+    
+    try:
+        with open(filename, 'w') as file:
+            file.write(text)
+        print(f'Caption for {figure} saved in {filename}')
+    except Exception as e:
+        print(f"Failed to save caption for {figure}. Error: {e}")
