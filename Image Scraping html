@@ -1,0 +1,40 @@
+
+import os
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin
+
+def download_images(url, folder_name):
+    if not os.path.isdir(folder_name):
+        os.makedirs(folder_name)
+
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    response = requests.get(url, headers=headers)
+    html = response.content
+    soup = BeautifulSoup(html, 'html.parser')
+    img_tags = soup.find_all('img')
+
+    for i, img in enumerate(img_tags):
+        try:
+            img_url = img.get('src')
+            img_url = urljoin(url, img_url)
+            basename = os.path.basename(img_url)
+
+            # Skip downloading if basename does not contain 'thumb' or 'fig'
+            if 'thumb' not in basename and 'fig' not in basename:
+                print(f'Skipped: {basename}')
+                continue
+
+            # Add a unique identifier (i) to the filename to prevent overwriting
+            img_path = os.path.join(folder_name, f"_{basename}")
+
+            with open(img_path, 'wb') as f:
+                img_data = requests.get(img_url, headers=headers).content
+                f.write(img_data)
+                print(f'Downloaded {img_path}')
+        except Exception as e:
+            print(f"Could not download {img_url}. Reason: {e}")
+
+url = 'https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-17/'
+folder_name = 'ATLAS_IMAGES'
+download_images(url, folder_name)
