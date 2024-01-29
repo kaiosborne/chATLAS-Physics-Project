@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <div>
+        <h2>Plot Image:</h2>
+        <!-- Displaying the image directly from the web location -->
+        <img src="{{ web_location }}" alt="Plot Image" style="max-width: 30%; height: auto;">
+    </div>
+    <div>
+        <h2>Caption:</h2>
+        <p>{{ caption }}</p>
+    </div>
+    <div>
+        <h2>Mentioned:</h2>
+        <p>{{ mentioned }}</p>
+    </div>
+    <div>
+        <h2>Location:</h2>
+        <p>{{ web_location }}</p>
+    </div>
+    <a href="/">Back to Search</a>
+</body>
+</html>
