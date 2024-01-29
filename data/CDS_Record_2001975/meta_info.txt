@@ -1,0 +1,3 @@
+PAPER NAME : Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\bar{b}$ in pp collisions at $\sqrt{s}$ = 8 TeV with the ATLAS detector
+LAST MODIFICATION DATE : 2023-11-30
+URL : https://cds.cern.ch/record/2001975

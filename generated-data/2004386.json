@@ -1,0 +1,86 @@
+{
+    "Plots": "fig_01.png",
+    "caption": "Figure 01:Scans of twice the negative log-likelihood ratio -2ln\u039b(mH) as functions of the Higgs boson mass mH for the ATLAS and CMS combination of the H \u2192 \u03b3\u03b3 (red), H \u2192 ZZ \u2192 4\u2113 (blue), and combined (black) channels. The dashed curves show the results accounting for statistical uncertainties only, with all nuisance parameters associated with systematic uncertainties fixed to their best-fit values. The 1 and 2 standard deviation limits are indicated by the intersections of the horizontal lines at 1 and 4, respectively, with the log-likelihood scan curves.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14fig_01.png"
+}{
+    "Plots": "fig_02.png",
+    "caption": "Figure 02:Summary of Higgs boson mass measurements from the individual analyses of ATLAS and CMS and from the combined analysis presented here. The systematic (narrower, magenta-shaded bands), statistical (wider, yellow-shaded bands), and total (black error bars) uncertainties are indicated. The (red) vertical line and corresponding (gray) shaded column indicate the central value and the total uncertainty of the combined measurement, respectively.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14fig_02.png"
+}{
+    "Plots": "fig_03.png",
+    "caption": "Figure 03:The impacts \u03b4mH (see text) of the nuisance parameter groups in Table 1 on the ATLAS (left), CMS (center), and combined (right) mass measurement uncertainty. The observed (expected) results are shown by the solid (empty) bars.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14fig_03.png"
+}{
+    "Plots": "fig_04.png",
+    "caption": "Figure 04:Summary of likelihood scans in the 2D plane of signal strength \u03bc versus Higgs boson mass mH for the ATLAS and CMS experiments. The 68% CL confidence regions of the individual measurements are shown by the dashed curves and of the overall combination by the solid curve. The markers indicate the respective best-fit values. The SM signal strength is indicated by the horizontal line at \u03bc=1.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14fig_04.png"
+}{
+    "Plots": "tab_01.png",
+    "caption": "Table 01:Systematic uncertainties \u03b4mH (see text) associated with the indicated effects for each of the four input channels, and the corresponding contributions of ATLAS and CMS to the systematic uncertainties of the combined result. \"ECAL\" refers to the electromagnetic calorimeters. The numbers in parentheses indicate expected values obtained from the prefit Asimov data set discussed in the text. The uncertainties for the combined result are related to the values of the individual channels through the relative weight of the individual channel in the combination, which is proportional to the inverse of the respective uncertainty squared. The top section of the table divides the sources of systematic uncertainty into three classes, which are discussed in the text. The bottom section of the table shows the total systematic uncertainties estimated by adding the individual contributions in quadrature, the total systematic uncertainties evaluated using the nominal method discussed in the text, the statistical uncertainties, the total uncertainties, and the analysis weights, illustrative of the relative weight of each channel in the combined mH measurement.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14tab_01.png"
+}{
+    "Plots": "figaux_01a.png",
+    "caption": "01a:Summary of (a) Higgs boson mass measurements from the individual analyses of ATLAS and CMS, and from the combined measurements; (b) Higgs boson mass measurement results from individual analyses; (c) Combined Higgs boson mass measured from each experiment; (d) Combined Higgs boson mass measured from each decay channel. The systematic (narrower, magenta-shaded bands), statistical (wider, yellow-shaded bands), and total (black error bars) uncertainties are indicated. The (red) vertical line and corresponding (gray) shaded column indicate the central value and the total uncertainty of the combined measurement, respectively.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_01a.png"
+}{
+    "Plots": "figaux_01b.png",
+    "caption": "01b:Summary of (a) Higgs boson mass measurements from the individual analyses of ATLAS and CMS, and from the combined measurements; (b) Higgs boson mass measurement results from individual analyses; (c) Combined Higgs boson mass measured from each experiment; (d) Combined Higgs boson mass measured from each decay channel. The systematic (narrower, magenta-shaded bands), statistical (wider, yellow-shaded bands), and total (black error bars) uncertainties are indicated. The (red) vertical line and corresponding (gray) shaded column indicate the central value and the total uncertainty of the combined measurement, respectively.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_01b.png"
+}{
+    "Plots": "figaux_01c.png",
+    "caption": "01c:Summary of (a) Higgs boson mass measurements from the individual analyses of ATLAS and CMS, and from the combined measurements; (b) Higgs boson mass measurement results from individual analyses; (c) Combined Higgs boson mass measured from each experiment; (d) Combined Higgs boson mass measured from each decay channel. The systematic (narrower, magenta-shaded bands), statistical (wider, yellow-shaded bands), and total (black error bars) uncertainties are indicated. The (red) vertical line and corresponding (gray) shaded column indicate the central value and the total uncertainty of the combined measurement, respectively.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_01c.png"
+}{
+    "Plots": "figaux_01d.png",
+    "caption": "01d:Summary of (a) Higgs boson mass measurements from the individual analyses of ATLAS and CMS, and from the combined measurements; (b) Higgs boson mass measurement results from individual analyses; (c) Combined Higgs boson mass measured from each experiment; (d) Combined Higgs boson mass measured from each decay channel. The systematic (narrower, magenta-shaded bands), statistical (wider, yellow-shaded bands), and total (black error bars) uncertainties are indicated. The (red) vertical line and corresponding (gray) shaded column indicate the central value and the total uncertainty of the combined measurement, respectively.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_01d.png"
+}{
+    "Plots": "figaux_02a.png",
+    "caption": "02a:Likelihood curves for the Higgs boson mass mH measured in the H \u2192 \u03b3\u03b3 (a) and H \u2192 ZZ \u2192 4\u2113 (b) channels by the ATLAS (red) and CMS (blue) experiments, and their combination (black). The dashed curves reflect the statistical components of the uncertainties.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_02a.png"
+}{
+    "Plots": "figaux_02b.png",
+    "caption": "02b:Likelihood curves for the Higgs boson mass mH measured in the H \u2192 \u03b3\u03b3 (a) and H \u2192 ZZ \u2192 4\u2113 (b) channels by the ATLAS (red) and CMS (blue) experiments, and their combination (black). The dashed curves reflect the statistical components of the uncertainties.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_02b.png"
+}{
+    "Plots": "figaux_03.png",
+    "caption": "03:Summary of likelihood scans in the 2D plane of signal strength \u03bc versus Higgs boson mass mH for the H \u2192 \u03b3\u03b3 (red) and H \u2192 ZZ \u2192 4\u2113 (blue) channels, and their combination (black). The 68% and 95% CL confidence regions of the individual measurements are shown by the solid and dashed curves, respectively. The markers indicate the respective best-fit values. The SM signal strength is indicated by the horizontal line at \u03bc=1.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_03.png"
+}{
+    "Plots": "figaux_04.png",
+    "caption": "04:Summary of likelihood scans in the 2D plane of the normalized signal yield S \u2261 \u03c3 / \u03c3SM (mH = 125.09 GeV) versus Higgs boson mass mH for the ATLAS and CMS experiments. S is similar to the signal strength \u03bc \u2261 \u03c3/\u03c3SM(mH), except the mH-dependence of the expected SM event yield that enters into the denominator, principally for the H \u2192 ZZ \u2192 4\u2113 channel, is removed by fixing mH to the combined best-fit mass. The 68% CL confidence regions of the individual measurements are shown by the dashed curves and of the overall combination by the solid curve. The markers indicate the respective best-fit values. The fitted signal yield is observed to be independent of the measured mass.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_04.png"
+}{
+    "Plots": "figaux_05.png",
+    "caption": "05:Likelihood curves for the mass difference, \u0394m\u03b3Z \u2261 mH\u03b3\u03b3-mH4\u2113, for the ATLAS (red) and CMS (blue) experiments, and their combination (black). The common signal strength parameters \u03bcggF+ttH\u03b3\u03b3, \u03bcVBF+VH\u03b3\u03b3, and \u03bc4\u2113 are allowed to vary independently. The tension between two channels is evaluated to be 2.0\u03c3 in ATLAS experiment, 1.6\u03c3 in CMS experiment, and within 1\u03c3 (0.2\u03c3) in the full combination.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_05.png"
+}{
+    "Plots": "figaux_06.png",
+    "caption": "06:Likelihood curves for the mass difference, \u0394mexp \u2261 mHATLAS-mHCMS, for the H \u2192 \u03b3\u03b3 (red) and H \u2192 ZZ \u2192 4\u2113 (blue) channels, and their combination (black). The signal strength parameters \u03bcggF+ttH\u03b3\u03b3, \u03bcVBF+VH\u03b3\u03b3, and \u03bc4\u2113 are allowed to vary independently. The tension between two experiments is evaluated to be 2.1\u03c3 in H \u2192 \u03b3\u03b3 channel, 1.3\u03c3 in H \u2192 ZZ \u2192 4\u2113 channel, and within 1\u03c3 (0.8\u03c3) in the full combination.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_06.png"
+}{
+    "Plots": "figaux_07.png",
+    "caption": "07:Summary of likelihood scan in the 2D plane of the mass differences between two experiments, \u0394mexp \u2261 mHATLAS-mHCMS, and between two channels, \u0394m\u03b3Z \u2261 mH\u03b3\u03b3-mH4\u2113. The 68% and 95% CL confidence regions are shown by the solid and dashed curves, respectively. The marker indicates the best-fit values.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14figaux_07.png"
+}{
+    "Plots": "tabaux_01.png",
+    "caption": "01:Systematic uncertainties \u03b4mH (see text) associated with the indicated effects for ATLAS, CMS, and the combined result. The numbers in parentheses indicate expected values obtained from the prefit Asimov data set discussed in the text. The top section of the table divides the sources of systematic uncertainty into three classes, which are discussed in the text. The bottom section of the table shows the total systematic uncertainties estimated by adding the individual contributions in quadrature, the total systematic uncertainties evaluated using the nominal method discussed in the text, the statistical uncertainties, the total uncertainties, and the analysis weights, illustrative of the relative weight of each experiment in the combined mH measurement.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2014-14tabaux_01.png"
+}

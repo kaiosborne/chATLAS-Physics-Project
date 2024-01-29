@@ -1,0 +1,621 @@
+Search for New Phenomena in Dijet Angular Distributions in Proton-Proton Collisions at \(\sqrt{s}=8\) TeV Measured with the ATLAS Detector
+
+G. Aad _et al._
+
+G. Aad _et al._
+
+(ATLAS Collaboration)
+
+###### Abstract
+
+A search for new phenomena in LHC proton-proton collisions at a center-of-mass energy of \(\sqrt{s}=8\) TeV was performed with the ATLAS detector using an integrated luminosity of 17.3 fb\({}^{-1}\). The angular distributions are studied in events with at least two jets; the highest dijet mass observed is 5.5 TeV. All angular distributions are consistent with the predictions of the standard model. In a benchmark model of quark contact interactions, a compositeness scale below 8.1 TeV in a destructive interference scenario and 12.0 TeV in a constructive interference scenario is excluded at 95% C.L.; median expected limits are 8.9 TeV for the destructive interference scenario and 14.1 TeV for the constructive interference scenario.
+
+pacs: 13.85.Rm, 12.60.Rc +
+Footnote †: Full author list given at the end of the article.
+
+The search for an internal structure of fermions and new forces that might govern that structure is a major goal of modern particle physics. The most powerful probes are scattering experiments with large momentum transfer. Collisions of protons at the Large Hadron Collider (LHC) resulting in two energetic jets of particles (dijets) provide the largest momentum transfer currently available, and therefore the deepest probe.
+
+The angular distribution of jets relative to the beam axis in events with high dijet invariant mass (\(m_{jj}\)) provides stringent tests of perturbative quantum chromodynamics (QCD) as well as theories of new phenomena. QCD calculations predict that dijet production, dominated by \(t\)-channel gluon exchange in the kinematic region of proton-proton (\(pp\)) collisions at the LHC, features steeply falling \(m_{jj}\) distributions and angular distributions peaked at \(|\cos(\theta^{*})|=1\), where \(\theta^{*}\) is the polar scattering angle in the two-parton center-of-mass frame. New phenomena, such as strong gravity [1, 2] or new interactions [3, 4, 5, 6] typically predict angular distributions which are more isotropic.
+
+Previous studies of dijet angular distributions, at the CERN SPS [7, 8], the FNAL Tevatron [9, 10], the CERN LHC at \(\sqrt{s}=7\) TeV [11, 12, 13, 14, 15, 16], and by the CMS Collaboration at \(\sqrt{s}=8\) TeV [17], have reported results consistent with the standard model (SM). This Letter reports on studies of dijet angular distributions in \(pp\) collisions at \(\sqrt{s}=8\) TeV in data with an integrated luminosity of 17.3 fb\({}^{-1}\) collected with the ATLAS detector in 2012.
+
+A detailed description of the ATLAS detector is published elsewhere [18]. The detector is instrumented over almost the entire solid angle around the \(pp\) collision point, with layers of tracking detectors, calorimeters, and muon detectors.
+
+The jets are measured using a calorimeter system composed of different detector types covering different regions in \(\eta\)[19] and depth. The electromagnetic calorimeter is composed of liquid-argon sampling calorimeters, using lead as an absorber, and is split into a barrel (\(|\eta|<1.475\)) and two end caps (\(1.375<|\eta|<3.2\)). The hadronic calorimeter is divided into a barrel and two extended barrels (\(|\eta|<1.75\)), and two endcaps (\(1.5<|\eta|<3.2\)). The barrel and extended barrels are sampling calorimeters with steel as absorber and scintillator tiles as the active medium, while the hadronic end caps are liquid-argon calorimeters with copper as the absorber. In the very forward regions (\(3.1<|\eta|<4.9\)) there are liquid argon calorimeters with copper and tungsten absorbers.
+
+The data are selected using a trigger that requires a single high-\(p_{\rm T}\)[19] jet above one of eight thresholds, ranging from 25 to 220 GeV. Because of the high rate of jets at lower \(p_{\rm T}\), only a fraction of the events from the lower seven thresholds are stored.
+
+Individual jets are reconstructed using the anti-\(k_{t}\) jet clustering algorithm [20, 21] with radius parameter \(R=0.6\). The inputs to this algorithm are clusters [22] of calorimeter cells with energy depositions significantly above the noise. Jet four-momenta are constructed by the vectorial addition of clusters of cells, treating each cluster as a four-momentum with zero mass. The jet four-momenta are then corrected to the jet energy scale [23] as a function of \(\eta\) and \(p_{\rm T}\) for various effects, the largest of which are the hadronic shower response, detector material distribution, and pileup events [24]. This is done using a calibration scheme based on samples of simulated events and validated with test-beam [25] and collision data [22] studies.
+
+The rapidity of a jet is defined as \(y=\frac{1}{2}\ln[(E+p_{z})/\left(E-p_{z}\right)]\), where \(E\) is the jet energy and \(p_{z}\) is the momentum component along the beam axis [19]. The scattering angle between two jets can be expressed using the variable \(\chi=e^{|y_{1}-y_{2}|}=e^{2|y^{\prime}|}\), where \(y_{1}\) and \(y_{2}\) are the rapidities of the two jets, and \(y^{*}=\frac{1}{2}(y_{1}-y_{2})\). The rapidity boost of the dijet system with respect to the center of mass of the colliding protons is calculated as \(y_{B}=\frac{1}{2}(y_{1}+y_{2})\).
+
+For each trigger, the event is required to have a jet with \(p_{T}\) sufficient to achieve a trigger efficiency greater than 99.5%. For the lowest (highest) threshold trigger, this corresponds to \(p_{T}>p_{T}^{\text{min}}=47(333)\) GeV. Events are required to have at least two jets, each with \(p_{T}>50\) GeV; the dijet system, defined as the two jets with largest \(p_{T}\), is required to have \(|y^{*}|<1.7\), \(|y_{B}|<1.1\), and \(m_{jj}>600\) GeV (where the \(m_{jj}\) requirement avoids the kinematic bias in the angular distributions introduced by the minimum \(p_{T}\) requirement).
+
+The detector covers the angular range \(|y^{*}|<1.7\), corresponding to \(\chi<30\). This interval is divided into 11 bins, with boundaries at \(\chi_{n}=e^{(0.3\times n)}\) for \(n=0\) to 10, approximating the segmentation of the calorimeter in \(\Delta\eta\). The data are further binned coarsely in \(m_{jj}\) with the expectation that low-\(m_{jj}\) bins are dominated by QCD processes and that signals associated with new physics would be found in higher dijet invariant mass bins. The bin edges are chosen to optimize the expected sensitivity to the model of contact interactions. The highest dijet mass observed is 5.5 TeV.
+
+The SM predictions are estimated using the Pythia8[26] v8.160 event generator with the AU2[27] underlying-event tune and the CT10[28] parton distribution functions (PDF). The simulated events are propagated through a detector simulation [29] that uses the Geant4[30] simulation package. Pileup conditions vary as a function of the instantaneous luminosity and are taken into account by overlaying simulated minimum-bias events generated with Pythia8 onto the hard-scattering process such that the observed distribution of the average number of interactions per bunch crossing is reproduced. The same reconstruction and event selection are applied to the simulated events and the data.
+
+The Pythia8 calculations are primarily to leading order (LO) in QCD with simulation of higher-order contributions included in the shower modeling. Events generated by Pythia8 are reweighted using a correction factor calculated based on the ratio of the next-to-leading-order (NLO) cross-section calculation from Nlojet++[31, 32, 33] v4.1.2 to the LO+shower calculation from Pythia8:
+
+\[K(\chi,m_{jj})=\frac{\sigma_{\text{NLO}}(\chi,m_{jj})^{\text{NLOjet++}}}{ \sigma_{\text{LO+shower}}(\chi,m_{jj})^{\text{Pythia8}}}.\]
+
+The \(K\) factors decrease with \(\chi\) and thus modify the shape of the angular distributions; the impact ranges from a few percent at low \(m_{jj}\) to approximately 15% for the highest \(m_{jj}\) region. Additional processes accounting for electro-weak (EW) effects not included in Pythia8 (virtual weak boson exchange and Sudakov-type logarithms) are included as EW corrections [34]. The effect is most pronounced at high \(m_{jj}\) and low \(\chi\), and the correction factors range from unity at low \(m_{jj}\) to 0.98-1.12 in the highest \(m_{jj}\) region. The EW corrections and the NLO \(K\) factors are applied as a function of \(\chi\) and \(m_{jj}\) to the Pythia8 prediction.
+
+Figure 1 shows the distributions of the data as a function of \(\chi\). The distribution in each \(m_{jj}\) region is normalized to unity, as the sensitivity to new phenomena is due to the angular distribution rather than normalization. The predicted SM distributions are also shown in Fig. 1 and describe the data well. The EW corrections substantially improve the agreement of the SM prediction with data at high \(m_{jj}\), as can be appreciated from the comparison of the
+
+Figure 1: (color online). Distributions of the dijet angular variable \(\chi\) for several regions of dijet invariant mass \(m_{jj}\). Shown are the data (dots), SM predictions (solid lines) with uncertainties, and predictions for a benchmark theory of new contact interactions with a left-chiral color-singlet coupling with constructive (dotted, \(\eta_{LL}=-1\) and \(\Lambda=12\) TeV) or destructive (dashed, \(\eta_{LL}=+1\) and \(\Lambda=8\) TeV) interference with the SM processes. Also shown is the impact of the electroweak (EW) corrections described in the text. The error bars on data represent the experimental and statistical uncertainties added in quadrature, with a tick representing experimental uncertainties only. The theoretical uncertainties are displayed as a shaded band around the SM prediction.
+
+predictions with and without these corrections shown in Fig. 1.
+
+Models of quark compositeness are probed by searching for evidence of new interactions between quarks at a large characteristic energy scale, \(\Lambda\). At energies below this scale, the details of the new interaction and potential mediating particles can be integrated out to form a four-fermion contact interaction model [5, 6] described by an effective field theory:
+
+\[L_{qq}= \frac{2\pi}{\Lambda^{2}}[\eta_{LL}(\bar{q_{L}}\gamma_{\mu}q_{L})( \bar{q_{L}}\gamma^{\mu}q_{L})\] \[+\eta_{RR}(\bar{q_{R}}\gamma_{\mu}q_{R})(\bar{q_{R}}\gamma^{\mu}q _{R})\] \[+2\eta_{RL}(\bar{q_{R}}\gamma_{\mu}q_{R})(\bar{q_{L}}\gamma^{\mu}q _{L})], \tag{1}\]
+
+where the quark fields have \(L\) and \(R\) chiral projections and the coefficients \(\eta_{LL}\), \(\eta_{RR}\), and \(\eta_{RL}\) turn on and off various interactions.
+
+In this Letter, a contact interaction (CI) model with a left-chiral color-singlet coupling (\(\eta_{LL}=\pm 1\)) is used as a benchmark model, as many other models of new phenomena have similar predictions for the dijet scattering angle \(\chi\) at large \(m_{jj}\). Interference of the signal model with the SM process \(q\bar{q}\to q\bar{q}\) is also included.
+
+Event samples were simulated with both QCD and contact interactions, taking interference into account and using the same event generator, underlying-event tune, and PDF as for the SM simulations. Events were generated for both constructive and destructive interference with \(\Lambda=7\) TeV and \(\Lambda=10\) TeV. The \(\Lambda=7\) TeV sample is then used for extrapolation to other values of \(\Lambda\), using the fact that the interference term is proportional to \(1/\Lambda^{2}\) and the pure CI cross section is proportional to \(1/\Lambda^{4}\). This procedure is validated with the \(\Lambda=10\) TeV sample. As with the QCD prediction, a \(K\)-factor correction is computed to correct the Pythia LO + shower prediction to a NLO calculation. Calculations at NLO are provided by Ciet[35] v1.0.
+
+Uncertainties in the SM and signal predictions include theoretical uncertainties and experimental uncertainties on the measured angular distributions. Theoretical uncertainties in the SM and signal predictions are due to the choice of PDF, renormalization and factorization scales, choice of event generator, as well as statistical uncertainties due to limited simulation sample sizes. The impact of the uncertainty in the PDF is estimated using Nlojet++ with three different PDFs: CT10, MSTW2008[36], and NNPDF23[37]. These uncertainties are negligible (\(<1\%\)), as the choice of PDF largely impacts the total cross section rather than the angular distributions. The uncertainty due to the choice of renormalization and factorization scales were estimated by varying those independently up and down by a factor two in Nlojet++. The resulting uncertainty varies with \(m_{jj}\) and \(\chi\), rising to \(4\%\) at the smallest \(\chi\) values at high \(m_{jj}\). The uncertainty due to the choice of generator is estimated by comparing the predictions from the NLO generator Powheg[38] v1.0 with those of Pythia8 with \(K\) factors applied. The largest uncertainty due to choice of generator is at the lowest \(m_{jj}\) values, where it approaches \(20\%\), while for the highest \(m_{jj}\) values and smallest \(\chi\), it ranges from \(10\%\) to \(14\%\). The uncertainty due to the choice of the showering model is estimated through comparison of Powheg samples showered and hadronized with Pythia8 v8.175 to Herwig[39] v6.520.2 samples using Jimmy[40, 41] v4.31. The largest value of this uncertainty is less than \(1\%\) at the highest \(m_{jj}\) values and smallest values of \(\chi\). Finally the statistical uncertainties on the \(K\) factors due to limited simulation sample size are small and set to \(1\%\).
+
+The experimental uncertainty is dominated by the \(\eta\) dependence of the jet energy scale calibration. This uncertainty varies from approximately \(15\%\) at small values of \(\chi\) for the highest \(m_{jj}\) values, to a few percent at lower \(m_{jj}\) values and higher \(\chi\) values. The uncertainty in the beam energy is found to introduce a negligible contribution. The total uncertainty at the lowest \(\chi\), highest \(m_{jj}\) amounts to \(20\%\), decreasing to a few percent at high \(\chi\). The total theoretical and experimental uncertainties are shown in Fig. 1.
+
+The \(p\) value for the SM hypothesis is (0.25) 0.30 for the (second) highest \(m_{jj}\) bin. In the absence of significant deviations from the SM prediction, upper bounds on CI contributions are calculated using a one-sided profile likelihood ratio and the CL\({}_{5}\) technique [42, 43], evaluated using the asymptotic approximation [44] on events with \(m_{jj}>3.2\) TeV; the validity of asymptotic approximation was confirmed using toy simulations. These bounds exclude a compositeness scale below 8.1 TeV in a destructive interference scenario and below 12.0 TeV in a constructive interference scenario. The median expected limits are 8.9 (14.1) TeV for the destructive (constructive) interference scenario.
+
+In summary, dijet angular distributions have been measured by the ATLAS experiment in 17.3 fb\({}^{-1}\) of 8 TeV \(p\)\(p\) collisions at the LHC. Over a wide angular range and dijet invariant mass spectrum, the data are well described by QCD predictions at NLO. A model of quark compositeness is used as a benchmark for theories of new phenomena that include new forces and mediating particles; such theories predict deviations at small values of \(\chi\). A compositeness scale below 8.1 (12.0) TeV in a destructive (constructive) interference scenario is excluded at \(95\%\) confidence level, similar to results from the CMS Collaboration [17] and representing a significant enhancement in sensitivity relative to the previous limit (at 7.6 TeV for destructive interference) from the ATLAS Collaboration [11].
+
+We would like to thank S. Dittmaier and A. Huss for providing us with the electroweak correction factors. We thank CERN for the very successful operation of the LHC, as well as the support staff from our institutions without whom ATLAS could not be operated efficiently. Weacknowledge the support of ANPCyT, Argentina; YerPhI, Armenia; ARC, Australia; BMWFW and FWF, Austria; ANAS, Azerbaijan; SSTC, Belarus; CNPq and FAPESP, Brazil; NSERC, NRC and CFI, Canada; CERN; CONICYT, Chile; CAS, MOST and NSFC, China; COLCIENCIAS, Colombia; MSMT CR, MPO CR and VSC CR, Czech Republic; DNRF, DNSRC and Lundbeck Foundation, Denmark; EPLANET, ERC and NSRF, European Union; IN2P3-CNRS, CEA-DSM/IRFU, France; GNSF, Georgia; BMBF, DFG, HGF, MPG and AvH Foundation, Germany; GSRT and NSRF, Greece; RGC, Hong Kong SAR, China; ISF, MINERVA, GIF, I-CORE and Benoziyo Center, Israel; INFN, Italy; MEXT and JSPS, Japan; CNRST, Morocco; FOM and NWO, Netherlands; BRF and RCN, Norway; MNiSW and NCN, Poland; GRICES and FCT, Portugal; MNE/IFA, Romania; MES of Russia and NRC KI, Russian Federation; JINR; MSTD, Serbia; MSSR, Slovakia; ARRS and MIZS, Slovenia; DST/NRF, South Africa; MINECO, Spain; SRC and Wallenberg Foundation, Sweden; SER, SNSF and Cantons of Bern and Geneva, Switzerland; NSC, Taiwan; TAEK, Turkey; STFC, the Royal Society and Leverhulme Trust, United Kingdom; DOE and NSF, United States of America. The crucial computing support from all WLCG partners is acknowledged gratefully, in particular from CERN and the ATLAS Tier-1 facilities at TRIUMF (Canada), NDGF (Denmark, Norway, Sweden), CC-IN2P3 (France), KIT/GridKA (Germany), INFN-CNAF (Italy), NL-T1 (Netherlands), PIC (Spain), ASGC (Taiwan), RAL (UK) and BNL (USA) and in the Tier-2 facilities worldwide.
+
+## References
+
+* [1] P. Meade and L. Randall, J. High Energy Phys. 05 (2008) 003.
+* [2] L. Anchordoqui, J. L. Feng, H. Goldberg, and A. Shapere, Phys. Lett. B **594**, 363 (2004).
+* [3] U. Baur, I. Hinchliffe, and D. Zeppenfeld, Int. J. Mod. Phys. A **02**, 1285 (1987).
+* [4] U. Baur, M. Spira, and P. M. Zerwas, Phys. Rev. D **42**, 815 (1990).
+* [5] E. Eichten, I. Hinchliffe, K. D. Lane, and C. Quigg, Rev. Mod. Phys. **56**, 579 (1984), **58**, 1065(E) (1986).
+* [6] P. Chiappetta and M. Perrottet, Phys. Lett. B **253**, 489 (1991).
+* [7] G. Arnison _et al._ (UA1 Collaboration), Phys. Lett. **136B**, 294 (1984).
+* [8] P. Bagaia _et al._ (UA2 Collaboration), Phys. Lett. **144B**, 283 (1984).
+* [9] T. Aaltonen _et al._ (CDF Collaboration), Phys. Rev. D **79**, 112002 (2009).
+* [10] V. M. Abazov _et al._ (D0 Collaboration), Phys. Rev. Lett. **103**, 191803 (2009).
+* [11] ATLAS Collaboration, Phys. Lett. B **694**, 327 (2011).
+* [12] CMS Collaboration, Phys. Rev. Lett. **105**, 211801 (2010).
+* [13] CMS Collaboration, Phys. Rev. Lett. **105**, 262001 (2010).
+* [14] CMS Collaboration, Phys. Rev. Lett. **106**, 201804 (2011).
+* [15] ATLAS Collaboration, New J. Phys. **13**, 053044 (2011).
+* [16] ATLAS Collaboration, J. High Energy Phys. 01 (2013) 029.
+* [17] CMS Collaboration, arXiv:1411.2646.
+* [18] ATLAS Collaboration, JINST **3**, S08003 (2008).
+* [19] The ATLAS Collaboration uses a right-handed coordinate system with its origin at the nominal interaction point (IP) in the center of the detector and the\(z\) axis along the beam pipe. The \(x\) axis points from the IP to the center of the LHC ring, and the \(y\) axis points upward. Cylindrical coordinates \((r,\phi)\) are used in the transverse plane, \(\phi\) being the azimuthal angle around the beam pipe. The pseudorapidity is defined in terms of the polar angle \(\theta\) as \(\eta=-\ln\left[\tan(\theta/2)\right]\). The transverse energy and transverse momentum are defined by \(E_{\rm T}=E\sin\theta\) and \(p_{T}=|\vec{p}\,|\sin\theta\), respectively.
+* [20] M. Cacciari, G. Salam, and G. Soyez, J. High Energy Phys. 04 (2008) 063.
+* [21] M. Cacciari and G. P. Salam, Phys. Lett. B **641**, 57 (2006).
+* [22] ATLAS Collaboration, Eur. Phys. J. C **75**, 17 (2015).
+* [23] ATLAS Collaboration, Report No. ATLAS-CONF-2011-032, 2011, [http://cdsweb.cern.ch/record/1337782](http://cdsweb.cern.ch/record/1337782).
+* [24] ATLAS Collaboration, Report No. ATLAS-CONF-2013-083, 2013.
+* [25] P. Adragna _et al._, Nucl. Instrum. Methods Phys. Res., Sect. A **615**, 158 (2010).
+* [26] T. Sjostrand, S. Mrenna, and P. Skands, Comput. Phys. Commun. **178**, 852 (2008).
+* [27] ATLAS Collaboration, Report No. ATL-PHYS-PUB-2012-003, 2012, [http://cds.cern.ch/record/1474107](http://cds.cern.ch/record/1474107).
+* [28] H.-L. Lai, M. Guzzi, J. Huston, Z. Li, P. M. Nadolsky, J. Pumplin, and C.-P. Yuan, Phys. Rev. D **82**, 074024 (2010).
+* [29] ATLAS Collaboration, Eur. Phys. J. C **70**, 823 (2010).
+* [30] GEANT4 Collaboration, Nucl. Instrum. Methods Phys. Res., Sect. A **506**, 250 (2003).
+* [31] Z. Nagy, Phys. Rev. Lett. **88**, 122003 (2002).
+* [32] Z. Nagy, Phys. Rev. D **68**, 094002 (2003).
+* [33] S. Catani and M. Seymour, Nucl. Phys. **B485**, 291 (1997).
+* [34] S. Dittmaier, A. Huss, and C. Speckner, J. High Energy Phys. 11 (2012) 095.
+* [35] J. Gao, Comput. Phys. Commun. **184**, 2362 (2013).
+* [36] A. Martin, W. Stirling, R. Thorne, and G. Watt, Eur. Phys. J. C **63**, 189 (2009).
+* [37] R. D. Ball, V. Bertone, S. Carrazza, C. S. Deans, L. Del Debbio _et al._, Nucl. Phys. **B867**, 244 (2013).
+* [38] S. Alioli, P. Nason, and C. Oleari, J. High Energy Phys. 06 (2010) 043.
+* [39] G. Corcella, I. G. Knowles, G. Marchesini, S. Moretti, K. Odagiri, P. Richardson, M. H. Seymour, and B. R. Webber, J. High Energy Phys. 01 (2001) 010; arXiv:hep-ph/ 0210213.
+* [40] J. Butterworth, J. Forshaw, and M. Seymour, Z. Phys. C **72**, 637 (1996).
+* [41] J. Butterworth and M. Seymour, [http://projects.hepforge.org/jimmy/](http://projects.hepforge.org/jimmy/).
+* [42] A. L. Read, J. Phys. G **28**, 2693 (2002).
+* [43] T. Junk, Nucl. Instrum. Methods Phys. Res., Sect. A **434**, 435 (1999).
+* [44] G. Cowan, K. Cranmer, E. Gross, and O. Vitells, Eur. Phys. J. C **71**, 1554 (2011).
+
+# Physical Review Letters
+
+P. Urquijo,\({}^{88}\) P. Urrejola,\({}^{83}\) G. Usai,\({}^{8}\) A. Usanova,\({}^{62}\) L. Vacavant,\({}^{85}\) V. Vacek,\({}^{128}\) B. Vachon,\({}^{87}\) C. Valderanis,\({}^{83}\) N. Valencic,\({}^{107}\) S. Valentinetti,\({}^{20a,20b}\) A. Valero,\({}^{167}\) L. Valery,\({}^{12}\) S. Valkar,\({}^{129}\) E. Valladolid Gallego,\({}^{167}\) S. Vallecorsa,\({}^{49}\) J. A. Valls Ferrer,\({}^{167}\) W. Van Den Wollenberg,\({}^{107}\) P. C. Van Der Deijl,\({}^{107}\) R. van der Geer,\({}^{107}\) H. van der Graaf,\({}^{107}\) R. Van Der Leeuw,\({}^{107}\) N. van Eldik,\({}^{152}\) P. van Gemmeren,\({}^{6}\) J. Van Nieuwkoop,\({}^{142}\) I. van Vulpen,\({}^{107}\) M. C. van Woerden,\({}^{30}\) M. Vanadia,\({}^{132a,132b}\) W. Vandelli,\({}^{30}\) R. Vanguri,\({}^{122}\) A. Vaniachine,\({}^{6}\) F. Vannucci,\({}^{80}\) G. Vardanyan,\({}^{177}\) R. Vari,\({}^{132a}\) E. W. Varnes,\({}^{7}\) T. Varol,\({}^{40}\) D. Varouchas,\({}^{80}\) A. Vartapetian,\({}^{8}\) K. E. Varvell,\({}^{150}\) F. Vazeille,\({}^{34}\) T. Vazquez Schroeder,\({}^{87}\) J. Veatch,\({}^{7}\) F. Veloso,\({}^{126a,126c}\) T. Velz,\({}^{21}\) S. Veneziano,\({}^{132a}\) A. Ventura,\({}^{73a,73b}\) D. Ventura,\({}^{86}\) M. Venturi,\({}^{169}\) N. Venturi,\({}^{158}\) A. Venturini,\({}^{23}\) V. Vecesi,\({}^{121a}\) M. Verducci,\({}^{132a,132b}\) W. Verkerke,\({}^{107}\) J. C. Vermeulen,\({}^{107}\) A. Vest,\({}^{44}\) M. C. Vetterli,\({}^{142,e}\) O. Viazlo,\({}^{81}\) I. Vichou,\({}^{165}\) T. Vickey,\({}^{139}\) O. E. Vickey Boeriu,\({}^{139}\) G. H. A. Viehhauser,\({}^{120}\) S. Viel,\({}^{15}\) R. Vigne,\({}^{30}\) M. Villa,\({}^{20a,20b}\) M. Villaplana Perez,\({}^{91a,91b}\) E. Vilucchi,\({}^{47}\) M. G. Vincter,\({}^{29}\) V. B. Vinogradov,\({}^{65}\) I. Vivarelli,\({}^{149}\) F. Vives Vaque,\({}^{3}\) S. Vlachos,\({}^{10}\) D. Vladoiu,\({}^{100}\) M. Vlasak,\({}^{128}\) M. Vogel,\({}^{32}\) P. Vokac,\({}^{128}\) G. Volpi,\({}^{124a,124b}\) M. Volpi,\({}^{88}\) H. von der Schmitt,\({}^{101}\) H. von Radziewski,\({}^{48}\) E. von Toerne,\({}^{21}\) V. Vorobel,\({}^{129}\) K. Vorobev,\({}^{98}\) M. Vos,\({}^{167}\) R. Voss,\({}^{30}\) J. H. Vossebeld,\({}^{74}\) N. Vranjes,\({}^{13}\) M. Vranjes Milosavljevic,\({}^{13}\) V. Vrba,\({}^{127}\) M. Vreeswijk,\({}^{107}\) R. Vuillermet,\({}^{30}\) I. Vukotic,\({}^{31}\) Z. Vykydal,\({}^{128}\) P. Wagner,\({}^{21}\) W. Wagner,\({}^{175}\) H. Wahlberg,\({}^{71}\) S. Wahrmund,\({}^{44}\) J. Wakabayashi,\({}^{103}\) J. Walder,\({}^{72}\) R. Walker,\({}^{100}\) W. Walkowiak,\({}^{141}\) C. Wang,\({}^{33c}\) F. Wang,\({}^{173}\) H. Wang,\({}^{15}\) H. Wang,\({}^{40}\) J. Wang,\({}^{42}\) J. Wang,\({}^{33a}\) K. Wang,\({}^{87}\) R. Wang,\({}^{6}\) S. M. Wang,\({}^{151}\) T. Wang,\({}^{21}\) X. Wang,\({}^{176}\) C. Wanotayaroj,\({}^{116}\) A. Warburton,\({}^{87}\) C. P. Ward,\({}^{28}\) D. R. Wardrope,\({}^{78}\) M. Warsinsky,\({}^{48}\) A. Washbrook,\({}^{46}\) C. Waseicki,\({}^{42}\) P. M. Watkins,\({}^{18}\) A. T. Watson,\({}^{18}\) I. J. Watson,\({}^{150}\) M. F. Watson,\({}^{18}\) G. Watts,\({}^{138}\) S. Watts,\({}^{84}\) B. M. Waugh,\({}^{78}\) S. Webb,\({}^{84}\) M. S. Weber,\({}^{17}\) S. W. Weber,\({}^{174}\) J. S. Webster,\({}^{31}\) A. R. Weidberg,\({}^{120}\) B. Weinert,\({}^{61}\) J. Weingarten,\({}^{54}\) C. Weiser,\({}^{48}\) H. Weits,\({}^{107}\) P. S. Wells,\({}^{30}\) T. Wenaus,\({}^{25}\) T. Wengler,\({}^{30}\) S. Wenig,\({}^{30}\) N. Wermes,\({}^{21}\) M. Werner,\({}^{48}\) P. Werner,\({}^{30}\) M. Wessels,\({}^{58a}\) J. Wetter,\({}^{161}\) K. Whalen,\({}^{29}\) A. M. Wharton,\({}^{72}\) A. White,\({}^{8}\) M. J. White,\({}^{1}\) R. White,\({}^{32b}\) S. White,\({}^{124a,124b}\) D. Whiteson,\({}^{163}\) F. J. Wickens,\({}^{131}\) W. Wiedenmann,\({}^{173}\) M. Wielers,\({}^{131}\) P. Wienemann,\({}^{21}\) C. Wiglesworth,\({}^{36}\) L. A. M. Wiik-Fuchs,\({}^{21}\) A. Wildauer,\({}^{101}\) H. G. Wilkens,\({}^{30}\) H. H. Williams,\({}^{122}\) S. Williams,\({}^{107}\) C. Willis,\({}^{90}\) S. Willocq,\({}^{86}\) A. Wilson,\({}^{89}\) J. A. Wilson,\({}^{18}\) I. Wingerter-Seez,\({}^{5}\) F. Winklmeier,\({}^{116}\) B. T. Winter,\({}^{21}\) M. Wittgen,\({}^{143}\) J. Wittkowski,\({}^{100}\) S. J. Wollstadt,\({}^{83}\) M. W. Wolter,\({}^{39}\) H. Wolters,\({}^{126a,126c}\) B. K. Wosiek,\({}^{39}\) J. Wotschack,\({}^{30}\) M. J. Woudstra,\({}^{84}\) K. W. Wozniak,\({}^{39}\) M. Wu,\({}^{55}\) M. Wu,\({}^{31}\) S. L. Wu,\({}^{173}\) X. Wu,\({}^{49}\) Y. Wu,\({}^{89}\) T. R. Wyatt,\({}^{84}\) B. M. Wynne,\({}^{46}\) S. Xella,\({}^{36}\) D. Xu,\({}^{33a}\) L. Xu,\({}^{33b,kk}\) B. Yabsley,\({}^{150}\) S. Yacoob,\({}^{145b,l}\) R. Yakabe,\({}^{67}\) M. Yamada,\({}^{66}\) Y. Yamaguchi,\({}^{118}\) A. Yamamoto,\({}^{66}\) S. Yamamoto,\({}^{155}\) T. Yamanaka,\({}^{155}\) K. Yamauchi,\({}^{103}\) Y. Yamazaki,\({}^{67}\) Z. Yan,\({}^{22}\) H. Yang,\({}^{35a}\) H. Yang,\({}^{173}\) Y. Yang,\({}^{151}\) L. Yao,\({}^{33a}\) W-M. Yao,\({}^{15}\) Y. Yasu,\({}^{66}\) E. Yatsenko,\({}^{5}\) K. H. Y12]Institut de Fisica d'Altes Energies and Departament de Fisica de la Universitat Autonoma de Barcelona, Barcelona, Spain
+
+[13]Institute of Physics, University of Belgrade, Belgrade, Serbia
+
+[14]Department for Physics and Technology, University of Bergen, Bergen, Norway
+
+[15]Physics Division, Lawrence Berkeley National Laboratory and University of California, Berkeley, California, USA
+
+[16]Department of Physics, Humboldt University, Berlin, Germany
+
+[17]Albert Einstein Center for Fundamental Physics and Laboratory for High Energy Physics, University of Bern, Bern, Switzerland
+
+[18]School of Physics and Astronomy, University of Birmingham, Birmingham, United Kingdom
+
+[19]Department of Physics, Bogazici University, Istanbul, Turkey
+
+[19]Department of Physics, Dogus University, Istanbul, Turkey
+
+[19]Department of Physics Engineering, Gaziantep University, Gaziantep, Turkey
+
+[20]INFN Sezione di Bologna, Italy
+
+[21]Physikalisches Institut, University of Bonn, Bonn, Germany
+
+[22]Department of Physics, Boston University, Boston, Massachusetts, USA
+
+[23]Department of Physics, Brandeis University, Waltham, Massachusetts, USA
+
+[24]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[24]Electrical Circuits Department, Federal University of Juiz de Fora (UFJF), Juz de Fora, Brazil
+
+[25]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[26]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[27]Physics Department, Brookhaven National Laboratory, Upton, New York, USA
+
+[28]National Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[29]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[30]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[31]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[32]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[33]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[34]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[35]Electrical Circuits Department, Federal University of Juiz de Fora (UFJF), Juz de Fora, Brazil
+
+[36]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[37]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[38]Physics Department, University of Bucharest, BMC, Brazil
+
+[39]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[41]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Electrical Circuits Department, Federal University of Juiz de Fora (UFJF), Juz de Fora, Brazil
+
+[43]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[46]National Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[47]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[48]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[49]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[41]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Electrical Circuits Department, Federal University of Juiz de Fora (UFJF), Juz de Fora, Brazil
+
+[43]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[46]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[47]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[48]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[49]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[41]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Electrical Circuits Department, Federal University of Juiz de Fora (UFJFJF), Juz de Fora, Brazil
+
+[43]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[46]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[47]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[48]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[49]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[41]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Electrical Circuits Department, Federal University of Juiz de Fora (UFJFJF), Juz de Fora, Brazil
+
+[43]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[46]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[47]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[48]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[49]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[41]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Electrical Circuits Department, Federal University of Juiz de Fora (UFJFJF), Juz de Fora, Brazil
+
+[43]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[46]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[47]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[48]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[49]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[41]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Electrical Circuits Department, Federal University of Juiz de Fora (UFJFJF), Juz de Fora, Brazil
+
+[43]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[46]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[47]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[48]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[49]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[41]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Electrical Circuits Department, Federal University of Juiz de Fora (UFJFJF), Juz de Fora, Brazil
+
+[43]Federal University of Sao Joao del Rei (UFJ), Sao Joao Joao del Rei, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Brazil
+
+[MISSING_PAGE_POST]
+
+[43]Federal University of Sao Joao del Rei (UFJ), Sao Joao Joao del Rei, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[MISSING_PAGE_POST]
+
+[43]Federal University of Sao Joao del Rei (UFJ), Juz de Fora, Brazil
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de Fisica, Universidade de Sao Paulo, Sao Paulo, Sao Paulo, Brazil
+
+[46]National Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[47]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[48]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[49]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[40]National Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department, Cluj Napoca, Romania
+
+[41]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Universidade Federal do Rio De Janeiro COPPE/E/IF, Rio de Janeiro, Brazil
+
+[42]Electrical Circuits Department, Federal University of Juiz de Fora (UFJFJF), Juz de Fora, Brazil
+
+[42]Federal University of Sao Joao del Rei (UFJ), Sao Joao del Rei, Brazil
+
+[43]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[44]Institute of Physics and Nuclear Engineering, Bucharest, Romania
+
+[45]Instituto de 
+
+[MISSING_PAGE_EMPTY:14]
+
+\({}^{104}\)INFN Sezione di Napoli, Italy
+
+\({}^{108}\)Dipartimento di Fisica, Universita di Napoli, Napoli, Italy
+
+\({}^{109}\)Dipartimento di Fisica, Universita di Napoli, Napoli, Italy
+
+\({}^{105}\)Department of Physics and Astronomy, University of New Mexico, Albuquerque, New Mexico, USA
+
+\({}^{106}\)Institute for Mathematics, Astrophysics and Particle Physics, Radboud University Nijmegen/Nikhef, Nijmegen, Netherlands
+
+\({}^{107}\)Nikhef National Institute for Subatomic Physics and University of Amsterdam, Amsterdam, Netherlands
+
+\({}^{108}\)Department of Physics, Northern Illinois University, DeKalb, Illinois, USA
+
+\({}^{109}\)Budker Institute of Nuclear Physics, SB RAS, Novosibirsk, Russia
+
+\({}^{110}\)Department of Physics, New York University, New York, New York, USA
+
+\({}^{111}\)Ohio State University, Columbus, Ohio, USA
+
+\({}^{112}\)Faculty of Science, Okayama University, Okayama, Japan
+
+\({}^{113}\)Homer L. Dodge Department of Physics and Astronomy, University of Oklahoma, Norman, Oklahoma, USA
+
+\({}^{114}\)Department of Physics, Oklahoma State University, Stillwater, Oklahoma, USA
+
+\({}^{115}\)Palacky University, RCPTM, Olomouc, Czech Republic
+
+\({}^{116}\)Center for High Energy Physics, University of Oregon, Eugene, Oregon, USA
+
+\({}^{117}\)LAL, Universite Paris-Sud and CNRS/IN2P3, Orsay, France
+
+\({}^{118}\)Graduate School of Science, Osaka University, Osaka, Japan
+
+\({}^{119}\)Department of Physics, University of Oslo, Oslo, Norway
+
+\({}^{120}\)Department of Physics, Oxford University, Oxford, United Kingdom
+
+\({}^{121}\)INFN Sezione di Pavia, Italy
+
+\({}^{121}\)Dipartimento di Fisica, Universita di Pavia, Pavia, Italy
+
+\({}^{122}\)Department of Physics, University of Pennsylvania, Philadelphia, Pennsylvania, USA
+
+\({}^{123}\)Petersburg Nuclear Physics Institute, Gatchina, Russia
+
+\({}^{124}\)INFN Sezione di Pisa, Italy
+
+\({}^{125}\)Department of Physics and Astronomy, University of Pittsburgh, Pittsburgh, Pennsylvania, USA
+
+\({}^{126}\)Laboratorio de Instrumentacacao e Fisica Experimental de Particulas - LIP, Lisboa, Portugal
+
+\({}^{126}\)Faculdade de Ciencias, Universidade de Lisboa, Lisboa, Portugal
+
+\({}^{128}\)Department of Physics, University of Coimbra, Coimbra, Portugal
+
+\({}^{126}\)Centro de Fisica Nuclear da Universidade de Lisboa, Lisboa, Portugal
+
+\({}^{128}\)Departamento de Fisica, Universidade do Minho, Braga, Portugal
+
+\({}^{129}\)Departamento de Fisica Teorica y del Cosmos and CAFPE, Universidad de Granada, Granada, Spain
+
+\({}^{126}\)Dep Fisica and CEFITEC of Faculdade de Ciencias e Tecnologia, Universidade Nova de Lisboa, Caparica, Portugal
+
+\({}^{127}\)Institute of Physics, Academy of Sciences of the Czech Republic, Praha, Czech Republic
+
+\({}^{128}\)Czech Technical University in Prague, Praha, Czech Republic
+
+\({}^{129}\)Faculty of Mathematics and Physics, Charles University in Prague, Praha, Czech Republic
+
+\({}^{130}\)State Research Center Institute for High Energy Physics, Protvino, Russia
+
+\({}^{131}\)Particle Physics Department, Rutherford Appleton Laboratory, Didcot, United Kingdom
+
+\({}^{132}\)INFN Sezione di Roma, Italy
+
+\({}^{133}\)Dipartimento di Fisica, Sapienza Universita di Roma, Roma, Italy
+
+\({}^{133}\)INFN Sezione di Roma Tor Vergata, Italy
+
+\({}^{133}\)Dipartimento di Fisica, Universita di Roma Tor Vergata, Roma, Italy
+
+\({}^{134}\)INFN Sezione di Roma Tre, Italy
+
+\({}^{138}\)Dipartimento di Matematica e Fisica, Universita Roma Tre, Roma, Italy
+
+\({}^{135}\)Faculte des Sciences Ain Chock, Reseau Universitaire de Physique des Hautes Energies - Universite Hassan II, Casablanca, Morocco
+
+\({}^{138}\)Centre National de l'Energie des Sciences Techniques Nucleaires, Rabat, Morocco
+
+\({}^{135}\)Faculte des Sciences Semlalia, Universite Cadi Ayyad, LPHEA-Marrakech, Morocco
+
+\({}^{135}\)Faculte des Sciences, Universite Mohamed Premier and LPTPM, Oujda, Morocco
+
+\({}^{136}\)Faculte des sciences, Universite Mohammed V-Agdal, Rabat, Morocco
+
+\({}^{137}\)DSM/IRFU (Institut de Recherches sur les Lois Fondamentales de l'Univers), CEA Saclay (Commissariat a l'Energie Atomique et aux Energies Alternatives), Gif-sur-Yvette, France
+
+\({}^{138}\)Santa Cruz Institute for Particle Physics, University of California Santa Cruz, Santa Cruz, California, USA
+
+\({}^{139}\)Department of Physics, University of Washington, Seattle, Washington, USA
+
+\({}^{130}\)Department of Physics and Astronomy, University of Sheffield, Sheffield, United Kingdom
+
+\({}^{140}\)Department of Physics, Shinshu University, Nagano, Japan
+
+\({}^{141}\)Fachbereich Physik, Universitat Siegen, Siegen, Germany
+
+\({}^{142}\)Department of Physics, Simon Fraser University, Burnaby, British Columbia, Canada
+
+\({}^{143}\)SLAC National Accelerator Laboratory, Stanford, California, USA
+
+\({}^{144}\)Faculty of Mathematics, Physics & Informatics, Comenius University, Bratislava, Slovak Republic
+
+\({}^{144b}\)Department of Subnuclear Physics, Institute of Experimental Physics of the Slovak Academy of Sciences, Kosice, Slovak Republic\({}^{145}\)Department of Physics, University of Cape Town, Cape Town, South Africa
+
+\({}^{145}\)Department of Physics, University of Johannesburg, Johannesburg, South Africa
+
+\({}^{145}\)School of Physics, University of the Witwatersrand, Johannesburg, South Africa
+
+\({}^{146}\)Department of Physics, Stockholm University, Sweden
+
+\({}^{146}\)The Oskar Klein Centre, Stockholm, Sweden
+
+\({}^{147}\)Physics Department, Royal Institute of Technology, Stockholm, Sweden
+
+\({}^{148}\)Departments of Physics & Astronomy and Chemistry, Stony Brook University, Stony Brook, New York, USA
+
+\({}^{149}\)Department of Physics and Astronomy, University of Sussex, Brightton, United Kingdom
+
+\({}^{150}\)School of Physics, University of Sydney, Sydney, Australia
+
+\({}^{151}\)Institute of Physics, Academia Sinica, Taipei, Taiwan
+
+\({}^{152}\)Department of Physics, Technion: Israel Institute of Technology, Haifa, Israel
+
+\({}^{153}\)Raymond and Beverly Sackler School of Physics and Astronomy, Tel Aviv University, Tel Aviv, Israel
+
+\({}^{154}\)Department of Physics, Aristotle University of Thessaloniki, Thessaloniki, Greece
+
+\({}^{155}\)International Center for Elementary Particle Physics and Department of Physics, The University of Tokyo, Tokyo, Japan
+
+\({}^{156}\)Graduate School of Science and Technology, Tokyo Metropolitan University, Tokyo, Japan
+
+\({}^{157}\)Department of Physics, Tokyo Institute of Technology, Tokyo, Japan
+
+\({}^{158}\)Department of Physics, University of Toronto, Toronto, Ontario, Canada
+
+\({}^{159}\)TRIUMF, Vancouver, British Columbia, Canada
+
+\({}^{150}\)Department of Physics and Astronomy, York University, Toronto, Ontario, Canada
+
+\({}^{160}\)Faculty of Pure and Applied Sciences, University of Tsukuba, Tsukuba, Japan
+
+\({}^{161}\)Department of Physics and Astronomy, Tufts University, Medford, Massachusetts, USA
+
+\({}^{162}\)Centro de Investigaciones, Universidad Antonio Narino, Bogota, Colombia
+
+\({}^{163}\)Department of Physics and Astronomy, University of California Irvine, Irvine, California, USA
+
+\({}^{164}\)INFN Gruppo Collegato di Udine, Sezione di Trieste, Udine, Italy
+
+\({}^{165}\)LCTP, Trieste, Italy
+
+\({}^{166}\)Dipartimento di Chimica, Fisica e Ambiente, Universita di Udine, Udine, Italy
+
+\({}^{167}\)Department of Physics, University of Illinois, Urbana, Illinois, USA
+
+\({}^{168}\)Department of Physics and Astronomy, University of Uppsala, Uppsala, Sweden
+
+\({}^{169}\)Instituto de Fisica Corpuscular (IFIC) and Departamento de Fisica Atomica, Molecular y Nuclear and Departamento de Ingenieria Electronica and Instituto de Microelectronica de Barcelona (IMB-CNM), University of Valencia and CSIC, Valencia, Spain
+
+\({}^{168}\)Department of Physics, University of British Columbia, Vancouver, British Columbia, Canada
+
+\({}^{169}\)Department of Physics and Astronomy, University of Victoria, Victoria, British Columbia, Canada
+
+\({}^{170}\)Department of Physics and Astronomy, University of Victoria, Victoria, British Columbia, Canada
+
+\({}^{170}\)Department of Physics, University of Warwick, Coventry, United Kingdom
+
+\({}^{171}\)Waseda University, Tokyo, Japan
+
+\({}^{172}\)Department of Particle Physics, The Weizmann Institute of Science, Rehovot, Israel
+
+\({}^{173}\)Department of Physics, University of Wisconsin, Madison, Wisconsin, USA
+
+\({}^{174}\)Fakultat fur Physik und Astronomie, Julius-Maximilians-Universitat, Wurzburg, Germany
+
+\({}^{175}\)Fachbereich C Physik, Bergische Universit Wuppertal, Wuppertal, Germany
+
+\({}^{176}\)Department of Physics, Yale University, New Haven, Connecticut, USA
+
+\({}^{177}\)Yerevan Physics Institute, Yerevan, Armenia
+
+\({}^{178}\)Centre de Calcul de l'Institut National de Physique Nucleaire et de Physique des Particules (IN2P3), Villeurbanne, France
+
+\({}^{179}\)Centre de Calcul de l'Institut National de Physique Nucleaire et de Physique des Particules (IN2P3), Villeurbanne, France
+
+\({}^{20}\)Deceased.
+
+\({}^{21}\)Also at Department of Physics, King's College London, London, United Kingdom.
+
+\({}^{22}\)Also at Department of Physics, King's College London, London, United Kingdom.
+
+\({}^{23}\)Also at Institute of Physics, Azerbaijan Academy of Sciences, Baku, Azerbaijan.
+
+\({}^{24}\)Also at Novosibirsk State University, Novosibirsk, Russia.
+
+\({}^{25}\)Also at TRIUMF, Vancouver BC, Canada.
+
+\({}^{26}\)Also at Department of Physics, California State University, Fresno CA, USA.
+
+\({}^{27}\)Also at Department of Physics, University of Fribourg, Fribourg, Switzerland.
+
+\({}^{28}\)Also at Departamento de Fisica e Astronomia, Faculdade de Ciencias, Universidade do Porto, Portugal.
+
+\({}^{29}\)Also at Tomsk State University, Tomsk, Russia.
+
+\({}^{30}\)Also at CPPM, Aix-Marseille Universite and CNRS/IN2P3, Marseille, France.
+
+\({}^{31}\)Also at Universita di Napoli Parthenope, Napoli, Italy.
+
+\({}^{32}\)Also at Institute of Particle Physics (IPP), Canada.
+
+\({}^{33}\)Also at Particle Physics Department, Rutherford Appleton Laboratory, Didcot, United Kingdom.
+
+\({}^{34}\)Also at Department of Physics, St. Petersburg State Polytechnical University, St. Petersburg, Russia.
+
+\({}^{35}\)Also at Louisiana Tech University, Ruston LA, USA.
+
+\({}^{36}\)Also at Institucio Catalana de Recerca i Estudis Avancats, ICREA, Barcelona, Spain.
+
+\({}^{37}\)Also at Department of Physics, National Tsing Hua University, Taiwan.
+
+\({}^{38}\)Also at Department of Physics, The University of Texas at Austin, Austin TX, USA.
+
+* [1]Also at Institute of Theoretical Physics, Ilia State University, Tbilisi, Georgia.
+* [2]Also at CERN, Geneva, Switzerland.
+* [3]Also at Georgian Technical University (GTU),Tbilisi, Georgia.
+* [4]Also at Ochadai Academic Production, Ochanomizu University, Tokyo, Japan.
+* [5]Also at Manhattan College, New York NY, USA.
+* [6]Also at Institute of Physics, Academia Sinica, Taipei, Taiwan.
+* [7]Also at LAL, Universite Paris-Sud and CNRS/IN2P3, Orsay, France.
+* [8]Also at Academia Sinica Grid Computing, Institute of Physics, Academia Sinica, Taipei, Taiwan.
+* [9]Also at School of Physics, Shandong University, Shandong, China.
+* [10]Also at Moscow Institute of Physics and Technology State University, Dolgoprudny, Russia.
+* [11]Also at Section de Physique, Universite de Geneve, Geneva, Switzerland.
+* [12]Also at International School for Advanced Studies (SISSA), Trieste, Italy.
+* [13]Also at Department of Physics and Astronomy, University of South Carolina, Columbia SC, USA.
+* [14]Also at School of Physics and Engineering, Sun Yat-sen University, Guangzhou, China.
+* [15]Also at Faculty of Physics, M.V.Lomonosov Moscow State University, Moscow, Russia.
+* [16]Also at National Research Nuclear University MEPhI, Moscow, Russia.
+* [17]Also at Department of Physics, Stanford University, Stanford CA, USA.
+* [18]Also at Institute for Particle and Nuclear Physics, Wigner Research Centre for Physics, Budapest, Hungary.
+* [19]Also at Department of Physics, The University of Michigan, Ann Arbor MI, USA.
+* [20]Also at Discipline of Physics, University of KwaZulu-Natal, Durban, South Africa.
+* [21]Also at University of Malaya, Department of Physics, Kuala Lumpur, Malaysia.

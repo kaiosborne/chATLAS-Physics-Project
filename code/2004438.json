@@ -1,0 +1,111 @@
+{
+    "Plots": "fig_01a.png",
+    "caption": "Figure 01a:Distributions of the reconstructed  (a) transverse mass mT\u03bd\u03bd jj for the \u03bd\u03bd b anti-b final state, (b) invariant mass m\u2113 \u03bd jj for the \u2113 \u03bd b anti-b  final state\tand  (c)  invariant mass m\u2113 \u2113 jj for the \u2113\u2113 b anti-b  final state for the 1-b-tag (upper) and  2-b-tag (lower) channels. The background expectation is shown after the profile likelihood fit to the data.  Any overflow is included in the last bin. The signals are shown stacked on top of the background and correspond to the benchmark models MWT with mR1 = 700 GeV and HVT with mV' = 1000 GeV normalized to the expected cross sections.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/fig_01a.png"
+}{
+    "Plots": "fig_01b.png",
+    "caption": "Figure 01b:Distributions of the reconstructed  (a) transverse mass mT\u03bd\u03bd jj for the \u03bd\u03bd b anti-b final state, (b) invariant mass m\u2113 \u03bd jj for the \u2113 \u03bd b anti-b  final state\tand  (c)  invariant mass m\u2113 \u2113 jj for the \u2113\u2113 b anti-b  final state for the 1-b-tag (upper) and  2-b-tag (lower) channels. The background expectation is shown after the profile likelihood fit to the data.  Any overflow is included in the last bin. The signals are shown stacked on top of the background and correspond to the benchmark models MWT with mR1 = 700 GeV and HVT with mV' = 1000 GeV normalized to the expected cross sections.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/fig_01b.png"
+}{
+    "Plots": "fig_01c.png",
+    "caption": "Figure 01c:Distributions of the reconstructed  (a) transverse mass mT\u03bd\u03bd jj for the \u03bd\u03bd b anti-b final state, (b) invariant mass m\u2113 \u03bd jj for the \u2113 \u03bd b anti-b  final state\tand  (c)  invariant mass m\u2113 \u2113 jj for the \u2113\u2113 b anti-b  final state for the 1-b-tag (upper) and  2-b-tag (lower) channels. The background expectation is shown after the profile likelihood fit to the data.  Any overflow is included in the last bin. The signals are shown stacked on top of the background and correspond to the benchmark models MWT with mR1 = 700 GeV and HVT with mV' = 1000 GeV normalized to the expected cross sections.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/fig_01c.png"
+}{
+    "Plots": "fig_02a.png",
+    "caption": "Figure 02a:Combined upper limits at the 95% CL for (a)  the \tproduction cross section of R10 (V'0)   times its branching ratio to ZH and branching ratio of  H to banti-b and (b) the production cross section of R1\u00b1  (V'\u00b1)   times its branching ratio to WH and branching ratio of  H to banti-b . The experimental limits are obtained using samples with a single resonance R1; however, the theory curve line for MWT includes both R1 and R2. The dip  near 500 GeV in this theory curve is due to the interference between R1 and R2 [6].",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/fig_02a.png"
+}{
+    "Plots": "fig_02b.png",
+    "caption": "Figure 02b:Combined upper limits at the 95% CL for (a)  the \tproduction cross section of R10 (V'0)   times its branching ratio to ZH and branching ratio of  H to banti-b and (b) the production cross section of R1\u00b1  (V'\u00b1)   times its branching ratio to WH and branching ratio of  H to banti-b . The experimental limits are obtained using samples with a single resonance R1; however, the theory curve line for MWT includes both R1 and R2. The dip  near 500 GeV in this theory curve is due to the interference between R1 and R2 [6].",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/fig_02b.png"
+}{
+    "Plots": "fig_03.png",
+    "caption": "Figure 03:Exclusion contours at 95% CL in the plane of the Minimal Walking Technicolor parameter space defined by the bare axial-vector mass versus the strength of the spin-1 resonance interaction mA, g. Electroweak precision measurements exclude the (green) area in the bottom left corner. The requirement to stay in the walking regime excludes the (blue) area in the right corner. The large (red) area (black dashed line) shows the observed (expected) exclusion. The blue dashed line shows the observed exclusion from the dilepton resonance search [20]. The upper region is excluded due to non-real axial and axial-vector decay constants. Here both resonances predicted by MWT, R1 and R2, are fitted simultaneously.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/fig_03.png"
+}{
+    "Plots": "fig_04.png",
+    "caption": "Figure 04:Observed 95% CL exclusion contours in the HVT parameter space (g2/gV)cF, gVcH for resonances of mass 1 TeV, 1.5 TeV and 1.8 TeV . The areas outside the curves are excluded.  Also shown are the benchmark model parameters A(gV=1), A(gV=3) and B(gV=3).",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/fig_04.png"
+}{
+    "Plots": "tab_01.png",
+    "caption": "Table 01:The number of expected and observed events for the three final states. The expectation  is shown after the profile likelihood fit to the data. The quoted uncertainties are the combined systematic and statistical uncertainties.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/tab_01.png"
+}{
+    "Plots": "figaux_01a.png",
+    "caption": "01a:Distributions of the the transverse (a) mT\u03bd\u03bd jj mass for the \u03bd\u03bd b anti-b final state, (b) reconstructed ml\u03bd jj  mass for the \u2113 \u03bd b anti-b  final state and  (c) mlljj  mass for the \u2113\u2113 b anti-b  final state for the 1 b-tag channel. The expectation is shown after the profile likelihood fit to the data. The uncertainty shown as the shaded area in the lower plots of the ratio of data over expectation includes both systematic and statistical uncertainties on the prediction. The overflow is included in the last bin. The signals shown  correspond to the benchmark model MWT with mR1 = 700 GeV and HVT  mV' = 1000 GeV.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_01a.png"
+}{
+    "Plots": "figaux_01b.png",
+    "caption": "01b:Distributions of the the transverse (a) mT\u03bd\u03bd jj mass for the \u03bd\u03bd b anti-b final state, (b) reconstructed ml\u03bd jj  mass for the \u2113 \u03bd b anti-b  final state and  (c) mlljj  mass for the \u2113\u2113 b anti-b  final state for the 1 b-tag channel. The expectation is shown after the profile likelihood fit to the data. The uncertainty shown as the shaded area in the lower plots of the ratio of data over expectation includes both systematic and statistical uncertainties on the prediction. The overflow is included in the last bin. The signals shown  correspond to the benchmark model MWT with mR1 = 700 GeV and HVT  mV' = 1000 GeV.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_01b.png"
+}{
+    "Plots": "figaux_01c.png",
+    "caption": "01c:Distributions of the the transverse (a) mT\u03bd\u03bd jj mass for the \u03bd\u03bd b anti-b final state, (b) reconstructed ml\u03bd jj  mass for the \u2113 \u03bd b anti-b  final state and  (c) mlljj  mass for the \u2113\u2113 b anti-b  final state for the 1 b-tag channel. The expectation is shown after the profile likelihood fit to the data. The uncertainty shown as the shaded area in the lower plots of the ratio of data over expectation includes both systematic and statistical uncertainties on the prediction. The overflow is included in the last bin. The signals shown  correspond to the benchmark model MWT with mR1 = 700 GeV and HVT  mV' = 1000 GeV.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_01c.png"
+}{
+    "Plots": "figaux_02a.png",
+    "caption": "02a:Distributions of the the transverse (a) mT\u03bd\u03bd jj mass for the \u03bd\u03bd b anti-b final state, (b) reconstructed ml\u03bd jj  mass for the \u2113 \u03bd b anti-b  final state and  (c) mlljj  mass for the \u2113\u2113 b anti-b  final state for the 2 b-tag channel. The expectation is shown after the profile likelihood fit to the data. The uncertainty shown as the shaded area in the lower plots of the ratio of data over expectation includes both systematic and statistical uncertainties. The overflow is included in the last bin. The signals shown  correspond to the benchmark model MWT with mR1 = 700 GeV and HVT  mV' = 1000 GeV.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_02a.png"
+}{
+    "Plots": "figaux_02b.png",
+    "caption": "02b:Distributions of the the transverse (a) mT\u03bd\u03bd jj mass for the \u03bd\u03bd b anti-b final state, (b) reconstructed ml\u03bd jj  mass for the \u2113 \u03bd b anti-b  final state and  (c) mlljj  mass for the \u2113\u2113 b anti-b  final state for the 2 b-tag channel. The expectation is shown after the profile likelihood fit to the data. The uncertainty shown as the shaded area in the lower plots of the ratio of data over expectation includes both systematic and statistical uncertainties. The overflow is included in the last bin. The signals shown  correspond to the benchmark model MWT with mR1 = 700 GeV and HVT  mV' = 1000 GeV.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_02b.png"
+}{
+    "Plots": "figaux_02c.png",
+    "caption": "02c:Distributions of the the transverse (a) mT\u03bd\u03bd jj mass for the \u03bd\u03bd b anti-b final state, (b) reconstructed ml\u03bd jj  mass for the \u2113 \u03bd b anti-b  final state and  (c) mlljj  mass for the \u2113\u2113 b anti-b  final state for the 2 b-tag channel. The expectation is shown after the profile likelihood fit to the data. The uncertainty shown as the shaded area in the lower plots of the ratio of data over expectation includes both systematic and statistical uncertainties. The overflow is included in the last bin. The signals shown  correspond to the benchmark model MWT with mR1 = 700 GeV and HVT  mV' = 1000 GeV.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_02c.png"
+}{
+    "Plots": "figaux_03.png",
+    "caption": "03:Distributions of the reconstructed mlljj  mass for the tanti-t control region included in the likelihood fit to constrain the t anti-t normalization. It is defined by requiring exactly one electron and one muon, one of which has pT>25 GeV, and two b-tagged jets. The expectation is shown after the profile likelihood fit to the data. The uncertainty shown as the shaded area in the lower plots of the ratio of data over expectation includes the statistical uncertainties. The overflow is included in the last bin.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_03.png"
+}{
+    "Plots": "figaux_04.png",
+    "caption": "04:Combined upper limits at the 95% CL for the production cross section of V'  times its branching ratio to VH and branching ratio of  H to bb  for different MV' mass points. The branching ratio to WH and ZH  is taken  into account and comes from the HVT model. The blue line shows the theoretical cross section for  HVT benchmark model A.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_04.png"
+}{
+    "Plots": "figaux_05a.png",
+    "caption": "05a:Observed 95% CL exclusion contours in the HVT parameter space (g2/gV)cF, gVcH for resonances of different masses, obtained from (a) combining  the \u2113 \u2113 b anti-b and \u03bd \u03bd b anti-b  final states  and (b) the \u2113 \u03bd b anti- b final state. Also shown are the benchmark model parameters A(gV=1), A(gV=3) and B(gV=3).",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_05a.png"
+}{
+    "Plots": "figaux_05b.png",
+    "caption": "05b:Observed 95% CL exclusion contours in the HVT parameter space (g2/gV)cF, gVcH for resonances of different masses, obtained from (a) combining  the \u2113 \u2113 b anti-b and \u03bd \u03bd b anti-b  final states  and (b) the \u2113 \u03bd b anti- b final state. Also shown are the benchmark model parameters A(gV=1), A(gV=3) and B(gV=3).",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/figaux_05b.png"
+}{
+    "Plots": "tabaux_01.png",
+    "caption": "01:Combined upper limits (pb) at the 95% CL for the production cross section of V'  times its branching ratio to VH and branching ratio of  H to bb  for different MV' mass points  for the combined fit to the \u2113 \u2113/ \u2113 \u03bd/ \u03bd \u03bd b anti-b channels. The branching ratio to WH and ZH is taken from the HVT model.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/tabaux_01.png"
+}{
+    "Plots": "tabaux_02.png",
+    "caption": "02:Total acceptance times efficiency for the three channels studied.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/tabaux_02.png"
+}{
+    "Plots": "tabaux_03.png",
+    "caption": "03:Combined upper limits (pb) at the 95% CL for the production cross section of R10  times its branching ratio to ZH and branching ratio of  H to bb  for the combined fit to the \u2113 \u2113/ \u03bd \u03bd b anti-b channels.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/tabaux_03.png"
+}{
+    "Plots": "tabaux_04.png",
+    "caption": "04:Combined upper limits (pb) at the 95% CL for the production cross section of R10  times its branching ratio to ZH and branching ratio of  H to bb  for the combined fit to the \u2113 \u2113/ \u03bd \u03bd b anti-b channels.",
+    "mentioned": "",
+    "web location": "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2013-23/tabaux_04.png"
+}

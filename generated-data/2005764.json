@@ -1,0 +1,36 @@
+{
+    "Plots": "fig_01.png",
+    "caption": "Figure 01:Distributions of the dijet angular variable \u03c7 for several regions of dijet invariant mass  mjj.  Shown are the data (dots),  SM predictions (solid lines) with uncertainties, and predictions for a benchmark theory of new contact interactions with a left-chiral color-singlet coupling with constructive (dotted, \u03b7LL=-1 and \u039b=12 TeV) or destructive (dashed, \u03b7LL=+1 and \u039b=8 TeV) interference with the SM processes. Also shown is the impact of the electroweak (EW) corrections described in the text. The error bars on data represent the experimental and statistical uncertainties added in quadrature, with a tick representing experimental uncertainties only. The theoretical uncertainties are displayed as a shaded band around the SM prediction.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-15/fig_01.png"
+}{
+    "Plots": "figaux_01.png",
+    "caption": "01:Measured distributions of the dijet angular variable \u03c7 for several regions of the dijet invariant mass  mjj (points). For comparison, each pane shows an average over data with 0.6< mjj<3.2 TeV (dashed line), excluding the  mjj region displayed.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-15/figaux_01.png"
+}{
+    "Plots": "figaux_02.png",
+    "caption": "02:Electroweak correction factors, applied to the simulated dijet angular distributions, shown versus \u03c7 for each region of  mjj. They were derived by the authors of Ref. [33] using the same choices of PDF, renormalization and factorization scale as in this analysis.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-15/figaux_02.png"
+}{
+    "Plots": "figaux_03.png",
+    "caption": "03:Monte Carlo (MC) simulated  normalized dijet angular distributions (1/N) dN/d\u03c7 versus \u03c7 for several regions of dijet invariant mass  mjj (points). For comparison, each panel shows an average over all MC events with 0.6< mjj<3.2 TeV, excluding the  mjj region displayed.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-15/figaux_03.png"
+}{
+    "Plots": "figaux_04.png",
+    "caption": "04:Breakdown of uncertainties in the highest region of  mjj, showing the SM prediction (thick black line) and its total uncertainty (grey band), while the separate uncertainties from varying each component down (up) by 1\u03c3 are shown as a solid (dashed) line.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-15/figaux_04.png"
+}{
+    "Plots": "figaux_05a.png",
+    "caption": "05a:Observed and expected 95% CL exclusion on the CI signal strength vs compositeness scale \u039b, for (top) destructive and (bottom) constructive interference mode with QCD. The markers show scanned signal \u039b points, and the solid line is an interpolation. The crossing of the observed and expected 95% CL lines with the red dotted line at signal strength =1 indicates observed and expected limits on \u039b, respectively.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-15/figaux_05a.png"
+}{
+    "Plots": "figaux_05b.png",
+    "caption": "05b:Observed and expected 95% CL exclusion on the CI signal strength vs compositeness scale \u039b, for (top) destructive and (bottom) constructive interference mode with QCD. The markers show scanned signal \u039b points, and the solid line is an interpolation. The crossing of the observed and expected 95% CL lines with the red dotted line at signal strength =1 indicates observed and expected limits on \u039b, respectively.",
+    "mentioned": "",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2014-15/figaux_05b.png"
+}
