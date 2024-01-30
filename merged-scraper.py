@@ -53,7 +53,7 @@ def extractNameAndLegendsFromSite(url):
 
     return data
         
-
+#holds all the required data of all the figures
 class Figure:
     def __init__(self,imageUrl,name,legend,paperLoc):
         self.loc = imageUrl + name
@@ -69,13 +69,16 @@ class Figure:
         print("Paper: " + self.paper)
 
     def downloadFigure(self,createLoc):
+        #this function should download the figure into the createLoc directory
         pass
 
     def findMentionsInPaper(self):
+        #should find the mentions of the figure in the paper, I believe this code already exists 
         pass
   
 
 #defines directory with data folders in them on local computer
+#for this to work its needs to be the data file in your repository
 dataDir = r"C:\workspace\git-repos\physics-project\data"
 
 #finds the folder names
