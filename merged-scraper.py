@@ -1,8 +1,8 @@
 import os
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
 import re
+import json
 
 
 def scrapImagePageUrl(folderLocation):
@@ -52,49 +52,92 @@ def extractNameAndLegendsFromSite(url):
             
 
     return data
+
+def extractData(folderLoc):
+    fileLoc = folderLoc +"\\" +"latex.txt"
+    return open(fileLoc,encoding="utf8").readlines()
+
+def checkPatterns(patterns, line):
+    for p in patterns:
+        if bool(re.search(p, line)):
+            return True
+    return False
+    
         
 #holds all the required data of all the figures
 class Figure:
-    def __init__(self,imageUrl,name,legend,paperLoc):
-        self.loc = imageUrl + name
-        self.name = name
+    def __init__(self,imageUrl,fileName,legend,paperName,paperData):
+        self.loc = imageUrl + fileName
+        self.fileName = fileName.strip()
         self.legend = legend
-        self.paperLoc = paperLoc
+        self.paperName = paperName
+        self.paperData = paperData
+
+        self.findSearchPatterns()
+        self.findMentionsInPaper()
+
+    def findSearchPatterns(self):
+        firstLetters = self.fileName[:3]
+        numbers = re.sub("[^0-9]", "",self.fileName[4:-4]).lstrip("0")
+        if firstLetters == "fig":
+            self.patterns = [r"F*f*igures* " + numbers +"\D",r"F*f*ig. " + numbers +"\D"]
+        elif firstLetters == "tab":
+            self.patterns = [r"Table " + numbers]
+        else:
+            print("Error figure not in format recognised")
+            self.patterns = []
+        
 
     def printData(self):
         print("---------------------")
         print("Loc: " + self.loc)
-        print("Name: " + self.name)
+        print("Name: " + self.fileName)
         print("Legend: " + self.legend)
-        print("Paper: " + self.paper)
+        print("Paper name: " + self.paperName)
+        print("Mentions: ")
+        for x in self.mentions:
+            print(x)
 
     def downloadFigure(self,createLoc):
         #this function should download the figure into the createLoc directory
         pass
 
     def findMentionsInPaper(self):
-        #should find the mentions of the figure in the paper, I believe this code already exists 
-        pass
+        self.mentions = [] 
+        for line in self.paperData:
+            if checkPatterns(self.patterns, line):
+                self.mentions.append(line.strip())
+
+    def generateDictionary(self):
+        return { "Filename": self.fileName, "Location": self.loc,"Paper name": self.paperName ,"Legend (image site)": self.legend,
+                 "Mentions": self.mentions}
   
 
 #defines directory with data folders in them on local computer
 #for this to work its needs to be the data file in your repository
 dataDir = r"C:\workspace\git-repos\physics-project\data"
+outputDir = r"C:\workspace\git-repos\physics-project"
 
 #finds the folder names
 folders = os.listdir(dataDir)
 
-
 figures = []
-
 for f in folders:
-    imageUrl = scrapImagePageUrl(dataDir + "\\" + f)
-    paperImages = extractNameAndLegendsFromSite(imageUrl)
-
+    folderLoc = dataDir + "\\" + f
+    paperData = extractData(folderLoc)
+    imageUrl = scrapImagePageUrl(folderLoc)
+    paperImages = extractNameAndLegendsFromSite(imageUrl) #need to name this better
+      
     for i in paperImages:
-        figures.append(Figure(imageUrl,i["name"],i["legend"],f))
+        figures.append(Figure(imageUrl,i["name"],i["legend"],f,paperData))
         figures[-1].printData()
 
-        
-    
-    
+with open(outputDir+"\\"+"generated-data.json", "w") as outfile:
+    for fig in figures:
+        outfile.write(json.dumps(fig.generateDictionary(), indent=4))
+
+#should i change name of figure as it also takes tables
+#scrapImagePageUrl could be faster as well
+#need to find a neat way to deal with the duplicate problem: 3a,3b,.. all have the same data, so could be optimised here
+#scrapping data where fig 3,4,5, hasn't been added yet
+

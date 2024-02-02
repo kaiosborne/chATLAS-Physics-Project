@@ -1,0 +1,3 @@
+PAPER NAME : Combined Measurement of the Higgs Boson Mass in $pp$ Collisions at $\sqrt{s}$ = 7 and 8 TeV with the ATLAS and CMS Experiments
+LAST MODIFICATION DATE : 2023-11-30
+URL : https://cds.cern.ch/record/2004386
