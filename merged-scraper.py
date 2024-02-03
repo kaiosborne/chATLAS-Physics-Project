@@ -4,28 +4,35 @@ import re
 import json
 import itertools
 
+#these are the patterns used to identify figures and tables
 figPatterns = [r"[Ff]ig. (\d+)",r"[Ff]igures* (\d+)"]
-figIdentifier = "Fig "
 tablePatterns = [r"[Tt]able (\d+)"]
+
+#these are the identifiers for the figures and tables 
+figIdentifier = "Figure "
 tableIdentifier = "Table "
 
 def getLinesFromFile(folderLoc,file):
+    """Program that gets list of file lines from file in folderloc"""
     fileLoc = folderLoc +"\\" + file
     return open(fileLoc,encoding="utf8").readlines()
 
 def extractImageNamesAndMentions(allLines,patterns,identifier):
+    """Given a list of patterns, searches through line list and finds all instances, then groups them together"""
     unsortedMentions = []
+    #for all lines check if any patterns occur, if they do find number then add number and line to lst
     for line in allLines:
-        for p in patterns: #try to clean this up a bit
+        for p in patterns: 
             if re.search(p, line):
                 search = re.search(p, line)
-                unsortedMentions.append([search.group(1),line])
-    mentions = { identifier+name: list(items) for name, items in itertools.groupby(unsortedMentions, key=lambda x: x[0])}
-    return {k: [l[1] for l in v]  for k, v in mentions.items()}
+                unsortedMentions.append({"image number":search.group(1), "line":line})
+    #sort list into dictionary where key:image numbers, values: list of corresponding line dictionaries
+    mentions = { identifier+imageNumb: list(imageDics) for imageNumb, imageDics in itertools.groupby(unsortedMentions, key=lambda x: x["image number"])}
+    #converts line dictionaries into line strings and returns 
+    return {k: [l["line"] for l in v]  for k, v in mentions.items()}
 
 
-#defines directory with data folders in them on local computer
-#for this to work its needs to be the data file in your repository
+#defines directory with data folders and output folders on your local computer
 dataDir = r"C:\workspace\data-for-project"
 outputDir = r"C:\workspace\git-repos\physics-project"
 
@@ -34,6 +41,7 @@ folders = os.listdir(dataDir)
     
 
 figures = []
+#for all folders find the directory, then try and fetch data from folders
 for f in folders:
     folderDir = dataDir + "\\" + f
     
@@ -44,18 +52,22 @@ for f in folders:
         print("Proper data doesn't exist at: " + str(f))
         continue
 
+    #find atlus url
     atlusUrl = max(metaLinesList[-1].split(),key=len)
 
-    
+    #for given patterns find dictionaries of image data
     figMentionDic = extractImageNamesAndMentions(latexLinesList,figPatterns,figIdentifier)
     tableMentionDic = extractImageNamesAndMentions(latexLinesList,tablePatterns,tableIdentifier)
+
+    #combine these dictionaries
     combinedMentionDic = {**figMentionDic, **tableMentionDic}
 
+    #for all data create a list of dictionaries coresponding to image
     for key, mentions in combinedMentionDic.items():
         figures.append({"name": key, "mentions": mentions,"atlusUrl": atlusUrl,"paper": f})
 
 
-
+#create json file to store data in
 with open(outputDir+"\\"+"generated-data.json", "w") as outfile:
     for fig in figures:
         outfile.write(json.dumps(fig, indent=4))
