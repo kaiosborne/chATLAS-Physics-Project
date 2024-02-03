@@ -1,3 +1,0 @@
-PAPER NAME : Search for vector-like $B$ quarks in events with one isolated lepton, missing transverse momentum and jets at $\sqrt{s}=$ 8 TeV with the ATLAS detector
-LAST MODIFICATION DATE : 2023-11-30
-URL : https://cds.cern.ch/record/2002197
