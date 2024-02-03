@@ -4,9 +4,9 @@ import re
 import json
 import itertools
 
-figPatterns = [r"F*f*ig. (\d+)",r"F*f*igures* (\d+)"]
+figPatterns = [r"[Ff]ig. (\d+)",r"[Ff]igures* (\d+)"]
 figIdentifier = "Fig "
-tablePatterns = [r"t*T*able (\d+)"]
+tablePatterns = [r"[Tt]able (\d+)"]
 tableIdentifier = "Table "
 
 def getLinesFromFile(folderLoc,file):
