@@ -64,18 +64,12 @@ with open(outputDir+"\\"+"generated-data.json", "w") as outfile:
 """
 Stuff that still needs to be done:
 
-- look for other search patterns to get more data
 - tidy up code, there some bits that are not very clear
-- when scrapImagePageUrl add code that scraps directly from text file (already solved in George's code, I adapted part of this code
-here) and add this data from json
 - need find out if jsons are approriate for storing this data
-- scrapImagePageUrl has some efficiency issues
 - scraping data for cases like fig 3,4,5, hasn't been added yet (may be too complex)
 - need to add comments
 - folder finding code doesn't just find folders, this creates problems when other files are in the same folder (I shouldn't have to manually delete them)
-- could try and improve efficiency
 - need to find the paper name, may be useful to add the abstract as well
 - automated testing needs to be implemented
-- try and remove some of the try loops, it bad practice to do this
 
 """
