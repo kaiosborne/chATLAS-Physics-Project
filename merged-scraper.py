@@ -3,6 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
+import itertools
+
 
 
 def scrapImagePageUrl(folderLocation):
@@ -62,56 +64,24 @@ def checkPatterns(patterns, line):
         if bool(re.search(p, line)):
             return True
     return False
-    
-        
-#holds all the required data of all the figures
-class Figure:
-    def __init__(self,imageUrl,fileName,legend,paperName,paperData):
-        self.loc = imageUrl + fileName
-        self.fileName = fileName.strip()
-        self.legend = legend
-        self.paperName = paperName
-        self.paperData = paperData
 
-        self.findSearchPatterns()
-        self.findMentionsInPaper()
+def findMentionsInPaper(patterns,data):
+    mentions = [] 
+    for line in data:
+        if checkPatterns(patterns, line):
+            mentions.append(line.strip())
+    return mentions
 
-    def findSearchPatterns(self):
-        firstLetters = self.fileName[:3]
-        numbers = re.sub("[^0-9]", "",self.fileName[4:-4]).lstrip("0")
-        if firstLetters == "fig":
-            self.patterns = [r"F*f*igures* " + numbers +"\D",r"F*f*ig. " + numbers +"\D"]
-        elif firstLetters == "tab":
-            self.patterns = [r"Table " + numbers]
-        else:
-            print("Error figure not in format recognised")
-            self.patterns = []
-        
-
-    def printData(self):
-        print("---------------------")
-        print("Loc: " + self.loc)
-        print("Name: " + self.fileName)
-        print("Legend: " + self.legend)
-        print("Paper name: " + self.paperName)
-        print("Mentions: ")
-        for x in self.mentions:
-            print(x)
-
-    def downloadFigure(self,createLoc):
-        #this function should download the figure into the createLoc directory
-        pass
-
-    def findMentionsInPaper(self):
-        self.mentions = [] 
-        for line in self.paperData:
-            if checkPatterns(self.patterns, line):
-                self.mentions.append(line.strip())
-
-    def generateDictionary(self):
-        return { "Filename": self.fileName, "Location": self.loc,"Paper name": self.paperName ,"Legend (image site)": self.legend,
-                 "Mentions": self.mentions}
-  
+def findSearchPatterns(fileName):
+    firstLetters = fileName[:3]
+    numbers = re.sub(r"\D", "",fileName).lstrip("0")
+    if firstLetters == "fig":
+        return [r"F*f*igures* " + numbers +"\D",r"F*f*ig. " + numbers +"\D"]
+    elif firstLetters == "tab":
+        return [r"Table " + numbers]
+    else:
+        print("Error figure not in format recognised") #improve this
+        return []
 
 #defines directory with data folders in them on local computer
 #for this to work its needs to be the data file in your repository
@@ -126,15 +96,26 @@ for f in folders:
     folderLoc = dataDir + "\\" + f
     paperData = extractData(folderLoc)
     imageUrl = scrapImagePageUrl(folderLoc)
-    paperImages = extractNameAndLegendsFromSite(imageUrl) #need to name this better
-      
+    
+    paperImages = extractNameAndLegendsFromSite(imageUrl)
+
+    folderFigures = []
     for i in paperImages:
-        figures.append(Figure(imageUrl,i["name"],i["legend"],f,paperData))
-        figures[-1].printData()
+        folderFigures.append({"name/legend": i, "patterns": findSearchPatterns(i["name"])}) #this is messy here
+        
+    orderedFigures = { name: list(items) for name, items in itertools.groupby(folderFigures, key=lambda x: x["patterns"][0])}
+    for pattern, data in orderedFigures.items():
+        names = [i["name/legend"]["name"] for i in data]
+        legend = data[0]["name/legend"]["legend"]
+        mentions = findMentionsInPaper(data[0]["patterns"],paperData)
+        figures.append({ "Names": names, "Legend": legend,"Paper name": f ,"Mentions": mentions,
+                 "Location": imageUrl}) 
+
+
 
 with open(outputDir+"\\"+"generated-data.json", "w") as outfile:
     for fig in figures:
-        outfile.write(json.dumps(fig.generateDictionary(), indent=4))
+        outfile.write(json.dumps(fig, indent=4))
 
 #should i change name of figure as it also takes tables
 #scrapImagePageUrl could be faster as well
