@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        div {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; /* Adds space below the results div */
+        }
+
+        img {
+            max-width: 30%; /* Ensures the image is responsive */
+            height: auto;
+            border-radius: 4px; /* Optional: Adds rounded corners to the image */
+        }
+
+        p {
+            margin: 10px 0; /* Adds spacing around paragraphs */
+        }
+
+        a {
+            color: #007bff; /* Styles the link color */
+            text-decoration: none; /* Removes underline from links */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Adds underline on hover for better UX */
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 20px; /* Adds space above the button */
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+    {% if result %}
+        <div>
+            <h2>Result:</h2>
+            <p>Plots:<img src="{{ result.WebLocation }}" alt="Plot Image"></p>
+            <p><strong>Caption:</strong> {{ result.Caption }}</p>
+            <p><strong>Mentions:</strong> {{ result.Mentions }}</p>
+            <p><strong>Web Location:</strong> <a href="{{ result.WebLocation }}" target="_blank">{{ result.WebLocation }}</a></p>
+        </div>
+    {% else %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <button onclick="window.location.href='/'">Return to Query Page</button>
+</body>
+</html>
