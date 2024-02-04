@@ -113,6 +113,23 @@
             bottom: 20px;
             right: 20px;
             z-index: 1000;
+            text-align: right;
+        }
+
+        .history-btn-container button {
+            margin-left: 10px; /* Adds space between the buttons */
+        }
+
+        /* Adding styles to ensure the clear history form aligns with the button */
+        .history-btn-container form {
+            display: inline; /* Aligns the form with the buttons */
+        }
+
+        .clear-history-form {
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
         }
         
     </style>
@@ -176,9 +193,14 @@
 
             <input type="submit" value="Search">
         </form>
-        {% if history %}
-        <div class="history-btn-container">
-            <button onclick="toggleHistory()">Search History</button>
+    </div>
+
+    {% if history %}
+    <div class="history-btn-container">
+        <button onclick="toggleHistory()">Search History</button>
+        <form action="/clear_history" method="post" class="clear-history-form" style="display: inline;">
+            <button type="submit">Clear Search History</button>
+        </form>
         </div>
         <div id="searchHistory" style="display: none;">
             {% for entry in history %}
