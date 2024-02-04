@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, session
+from flask import Flask, request, render_template, session, redirect, url_for
 import chromadb
 import json
 
@@ -44,8 +44,6 @@ def search():
     x_axis = request.form.get('xAxis', '')
     y_axis = request.form.get('yAxis', '')
 
-
-    # Build the query text by including X and Y axis information if provided
     query_texts = [main_query]
     if x_axis:
         query_texts.append(f"X Axis: {x_axis}")
@@ -63,18 +61,24 @@ def search():
         "Mentions": top_result_metadata['Mentioned'],
         "WebLocation": top_result_metadata['WebLocation']
     }
- # Save search query and result to session
+
+    # Save search query and result to session
     if 'search_history' not in session:
         session['search_history'] = []
     session['search_history'].append({
         'query': main_query,
         'x_axis': x_axis,
         'y_axis': y_axis,
-        'results': results['metadatas'][0] if results['metadatas'] else None
+        'results': result_data
     })
-    session.modified = True  # To notify Flask that the session has been modified
+    session.modified = True
 
     return render_template('results_page.html', result=result_data)
 
+@app.route('/clear_history', methods=['POST'])
+def clear_history():
+    session.pop('search_history', None)  # Clear the search history from session
+    return redirect(url_for('index'))  # Redirect back to the main query form
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)  # Change 5001 to any other port number
+    app.run(debug=True, port=5001)
