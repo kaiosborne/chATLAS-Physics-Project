@@ -80,50 +80,6 @@ def extractPaperName(metaLinesList):
     
     return ' '.join(paperNameLines) if paperNameLines else None
 
-def extractFigureCaptionsAndMentions(filePath):
-    """
-    Extracts figure captions and paragraphs containing mentions of figures from a given text file.
-    
-    Parameters:
-    - filePath: Path to the text file.
-    
-    Returns:
-    - A tuple of two dictionaries: 
-        - First dict: Captions with figure numbers as keys.
-        - Second dict: Paragraphs mentioning figures with figure numbers as keys.
-    """
-    figure_caption_pattern = r'^Figure (\d+):'
-    figure_paragraph_pattern = r'(Figure|Fig|figure|fig)\s+(\d+)[^\n:]*'
-    paragraph_pattern = r'((?:\n|^)(?:(?!\n\n).)+)'
-    figures = {}
-    paragraphs = {}
-    
-    try:
-        with open(filePath, 'r') as file:
-            content = file.read()
-            # Extract figures and captions
-            for line in content.split('\n'):
-                if re.match(figure_caption_pattern, line, re.IGNORECASE):
-                    figure_number = re.search(figure_caption_pattern, line, re.IGNORECASE).group(1)
-                    figures[f'Figure {figure_number}'] = line.strip()
-            
-            # Extract paragraphs containing figure mentions
-            for paragraph_match in re.finditer(paragraph_pattern, content, re.DOTALL):
-                paragraph = paragraph_match.group(1).strip()
-                fig_matches = re.finditer(figure_paragraph_pattern, paragraph)
-                for fig_match in fig_matches:
-                    fig_number = fig_match.group(2)
-                    if fig_number not in paragraphs and not re.match(figure_caption_pattern, paragraph):
-                        paragraphs[f'Figure {fig_number}'] = paragraph
-
-    except FileNotFoundError:
-        print(f"The file {filePath} was not found.")
-        return {}, {}
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return {}, {}
-
-    return figures, paragraphs
 
 # Define input and output directories
 dataDir = "/Users/georgedoumenis-ramos/Documents/ATLASPublications"
@@ -171,9 +127,6 @@ for f in os.listdir(dataDir):
     # Extract the URL from the last line of the metadata file
     atlusUrl = max(metaLinesList[-1].split(), key=len)
 
-    # Extract captions and mentions for figures
-    figureCaptions, figureMentions = extractFigureCaptionsAndMentions(os.path.join(folderDir, LATEX_FILE))
-
     # Extract mentions of figures and tables from the latex file
     figMentionDic = extractImageNamesAndMentions(latexLinesList, figPattern, figIdentifier)
     tableMentionDic = extractImageNamesAndMentions(latexLinesList, tablePattern, tableIdentifier)
@@ -186,7 +139,6 @@ for f in os.listdir(dataDir):
         figures.append({
             "name": key, 
             "mentions": mentions, 
-            "caption": figureCaptions.get(key, ""),  # Include the extracted figure caption
             "atlusUrl": atlusUrl, 
             "paper": f, 
             "paperName": paperName  # Include the extracted paper name here
