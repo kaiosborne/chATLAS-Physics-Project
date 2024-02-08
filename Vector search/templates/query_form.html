@@ -1,138 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Query Physics Figures</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query CERN Figures</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center; /* Centers the heading */
-        }
-
-        form {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input[type="text"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 20px;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-            box-sizing: border-box; /* Ensures padding doesn't affect overall width */
-        }
-        
-        input[type="submit"], button {
-            cursor: pointer;
-            background-color: #007bff;
-            color: #ffffff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        input[type="submit"]:hover, button:hover {
-            opacity: 0.9;
-        }
-        .input-group {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background: #fff;
-        }
-
-        .input-group input[type="text"] {
-            flex-grow: 1;
-            border: none;
-            padding: 8px;
-            border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
-            margin: 0; /* Removes default margin */
-        }
-
-        .input-group .mic-btn {
-            background: none;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            color: #d22626; /* Icon color */
-            border-radius: 0 4px 4px 0; /* Rounded corners on the right side */
-        }
-
-        .input-group .mic-btn:hover {
-            background: #f0f0f0; /* Slight background on hover for better UX */
-        }
-
-        /* Ensure the input field doesn't have a border on the right to blend with the button */
-        .input-group input[type="text"]:focus {
-            outline: none;
-        }
-        .option-group {
-            display: flex;
-            align-items: center;
-        }
-
-        .option-group label {
-            margin-right: 10px;
-        }
-        .option-group input[type="checkbox"] {
-            margin-top: -6px; /* Shifts the checkbox upwards */
-        }
-        .advancedField {
-    text-align: left;
-    margin-left: -5px; /* Shifts the labels and inputs to the left */
-}
-.history-btn-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            text-align: right;
-        }
-
-        .history-btn-container button {
-            margin-left: 10px; /* Adds space between the buttons */
-        }
-
-        /* Adding styles to ensure the clear history form aligns with the button */
-        .history-btn-container form {
-            display: inline; /* Aligns the form with the buttons */
-        }
-
-        .clear-history-form {
-            background: none;
-            padding: 0;
-            border-radius: 0;
-            box-shadow: none;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/query_styles.css') }}">
     <script>
         function startDictation() {
             if (window.hasOwnProperty('webkitSpeechRecognition')) {
@@ -152,77 +25,104 @@
                 }
             }
         }
+
         function toggleAdvancedOptions() {
             var checkBox = document.getElementById("advancedOption");
             var advancedFields = document.getElementById("advancedFields");
+            advancedFields.style.display = checkBox.checked ? "block" : "none";
+        }
 
-            if (checkBox.checked == true) {
-                advancedFields.style.display = "block";
-            } else {
-                advancedFields.style.display = "none";
+        function pasteLastQuery() {
+            var lastQuery = localStorage.getItem('lastQuery');
+            if (lastQuery) {
+                document.getElementById('mainQuery').value = lastQuery;
             }
         }
+
+        function toggleHistory() {
+            var historyDiv = document.getElementById('searchHistory');
+            var containerDiv = document.getElementById('container');
+            historyDiv.style.display = historyDiv.style.display === 'none' ? 'block' : 'none';
+            containerDiv.style.display = historyDiv.style.display === 'block' ? 'none' : 'block';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+    var micBtn = document.getElementById("micBtn");
+    micBtn.addEventListener("click", startDictation);
+
+    var advancedOption = document.getElementById("advancedOption");
+    advancedOption.addEventListener("change", toggleAdvancedOptions);
+
+    var pasteLastQueryBtn = document.getElementById("pasteLastQueryBtn");
+    pasteLastQueryBtn.style.display = localStorage.getItem('lastQuery') ? "inline" : "none";
+    
+    // Add event listener for the pasteLastQueryBtn button
+    pasteLastQueryBtn.addEventListener("click", function() {
+        var lastQuery = localStorage.getItem('lastQuery');
+        if (lastQuery) {
+            document.getElementById('mainQuery').value = lastQuery;
+        }
+    });
+
+    document.querySelector("form").addEventListener("submit", function() {
+        var query = document.getElementById('mainQuery').value;
+        localStorage.setItem('lastQuery', query);
+        pasteLastQueryBtn.style.display = "inline";
+    });
+});
     </script>
 </head>
 <body>
-    <div class="container">
+    <div id="container" class="container">
         <h1>Search CERN Figures</h1>
         <form action="/search" method="post">
             <div class="input-group">
                 <input type="text" id="mainQuery" name="mainQuery" required>
-                <button type="button" onclick="startDictation()" aria-label="Speak" class="mic-btn">
+                <button type="button" id="micBtn" aria-label="Speak" class="mic-btn">
                     <i class="fas fa-microphone"></i>
                 </button>
             </div><br>
-
             <div class="option-group">
-                <label for="advancedOption">Advanced Option:</label>
-                <input type="checkbox" id="advancedOption" name="advancedOption" onchange="toggleAdvancedOptions()">
+                <input type="checkbox" id="advancedOption" name="advancedOption">
+                <label for="advancedOption">Advanced Option</label>
             </div>
-
             <div id="advancedFields" style="display: none;">
-                <div class="advancedField">
-                    <label for="xAxis">X Axis:</label>
-                    <input type="text" id="xAxis" name="xAxis"><br><br>
-                </div>
-                <div class="advancedField">
-                    <label for="yAxis">Y Axis:</label>
-                    <input type="text" id="yAxis" name="yAxis"><br><br>
-                </div>
+                <label for="xAxis">X Axis:</label>
+                <input type="text" id="xAxis" name="xAxis"><br><br>
+                <label for="yAxis">Y Axis:</label>
+                <input type="text" id="yAxis" name="yAxis"><br><br>
             </div>
-
             <input type="submit" value="Search">
+            <button type="button" id="pasteLastQueryBtn" style="display: none;">Paste Last Query</button>
+        </form>
+    </div>
+    {% if history %}
+    <div class="history-btn-container">
+        <button id="historyBtn" onclick="toggleHistory()">Toggle Search History</button>
+        <form action="/clear_history" method="post" class="clear-history-form">
+            <button type="submit">Clear Search History</button>
         </form>
     </div>
 
-    {% if history %}
-    <div class="history-btn-container">
-        <button onclick="toggleHistory()">Search History</button>
-        <form action="/clear_history" method="post" class="clear-history-form" style="display: inline;">
-            <button type="submit">Clear Search History</button>
-        </form>
-        </div>
-        <div id="searchHistory" style="display: none;">
-            {% for entry in history %}
-                <div>
-                    <p>Query: {{ entry.query }}</p>
-                    <p>X Axis: {{ entry.x_axis }}</p>
-                    <p>Y Axis: {{ entry.y_axis }}</p>
-                    <p>Results: {{ entry.results }}</p>
-                </div>
-            {% endfor %}
-        </div>
+    <div id="searchHistory" style="display: none;">
+        {% for entry in history %}
+            <div class="history-entry">
+                <p>Query: {{ entry.query }}</p>
+                {% for result in entry.results %}
+                    <div class="result">
+                        {% if result.image_url %}
+                            <p>Image: <img src="{{ result.image_url }}" alt="Figure Image" style="max-width:50%;height:auto;"></p>
+                        {% endif %}
+                        <p>Name: {{ result.name }}</p>
+                        <p>Mentions: {{ result.mentions }}</p>
+                        <p>Atlas URL: <a href="{{ result.atlusUrl }}" target="_blank">{{ result.atlusUrl }}</a></p>
+                        <p>Paper ID: {{ result.paper }}</p>
+                        <p>Paper Name: {{ result.paperName }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
     {% endif %}
-
-    <script>
-        function toggleHistory() {
-            var history = document.getElementById('searchHistory');
-            if (history.style.display === 'none') {
-                history.style.display = 'block';
-            } else {
-                history.style.display = 'none';
-            }
-        }
-    </script>
 </body>
 </html>
