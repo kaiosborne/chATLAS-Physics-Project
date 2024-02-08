@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center; /* Centers the heading */
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+input[type="submit"], button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover, button:hover {
+    opacity: 0.9;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.input-group input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+    margin: 0; /* Removes default margin */
+}
+
+.input-group .mic-btn {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #d22626; /* Icon color */
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right side */
+}
+
+.input-group .mic-btn:hover {
+    background: #f0f0f0; /* Slight background on hover for better UX */
+}
+
+.input-group input[type="text"]:focus {
+    outline: none;
+}
+
+.option-group {
+    display: flex;
+    align-items: center;
+}
+
+.option-group label {
+    margin-right: 10px;
+}
+
+.option-group input[type="checkbox"] {
+    margin-top: -6px; /* Shifts the checkbox upwards */
+}
+
+.advancedField {
+    text-align: left;
+    margin-left: -5px; /* Shifts the labels and inputs to the left */
+}
+
+.history-btn-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-align: right;
+}
+
+.history-btn-container button {
+    margin-left: 10px; /* Adds space between the buttons */
+}
+
+.history-btn-container form {
+    display: inline; /* Aligns the form with the buttons */
+}
+
+.clear-history-form {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
