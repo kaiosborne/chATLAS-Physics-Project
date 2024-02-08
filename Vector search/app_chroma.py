@@ -1,84 +1,68 @@
 from flask import Flask, request, render_template, session, redirect, url_for
 import chromadb
 import json
+from tqdm import tqdm
+from flask_session import Session
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'
+app.config['SECRET_KEY'] = 'your_secret_key'
+app.config['SESSION_TYPE'] = 'filesystem'  # Example using filesystem
+Session(app)
 
-# Initialize the ChromaDB client
 chroma_client = chromadb.Client()
-# Create a collection named "PhysicsFigures"
 collection = chroma_client.create_collection(name="PhysicsFigures")
 
-# Function to load and insert data into the collection
 def load_data_into_collection():
-    with open('Rawdata.json', 'r') as file:
+    with open('EmbeddedDB_with_images.json', 'r') as file:
         data = json.load(file)
-        documents = []
-        metadatas = []
-        ids = []
 
-        for obj in data:
-            text_content = "{} {}".format(obj['caption'], obj['mentioned'])
-            documents.append(text_content)
-            metadatas.append({
-                "Plot": obj["Plots"],
-                "Caption": obj["caption"],
-                "Mentioned": obj["mentioned"],
-                "WebLocation": obj["web location"]
-            })
-            ids.append(obj["Plots"])
+    embeddings = []
+    documents = []
+    metadatas = []
+    ids = []
 
-        collection.add(documents=documents, metadatas=metadatas, ids=ids)
+    for i, obj in tqdm(enumerate(data), total=len(data), desc="Adding documents"):
+        document_id = f"document_{i}"
+        embeddings.append(obj.get("embedded vector", []))
+        documents.append(f"{obj['name']} {' '.join(obj['mentions'])}")
+        metadatas.append({
+            "name": obj["name"],
+            "mentions": "\n".join(obj["mentions"]),
+            "atlusUrl": obj["atlusUrl"],
+            "paper": obj["paper"],
+            "paperName": obj["paperName"],
+            "image_url": obj.get("image_url", "")
+        })
+        ids.append(document_id)
 
-# Load data into the collection when the app starts
-load_data_into_collection()
+    collection.add(embeddings=embeddings, documents=documents, metadatas=metadatas, ids=ids)
 
 @app.route('/', methods=['GET'])
 def index():
-    return render_template('query_form.html', history=session.get('search_history'))
+    if 'search_history' not in session:
+        session['search_history'] = []
+    return render_template('query_form.html', history=session['search_history'])
 
 @app.route('/search', methods=['POST'])
 def search():
-    main_query = request.form['mainQuery']
-    x_axis = request.form.get('xAxis', '')
-    y_axis = request.form.get('yAxis', '')
+    query_text = request.form['mainQuery']
+    results = collection.query(query_texts=[query_text], n_results=10)
 
-    query_texts = [main_query]
-    if x_axis:
-        query_texts.append(f"X Axis: {x_axis}")
-    if y_axis:
-        query_texts.append(f"Y Axis: {y_axis}")
+    result_data = [metadata for sublist in results['metadatas'] for metadata in sublist]
 
-    results = collection.query(query_texts=query_texts, n_results=1)
-    
-    if not results['metadatas']:
-        return render_template('results_page.html', error="No results found")
-
-    top_result_metadata = results['metadatas'][0][0]
-    result_data = {
-        "Caption": top_result_metadata['Caption'],
-        "Mentions": top_result_metadata['Mentioned'],
-        "WebLocation": top_result_metadata['WebLocation']
-    }
-
-    # Save search query and result to session
-    if 'search_history' not in session:
-        session['search_history'] = []
     session['search_history'].append({
-        'query': main_query,
-        'x_axis': x_axis,
-        'y_axis': y_axis,
+        'query': query_text,
         'results': result_data
     })
     session.modified = True
 
-    return render_template('results_page.html', result=result_data)
+    return render_template('results_page.html', results=result_data)
 
 @app.route('/clear_history', methods=['POST'])
 def clear_history():
-    session.pop('search_history', None)  # Clear the search history from session
-    return redirect(url_for('index'))  # Redirect back to the main query form
+    session.pop('search_history', None)
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    load_data_into_collection()
+    app.run(debug=True, port=5005)
