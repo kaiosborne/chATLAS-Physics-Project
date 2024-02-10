@@ -18,7 +18,8 @@ def extractImagesFromPdf(pattern,outputFormat,inputDir,outPutDir):
 		for m in matches:
 			xLeft = min(m[0],m[2])
 			xRight = max(m[0],m[2])
-			yTop = min(m[1],m[3]) - scaleFactor*(xRight-xLeft)
+			yTop = min(m[1],m[3]) - scaleFactor*(xRight-xLeft) 
+			#this scale factor part needs to be found accurately
 			yBottom = min(m[1],m[3]) 
 
 			if yTop < 0:
