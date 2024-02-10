@@ -82,8 +82,8 @@ def extractPaperName(metaLinesList):
 
 
 # Define input and output directories
-dataDir = "/Users/georgedoumenis-ramos/Documents/ATLASPublications"
-outputDir = "/Users/georgedoumenis-ramos/Documents/OUTPUT DATA"
+dataDir = "C:\workspace\data-for-project"
+outputDir = "C:\workspace\git-repos\physics-project"
 
 # Check if the input directory exists, exit if not
 if not os.path.isdir(dataDir):
@@ -148,6 +148,6 @@ for f in os.listdir(dataDir):
 outputFilePath = os.path.join(outputDir, "generated-data.json")
 
 # Write the compiled data to the output JSON file
-with open(outputFilePath, "w") as outfile:
+with open(outputFilePath, "w",encoding="utf-8") as outfile:
     json.dump(figures, outfile, indent=4, ensure_ascii=False)
 
