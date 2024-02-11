@@ -8,7 +8,8 @@ chroma_client = chromadb.Client()
 collection = chroma_client.create_collection(name="new2_collection")
 
 # Step 1: Read the JSON file with explicit encoding
-dir = "C:\workspace\git-repos\physics-project\\vector database with actual data"
+dir = "C:\workspace\git-repos\physics-project\\vector database with actual data" 
+#this directory needs to be changed to your directory (also note \v causes an error you need \\v)
 with open(dir+"\\"+'generated-data-small.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
