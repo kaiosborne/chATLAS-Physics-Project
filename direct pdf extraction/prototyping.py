@@ -14,7 +14,8 @@ def save_image(doc, xref):
     print(f'Saving {file_name}')
     pix.save(file_name) # save the image as png
 
-doc = fitz.open("jinst8_08_s08003.pdf") # open a document
+loc = "C:\workspace\git-repos\physics-project\direct pdf extraction"
+doc = fitz.open(loc + "\\"+ "jinst8_08_s08003.pdf") # open a document
 page = doc[PAGE_NUM]
 images = page.get_images()
 print(images)
@@ -33,4 +34,4 @@ union_rect = reduce(Rect.include_rect, rects)
 print(f'enlarged rect: {union_rect}')
 print(f'Saving page {PAGE_NUM} fragment as PNG')
 pix = page.get_pixmap(matrix=fitz.Matrix(ZOOM, ZOOM), clip=union_rect)
-pix.save(f'page-{PAGE_NUM}-fragment.png')
+pix.save(loc+"\\"+f'page-{PAGE_NUM}-fragment.png')
