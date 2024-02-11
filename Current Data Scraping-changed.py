@@ -19,6 +19,7 @@ tableIdentifier = "Table "
 LATEX_FILE = "latex.txt"
 META_FILE = "meta_info.txt"
 
+
 def getLinesFromFile(folderLoc, file):
     """
     Read all lines from a file located in a specified directory.
@@ -48,17 +49,15 @@ def extractImageNamesAndMentions(allLines, pattern, identifier):
     """
     mentions = defaultdict(list)
     for line in allLines:
-        match = pattern.search(line)
-        if match:
-            # Define iterator for non-zero group matches
-            iterator = iter(g for g in match.groups() if g is not None)
-            # Take first match
-            image_number = next(iterator)
-            # If second match exists add it to that part, otherwise just add first part
+        matches = re.findall(pattern,line)
+        for m in matches:
+            iterator = iter(g for g in m if g != "")
+            index1 = next(iterator)
             try:
-                mentions[identifier + image_number + next(iterator)].append(line)
+                index2 = next(iterator)
+                mentions[identifier + index1+index2].append(line)
             except:
-                mentions[identifier + image_number].append(line)
+                mentions[identifier + index1].append(line)
     return dict(mentions)
 
 def extractPaperName(metaLinesList):
