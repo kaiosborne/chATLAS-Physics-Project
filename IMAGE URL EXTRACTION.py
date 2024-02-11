@@ -1,45 +1,55 @@
-# %%
 import requests
 from bs4 import BeautifulSoup
 import json
 import os
-from tqdm import tqdm  # Import tqdm for the progress bar
+from tqdm import tqdm
 
-# Initialize lists to track papers
+# Initialize a list to track papers with no images found
 papers_with_no_images = []
 
-
-def find_relevant_link(soup):
-    """Search for the first relevant hyperlink in the HTML, prioritizing Atlas links, then CDS links."""
-    atlas_link = soup.find('a', href=lambda href: href and (
-                href.startswith('https://atlas.web.cern.ch/Atlas') or href.startswith(
-            'http://atlas.web.cern.ch/Atlas')))
-    if atlas_link:
-        return atlas_link['href']
-
-    cds_link = soup.find('a', href=lambda href: href and (
-                href.startswith('https://cds.cern.ch/record') or href.startswith('http://cds.cern.ch/record')))
-    return cds_link['href'] if cds_link else None
-
-
 def scrape_image_data(link):
-    """Scrape all image data (name and URL) from the given page, filtering out names not starting with '.thumb'."""
+    """Scrape all PNG image data (name and URL) from the given page, excluding 'cern-logo-large.png'."""
     try:
         response = requests.get(link)
         soup = BeautifulSoup(response.content, 'html.parser')
-        images = soup.find_all('img', src=True)
-
-        image_data = [{"name": os.path.basename(img['src']), "url": requests.compat.urljoin(link, img['src'])} for img
-                      in images if os.path.basename(img['src']).startswith(".thumb")]
-        return image_data
+        images = soup.find_all('img', src=lambda src: src.endswith('.png'))  # Filter for PNG images only
+        
+        # Filter out 'cern-logo-large.png'
+        image_data = [{"name": os.path.basename(img['src']), "url": requests.compat.urljoin(link, img['src'])}
+                      for img in images if os.path.basename(img['src']) != 'cern-logo-large.png']
+        return image_data, True
     except Exception as e:
-        print(f"An error occurred while scraping images: {e}")
-        return []
+        print(f"An error occurred while scraping PNG images: {e}")
+        return [], False
 
+def find_and_scrape_links(url):
+    """Append '/plots' to the original URL and find the CERN link to scrape images."""
+    image_data_list = []
+    cern_link_found = False
+
+    # Directly append '/plots' to the original URL and scrape images
+    plots_url = url + '/plots'
+    image_data, plots_scraped = scrape_image_data(plots_url)
+    image_data_list += image_data
+
+    # Attempt to find and scrape the CERN link
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    atlas_link = soup.find('a', href=lambda href: href and href.startswith('https://atlas.web.cern.ch/Atlas'))
+    if atlas_link:
+        cern_url = atlas_link['href']
+        # Check for and remove a trailing full stop
+        if cern_url.endswith('.'):
+            cern_url = cern_url[:-1]
+        image_data, cern_scraped = scrape_image_data(cern_url)
+        image_data_list += image_data
+        cern_link_found = cern_scraped
+    
+    return image_data_list, cern_link_found
 
 def process_meta_info(meta_info_path, output_directory):
-    """Process each meta_info.txt file to scrape images from linked pages, handling both Atlas and CDS links, and filtering based on name."""
-    folder_name = os.path.basename(os.path.dirname(meta_info_path))  # Define folder_name at the start
+    """Process each meta_info.txt file to scrape PNG images from the original URL with '/plots' and check for the CERN link."""
+    folder_name = os.path.basename(os.path.dirname(meta_info_path))
     with open(meta_info_path) as file:
         content = file.read()
 
@@ -47,33 +57,25 @@ def process_meta_info(meta_info_path, output_directory):
     start = content.find(prefix)
     if start != -1:
         start += len(prefix)
-        url = content[start:].strip().split("\n", 1)[0]
+        original_url = content[start:].strip().split("\n", 1)[0]
 
-        try:
-            response = requests.get(url)
-            soup = BeautifulSoup(response.content, 'html.parser')
-            relevant_link = find_relevant_link(soup)
+        image_data_list, cern_link_found = find_and_scrape_links(original_url)
 
-            if relevant_link:
-                image_data = scrape_image_data(relevant_link)
-                if image_data:
-                    output_path = os.path.join(output_directory, f"{folder_name}.json")
-                    with open(output_path, 'w') as json_file:
-                        json.dump(image_data, json_file, indent=4)
-                    print(f"Scraped {len(image_data)} images from {relevant_link} into {output_path}")
-                else:
-                    print(f"No images found at {relevant_link}")
-                    papers_with_no_images.append(folder_name)
-            else:
-                print(f"No relevant link found in {url}")
-                papers_with_no_images.append(folder_name)
-        except requests.RequestException as e:
-            print(f"Failed to process URL {url}: {e}")
+        if image_data_list:
+            output_data = {
+                "images": image_data_list,
+                "cern_link_found": cern_link_found
+            }
+            output_path = os.path.join(output_directory, f"{folder_name}.json")
+            with open(output_path, 'w') as json_file:
+                json.dump(output_data, json_file, indent=4)
+            print(f"Scraped {len(image_data_list)} PNG images into {output_path}. CERN link found: {cern_link_found}")
+        else:
+            print(f"No PNG images found for {folder_name}. CERN link found: {cern_link_found}")
             papers_with_no_images.append(folder_name)
     else:
         print(f"URL prefix '{prefix}' not found in {meta_info_path}")
         papers_with_no_images.append(folder_name)
-
 
 def process_directories(data_dir, output_directory):
     """Traverse directories to find and process meta_info.txt files, and report papers with no images found."""
@@ -83,7 +85,7 @@ def process_directories(data_dir, output_directory):
             if filename.endswith("meta_info.txt"):
                 meta_info_path = os.path.join(root, filename)
                 meta_info_paths.append(meta_info_path)
-
+                
     # Now process each meta_info.txt with a progress bar
     for meta_info_path in tqdm(meta_info_paths, desc="Processing meta_info.txt files"):
         process_meta_info(meta_info_path, output_directory)
@@ -94,10 +96,9 @@ def process_directories(data_dir, output_directory):
         for paper in papers_with_no_images:
             print(paper)
 
-
 # Configuration
-data_dir = "/Users/georgedoumenis-ramos/Downloads/ATLASPublications"  # Update this path
-output_directory = "/Users/georgedoumenis-ramos/Documents/IMAGE URLS"  # Update this path
+data_dir = "/Users/georgedoumenis-ramos/Documents/ATLAS PUBLICATIONS TEST"  # Update this path
+output_directory = "/Users/georgedoumenis-ramos/Documents/IMAGE URL TEST"  # Update this path
 
 os.makedirs(output_directory, exist_ok=True)
 
