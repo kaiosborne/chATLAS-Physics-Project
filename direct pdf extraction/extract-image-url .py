@@ -26,31 +26,28 @@ def extractImagesFromPdf(pattern,outputFormat,inputDir,outPutDir):
 		
 		#find matches
 		matches = [b for b in blocks if pattern.search(b[4])]
-		matches = sorted(matches, key=lambda m: m[3]) #ithink this may be the solution
 
-		if matches != []:  #don't think that this is needed
-			for i,m in enumerate(matches):
-				if i == 0:
-					yTop = 0 #dropping some cases somehow, need to look at	
-					yBottom = min(m[3],m[1])
-				else:
-					yTop = max(matches[i-1][1],matches[i-1][3])
-					yBottom = min(m[1],m[3])
-				
-				imageInRange = [i for i in images if yTop <= i[3] <= yBottom]
-				for i,img in enumerate(imageInRange):
-					fileName = outputFormat +f'{pattern.search(m[4]).group(1)}-nimage.png'
-					save_image(doc, img[0],outPutDir+"\\"+fileName)
+		for i,m in enumerate(matches):
+			if i == 0:
+				yTop = 0 #dropping some cases somehow, need to look at	
+				yBottom = min(m[3],m[1])
+			else:
+				yTop = max(matches[i-1][1],matches[i-1][3])
+				yBottom = min(m[1],m[3])
+			
+			imageInRange = [i for i in images if yTop <= i[1] <= yBottom]
+			for i,img in enumerate(imageInRange):
+				fileName = outputFormat +f'{pattern.search(m[4]).group(1)}-{i}-nimage.png'
+				save_image(doc, img[0],outPutDir+"\\"+fileName)
 
-				unionOfRec = [d["rect"] for d in drawings if yTop <= d["rect"][3] <= yBottom]
+			unionOfRec = [d["rect"] for d in drawings if yTop <= d["rect"][1] <= yBottom]
 
-				if unionOfRec != []:
-					drawingRec = reduce(Rect.include_rect, unionOfRec)
-					fileName = outputFormat +f'{pattern.search(m[4]).group(1)}-dimage.png'
-					pix = page.get_pixmap(matrix=fitz.Matrix(ZOOM, ZOOM), clip=drawingRec)
-					pix.save(outPutDir+"\\"+fileName)
+			if unionOfRec != []:
+				drawingRec = reduce(Rect.include_rect, unionOfRec)
+				fileName = outputFormat +f'{pattern.search(m[4]).group(1)}-dimage.png'
+				pix = page.get_pixmap(matrix=fitz.Matrix(ZOOM, ZOOM), clip=drawingRec)
+				pix.save(outPutDir+"\\"+fileName)
 		
-
 
 pattern = re.compile(r"^Figure 2(\.\d+)?: ")  # the regex pattern
 dataDir = "C:\workspace\git-repos\physics-project\direct pdf extraction"
