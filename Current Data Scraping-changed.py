@@ -5,8 +5,6 @@ import json
 import logging
 from collections import defaultdict
 
-letterLimit = 200
-
 # Patterns to identify figure and table references in the text files, precompiled for performance
 figPattern = re.compile(r"[Ff]ig. (\d+)(\.\d+)?|[Ff]igures* (\d+)(\.\d+)?")
 tablePattern = re.compile(r"[Tt]able (\d+)")
@@ -19,6 +17,46 @@ tableIdentifier = "Table "
 LATEX_FILE = "latex.txt"
 META_FILE = "meta_info.txt"
 
+
+def snipSentence(line,m):
+    """
+
+    Given a pagraph and its match object return the senctence containing that match
+
+    Inputs:
+    - line: The line that the match is in
+    - m: The match object
+
+    Returns:
+    - A sentence
+    """
+    sentenceBefore = line[:m.start()].split(". ")[-1]
+    sentenceAfter = line[m.end():].split(". ")[0]
+    return sentenceBefore + m.group(0) + sentenceAfter 
+
+
+def labelByIterator(dDict,m,identifier,line):
+    """ 
+
+    Given a dictionary and mention object add mention to dictionary with the appropriate key.
+
+    Parameters:
+    - dDict: Dictionary that is being added to
+    - m: Match object
+    - identifier: Identifer used in the dictionaries key name
+    - line: line where the match is located
+
+    Returns:
+    - Updated dictionary
+    """
+    groupIterator = iter(g for g in m.groups() if g is not None)
+    index1 = next(groupIterator) 
+    try:
+        index2 = next(groupIterator)
+        dDict[identifier + index1+index2].append(line)
+    except:
+        dDict[identifier + index1].append(line)
+    return dDict
 
 def getLinesFromFile(folderLoc, file):
     """
@@ -37,7 +75,8 @@ def getLinesFromFile(folderLoc, file):
 
 def extractImageNamesAndMentions(allLines, pattern, identifier):
     """
-    Search through a list of lines for mentions of images (figures/tables) based on provided pattern, then group and label them.
+    Search through a list of lines for mentions of images (figures/tables) based on provided pattern, 
+    then sort into figures and mentions and return both dictionaries.
     
     Parameters:
     - allLines: List of strings to search through.
@@ -45,20 +84,20 @@ def extractImageNamesAndMentions(allLines, pattern, identifier):
     - identifier: String to prepend to image numbers for naming.
     
     Returns:
-    - A dictionary mapping image names to lists of lines in which they are mentioned.
+    - A dictionary mapping image names to lists of lines in which they are mentioned (excluding figure like).
+    - A dictionary mapping image names to lists of figure like mentions.
     """
-    mentions = defaultdict(list)
+    captions, mentions = defaultdict(list), defaultdict(list)
     for line in allLines:
-        matches = re.findall(pattern,line)
-        for m in matches:
-            iterator = iter(g for g in m if g != "")
-            index1 = next(iterator)
-            try:
-                index2 = next(iterator)
-                mentions[identifier + index1+index2].append(line)
-            except:
-                mentions[identifier + index1].append(line)
-    return dict(mentions)
+        # For all lines iterate through all match objects found in the line
+        for m in re.finditer(pattern,line):
+            # If the line is figurelike then add to captions and add placeholder in mentions, else add to mentions
+            if m.start() == 0:
+                captions = labelByIterator(captions,m,identifier,line)
+                mentions = labelByIterator(mentions,m,identifier,"")
+            else:
+                mentions = labelByIterator(mentions,m,identifier,snipSentence(line,m))
+    return dict(mentions), dict(captions)
 
 def extractPaperName(metaLinesList):
     """
@@ -134,17 +173,28 @@ for f in os.listdir(dataDir):
     # Extract the URL from the last line of the metadata file
     atlusUrl = max(metaLinesList[-1].split(), key=len)
 
-    # Extract mentions of figures and tables from the latex file
-    figMentionDic = extractImageNamesAndMentions(latexLinesList, figPattern, figIdentifier)
-    tableMentionDic = extractImageNamesAndMentions(latexLinesList, tablePattern, tableIdentifier)
+    # Extract mentions and captions of figures and tables from the latex file
+    figMentionDic, figCaptionDic = extractImageNamesAndMentions(latexLinesList, figPattern, figIdentifier)
+    tableMentionDic,tableCaptionDic = extractImageNamesAndMentions(latexLinesList, tablePattern, tableIdentifier)
 
     # Combine figure and table mentions into a single dictionary
     combinedMentionDic = {**figMentionDic, **tableMentionDic}
+    combinedCaptionDic = {**figCaptionDic, **tableCaptionDic}
 
-    # Compile the data for each figure/table into a list of dictionaries
     for key, mentions in combinedMentionDic.items():
+        # Try to find the caption
+        try:
+            captions = combinedCaptionDic[key]
+        except:
+            captions = "caption not found"
+        
+        # Remove all "" mentions
+        mentions = [m for m in mentions if m != ""]
+
+        # Append this figures caption
         figures.append({
-            "name": key, 
+            "name": key,
+            "captions": captions, 
             "mentions": mentions, 
             "atlusUrl": atlusUrl, 
             "paper": f, 
