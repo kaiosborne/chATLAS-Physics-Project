@@ -1,0 +1,27 @@
+[
+    {
+    "Plots": "fig01a.png",
+    "caption": "Figure 01a: Representative tree-level Feynman diagrams for the production of the Higgs boson in association with a top pair (ttH) and the subsequent decay of the Higgs to bb, (a) and (b), and for the main background tt+bb (c).",
+    "mentioned": "Figure 1a, b show two examples of tree-level diagrams for \\(t\\bar{t}H\\) production with a subsequent \\(H\\to b\\bar{b}\\) decay. A search for the associated production of the Higgs boson with a top-quark pair using several Higgs decay modes (including \\(H\\to b\\bar{b}\\)) has recently been published by the CMS Collaboration [24] quoting a ratio of the measured \\(t\\bar{t}H\\) signal cross section to the SM expectation for a Higgs boson mass of 125.6 GeV of \\(\\mu=2.8\\pm 1.0\\). The signal hypothesis is defined as a SM Higgs boson produced in association with a top-quark pair as shown in Fig. 1a, b. Hence no coupling of the Higgs boson to the \\(W\\) boson is accounted for in \\(|\\mathcal{M}_{i}|^{2}\\) to allow for a consistent treatment when performing the kinematic transformation. The Higgs boson is required to decay into a pair of \\(b\\)-quarks, while the top-quark pair decays into the single-lepton channel.",
+    "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-27/fig_01a.png"
+  },
+    {
+      "Plots": "fig01b.png",
+      "caption": "Figure 01b: Representative tree-level Feynman diagrams for the production of the Higgs boson in association with a top pair (ttH) and the subsequent decay of the Higgs to bb, (a) and (b), and for the main background tt+bb (c).",
+      "mentioned": "Figure 1a, b show two examples of tree-level diagrams for \\(t\\bar{t}H\\) production with a subsequent \\(H\\to b\\bar{b}\\) decay. A search for the associated production of the Higgs boson with a top-quark pair using several Higgs decay modes (including \\(H\\to b\\bar{b}\\)) has recently been published by the CMS Collaboration [24] quoting a ratio of the measured \\(t\\bar{t}H\\) signal cross section to the SM expectation for a Higgs boson mass of 125.6 GeV of \\(\\mu=2.8\\pm 1.0\\). The signal hypothesis is defined as a SM Higgs boson produced in association with a top-quark pair as shown in Fig. 1a, b. Hence no coupling of the Higgs boson to the \\(W\\) boson is accounted for in \\(|\\mathcal{M}_{i}|^{2}\\) to allow for a consistent treatment when performing the kinematic transformation. The Higgs boson is required to decay into a pair of \\(b\\)-quarks, while the top-quark pair decays into the single-lepton channel.",
+      "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-27/fig_01b.png"
+    },
+    {
+      "Plots": "fig01c.png",
+      "caption": "Figure 01c: Representative tree-level Feynman diagrams for the production of the Higgs boson in association with a top pair (ttH) and the subsequent decay of the Higgs to bb, (a) and (b), and for the main background tt+bb (c).",
+      "mentioned": "An example is shown in Fig. 1c. A second contribution arises from \\(t\\bar{t}\\) production in association with light-quark (\\(u\\), \\(d\\), \\(s\\)) or gluon jets, referred to as \\(t\\bar{t}\\)+light background, and from \\(t\\bar{t}\\) production in association with \\(c\\)-quarks, referred to as \\(t\\bar{t}\\)+\\(c\\bar{c}\\). The size of the second contribution depends on the misidentification rate of the algorithm used to identify \\(b\\)-quark jets.",
+      "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-27/fig_01c.png"
+    },
+    {
+      "Plots": "fig02a.png",
+      "caption": "Figure 02a: Single-lepton channel: (a) S/√B ratio for each of the regions assuming SM cross sections and branching fractions, and mH=125GeV. Each row shows the plots for a specific jet multiplicity (4, 5, ≥6), and the columns show the b-jet multiplicity (2, 3, ≥4). Signal-rich regions are shaded in dark red, while the rest are shown in light blue. The S/B ratio for each region is also noted. (b) The fractional contributions of the various backgrounds to the total background prediction in each considered region. The ordering of the rows and columns is the same as in (a).",
+      "mentioned": "Figure 2a shows the \\(S/\\sqrt{B}\\) and \\(S/B\\) ratios for the different regions under consideration in the single-lepton channel based on the simulations described in Sect. 5. The expected proportions of different backgrounds in each region are shown in Fig. 2b. The same is shown in the dilepton channel in Fig. 3a, b.",
+      "web location": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-27/fig_02a.png"
+    }
+  ]
+  
