@@ -1,16 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 60px;
     background-color: #f4f4f4;
     color: #333;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
 }
 
-.container {
-    text-align: center; /* Centers the heading */
+/* Add to your existing CSS */
+.main-content {
+    width: 100%; /* Ensures it takes the full width of its parent */
+     /* Adjust based on your design preference */
+    margin: auto; /* Centers the content horizontally */
+    display: flex; /* Uses flexbox to arrange children */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
 }
 
 form {
@@ -128,3 +133,177 @@ input[type="submit"]:hover, button:hover {
     border-radius: 0;
     box-shadow: none;
 }
+
+/* Information Article Styles */
+.information-article {
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the article for spacing */
+    margin-top: 30px; /* Space between the search box and the article */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    font-size: 16px; /* Default font size */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.information-article h2 {
+    color: #333; /* Dark text color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.information-article p, .information-article ol {
+    text-align: left; /* Align text to the left for readability */
+    margin-bottom: 15px; /* Space below paragraphs and lists */
+}
+
+.information-article ol {
+    padding-left: 20px; /* Indent for the ordered list */
+}
+
+.nav-banner {
+    background-color: #3595df; /* Dark blue background */
+    color: #ffffff; /* White text */
+    padding: 20px 20px; /* Padding inside the nav */
+    display: flex; /* Ensures flex layout for the items */
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center; /* Align items vertically */
+    position: fixed; /* Fixes the nav at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Position at the very top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensures nav is above other content */
+    transition: top 0.3s;
+}
+
+.site-info {
+    display: flex; /* Display logo and text side by side */
+    align-items: center; /* Align items vertically */
+    width: 100%; /* Ensures the .site-info takes full width of its parent */
+}
+
+.site-info__logo img {
+    width: 150px; /* Smaller width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.site-info__text {
+    padding-left: 15px; /* Space between logo and text/links */
+}
+
+/* Style for the video container and its children */
+.layout--onecol {
+    width: 100%; /* Full width to span across the viewport */
+    position: relative; /* Needed for positioning nested elements */
+}
+
+.layout__region--content {
+    width: 100%; /* Ensures the content region takes full width */
+}
+
+.field--name-field-component {
+    margin: 0; /* Resets any default margin */
+}
+
+.background-component.background__video {
+    width: 100%; /* Full width to cover the container */
+    height: 50%; /* Height is set to auto to maintain aspect ratio of the video */
+}
+
+.background-component.background__video video {
+    width: 100%;
+    height: 10%; /* Adjust based on your layout or set to 'auto' for automatic adjustment */
+    object-fit: cover; /* Ensures the video covers the entire area without distortion */
+}
+
+.component-row__row {
+    position: absolute; /* Positioning the text overlay */
+    bottom: 0; /* Aligns text to the bottom of the video container */
+    left: 0;
+    width: 100%; /* Ensures the overlay spans the full width */
+    padding: 20px; /* Padding around the text for readability */
+    color: #FFFFFF; /* White text color */
+    display: flex; /* Flexbox for alignment */
+    align-items: flex-end; /* Aligns items to the bottom */
+}
+
+.component-row__column {
+    max-width: 50%; /* Adjust based on your layout or preference */
+    padding: 20px; /* Padding inside the column for spacing */
+}
+
+.text-component-text {
+    color: #FFFFFF; /* White text color for better visibility */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+    text-align: left; /* Aligns text to the left within its container */
+}
+
+#frontpagetitle, #frontpagesubtitle {
+    font-size: 2em; /* Makes the title text larger */
+    margin: 0 0 10px 0; /* Adds some space below the title */
+}
+
+#frontpagesubtitle {
+    font-size: 1.5em; /* Adjust subtitle size as needed */
+}
+
+.ucl-logo img {
+    /* Adjustments specifically for the UCL logo, if needed */
+    height: 50px; /* Example: Adjust the height of the UCL logo if it's different from the ATLAS logo */
+    width: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.chatlas-logo img{
+    height: 50px; /* Example: Adjust the height of the UCL logo if it's different from the ATLAS logo */
+    width: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.history-entry {
+    background-color: #fff; /* Light background for the entry */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px; /* Padding inside each history entry for spacing */
+    margin-bottom: 20px; /* Margin at the bottom of each entry to separate them */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+.history-entry p {
+    margin: 5px 0; /* Margins for paragraph spacing within each entry */
+    color: #333; /* Dark color for text for readability */
+    font-size: 16px; /* Slightly larger font size for better readability */
+}
+
+.history-entry a {
+    color: #007bff; /* Color for links, adjust to match your theme */
+    text-decoration: none; /* No underline for a cleaner look */
+}
+
+/* Additional styling for specific elements within .history-entry as needed */
+.game-access {
+    margin-top: 20px; /* Adds space above the button container */
+    text-align: center; /* Centers the button within the container */
+}
+
+.game-access .btn {
+    padding: 10px 20px; /* Adjusts the padding inside the button for size */
+    font-size: 16px; /* Sets the font size for the button text */
+    border-radius: 5px; /* Rounds the corners of the button */
+    background-color: #007bff; /* Sets the background color */
+    color: #ffffff; /* Sets the text color */
+    border: none; /* Removes the border */
+    transition: background-color 0.3s; /* Adds a transition effect for the background color */
+}
+
+.game-access a, .game-access a:visited, .game-access a:hover, .game-access a:active, .game-access a:focus {
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Optional: ensures the link color matches the button text color */
+}
+
+
+
+
+
