@@ -2,12 +2,9 @@ from flask import Flask, request, render_template, session, redirect, url_for
 import chromadb
 import json
 from tqdm import tqdm
-from flask_session import Session
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
-app.config['SESSION_TYPE'] = 'filesystem'  # Example using filesystem
-Session(app)
 
 chroma_client = chromadb.Client()
 collection = chroma_client.create_collection(name="PhysicsFigures")
@@ -52,7 +49,7 @@ def search():
 
     session['search_history'].append({
         'query': query_text,
-        'results': result_data
+        'results': result_data[:1]
     })
     session.modified = True
 
@@ -63,6 +60,10 @@ def clear_history():
     session.pop('search_history', None)
     return redirect(url_for('index'))
 
+@app.route('/play-invisible-atom')
+def play_invisible_atom():
+    return render_template('invisible_atom.html')
+
 if __name__ == '__main__':
     load_data_into_collection()
-    app.run(debug=True, port=5005)
+    app.run(debug=True, port=5001)
