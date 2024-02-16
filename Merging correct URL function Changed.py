@@ -34,6 +34,9 @@ def update_figures_with_urls(output_data, image_url_json_directory):
         indexImage = re.search(r"(\d+)", entry["name"]).group(1).lstrip("0")
 
         for name, url in image_urls_dict.items():
+            if re.search(r"aux", name):
+                continue
+
             # Finds figure number in Filename of url
             indexUrl = re.search(r"(\d+)", name).group(1).lstrip("0")
             if indexUrl == indexImage:
