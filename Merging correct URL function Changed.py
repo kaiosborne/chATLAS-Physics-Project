@@ -40,7 +40,10 @@ def update_figures_with_urls(output_data, image_url_json_directory):
             # Finds figure number in Filename of url
             indexUrl = re.search(r"(\d+)", name).group(1).lstrip("0")
             if indexUrl == indexImage:
-                entry["imageUrls"].append(url)
+                if re.search("[fF]ig", name) and re.search("[fF]ig", entry["name"]):
+                    entry["imageUrls"].append(url)
+                elif re.search("[tT]ab", name) and re.search("[tT]ab", entry["name"]):
+                    entry["imageUrls"].append(url)
 
 
 def save_json_data(file_path, data):
