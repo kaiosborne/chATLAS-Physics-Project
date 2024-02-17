@@ -2,10 +2,10 @@ import json
 import os
 import re
 
-output_data_json_path = 'C:\workspace\git-repos\physics-project\generated-data.json'
-image_url_json_directory = 'C:\workspace\git-repos\physics-project\IMAGE URLS\IMAGE URLS'  # Directory containing JSON files for image URLs
-updated_output_data_json_path = 'C:\workspace\git-repos\physics-project\OUTPUT\\updated_data.json'
-dataNotFoundLoc = "C:\workspace\git-repos\physics-project\data-not-found.txt"
+output_data_json_path = 'C:\workspace\git-repos\physics-project\merging correct url function\generated-data.json'
+image_url_json_directory = 'C:\workspace\git-repos\physics-project\merging correct url function\IMAGE URLS\IMAGE URLS'  # Directory containing JSON files for image URLs
+updated_output_data_json_path = 'C:\workspace\git-repos\physics-project\merging correct url function\OUTPUT\\updated_data.json'
+dataNotFoundLoc = "C:\workspace\git-repos\physics-project\merging correct url function\data-not-found.txt"
 
 dataNotFoundList = []
 
@@ -23,7 +23,6 @@ def find_image_urls_for_paper(image_url_json_directory, paper_id):
             image_data = json.load(file)
         return {img['name']: img['url'] for img in image_data}
     else:
-        print("File doesn't exist: " + paper_id)
         dataNotFoundList.append(paper_id)
     return {}
 
@@ -60,7 +59,6 @@ def save_json_data(file_path, data):
 
 # Load the output data JSON
 output_data = load_json_data(output_data_json_path)
-print(len(output_data))
 
 # Update the output data with image URLs for each entry
 update_figures_with_urls(output_data, image_url_json_directory)
@@ -69,4 +67,6 @@ update_figures_with_urls(output_data, image_url_json_directory)
 save_json_data(updated_output_data_json_path, output_data)
 
 with open(dataNotFoundLoc, 'w', encoding='utf-8') as file:
+        # Remove repeats
+        dataNotFoundList = list(set(dataNotFoundList))
         json.dump(dataNotFoundList, file, indent=4)
