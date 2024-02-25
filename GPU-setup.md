@@ -4,7 +4,7 @@ This document details how to access GPUs from a Jupyter notebook.
 
 ## Logging on 
 
-Use SSH to get into “login node”. Eg.  ssh xzcapwel@dias.hpc.phys.ucl.ac.uk
+Use SSH to get into “login node”. Eg.  ssh name@dias.hpc.phys.ucl.ac.uk
 
 ## Preliminary setup
 
