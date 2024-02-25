@@ -103,6 +103,7 @@ sbatch jupyter-slurm-singularity.sh
 cat jupyter-notebook-*.log 
 ```
 (displays text in .log file)
+
 if you have more than one .log file then replace * with the number returned by the last command. May need to be run several times until output is seen.
  
 Inside the .log file, copy the 2nd line and run it in a local bash shell (sets up tunnel with GPU). The 2nd line will look something like 
