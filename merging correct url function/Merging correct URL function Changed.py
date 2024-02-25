@@ -29,7 +29,7 @@ def find_image_urls_for_paper(image_url_json_directory, paper_id):
 
 def update_figures_with_urls(output_data, image_url_json_directory):
     """Update all entries in output data with their corresponding image URLs."""
-    for i,entry in enumerate(output_data):
+    for entry in output_data:
         paper_id = entry["paper"]
         image_urls_dict = find_image_urls_for_paper(image_url_json_directory, paper_id)
 
