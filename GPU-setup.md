@@ -4,7 +4,7 @@ This document details how to access GPUs from a Jupyter notebook.
 
 ## Logging on 
 
-Use SSH to get into “login node”. Eg.  ssh xzcapwel@dias.hpc.phys.ucl.ac.uk
+Use SSH to get into “login node”. Eg.  ssh name@dias.hpc.phys.ucl.ac.uk
 
 ## Preliminary setup
 
@@ -103,10 +103,12 @@ sbatch jupyter-slurm-singularity.sh
 cat jupyter-notebook-*.log 
 ```
 (displays text in .log file)
+
 if you have more than one .log file then replace * with the number returned by the last command. May need to be run several times until output is seen.
  
 Inside the .log file, copy the 2nd line and run it in a local bash shell (sets up tunnel with GPU). The 2nd line will look something like 
 > ssh -N -L PPPP:compute-gpu-0-1:PPPP UUU@dias.hpc.phys.ucl.ac.uk
+
 (connects to dias.hpc.phys.ucl.ac.uk and sets up a tunnel so we can see the notebook in a browser on our machine)
 Find the web address in the form http://127.0.0.1:PPPP/tree, this is the location of the jupyter notebook. Open this in a browser
 
