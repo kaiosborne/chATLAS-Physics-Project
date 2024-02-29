@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Added padding for overall body */
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Keeps items in a column layout */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Aligns content to the top */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.result-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds space between result containers */
+    width: 80%; /* Sets a max width for result containers */
+    max-width: 600px; /* Ensures containers do not become too wide on larger screens */
+}
+
+img {
+    border-radius: 4px;
+    display: block; /* Ensures the image is block-level for margin auto to work */
+    margin: 0 auto; /* Centers the image */
+}
+
+p, h2 {
+    margin: 10px 0;
+    text-align: left; /* Aligns text to the left for readability */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.return-button {
+    position: fixed; /* Fix the position relative to the viewport */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+/* Adjust the button styles if needed */
+button.return-button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+

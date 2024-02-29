@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Invisible Particle</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #gameArea {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        #gameImage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1; /* Start with the image almost transparent */
+            background-image: url("static/images/ATLAS detector.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #target {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            cursor: pointer;
+            background-color: transparent; /* Make it transparent for the actual game */
+        }
+        #exitButton {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameArea">
+        <div id="gameImage"></div> <!-- Ensure gameImage is inside gameArea -->
+        <div id="target"></div>
+    </div>
+    <button id="exitButton">Exit Game</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var gameArea = document.getElementById('gameArea');
+            var target = document.getElementById('target');
+            var gameImage = document.getElementById('gameImage');
+
+            // Randomly position the target within the game area
+            function positionTarget() {
+                var maxX = gameArea.clientWidth - target.offsetWidth;
+                var maxY = gameArea.clientHeight - target.offsetHeight;
+                target.style.left = Math.random() * maxX + 'px';
+                target.style.top = Math.random() * maxY + 'px';
+            }
+
+            // Detect mouse movement within the game area
+            gameArea.addEventListener('mousemove', function(e) {
+                var rect = gameArea.getBoundingClientRect();
+                var x = e.clientX - rect.left;
+                var y = e.clientY - rect.top;
+
+                // Calculate distance from the mouse to the center of the target
+                var targetRect = target.getBoundingClientRect();
+                var targetX = targetRect.left + target.offsetWidth / 2;
+                var targetY = targetRect.top + target.offsetHeight / 2;
+                var distance = Math.sqrt(Math.pow(x - targetX, 2) + Math.pow(y - targetY, 2));
+
+                // Adjust image opacity based on distance
+                var opacity = 1 - Math.min(distance / 500, 1); // Adjust the divisor to control the effect's sensitivity
+                gameImage.style.opacity = opacity;
+            });
+
+            // Reposition the target when found
+            target.addEventListener('click', function() {
+                alert('You found the particle!');
+                positionTarget();
+            });
+
+            // Initial positioning of the target
+            positionTarget();
+        });
+
+        document.getElementById('exitButton').addEventListener('click', function() {
+            window.location.href='/'; // Adjust the URL as needed
+        });
+    </script>
+</body>
+</html>
