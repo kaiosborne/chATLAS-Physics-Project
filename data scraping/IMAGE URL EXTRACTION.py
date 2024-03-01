@@ -28,7 +28,7 @@ def scrape_image_data(link):
         soup = BeautifulSoup(response.content, 'html.parser')
         images = soup.find_all('img', src=True)
 
-        image_data = [{"name": os.path.basename(img['src']), "url": requests.compat.urljoin(link, img['src'])} for img
+        image_data = [{"name": os.path.basename(img['src']), "url": link+"//"+ img['src']} for img
                       in images if os.path.basename(img['src']).startswith(".thumb")]
         return image_data
     except Exception as e:
@@ -55,6 +55,7 @@ def process_meta_info(meta_info_path, output_directory):
 
             if relevant_link:
                 image_data = scrape_image_data(relevant_link)
+                print(image_data)
                 if image_data:
                     output_path = os.path.join(output_directory, f"{folder_name}.json")
                     with open(output_path, 'w') as json_file:
@@ -72,6 +73,9 @@ def process_meta_info(meta_info_path, output_directory):
     else:
         print(f"URL prefix '{prefix}' not found in {meta_info_path}")
         papers_with_no_images.append(folder_name)
+        output_path = os.path.join(output_directory, f"{folder_name}.json")
+        with open(output_path, 'w') as json_file:
+            json.dump(image_data, json_file, indent=4)
 
 
 def process_directories(data_dir, output_directory):
@@ -95,8 +99,8 @@ def process_directories(data_dir, output_directory):
 
 
 # Configuration
-data_dir = "/Users/georgedoumenis-ramos/Downloads/ATLASPublications"  # Update this path
-output_directory = "/Users/georgedoumenis-ramos/Documents/IMAGE URLS"  # Update this path
+data_dir = "C:\workspace\git-repos\physics-project\paper data\CMS-papers"  # Update this path
+output_directory = "C:\workspace\data-for-project"  # Update this path
 
 os.makedirs(output_directory, exist_ok=True)
 

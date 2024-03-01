@@ -1,4 +1,4 @@
-#%%
+
 import os
 import re
 import json
@@ -168,3 +168,5 @@ with open(outputFilePath, "w",encoding="utf-8") as outfile:
     json.dump(figures, outfile, indent=4, ensure_ascii=False)
 
 
+
+# %%
