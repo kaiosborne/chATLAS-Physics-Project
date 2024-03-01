@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "$", right: "$", display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Search Results</h1>
+    {% if results %}
+        {% for result in results[:10] %}
+            <div class="result-container">
+                <h2>{{ result['name'] }}</h2>
+                <div class="image-container">
+                    {% if result['image_url'] %}
+                        <a href="{{ result['atlusUrl'] }}" target="_blank">
+                            <img src="{{ result['image_url'] }}" alt="No image found, please check at Atlas URL">
+                        </a>
+                    {% else %}
+                        <p>No image found, please check at <a href="{{ result['atlusUrl'] }}">Atlas URL</a>.</p>
+                    {% endif %}
+                </div>
+                <p><strong>Mentions:</strong> <span class="latex-content">{{ result['mentions']|safe }}</span></p>
+                <p><strong>Atlas URL:</strong> <a href="{{ result['atlusUrl'] }}">{{ result['atlusUrl'] }}</a></p>
+                <p><strong>Paper ID:</strong> {{ result['paper'] }}</p>
+                <p><strong>Paper Name:</strong> {{ result['paperName'] }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No results found</p>
+    {% endif %}
+    <button onclick="window.location.href='/'" class="return-button">Return to Query Page</button>
+</body>
+</html>
