@@ -1,4 +1,6 @@
 
+DB:download
+https://drive.google.com/file/d/1t0bILJT0PjPLLod9VLNRcSMfC0swdLH1/view?usp=drive_link
 ***Extract DB.json.zip in the same directory as app_chroma.py***
 How to run this web application
 1. Install the following libraries : flask, chromed, json, tqdm

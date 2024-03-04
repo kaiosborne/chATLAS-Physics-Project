@@ -13,26 +13,37 @@ def load_data_into_collection():
     with open('DB.json', 'r') as file:
         data = json.load(file)
 
-    embeddings = []
-    documents = []
-    metadatas = []
-    ids = []
+    batch_size = 40000  
+    total_documents = len(data)
+    num_batches = (total_documents + batch_size - 1) // batch_size  # Calculate the total number of batches
 
-    for i, obj in tqdm(enumerate(data), total=len(data), desc="Adding documents"):
-        document_id = f"document_{i}"
-        embeddings.append(obj.get("embedded vector", []))
-        documents.append(f"{obj['name']} {' '.join(obj['mentions'])}")
-        metadatas.append({
-            "name": obj["name"],
-            "mentions": "\n".join(obj["mentions"]),
-            "atlusUrl": obj["atlusUrl"],
-            "paper": obj["paper"],
-            "paperName": obj["paperName"],
-            "image_url": obj.get("imageUrls", "")
-        })
-        ids.append(document_id)
+    for batch_num in tqdm(range(num_batches), desc="Processing batches"):
+        start_idx = batch_num * batch_size
+        end_idx = min(start_idx + batch_size, total_documents)
+        batch_data = data[start_idx:end_idx]
 
-    collection.add(embeddings=embeddings, documents=documents, metadatas=metadatas, ids=ids)
+        embeddings = []
+        documents = []
+        metadatas = []
+        ids = []
+
+        for i, obj in enumerate(batch_data):
+            document_id = f"document_{start_idx + i}"
+            embeddings.append(obj.get("embedded vector", []))
+            documents.append(f"{obj['name']} {' '.join(obj['mentions'])}")
+            metadatas.append({
+                "name": obj["name"],
+                "mentions": "\n".join(obj["mentions"]),
+                "atlusUrl": obj["atlusUrl"],
+                "paper": obj["paper"],
+                "paperName": obj["paperName"],
+                "image_url": obj.get("imageUrls", "")
+            })
+            ids.append(document_id)
+
+        collection.add(embeddings=embeddings, documents=documents, metadatas=metadatas, ids=ids)
+
+        tqdm.write(f"Added documents {start_idx} to {end_idx-1} to the collection")
 
 @app.route('/', methods=['GET'])
 def index():

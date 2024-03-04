@@ -29,6 +29,17 @@ img {
     border-radius: 4px;
     display: block; /* Ensures the image is block-level for margin auto to work */
     margin: 0 auto; /* Centers the image */
+    max-width: 100px;
+    height: auto;
+}
+
+.result-container img {
+    border-radius: 4px;
+    display: block; /* Ensures the image is block-level for margin auto to work */
+    margin: 0 auto; /* Centers the image */
+    max-width: 100%; /* Ensures the image width does not exceed the container width */
+    height: auto; /* Keeps the image aspect ratio intact */
+    /* Optional: you can add max-height as well if needed, e.g., max-height: 100%; */
 }
 
 p, h2 {
