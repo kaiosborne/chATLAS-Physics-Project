@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[7]:
-
-
 # Import relevant libraries
 import chromadb
 import json
@@ -18,7 +12,7 @@ from llama_index.llms.openai import OpenAI
 import os 
 
 
-# In[10]:
+
 
 
 # Set the API key
@@ -47,7 +41,7 @@ def generate_queries(query: str, llm, num_queries: int = 4):
 queries = generate_queries("What is the efficiency of L1 single EM object triggers vs pile-up?", llm)
 
 
-# In[ ]:
+
 
 
 # Initialize ChromaDB client and collection
