@@ -3,7 +3,7 @@ DB:download
 https://drive.google.com/file/d/1t0bILJT0PjPLLod9VLNRcSMfC0swdLH1/view?usp=drive_link
 ***Extract DB.json.zip in the same directory as app_chroma.py***
 How to run this web application
-1. Install the following libraries : flask, chromadb, json, tqdm
+1. Install the following libraries : flask, chromed, json, tqdm
 2. Open and Run app_chroma.py in Visual Studio Code
 3. Wait for DB to be loaded
 4. In the terminal there should be "* Running on http://127.0.0.1:5001"
