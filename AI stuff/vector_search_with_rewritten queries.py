@@ -10,7 +10,7 @@ from io import StringIO
 from llama_index.core import PromptTemplate
 from llama_index.llms.openai import OpenAI
 import os 
-os.environ['OPENAI_API_KEY']='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'
+os.environ['OPENAI_API_KEY']='KEY'
 llm = OpenAI(model="gpt-3.5-turbo")
 
 # Your existing code for generating queries
