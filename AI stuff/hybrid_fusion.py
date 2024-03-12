@@ -3,7 +3,7 @@ from llama_index.node_parser import SimpleNodeParser
 import matplotlib.pyplot as plt
 import networkx as nx
 import os
-os.environ['OPENAI_API_KEY']='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'
+os.environ['OPENAI_API_KEY']='Key'
 # load in some sample data
 reader = SimpleDirectoryReader(input_files=["Rawdata (2).json"])
 documents = reader.load_data()
