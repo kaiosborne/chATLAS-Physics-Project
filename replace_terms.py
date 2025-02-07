@@ -2,8 +2,6 @@ import re
 import json
 
 
-# test
-
 # Create a function to replace terms to complete forms
 def replace_term(text,glossary):
     """
