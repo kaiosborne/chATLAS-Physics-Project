@@ -29,7 +29,7 @@ with open("glossary.json", "r") as f:
     glossary = json.load(f)
 
 # Import database create by get-mentions.py
-with open("generated-data.json","r") as f: # generated-data.json should be located in the same directory as this script, "r" means read only
+with open("generated-data.json","r",encoding="utf-8") as f: # generated-data.json should be located in the same directory as this script, "r" means read only
     paper_data = json.load(f)
 
 # Process the text in all mentions and replace abbreviations
