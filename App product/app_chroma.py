@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, session, redirect, url_for
 import chromadb
 import json
+import os
 from tqdm import tqdm
 
 app = Flask(__name__)
@@ -9,8 +10,11 @@ app.config['SECRET_KEY'] = 'your_secret_key'
 chroma_client = chromadb.Client()
 collection = chroma_client.create_collection(name="PhysicsFigures")
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+db_path = os.path.join(current_dir, './DB.json') #sets database path to current directory with name DB.json
+
 def load_data_into_collection():
-    with open('DB.json', 'r') as file:
+    with open(db_path, 'r') as file:
         data = json.load(file)
 
     batch_size = 40000  
