@@ -14146,3 +14146,6 @@ data scraping/paper data/CDS_doc4/CDS_Record_2889672/latex.txt
 data scraping/paper data/CDS_doc4/CDS_Record_2889672/meta_info.txt
 data scraping/paper data/CDS_doc4/CDS_Record_2890161/latex.txt
 data scraping/paper data/CDS_doc4/CDS_Record_2890161/meta_info.txt
+data scraping/Test Output/generated-data.json
+data scraping/Test Papers/CDS_Record_2869241/latex.txt
+data scraping/Test Papers/CDS_Record_2869241/meta_info.txt
