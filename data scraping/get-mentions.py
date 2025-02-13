@@ -8,6 +8,7 @@ from collections import defaultdict
 # Patterns to identify figure and table references in the text files, precompiled for performance
 figPattern = re.compile(r"[Ff]ig. (\d+)|[Ff]igures* (\d+)")
 tablePattern = re.compile(r"[Tt]able (\d+)")
+tableContentPattern = re.compile(r"\\begin\{(?:table|tabular)\}[\s\S]*?\\end\{(?:table|tabular)\}", re.DOTALL)
 
 # Identifiers to prepend to the figure and table numbers for naming
 figIdentifier = "Figure "
@@ -98,8 +99,8 @@ def extractPaperName(metaLinesList):
 
 
 # Define input and output directories
-dataDir = "C:\workspace\git-repos\physics-project\paper data\CMS-papers\CDS_doc"
-outputDir = "C:\workspace\git-repos\physics-project"
+dataDir = "/Users/kai/Github/chATLAS-Physics-Project/data scraping/Test Papers"
+outputDir = "/Users/kai/Github/chATLAS-Physics-Project/data scraping/Test Output" #temporary test file path
 
 # Check if the input directory exists, exit if not
 if not os.path.isdir(dataDir):
@@ -152,9 +153,11 @@ for f in os.listdir(dataDir):
 
     # Compile the data for each figure/table into a list of dictionaries
     for key, mentions in combinedMentionDic.items():
+        for m in mentions:
+            cleanedMentions = re.sub(tableContentPattern, '', m) #remove tables from saved mentions
         figures.append({
             "name": key, 
-            "mentions": mentions, 
+            "mentions": cleanedMentions, 
             "atlusUrl": atlusUrl, 
             "paper": f, 
             "paperName": paperName  # Include the extracted paper name here
@@ -166,7 +169,5 @@ outputFilePath = os.path.join(outputDir, "generated-data.json")
 # Write the compiled data to the output JSON file
 with open(outputFilePath, "w",encoding="utf-8") as outfile:
     json.dump(figures, outfile, indent=4, ensure_ascii=False)
-
-
 
 # %%
