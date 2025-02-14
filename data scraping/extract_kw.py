@@ -61,7 +61,7 @@ def process_paper(paper_folder):
     captions = extract_captions(latex_text)
     
     # 
-    combined_text = latex_text + " " + captions * 3  # 提高图片标题的权重
+    combined_text = latex_text + " " + captions * 3 
     keywords = extract_keywords_yake(combined_text)
     
     # Return result
@@ -78,7 +78,7 @@ def process_paper_library(library_dir):
     results = []
     for root, dirs, files in os.walk(library_dir):
         for dir_name in dirs:
-            if dir_name.startswith("CDS_Record_"):  # 只处理论文文件夹
+            if dir_name.startswith("CDS_Record_"):  
                 paper_folder = os.path.join(root, dir_name)
                 if os.path.exists(os.path.join(paper_folder, "latex.txt")) and os.path.exists(os.path.join(paper_folder, "meta_info.txt")):
                     result = process_paper(paper_folder)
