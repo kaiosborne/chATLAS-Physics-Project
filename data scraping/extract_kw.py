@@ -36,7 +36,14 @@ def extract_meta_info(meta_info_path):
 # extract keywords by yake
 def extract_keywords_yake(text, top_n=10):
     # intialize YAKE
-    kw_extractor = yake.KeywordExtractor()
+    kw_extractor = yake.KeywordExtractor(
+        lan = "en",
+        n=3,
+        deduplim=0.9,
+        windowsSize=1,
+        top=top_n
+    
+    )
     # extract keywors
     keywords = kw_extractor.extract_keywords(text)
     # back to top_n
@@ -44,15 +51,25 @@ def extract_keywords_yake(text, top_n=10):
 
 # one paper
 def process_paper(paper_folder):
+    print(f"Processing: {paper_folder}")
     latex_path = os.path.join(paper_folder, "latex.txt")
     meta_info_path = os.path.join(paper_folder, "meta_info.txt")
+
+    
+    if not os.path.exists(latex_path) or not os.path.exists(meta_info_path):
+        print(f"Missing files in {paper_folder}, skipping.")
+        return None
     
     # extract meta_info.txt
     paper_name, url = extract_meta_info(meta_info_path)
     
     # extract latex.txt
-    with open(latex_path, "r", encoding="utf-8") as file:
-        latex_text = file.read()
+    try:
+        with open(latex_path, "r", encoding="utf-8") as file:
+            latex_text = file.read()
+    except Exception as e:
+        print(f"Error reading {latex_path}: {e}")
+        return None
     
     # extract abstract
     abstract = extract_abstract(latex_text)
@@ -60,9 +77,17 @@ def process_paper(paper_folder):
     # extract captions
     captions = extract_captions(latex_text)
     
-    # 
     combined_text = latex_text + " " + captions * 3 
-    keywords = extract_keywords_yake(combined_text)
+    
+    print(f"Extracted abstract and captions from {paper_folder}")
+    
+    try:
+        keywords = extract_keywords_yake(combined_text)
+    except Exception as e:
+        print(f"YAKE error: {e}")
+        return None
+
+    
     
     # Return result
     return {
