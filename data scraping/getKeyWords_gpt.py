@@ -1,6 +1,8 @@
 import openai
 import re
 
+# Openai package required
+
 openai.api_key = 'apikey'
 
 # Preprocess the texts, remove latex commands
