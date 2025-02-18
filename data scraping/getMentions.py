@@ -6,7 +6,7 @@ import logging
 from collections import defaultdict
 
 # Define input and output directories using relative paths
-dataDir = os.path.join("Data Scraping", "Test Paper Data","ATLASPapers") 
+dataDir = os.path.join("Data Scraping", "Test Paper Data") 
 outputDir = os.path.join("Data Scraping", "Test Outputs")  # temporary test file path (remove Test later)
 
 # Convert to absolute paths if needed
