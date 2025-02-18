@@ -75,16 +75,9 @@ for entry in tqdm(data, desc="Processing entries", unit="entry"):
     abbrev = entry["name"] #set abbrevation to variable
     context = entry["mentions"] #set all mentions to context variable
 
-    definitions = [] #init list
-
-    definition = get_definition_from_openai(abbrev, context)
-    if definition:
-        definitions.append(definition)
-    
-    #collect all definitions for abbrevation
     results.append({
         "abbreviation": abbrev,
-        "definitions": definitions
+        "definition": get_definition_from_openai(abbrev, context)
     })
 
 
