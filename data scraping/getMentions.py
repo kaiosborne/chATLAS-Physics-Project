@@ -127,14 +127,12 @@ for f in os.listdir(dataDir):
     # Skip if 'f' is not a directory
     if not os.path.isdir(folderDir):
         continue
-    
     # Attempt to read the latex and metadata files, skip the folder if either file is missing
     try:
         latexLinesList = getLinesFromFile(folderDir, LATEX_FILE)
     except FileNotFoundError:
         logging.error(f"{LATEX_FILE} not found in: {folderDir}")
         continue
-
     try:
         metaLinesList = getLinesFromFile(folderDir, META_FILE)
     except FileNotFoundError:
