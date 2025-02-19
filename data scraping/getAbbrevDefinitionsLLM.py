@@ -4,11 +4,11 @@ from openai import OpenAI
 from tqdm import tqdm
 
 #define input and output directories
-dataDir = os.path.join("Data Scraping", "Test Paper Data")
+dataDir = os.path.join("Data Scraping", "Test Outputs")
 outputDir = os.path.join("Data Scraping", "Test Outputs")  #temporary test file path
 
 #set input and output JSON file names
-fileName = 'generated-data-maths.json'
+fileName = 'generated-data.json'
 outputName = 'maths_definitions.json'
 
 #export OPENAI_API_KEY="apikey"
@@ -53,7 +53,6 @@ def saveJSON(data,outputDir,outputName):
     try:
         with open(outputPath, 'w') as outputFile:
             outputFile.write(outputJSON)
-        print("Results saved to", outputPath)
     except Exception as e:
         print("Error saving results:", e)
 
@@ -111,21 +110,18 @@ def getAbbrevDefinitionLLM(abbrev,context):
 
     #prompts
     systemPrompt = f"""
-    You are a helpful academic assistant that is operating 
-    in a technical high energy physics context.
+    You are a helpful academic assistant.
     """
     userPrompt = f"""
-    Provide an extremely short definition (just one phrase) for the abbreviation
-    '{abbrev}' as used in the following contexts: {context}. 
-    Return only the definition without extra explanation, the returned response 
-    should only refer to the abbreviation '{abbrev}'. You should not answer if you 
-    are unable to determine a definition with certainty.
+    Provide an extremely short definition for the abbreviation
+    '{abbrev}' as used in the following context {context}. 
+    Return only the definition of '{abbrev}' without extra explanation or additional words.
     """
 
     model = 'gpt-4o-mini'
     maxTokens = 50
     numResponse = 1
-    temperature = 0.5
+    temperature = 0.3
 
     response = getOpenAIResponse(systemPrompt, userPrompt,model,maxTokens,numResponse,temperature,)
 
@@ -142,12 +138,21 @@ data = loadJSON(dataDir,fileName) #load JSON of abbreviations and context
 
 for entry in tqdm(data, desc="Processing entries", unit="entry"):
 
-    abbrev = entry["name"] #set abbrevation to variable
-    context = entry["mentions"] #set all mentions to context variable
+    abbrev = entry["maths"] #set abbrevation to variable
+    contexts = entry["mathsContext"] #set all mentions to context variable
+
+    definitions = []
+
+    for i in range(len(abbrev)):
+        definitions.append(getAbbrevDefinitionLLM(abbrev[i], contexts[i]))
 
     results.append({
-        "abbreviation": abbrev,
-        "definition": getAbbrevDefinitionLLM(abbrev, context)
+        "name": entry["name"], 
+        "mentions": entry["mentions"], 
+        "atlusUrl": entry["atlusUrl"], 
+        "paper": entry["paper"], 
+        "paperName": entry["paperName"],
+        "maths": abbrev, 
+        "mathsDefinitions": definitions,
     })
-
-saveJSON(results,outputDir,outputName)
+    saveJSON(results,outputDir,outputName)
