@@ -5,13 +5,9 @@ import json
 import logging
 from collections import defaultdict
 
-### THE GOAL FOR THIS FILE IS TO FIND ABBREVIATIONS FROM THE PREVIOUSLY DISCUSSED REGEX
-### PARSE SENTENCE OF DISCOVERY AND ABBREVATION INTO LLM TO DETERMINE DEFINITION
-### WRITE ABBREVATIONS TO JSON GLOSSARY THAT IS STORED IN EACH PAPER FILE FOLDER
-### THIS ABBREVIATION GLOSSARY IS USED IN GETMENTIONS TO ADD FULL LENGTH TERMS TO THE PLOT MENTIONS AND CAPTIONS
-### ADDITIONALLY A SET OF KEYWORDS ARE ALSO GENERATED FOR EACH PAPER AND STORED IN A KEYWORDS FILE AFTER PARSING ENITRE PAPER THROUGH LLM
 
-# Patterns to identify abbreviations in brackets, and markdown maths inline
+
+# Patterns to identify markdown maths inline and tables
 mathsPattern = re.compile(r"\\\((.*?)\\\)")
 tableContentPattern = re.compile(r"\\begin\{(?:table|tabular)\}[\s\S]*?\\end\{(?:table|tabular)\}", re.DOTALL)
 
@@ -25,7 +21,7 @@ META_FILE = "meta_info.txt"
 def snipSentence(line,m):
     """
 
-    Given a pagraph and its match object return the senctence containing that match
+    Given a paragraph and its match object return the sentence containing that match
 
     Inputs:
     - line: The line that the match is in
