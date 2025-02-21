@@ -8,6 +8,9 @@ from tqdm import tqdm
 
 client = OpenAI()
 
+
+#pretty much all chat gpt and doesnt work - ignore this for now
+
 # --------------------------
 # Configuration & Directories
 # --------------------------
