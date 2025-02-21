@@ -13,7 +13,6 @@ outputName = 'maths_definitions.json'
 
 #export OPENAI_API_KEY="apikey" to set api key in environment
 
-
 def loadJSON(dataDir,fileName):
     '''
     Loads JSON file given file directory and filename.
