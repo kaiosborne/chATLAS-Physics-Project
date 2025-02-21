@@ -11,7 +11,7 @@ outputDir = os.path.join("Data Scraping", "Test Outputs")  #temporary test file 
 fileName = 'generated-data.json'
 outputName = 'maths_definitions.json'
 
-#export OPENAI_API_KEY="apikey"
+#export OPENAI_API_KEY="apikey" to set api key in environment
 
 
 def loadJSON(dataDir,fileName):
@@ -99,7 +99,7 @@ def getOpenAIResponse(systemPrompt,
         print(f"Error calling OpenAI API.")
         return None
 
-def getAbbrevDefinitionLLM(abbrev,context):
+def getAbbrevDefinitionOpenAI(abbrev,context):
     '''
     Finds definition of abbreviation given context, using OpenAI API and 4o-mini model.
     Inputs:
@@ -144,7 +144,7 @@ for entry in tqdm(data, desc="Processing entries", unit="entry"):
     definitions = []
 
     for i in range(len(abbrev)):
-        definitions.append(getAbbrevDefinitionLLM(abbrev[i], contexts[i]))
+        definitions.append(getAbbrevDefinitionOpenAI(abbrev[i], contexts[i]))
 
     results.append({
         "name": entry["name"], 
@@ -155,4 +155,5 @@ for entry in tqdm(data, desc="Processing entries", unit="entry"):
         "maths": abbrev, 
         "mathsDefinitions": definitions,
     })
+
     saveJSON(results,outputDir,outputName)
