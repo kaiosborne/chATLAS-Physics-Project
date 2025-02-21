@@ -5,6 +5,14 @@ import json
 import logging
 from collections import defaultdict
 
+# Define input and output directories using relative paths
+dataDir = os.path.join("Data Scraping", "Test Paper Data","ATLASPapers") 
+outputDir = os.path.join("Data Scraping", "Test Outputs")  # temporary test file path (remove Test later)
+
+# Convert to absolute paths if needed
+dataDir = os.path.abspath(dataDir)
+outputDir = os.path.abspath(outputDir)
+
 # Patterns to identify figure and table references in the text files, precompiled for performance
 figPattern = re.compile(r"[Ff]ig. (\d+)|[Ff]igures* (\d+)")
 tablePattern = re.compile(r"[Tt]able (\d+)")
@@ -96,15 +104,6 @@ def extractPaperName(metaLinesList):
             paperNameLines.append(line.strip())
     
     return ' '.join(paperNameLines) if paperNameLines else None
-
-# Define input and output directories using relative paths
-dataDir = os.path.join("Data Scraping", "Test Paper Data") 
-outputDir = os.path.join("Data Scraping", "Test Outputs")  # temporary test file path (remove Test later)
-
-# Convert to absolute paths if needed
-dataDir = os.path.abspath(dataDir)
-outputDir = os.path.abspath(outputDir)
-
 
 # Check if the input directory exists, exit if not
 if not os.path.isdir(dataDir):
