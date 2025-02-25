@@ -8,7 +8,7 @@ from pydantic import BaseModel
 dataDir = os.path.join("Data Scraping", "Test Outputs")
 outputDir = os.path.join("Data Scraping", "Test Outputs")
 fileName = 'generated-data.json'
-outputName = 'maths_definitions.json'
+outputName = 'maths_definitionsslow.json'
 
 class mathsDef(BaseModel):
     maths: str
@@ -39,13 +39,18 @@ async def getOpenAIResponse(abbrev_list, context_list, session):
     '''
     Sends batch requests to OpenAI API with structured JSON output.
     '''
-    headers = {"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"}
-    
-    systemPrompt = "You are a helpful academic assistant. Provide structured output in JSON format."
-    
+    headers = {"Authorization": f"Bearer {OPENAI_API_KEY}",}
+
+    # Force OpenAI to return JSON by making the format explicit
+    systemPrompt = "\n".join([
+        "You are a helpful academic assistant."
+
+    ])
+
     userPrompt = "\n".join([
-        f"""Provide an extremely short definition for '{abbrev}' in this context: {context}. 
-        Return only the definition without extra explaination as a JSON with keys 'abbreviation' and 'definition'."""
+        f"""Provide an extremely short definition for the abbreviation
+        '{abbrev}' as used in the following context {context}. 
+        Return only the definition of '{abbrev}' without extra explanation or additional words."""
         for abbrev, context in zip(abbrev_list, context_list)
     ])
 
@@ -55,8 +60,8 @@ async def getOpenAIResponse(abbrev_list, context_list, session):
             {"role": "system", "content": systemPrompt},
             {"role": "user", "content": userPrompt}
         ],
-        "max_tokens": 50,
-        "temperature": 0.3,
+        "max_tokens": 500,
+        "temperature": 0.2,
         "n": 1
     }
 
@@ -64,12 +69,8 @@ async def getOpenAIResponse(abbrev_list, context_list, session):
         async with session.post(API_URL, headers=headers, json=payload) as response:
             if response.status == 200:
                 result = await response.json()
-                saveJSON(result, outputDir, outputName)
-                print(result)
                 try:
-                    # Parse JSON response from OpenAI
-                    structured_results = json.loads(result["choices"][0]["message"]["content"])
-                    return structured_results  # Returns list of JSON objects
+                    return [choice['message']['content'].strip() for choice in result["choices"]]
                 except json.JSONDecodeError:
                     print("Error parsing JSON response. Retrying...")
                     await asyncio.sleep(1)
@@ -106,15 +107,10 @@ async def process_entry(entry, session, progress_bar):
 
     progress_bar.update(1)  # Update progress bar
 
-    return {
-        "name": entry["name"],
-        "mentions": entry["mentions"],
-        "atlusUrl": entry["atlusUrl"],
-        "paper": entry["paper"],
-        "paperName": entry["paperName"],
-        "maths": abbrev_list,
-        "mathsDefinitions": cached_results
-    }
+    entry["mathsDefinitions"] = entry.pop("mathsContext")
+    entry["mathsDefinitions"] = cached_results
+
+    return entry
 
 async def main():
     '''
