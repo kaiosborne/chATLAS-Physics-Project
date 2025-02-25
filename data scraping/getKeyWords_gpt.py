@@ -1,6 +1,7 @@
 import openai
 import re
 import json
+import os
 
 # Openai package required
 
@@ -59,7 +60,27 @@ def process_figures(input_file, output_file):
         json.dump(results, f, indent=2, ensure_ascii=False)
 
 
+# Set Input and output files
+# NEED TO CHANGE
+input_file = '/Users/Jiayi/Desktop/project_code/test.json'
+output_file = '/Users/Jiayi/Desktop/project_code/extracted_keywords.json'
+
+# Check if the input file exists, exit if not
+if not os.path.exists(input_file):
+    print(f"Input file not found: {input_file}")
+    exit(1)
+
+# Check if the output directory exists, create it if not
+output_dir = os.path.dirname(output_file)  # Extract the directory part from the output file path
+if not os.path.exists(output_dir):
+    print(f"Output directory not found, trying to create: {output_dir}")
+    try:
+        os.makedirs(output_dir)
+    except OSError as error:
+        print(f"Failed to create output directory: {error}")
+        exit(1)
+
+
 process_figures(
-    input_file='/Users/Jiayi/Desktop/project_code/test.json', # Input data set **NEED TO CHANGE
-    output_file='/Users/Jiayi/Desktop/project_code/extracted_keywords.json' # Output data set with keywords **MUST EXIST
+    input_file,output_file
 )
