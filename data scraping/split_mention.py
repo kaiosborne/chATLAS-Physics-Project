@@ -1,6 +1,29 @@
 import json
 
 def transform_mentions(obj):
+    """
+    Transform the 'mentions' field in the given dictionary object into separate
+    'mention' and 'caption' fields according to the following rules:
+
+    1. If the 'mentions' field has only one element, use that single element for
+       both 'mention' and 'caption'.
+    2. If there are multiple elements, look for the first element containing a
+       colon (":") and set it as 'caption'. The remaining elements become the
+       'mention' field.
+       - If no element contains a colon, use the last element as 'caption' and
+         the rest as 'mention'.
+    3. If, after removal of the caption element, only one mention remains, store
+       it as a string (instead of a list with one element).
+    4. Remove the original 'mentions' key from the object.
+
+    Args:
+        obj (dict): A dictionary that may contain a 'mentions' key (list of strings).
+
+    Returns:
+        dict: The same dictionary, but with new 'mention' and 'caption' fields
+              replacing the original 'mentions' field.
+    """
+    
     # Process the "mentions" field if it exists.
     if "mentions" not in obj:
         return obj  # If not present, leave the object unchanged.
@@ -40,6 +63,19 @@ def transform_mentions(obj):
     return obj
 
 def transform_data(data):
+    """
+    Iterate over each object in the provided list and apply the 'transform_mentions'
+    function to transform the 'mentions' field into separate 'mention' and 'caption'
+    fields according to predefined rules.
+
+    Args:
+        data (list): A list of dictionaries, each of which may contain a 'mentions' key.
+
+    Returns:
+        list: A new list of dictionaries, each with 'mention' and 'caption' fields
+              replacing the original 'mentions' field (if it existed).
+    """
+    
     # Process each object in the data array.
     transformed = []
     for obj in data:
@@ -48,6 +84,13 @@ def transform_data(data):
     return transformed
 
 def main():
+    """
+    Main function that processes the input JSON file and writes the transformed data
+    to an output JSON file. Specifically, it reads 'DB.json', applies the 'transform_data'
+    function (which splits the 'mentions' field into 'mention' and 'caption' fields), 
+    and writes the result to 'DB_new.json'.
+    """
+    
     input_file = "DB.json"      # Your input file
     output_file = "DB_new.json"  # Output file for the transformed data
 
