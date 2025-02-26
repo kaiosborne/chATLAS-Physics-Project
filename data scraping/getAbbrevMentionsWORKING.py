@@ -55,7 +55,7 @@ async def get_openai_response(session, systemPrompt, userPrompt, model, maxToken
             return None
 
 async def getAbbrevDefinitionOpenAI(session, abbrev, context):
-    systemPrompt = "You are a helpful academic assistant."
+    systemPrompt = "You are a helpful academic assistant, in a high energy physics (ATLAS) context, return answers using domain specific and technical keywords."
     userPrompt = f"""Provide an extremely short definition for the abbreviation
                 '{abbrev}' as used in the following context {context}. 
                 Return only the definition of '{abbrev}' without extra explanation or additional words."""
