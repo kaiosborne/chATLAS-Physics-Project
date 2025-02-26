@@ -29,7 +29,7 @@ if not os.path.isdir(outputDir):
 # Patterns to identify figure and table references in the text files, precompiled for performance
 figPattern = re.compile(r"[Ff]ig. (\d+)|[Ff]igures* (\d+)")
 tablePattern = re.compile(r"[Tt]able (\d+)")
-mathsPattern = re.compile(r"\\\((.*?)\\\)")
+mathsPattern = re.compile(r"(\\\(.*?\\\))")
 tableContentPattern = re.compile(r"\\begin\{(?:table|tabular)\}[\s\S]*?\\end\{(?:table|tabular)\}", re.DOTALL)
 
 # Identifiers to prepend to the figure and table numbers for naming
@@ -168,7 +168,6 @@ for f in os.listdir(dataDir):
                 for key, item in mathsAllMentionDic.items()
                 if key in cleanedMentions
             }
-
         figures.append({
             "name": key, 
             "mentions": cleanedMentions, 

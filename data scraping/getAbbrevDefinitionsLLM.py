@@ -9,7 +9,7 @@ outputDir = os.path.join("Data Scraping", "Test Outputs")  #temporary test file 
 
 #set input and output JSON file names
 fileName = 'generated-data.json'
-outputName = 'maths_definitions.json'
+outputName = 'maths_definitionsslow.json'
 
 #export OPENAI_API_KEY="apikey" to set api key in environment
 
