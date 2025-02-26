@@ -56,9 +56,9 @@ async def get_openai_response(session, systemPrompt, userPrompt, model, maxToken
 
 async def getAbbrevDefinitionOpenAI(session, abbrev, context):
     systemPrompt = "You are a helpful academic assistant, in a high energy physics (ATLAS) context, return answers using domain specific and technical keywords."
-    userPrompt = f"""Provide an extremely short definition for the abbreviation
-                '{abbrev}' as used in the following context {context}. 
-                Return only the definition of '{abbrev}' without extra explanation or additional words."""
+    userPrompt = f"""Provide an EXTREMELY SHORT definition for the abbreviation
+                '{abbrev}' as used in the following context: '{context}'. 
+                Return ONLY the definition of '{abbrev}' without extra explanation or additional words."""
     return await get_openai_response(session, systemPrompt, userPrompt,
                                      model='gpt-4o-mini', maxTokens=50,
                                      numResponse=1, temperature=0.3)
@@ -92,7 +92,7 @@ async def main():
         for coro in tqdm_asyncio.as_completed(tasks, desc="Processing entries", total=len(tasks)):
             result = await coro
             results.append(result)
-    saveJSON(results, outputDir, outputName)
+        saveJSON(results, outputDir, outputName)
 
 if __name__ == '__main__':
     asyncio.run(main())
