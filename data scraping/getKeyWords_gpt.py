@@ -7,6 +7,11 @@ import aiohttp
 
 # Openai package required
 
+# Set Input and output files
+# NEED TO CHANGE
+input_file = '/Users/Jiayi/Desktop/project_code/processed_papers.json'
+output_file = '/Users/Jiayi/Desktop/project_code/extracted_keywords.json'
+
 openai.api_key = 'api' # Enter openai api key here
 
 # Preprocess the texts, remove latex commands
@@ -75,12 +80,6 @@ async def process_figures(input_file, output_file):
     # Save the results
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
-
-
-# Set Input and output files
-# NEED TO CHANGE
-input_file = '/Users/Jiayi/Desktop/project_code/processed_papers.json'
-output_file = '/Users/Jiayi/Desktop/project_code/extracted_keywords.json'
 
 # Check if the input file exists, exit if not
 if not os.path.exists(input_file):
