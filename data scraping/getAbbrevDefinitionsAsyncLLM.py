@@ -2,7 +2,7 @@ import os
 import json
 import asyncio
 import aiohttp
-from tqdm.asyncio import tqdm_asyncio  # async version of tqdm
+from tqdm.asyncio import tqdm_asyncio
 
 dataDir = os.path.join("Data Scraping", "Test Outputs")
 outputDir = os.path.join("Data Scraping", "Test Outputs")
@@ -28,8 +28,7 @@ def saveJSON(data, outputDir, outputName):
     except Exception as e:
         print("Error saving JSON:", e)
 
-async def get_openai_response(session, systemPrompt, userPrompt, model, maxTokens, numResponse, temperature):
-    # Construct your request payload
+async def getOpenAIResponse(session, systemPrompt, userPrompt, model, maxTokens, numResponse, temperature):
     payload = {
         "model": model,
         "messages": [
@@ -44,7 +43,7 @@ async def get_openai_response(session, systemPrompt, userPrompt, model, maxToken
         "Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}",
         "Content-Type": "application/json"
     }
-    url = "https://api.openai.com/v1/chat/completions"  # adjust endpoint if needed
+    url = "https://api.openai.com/v1/chat/completions"
 
     async with session.post(url, json=payload, headers=headers) as response:
         if response.status == 200:
@@ -55,15 +54,18 @@ async def get_openai_response(session, systemPrompt, userPrompt, model, maxToken
             return None
 
 async def getAbbrevDefinitionOpenAI(session, abbrev, context):
+
     systemPrompt = "You are a helpful academic assistant, in a high energy physics (ATLAS) context, return answers using domain specific and technical keywords."
+
     userPrompt = f"""Provide an EXTREMELY SHORT definition for the abbreviation
                 '{abbrev}' as used in the following context: '{context}'. 
                 Return ONLY the definition of '{abbrev}' without extra explanation or additional words."""
-    return await get_openai_response(session, systemPrompt, userPrompt,
+    
+    return await getOpenAIResponse(session, systemPrompt, userPrompt,
                                      model='gpt-4o-mini', maxTokens=50,
-                                     numResponse=1, temperature=0.3)
+                                     numResponse=1, temperature=0.1)
 
-async def process_entry(session, entry):
+async def processEntry(session, entry):
     abbrev = entry["maths"]
     contexts = entry["mathsContext"]
     definitions = []
@@ -87,7 +89,7 @@ async def main():
     data = loadJSON(dataDir, fileName)
     results = []
     async with aiohttp.ClientSession() as session:
-        tasks = [process_entry(session, entry) for entry in data]
+        tasks = [processEntry(session, entry) for entry in data]
         # Using tqdm for asynchronous progress monitoring
         for coro in tqdm_asyncio.as_completed(tasks, desc="Processing entries", total=len(tasks)):
             result = await coro
