@@ -18,8 +18,8 @@ def apply_glossary(text, glossary):
             joined = full
         
         # We create a replacement of the form 'abbr(full)'
-        # e.g. 'LSP(Luminosity Signal Process)'
-        replacement = f"{abbr}({joined})"
+        # e.g. 'LSP (Luminosity Signal Process)'
+        replacement = f"{abbr} ({joined})"
         
         # Use lookbehind/lookahead to allow punctuation, parentheses, etc. after 'abbr'
         pattern = rf'(?<!\w){re.escape(abbr)}(?!\w)'
