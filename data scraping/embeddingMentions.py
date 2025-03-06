@@ -22,7 +22,7 @@ for obj in tqdm(data, desc="Generating embeddings"):  # Wrap 'data' with tqdm fo
     if "embedded vector" not in obj:
         text_to_embed = f"{obj.get('name', '')} {' '.join(obj.get('mentions', []))} {obj.get('atlusUrl', '')} {obj.get('paper', '')} {obj.get('paperName', '')}"
         embedded_vector = embed_text(text_to_embed, model).tolist()
-        obj["embedded vector"] = embedded_vector
+        obj["Embedded Vector"] = embedded_vector
 
 # Save the modified data back to a new JSON file
 with open('EmbeddedDB.json', 'w') as file:
