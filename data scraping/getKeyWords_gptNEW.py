@@ -10,7 +10,7 @@ from tqdm.asyncio import tqdm_asyncio  # async version of tqdm
 input_file = os.path.join("Data Scraping", "Test Outputs", "maths_definitions.json")
 output_file = os.path.join("Data Scraping", "Test Outputs", "extracted_keywords.json")
 
-openai.api_key = 'api'  # Enter your OpenAI API key here
+#export OPENAI_API_KEY="yourkey" in terminal
 
 # Preprocess the texts, remove LaTeX commands
 def preprocess_text(text):
@@ -76,17 +76,8 @@ async def process_figures(input_file, output_file):
         
         # Combine the figures with their corresponding keywords
         for (figure, _), keywords in zip(tasks, keywords_results):
-            result = {
-                "name": figure['name'],
-                "mentions": figure['mentions'],
-                "paper": figure['paper'],
-                "paperName": figure['paperName'],
-                "atlusUrl": figure['atlusUrl'],
-                "keywords": keywords,
-                "maths": figure['maths'],
-                "mathsDefinitions": figure['mathsDefinitions'],
-            }
-            results.append(result)
+            figure["Keywords"] = keywords
+            results.append(figure)
     
     # Save the results
     with open(output_file, 'w', encoding='utf-8') as f:

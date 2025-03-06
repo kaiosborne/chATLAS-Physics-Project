@@ -9,6 +9,8 @@ outputDir = os.path.join("Data Scraping", "Test Outputs")
 fileName = 'generated-data.json'
 outputName = 'maths_definitions.json'
 
+#export OPENAI_API_KEY="yourkey" in terminal
+
 def loadJSON(dataDir, fileName):
     filePath = os.path.join(dataDir, fileName)
     try:
@@ -74,16 +76,11 @@ async def processEntry(session, entry):
         tasks.append(getAbbrevDefinitionOpenAI(session, a, ctx))
     # Gather results concurrently
     definitions = await asyncio.gather(*tasks)
-    
-    return {
-        "name": entry["name"],
-        "mentions": entry["mentions"],
-        "atlusUrl": entry["atlusUrl"],
-        "paper": entry["paper"],
-        "paperName": entry["paperName"],
-        "maths": abbrev,
-        "mathsDefinitions": definitions,
-    }
+
+    del entry["mathsContext"]
+    entry["mathsDefinitions"] = definitions 
+
+    return entry
 
 async def main():
     data = loadJSON(dataDir, fileName)
