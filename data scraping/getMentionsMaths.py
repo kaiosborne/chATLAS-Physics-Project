@@ -12,6 +12,9 @@ outputDir = os.path.join("Data Scraping", "Test Outputs")  # temporary test file
 dataDir = os.path.abspath(dataDir)
 outputDir = os.path.abspath(outputDir)
 
+#set output file name
+outputName = "generated-data.json"
+
 # Check if the input directory exists, exit if not
 if not os.path.isdir(dataDir):
     print(f"Input directory not found: {dataDir}")
@@ -149,6 +152,7 @@ for f in os.listdir(dataDir):
     figMentionDic = extractPatternAndMentions(latexLinesList, figPattern, figIdentifier)
     tableMentionDic = extractPatternAndMentions(latexLinesList, tablePattern, tableIdentifier)
 
+    #remove tables from data before maths detection
     joinedLatex = '\n'.join(latexLinesList)
     cleanedJoinedLatex = re.sub(tableContentPattern, '', joinedLatex)
     cleanedLatexLinesList = cleanedJoinedLatex.splitlines()
@@ -162,7 +166,7 @@ for f in os.listdir(dataDir):
     for key, mentions in combinedMentionDic.items():
         for m in mentions:
             cleanedMentions = re.sub(tableContentPattern, '', m) #remove instances of tables from saved mentions
-            #keeps maths terms that are present in cleaned mentions
+            #keeps maths terms that are present in cleaned mentions (ignore terms in rest of paper)
             mathsTermsPresent = {
                 key: item
                 for key, item in mathsAllMentionDic.items()
@@ -179,7 +183,7 @@ for f in os.listdir(dataDir):
         })
 
 # Define the path for the output JSON file
-outputFilePath = os.path.join(outputDir, "generated-data.json")
+outputFilePath = os.path.join(outputDir, outputName)
 
 # Write the compiled data to the output JSON file
 with open(outputFilePath, "w",encoding="utf-8") as outfile:
