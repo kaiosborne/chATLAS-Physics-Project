@@ -7,10 +7,9 @@ import re
 # image_url_json_directory = '/Users/georgedoumenis-ramos/Documents/MULTIPLE IMAGE URL TEST'  # Directory containing JSON files for image URLs
 # updated_output_data_json_path = '/Users/georgedoumenis-ramos/Documents/MERGED URL MULTIPLE/updated_data.json'  # Ensure this is the file path
 
-output_data_json_path = '/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/ATLAS/OUTPUT DATA ATLAS/generated-data.json'
-image_url_json_directory = '/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/ATLAS/IMAGE URL VERSION 2'  # Directory containing JSON files for image URLs
-updated_output_data_json_path = '/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/ATLAS/TEST/MERGED DATA.json '
-
+output_data_json_path = os.path.join("Data Scraping", "Test Outputs","generated-data.json")
+image_url_json_directory = os.path.join("Data Scraping", "Test Outputs","Image URLs")  # Directory containing JSON files for image URLs
+updated_output_data_json_path = os.path.join("Data Scraping", "Test Outputs","generated-data.json")
 
 def load_json_data(file_path):
     """Load JSON data from a file."""
@@ -38,10 +37,14 @@ def update_figures_with_urls(output_data, image_url_json_directory):
         # Extracts figure or table number from entry name
         indexEntry = re.search(r"(\d+)", entry["name"]).group(1).lstrip("0")
 
+        print(indexEntry)
+
         for name, url in image_urls_dict.items():
             # Skips auxiliary figures
             if re.search("aux", name, re.IGNORECASE):
                 continue
+            print(name)
+            print(entry[name])
 
             # Extracts figure or table number from image name
             indexImage = re.search(r"(\d+)", name).group(1).lstrip("0")
@@ -69,3 +72,4 @@ update_figures_with_urls(output_data, image_url_json_directory)
 
 # Save the updated output data
 save_json_data(updated_output_data_json_path, output_data)
+# %%

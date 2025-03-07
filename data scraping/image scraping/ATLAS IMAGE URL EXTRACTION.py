@@ -56,7 +56,6 @@ def process_meta_info(meta_info_path, output_directory):
 
             if relevant_link:
                 image_data = scrape_image_data(relevant_link)
-                print(image_data)
                 if image_data:
                     output_path = os.path.join(output_directory, f"{folder_name}.json")
                     with open(output_path, 'w') as json_file:
@@ -100,8 +99,9 @@ def process_directories(data_dir, output_directory):
 
 
 # Configuration
-data_dir = "/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/ATLAS/ATLASPublications"  # Update this path
-output_directory = "/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/ATLAS/TEST"  # Update this path
+data_dir = os.path.join("Data Scraping", "Test Paper Data", "ATLASPapers")  # Update this path
+output_directory = os.path.join("Data Scraping", "Test Outputs","Image URLs")  # Update this path
+
 
 os.makedirs(output_directory, exist_ok=True)
 
