@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "$", right: "$", display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Search Results</h1>
+    {% if results %}
+        {% for paper_name, figures in results[:10] %}
+            <div class="paper-container">
+                <h2>{{ paper_name }}</h2>
+                <div class="figure-row">
+                    {% for figure in figures %}
+                        <div class="result-container">
+                            <h3>{{ figure.name }}</h3>
+                            <div class="image-container">
+                                {% if figure.image_url %}
+                                    <a href="{{ figure.atlusUrl }}" target="_blank">
+                                        <img src="{{ figure.image_url }}" alt="No image found, please check at Atlas URL">
+                                    </a>
+                                {% else %}
+                                    <p>No image found, please check at <a href="{{ figure.atlusUrl }}">Atlas URL</a>.</p>
+                                {% endif %}
+                            </div>
+                            <p><strong>Mentions:</strong> <span class="latex-content">{{ figure.mentions|safe }}</span></p>
+                            <p><strong>Atlas URL:</strong> <a href="{{ figure.atlusUrl }}">{{ figure.atlusUrl }}</a></p>
+                            <p><strong>Paper ID:</strong> {{ figure.paper }}</p>
+                            <p><strong>Paper Name:</strong> {{ figure.paperName }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No results found</p>
+    {% endif %}
+    <button onclick="window.location.href='/'" class="return-button">Return to Query Page</button>
+</body>
+</html>

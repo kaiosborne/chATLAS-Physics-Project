@@ -198,7 +198,7 @@ def search():
     })
     session.modified = True
 
-    return render_template('results_page.html', results=combined_results)
+    return render_template('results_page2.html', results=combined_results)
 
 @app.route('/clear_history', methods=['POST'])
 def clear_history():
