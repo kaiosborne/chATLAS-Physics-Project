@@ -7,8 +7,8 @@ import aiohttp
 from tqdm.asyncio import tqdm_asyncio  # async version of tqdm
 
 # Set Input and output files
-input_file = os.path.join("Data Scraping", "Test Outputs", "generated-data.json")
-output_file = os.path.join("Data Scraping", "Test Outputs", "generated-data.json")
+input_file = os.path.join("Data Scraping", "Test Outputs", "generated-data2.json")
+output_file = os.path.join("Data Scraping", "Test Outputs", "generated-data3.json")
 
 #export OPENAI_API_KEY="yourkey" in terminal
 

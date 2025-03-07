@@ -8,7 +8,7 @@ import backoff
 dataDir = os.path.join("Data Scraping", "Test Outputs")
 outputDir = os.path.join("Data Scraping", "Test Outputs")
 fileName = 'generated-data.json'
-outputName = 'generated-data.json'
+outputName = 'generated-data2.json'
 
 #export OPENAI_API_KEY="yourkey" in terminal
 
