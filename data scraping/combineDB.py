@@ -1,6 +1,7 @@
 #%%
 #Short code to combine databases
 import json
+import os
 def combine_json_files(file_paths, output_file_path):
     combined_data = []
 
@@ -17,6 +18,10 @@ def combine_json_files(file_paths, output_file_path):
 # Example usage:
 input_files = ["/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/CMS/CMS MERGED DATA/MERGED DATA CMS.json", "/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/ATLAS CONFERENCE NOTES/ATLAS CONFERENCE NOTES MERGED DATA/MERGED DATA ATLAS CONFERENCE NOTES.json ", "/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/ATLAS/ATLAS MERGED DATA/MERGED DATA ATLAS.json "]
 output_file = "/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/MERGED DATABASE/MERGED DATA BASE.json"
+
+input_files = [os.path.join("Data Scraping", "Test Outputs","EmbeddedDB.json")]
+output_file = os.path.join("Data Scraping", "Test Outputs","CombinedDB.json")
+
 
 combine_json_files(input_files, output_file)
 
