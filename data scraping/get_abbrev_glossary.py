@@ -69,6 +69,7 @@ def extract_abbreviation(text):
     return glossary
 
 def find_best_long_form(short_form, long_form):
+    glossary = long_form
     short_form = glossary.items
     s_index = len(short_form) - 1  # Set s_index at the end of the short form
     l_index = len(long_form) - 1    # Set l_index at the end of the long form
