@@ -37,9 +37,9 @@ async def extract_keywords(session, text):
                     {
                         "role": "user",
                         "content": (
-                            f"Please extract the 5 most important keywords from the following text. "
+                            f"Please extract the most important keywords from the following text. "
                             f"The keywords should reflect the core content of the Plot or Table:\n{text}. "
-                            "Return ONLY 5 keywords and do NOT return any other information."
+                            "Return a FEW keywords and do NOT return any other information."
                         )
                     }
                 ],

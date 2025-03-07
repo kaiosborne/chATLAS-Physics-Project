@@ -58,7 +58,7 @@ def getSearchSuggestion(user_search):
         Frame the question as a suggestion to alter the search prompt.
         """
     )
-    return getOpenAIResponse(systemPrompt, userPrompt, model='gpt-4o-mini', maxTokens=50, numResponse=1, temperature=0.3)
+    return getOpenAIResponse(systemPrompt, userPrompt, model='gpt-4o-mini', maxTokens=150, numResponse=1, temperature=0.3)
 
 def generateQueries(user_search,num_queries):
     """
