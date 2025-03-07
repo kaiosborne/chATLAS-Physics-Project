@@ -80,6 +80,7 @@ def generateQueries(user_search,num_queries):
         f"""
         A user has submitted the following search query: '{user_search}'. "
         Generate {num_queries} search queries, one on each line, related to the input query: '{user_search}'
+        Do not number the queries, use as many synoyms as possible in your generated searches.
         """
     )
     return getOpenAIResponse(systemPrompt, userPrompt, model='gpt-4o-mini', maxTokens=50, numResponse=1, temperature=0.1)
