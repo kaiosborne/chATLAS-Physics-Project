@@ -6,11 +6,16 @@ import asyncio
 import aiohttp
 from tqdm.asyncio import tqdm_asyncio  # async version of tqdm
 
-# Set Input and output files
+# Set Input and output files (relative path)
 input_file = os.path.join("Data Scraping", "Test Outputs", "generated-data2.json")
 output_file = os.path.join("Data Scraping", "Test Outputs", "generated-data3.json")
+# Set Input and output files (absolute path)
+#input_file = r"C:\Users\maths_definitions.json"
+#output_file = r"C:\Users\extracted_keywords.json"
 
-#export OPENAI_API_KEY="yourkey" in terminal
+# Linux/macOS  : enter "export OPENAI_API_KEY="yourkey" " in bash
+# Windows(CMD): enter "set OPENAI_API_KEY=yourkey " in cmd
+# WIndows(PS) : enter "$env:OPENAI_API_KEY="your-api-key-here" " in powershell
 
 # Preprocess the texts, remove LaTeX commands
 def preprocess_text(text):
