@@ -303,6 +303,36 @@ input[type="submit"]:hover, button:hover {
     color: inherit; /* Optional: ensures the link color matches the button text color */
 }
 
+/* Center the search form */
+.search-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%; /* Adjust width as needed */
+}
+
+/* Align the input and button */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the input field */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+button, input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 
