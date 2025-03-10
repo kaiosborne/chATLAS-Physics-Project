@@ -92,7 +92,7 @@
     <button onclick="window.location.href='/'" class="return-button">Return to Query Page</button>
 </body>
 
-{% comment %} <body>
+<body>
     <h1>Search Results</h1>
     {% if results %}
         {% for paper_name, figures in results[:10] %}
@@ -124,5 +124,5 @@
         <p>No results found</p>
     {% endif %}
     <button onclick="window.location.href='/'" class="return-button">Return to Query Page</button>
-</body> {% endcomment %}
+</body>
 </html>
