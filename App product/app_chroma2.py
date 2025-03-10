@@ -3,7 +3,7 @@ import chromadb
 import json
 import os
 from tqdm import tqdm
-import re 
+import re
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
@@ -54,7 +54,7 @@ def load_data_into_collection():
 def index():
     if 'search_history' not in session:
         session['search_history'] = []
-    return render_template('query_form.html', history=session['search_history'])
+    return render_template('query_form2.html', history=session['search_history'])
 
 @app.route('/search', methods=['POST'])
 def search():
