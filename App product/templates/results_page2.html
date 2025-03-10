@@ -21,8 +21,77 @@
             });
         });
     </script>
+    <style>
+        
+            .results-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .paper-container {
+            margin-bottom: 20px;
+        }
+
+            .figure-row {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping to the next line if there are too many figures */
+            justify-content: flex-start; /* Aligns items to the start of the container */
+        }
+
+            .result-container {
+            flex: 1 1 30%; /* Allows for responsiveness - can adjust to desired width */
+            margin: 10px; /* Space between result containers */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for depth */
+            padding: 10px;
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+
+        .image-container {
+            text-align: center; /* Center-aligns the image containers */
+        }
+
+        img {
+        max-width: 100%; /* Ensures images are responsive */
+        height: auto;
+        }
 </head>
 <body>
+    <h1>Search Results</h1>
+    {% if results %}
+        <div class="results-container">
+            {% for paper_name, figures in results[:10] %}
+                <div class="paper-container">
+                    <h2>{{ paper_name }}</h2>
+                    <div class="figure-row">
+                        {% for figure in figures %}
+                            <div class="result-container">
+                                <h3>{{ figure.name }}</h3>
+                                <div class="image-container">
+                                    {% if figure.image_url %}
+                                        <a href="{{ figure.atlusUrl }}" target="_blank">
+                                            <img src="{{ figure.image_url }}" alt="No image found, please check at Atlas URL">
+                                        </a>
+                                    {% else %}
+                                        <p>No image found, please check at <a href="{{ figure.atlusUrl }}">Atlas URL</a>.</p>
+                                    {% endif %}
+                                </div>
+                                <p><strong>Mentions:</strong> <span class="latex-content">{{ figure.mentions|safe }}</span></p>
+                                <p><strong>Atlas URL:</strong> <a href="{{ figure.atlusUrl }}">{{ figure.atlusUrl }}</a></p>
+                                <p><strong>Paper ID:</strong> {{ figure.paper }}</p>
+                                <p><strong>Paper Name:</strong> {{ figure.paperName }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No results found</p>
+    {% endif %}
+    <button onclick="window.location.href='/'" class="return-button">Return to Query Page</button>
+</body>
+
+{% comment %} <body>
     <h1>Search Results</h1>
     {% if results %}
         {% for paper_name, figures in results[:10] %}
@@ -54,5 +123,5 @@
         <p>No results found</p>
     {% endif %}
     <button onclick="window.location.href='/'" class="return-button">Return to Query Page</button>
-</body>
+</body> {% endcomment %}
 </html>

@@ -3,6 +3,7 @@ import chromadb
 import json
 import os
 from tqdm import tqdm
+import resource myenv/bin/activate 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
