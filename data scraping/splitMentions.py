@@ -1,4 +1,5 @@
 import json
+import os
 
 def transform_mentions(obj):
     """
@@ -91,8 +92,14 @@ def main():
     and writes the result to 'DB_new.json'.
     """
     
-    input_file = "EmbeddedDB.json"      # Your input file
-    output_file = "EmbeddedDB_new.json"  # Output file for the transformed data
+
+    dataDir = os.path.join("Data Scraping", "Test Outputs")
+    outputDir = os.path.join("Data Scraping", "Test Outputs")
+    fileName = 'generated-data5.json'
+    outputName = 'generated-data6.json'
+
+    input_file =  os.path.join(dataDir, fileName)      # Your input file
+    output_file = os.path.join(outputDir, outputName)  # Output file for the transformed data
 
     # Read the JSON data from DB1.json.
     with open(input_file, "r", encoding="utf-8") as infile:
