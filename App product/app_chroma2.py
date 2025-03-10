@@ -3,7 +3,6 @@ import chromadb
 import json
 import os
 from tqdm import tqdm
-import resource myenv/bin/activate 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
@@ -54,7 +53,7 @@ def load_data_into_collection():
 def index():
     if 'search_history' not in session:
         session['search_history'] = []
-    return render_template('query_form.html', history=session['search_history'])
+    return render_template('query_form2.html', history=session['search_history'])
 
 @app.route('/search', methods=['POST'])
 def search():
@@ -63,28 +62,30 @@ def search():
     # Run embedding-based search
     embedding_results = collection.query(query_texts=[query_text], n_results=10)
 
+    print(f"embedding results {embedding_results}")
+
     # Extract embedding-based results
     embedding_data = [
         metadata for sublist in embedding_results['metadatas'] for metadata in sublist
     ]
 
-    # Run keyword-based search on metadata fields
-    keyword_matches = []
-    for obj in collection.get()['metadatas']:
-        text_to_search = f"{obj.get('name', '')} {obj.get('mentions', '')} {obj.get('paperName', '')}".lower()
-        if re.search(r'\b' + re.escape(query_text.lower()) + r'\b', text_to_search):
-            keyword_matches.append(obj)
+    # Run keyword-based search on metadata fields (adds to results)
+    #keyword_matches = []
+    #for obj in collection.get()['metadatas']:
+        #text_to_search = f"{obj.get('keywords', '')}".lower()
+        #if re.search(r'\b' + re.escape(query_text.lower()) + r'\b', text_to_search):
+            #keyword_matches.append(obj)
 
     # Combine results - using a set to remove duplicates
-    combined_results = {obj['paperName']: [] for obj in embedding_data + keyword_matches}
+    combined_results = {obj['paperName']: [] for obj in embedding_data}
     
     # Grouping results by paperName
-    for result in embedding_data + keyword_matches:
-        combined_results[result['paperName']].append(result)
-
+    for result in embedding_data:
+        combined_results[f'{result['paperName']}'].append(result)
+    print(f"combined results {combined_results}")
     # Convert to a list of tuples to send to the template
     grouped_results = [(paper_name, figures) for paper_name, figures in combined_results.items()]
-
+    print(f"grouped results {grouped_results}")
     # Store search history
     session['search_history'].append({
         'query': query_text,

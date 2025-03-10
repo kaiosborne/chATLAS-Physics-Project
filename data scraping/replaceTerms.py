@@ -1,5 +1,6 @@
 import re
 import json
+import os 
 
 
 # Create a function to replace terms to complete forms
@@ -24,14 +25,22 @@ def replace_term(text,glossary):
     return text
 
 
-
-# Import glossary
+# Import jsons with relative path
+# Import glossary 
 with open("acronyms.json", "r") as f:
     glossary = json.load(f)
-
 # Import database create by get-mentions.py
 with open("generated-data.json","r",encoding="utf-8") as f: # generated-data.json should be located in the same directory as this script, "r" means read only
     paper_data = json.load(f)
+
+
+# Import jsons with absolute path
+#glossary_path = r"C:\Users\ "
+#paper_data_path = r"C:\Users\ "
+#output_path = r"C:\Users\ "
+# Load JSON files
+#glossary = json.load(glossary_path)
+#paper_data =  json.load(paper_data_path)
 
 # Process the text in all mentions and replace abbreviations
 for paper in paper_data:

@@ -91,8 +91,8 @@ def main():
     and writes the result to 'DB_new.json'.
     """
     
-    input_file = "DB.json"      # Your input file
-    output_file = "DB_new.json"  # Output file for the transformed data
+    input_file = "EmbeddedDB.json"      # Your input file
+    output_file = "EmbeddedDB_new.json"  # Output file for the transformed data
 
     # Read the JSON data from DB1.json.
     with open(input_file, "r", encoding="utf-8") as infile:

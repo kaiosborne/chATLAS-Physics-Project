@@ -35,7 +35,7 @@ async def extract_keywords(session, text):
                     {"role": "user", "content": f"Please extract the 5 most important keywords from the following text. The keywords should reflect the core content of the Plot or Table:\n{text}"}
                 ],
                 "max_tokens": 50,
-                "temperature": 0.3
+                "temperature": 0.1
             }
         ) as response:
             data = await response.json()

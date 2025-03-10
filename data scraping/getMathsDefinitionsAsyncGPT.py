@@ -3,13 +3,17 @@ import json
 import asyncio
 import aiohttp
 from tqdm.asyncio import tqdm_asyncio
+import backoff
 
 dataDir = os.path.join("Data Scraping", "Test Outputs")
 outputDir = os.path.join("Data Scraping", "Test Outputs")
 fileName = 'generated-data.json'
-outputName = 'maths_definitions.json'
+outputName = 'generated-data2.json'
 
 #export OPENAI_API_KEY="yourkey" in terminal
+
+class RateLimitError(Exception):
+    pass
 
 def loadJSON(dataDir, fileName):
     filePath = os.path.join(dataDir, fileName)
@@ -30,6 +34,7 @@ def saveJSON(data, outputDir, outputName):
     except Exception as e:
         print("Error saving JSON:", e)
 
+@backoff.on_exception(backoff.expo, RateLimitError, max_tries=5, jitter=backoff.full_jitter)
 async def getOpenAIResponse(session, systemPrompt, userPrompt, model, maxTokens, numResponse, temperature):
     payload = {
         "model": model,
@@ -51,6 +56,9 @@ async def getOpenAIResponse(session, systemPrompt, userPrompt, model, maxTokens,
         if response.status == 200:
             resp_json = await response.json()
             return resp_json["choices"][0]["message"]["content"].strip()
+        elif response.status == 429:
+            response_body = await response.text()
+            raise RateLimitError(f"Rate limit exceeded: {response_body}")
         else:
             print(f"Error: {response.status}")
             return None

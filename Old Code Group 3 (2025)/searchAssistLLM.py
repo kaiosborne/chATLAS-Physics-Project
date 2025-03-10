@@ -12,7 +12,7 @@ def getLocalResponse(systemPrompt, userPrompt, maxTokens, numResponse, temperatu
     Args:
         systemPrompt (str): The system-level prompt.
         userPrompt (str): The user prompt.
-        maxTokens (int): Maximum tokens for the response.
+        maxTokens (int): Maximum tokens for the generated response.
         numResponse (int): Number of responses to generate.
         temperature (float): Sampling temperature.
 
@@ -23,10 +23,14 @@ def getLocalResponse(systemPrompt, userPrompt, maxTokens, numResponse, temperatu
     prompt = f"System: {systemPrompt}\nUser: {userPrompt}\nAssistant:"
     
     # Generate responses using the local model.
-    responses = generator(prompt,
-                          max_length=maxTokens,
-                          num_return_sequences=numResponse,
-                          temperature=temperature)
+    responses = generator(
+        prompt,
+        max_new_tokens=maxTokens,
+        num_return_sequences=numResponse,
+        do_sample=True,           # Enable sampling to use temperature.
+        temperature=temperature,
+        truncation=True           # Explicitly activate truncation.
+    )
     
     # Extract and clean up the response from the first generated output.
     generated_text = responses[0]['generated_text']
