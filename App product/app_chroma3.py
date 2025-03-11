@@ -34,11 +34,11 @@ def load_data_into_collection():
         for i, obj in enumerate(batch_data):
             document_id = f"document_{start_idx + i}"
             embeddings.append(obj.get("embeddedVector", []))
-            documents.append(f"{obj['name']}  {' '.join(obj['caption'])}{' '.join(obj['mentions'])}")
+            documents.append(f"{obj['name']}  {' '.join(obj['caption'])}{' '.join(obj['mentions']) if isinstance(obj['mentions'], list) else obj['mentions']}")
             metadatas.append({
                 "name": obj["name"],
                 "caption": obj["caption"],
-                "mentions": "\n".join(obj["mentions"]),
+                "mentions": "\n".join(obj['mentions']) if isinstance(obj['mentions'], list) else obj['mentions'],
                 "atlusUrl": obj["atlusUrl"],
                 "paper": obj["paper"],
                 "paperName": obj["paperName"],
@@ -89,10 +89,8 @@ def search():
     # Grouping results by paperName
     for result in embedding_data:
         combined_results[f'{result['paperName']}'].append(result)
-    print(f"combined results {combined_results}")
     # Convert to a list of tuples to send to the template
     grouped_results = [(paper_name, figures) for paper_name, figures in combined_results.items()]
-    print(f"grouped results {grouped_results}")
     # Store search history
     session['search_history'].append({
         'query': query_text,
