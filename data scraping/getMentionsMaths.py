@@ -6,7 +6,7 @@ from collections import defaultdict
 from tqdm import tqdm
 
 # Define input and output directories using relative paths
-dataDir = os.path.join("Data Scraping", "Test Paper Data","CDS_doc") 
+dataDir = os.path.join("Data Scraping", "Test Paper Data","ATLASPapers") 
 outputDir = os.path.join("Data Scraping", "Test Outputs")  # temporary test file path (remove Test later)
 
 # Convert to absolute paths if needed
