@@ -30,18 +30,25 @@ def load_data_into_collection():
         documents = []
         metadatas = []
         ids = []
-
+        #will later have to add abbreviations and defintiions and plot type 
         for i, obj in enumerate(batch_data):
             document_id = f"document_{start_idx + i}"
             embeddings.append(obj.get("embeddedVector", []))
-            documents.append(f"{obj['name']} {' '.join(obj['mentions'])}")
+            documents.append(f"{obj['name']}  {' '.join(obj['caption'])}{' '.join(obj['mentions'])}")
             metadatas.append({
                 "name": obj["name"],
+                "caption": obj["caption"],
                 "mentions": "\n".join(obj["mentions"]),
                 "atlusUrl": obj["atlusUrl"],
                 "paper": obj["paper"],
                 "paperName": obj["paperName"],
-                "image_url": obj.get("imageUrls", "")
+                "image_url": obj.get("imageUrls", ""),
+               # "abbrev": 
+              #  "abbrevDefinitions":
+              # "maths":
+               # "mathsDefinitions":
+                #"keywords":
+               # "figureType":
             })
             ids.append(document_id)
 
@@ -93,7 +100,7 @@ def search():
     })
     session.modified = True
 
-    return render_template('results_page2.html', results=grouped_results)
+    return render_template('results_page3.html', results=grouped_results)
 
 @app.route('/clear_history', methods=['POST'])
 def clear_history():
