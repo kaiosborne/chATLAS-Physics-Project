@@ -47,6 +47,8 @@ for entry in data:
             split_entries.append(new_entry)
     else:
         # If there is only one (or zero) image URL, keep the entry unchanged.
-        split_entries.append(entry)
+        new_entry = entry.copy()
+        new_entry["imageUrls"] = url
+        split_entries.append(new_entry)
 
 saveJSON(split_entries,outputDir,outputName)

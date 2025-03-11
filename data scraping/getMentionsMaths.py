@@ -166,17 +166,19 @@ for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
     # Compile the data for each figure/table into a list of dictionaries
     
     for key, mentions in combinedMentionDic.items():
+        cleanedMentionsList = []
         for m in mentions:
-            cleanedMentions = re.sub(tableContentPattern, '', m) #remove instances of tables from saved mentions
+            cleanedMention = re.sub(tableContentPattern, '', m) #remove instances of tables from saved mentions
             #keeps maths terms that are present in cleaned mentions (ignore terms in rest of paper)
             mathsTermsPresent = {
                 key: item
                 for key, item in mathsAllMentionDic.items()
-                if key in cleanedMentions
+                if key in cleanedMention
             }
+            cleanedMentionsList.append(cleanedMention)
         figures.append({
             "name": key, 
-            "mentions": cleanedMentions, 
+            "mentions": cleanedMentionsList, 
             "atlusUrl": atlusUrl, 
             "paper": f, 
             "paperName": paperName,  # Include the extracted paper name here

@@ -1,4 +1,5 @@
 import json
+import os
 
 def transform_mentions(obj):
     """
@@ -29,6 +30,7 @@ def transform_mentions(obj):
         return obj  # If not present, leave the object unchanged.
     
     mentions = obj["mentions"]
+    del obj["mentions"]
     
     # Check if it's a valid non-empty list.
     if not isinstance(mentions, list) or not mentions:
@@ -37,7 +39,7 @@ def transform_mentions(obj):
     
     # Apply transformation rules.
     if len(mentions) == 1:
-        obj["mention"] = mentions[0]
+        obj["mentions"] = []
         obj["caption"] = mentions[0]
     else:
         caption = None
@@ -55,11 +57,11 @@ def transform_mentions(obj):
         # If only one element remains in mention, output it as a string.
         if len(new_mentions) == 1:
             new_mentions = new_mentions[0]
-        obj["mention"] = new_mentions
+        obj["mentions"] = new_mentions
         obj["caption"] = caption
     
     # Remove the original "mentions" key.
-    del obj["mentions"]
+    #del obj["mentions"]
     return obj
 
 def transform_data(data):
@@ -91,8 +93,14 @@ def main():
     and writes the result to 'DB_new.json'.
     """
     
-    input_file = "EmbeddedDB.json"      # Your input file
-    output_file = "EmbeddedDB_new.json"  # Output file for the transformed data
+
+    dataDir = os.path.join("Data Scraping", "Test Outputs")
+    outputDir = os.path.join("Data Scraping", "Test Outputs")
+    fileName = 'generated-data5.json'
+    outputName = 'generated-data6.json'
+
+    input_file =  os.path.join(dataDir, fileName)      # Your input file
+    output_file = os.path.join(outputDir, outputName)  # Output file for the transformed data
 
     # Read the JSON data from DB1.json.
     with open(input_file, "r", encoding="utf-8") as infile:

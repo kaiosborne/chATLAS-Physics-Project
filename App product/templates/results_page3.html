@@ -76,10 +76,17 @@
                                         <p>No image found, please check at <a href="{{ figure.atlusUrl }}">Atlas URL</a>.</p>
                                     {% endif %}
                                 </div>
+                                <p><strong>Caption:</strong> <span class="latex-content">{{ figure.caption|safe }}</span></p>
                                 <p><strong>Mentions:</strong> <span class="latex-content">{{ figure.mentions|safe }}</span></p>
                                 <p><strong>Atlas URL:</strong> <a href="{{ figure.atlusUrl }}">{{ figure.atlusUrl }}</a></p>
                                 <p><strong>Paper ID:</strong> {{ figure.paper }}</p>
                                 <p><strong>Paper Name:</strong> {{ figure.paperName }}</p>
+                                <p><strong>Abbreviations:</strong> {{ figure.abbrev }}</p>
+                                <p><strong>Found Definitions:</strong> {{ figure.abbrevDefinitions }}</p>
+                                <p><strong>Maths:</strong> {{ figure.maths }}</p>
+                                <p><strong>Maths Definitions:</strong> {{ figure.mathsDefinitions }}</p>
+                                <p><strong>Keywords:</strong> {{ figure.keywords }}</p>
+                                <p><strong>Figure type:</strong> {{ figure.figureType }}</p>
                             </div>
                         {% endfor %}
                     </div>
@@ -91,7 +98,6 @@
     {% endif %}
     <button onclick="window.location.href='/'" class="return-button">Return to Query Page</button>
 </body>
-
 <!--
 <body>
     <h1>Search Results</h1>
