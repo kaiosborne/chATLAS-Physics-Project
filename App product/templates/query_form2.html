@@ -111,34 +111,19 @@ window.addEventListener("scroll", function() {
             </div>
         </div>
         <div class="search-container">
+            <h2>Search CERN Figures</h2>
             <form action="/search" method="post">
                 <div class="input-group">
-                    <input type="text" id="mainQuery" name="mainQuery" required>
-                    <button type="button" id="micBtn" aria-label="Speak" class="mic-btn">
+                    <input type="text" id="mainQuery" name="mainQuery" required placeholder="Enter your query...">
+                    <button type="button" id="micBtn" aria-label="Speak">
                         <i class="fas fa-microphone"></i>
                     </button>
                 </div>
-    
-                <div class="option-group">
-                    <input type="checkbox" id="advancedOption" name="advancedOption">
-                    <label for="advancedOption">Advanced Option</label>
-                </div>
-    
-                <div id="advancedFields" style="display: none;">
-                    <label for="xAxis">X Axis:</label>
-                    <input type="text" id="xAxis" name="xAxis">
-    
-                    <label for="yAxis">Y Axis:</label>
-                    <input type="text" id="yAxis" name="yAxis">
-                </div>
-    
                 <input type="submit" value="Search">
                 <button type="button" id="pasteLastQueryBtn" style="display: none;">Paste Last Query</button>
             </form>
         </div>
-       
     </header>
-
     <div data-history-node-id="106" class="layout layout--onecol">
         <div class="layout__region layout__region--content">
             <div class="field field--name-field-component field--type-entity-reference-revisions field--label-hidden field--items">
@@ -213,7 +198,7 @@ window.addEventListener("scroll", function() {
             </div>
         {% endfor %}
     </div>
-    
+
     {% endif %}
 </body>
 </html>
