@@ -80,13 +80,17 @@ async def processEntry(session, entry):
     contexts = entry["mathsContext"]
     definitions = []
     tasks = []
+    abbrevs = []
     for a, ctx in zip(abbrev, contexts):
         tasks.append(getAbbrevDefinitionOpenAI(session, a, ctx))
+        abbrevs.append(abbrev)
     # Gather results concurrently
     definitions = await asyncio.gather(*tasks)
 
+    definitions = abbrevs, definitions
+
     del entry["mathsContext"]
-    entry["mathsDefinitions"] = definitions 
+    entry["maths"] = definitions
 
     return entry
 
