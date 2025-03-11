@@ -62,7 +62,7 @@
         <div class="results-container">
             {% for paper_name, figures in results[:10] %}
                 <div class="paper-container">
-                    <h2>{{ paper_name }}</h2>
+                    <h2 style="text-align: center;">Paper: {{ paper_name }}</h2>
                     <div class="figure-row">
                         {% for figure in figures %}
                             <div class="result-container">
@@ -77,19 +77,18 @@
                                     {% endif %}
                                 </div>
                                 <p><strong>Caption:</strong> <span class="latex-content">{{ figure.caption|safe }}</span></p>
-                                <details open>
+                                <details>
                                     <summary><strong>Mentions</strong></summary>
                                     <span class="latex-content" style="white-space: pre-wrap;">{{ figure.mentions|safe }}</span>
-                                  </details>
-                                <p><strong>Atlas URL:</strong> <a href="{{ figure.atlusUrl }}">{{ figure.atlusUrl }}</a></p>
-                                <p><strong>Paper ID:</strong> {{ figure.paper }}</p>
-                                <p><strong>Paper Name:</strong> {{ figure.paperName }}</p>
-                                <p><strong>Abbreviations:</strong> {{ figure.abbrev }}</p>
-                                <p><strong>Found Definitions:</strong> {{ figure.abbrevDefinitions }}</p>
-                                <p><strong>Maths:</strong> {{ figure.maths }}</p>
-                                <p><strong>Maths Definitions:</strong> {{ figure.mathsDefinitions }}</p>
-                                <p><strong>Keywords:</strong> {{ figure.keywords }}</p>
-                                <p><strong>Figure type:</strong> {{ figure.figureType }}</p>
+                                </details>
+                                <br>
+                                <details>
+                                    <summary><strong>Additional Information</strong></summary>
+                                    <p><strong>Atlas URL:</strong> <a href="{{ figure.atlusUrl }}">{{ figure.atlusUrl }}</a></p>
+                                    <p><strong>Paper ID:</strong> {{ figure.paper }}</p>
+                                    <p><strong>Paper Name:</strong> {{ figure.paperName }}</p>
+                                    <p><strong>Abbreviations:</strong> {{ figure.abbrev }}</p>
+                                </details>
                             </div>
                         {% endfor %}
                     </div>

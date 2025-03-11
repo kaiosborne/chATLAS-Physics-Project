@@ -38,12 +38,12 @@ def load_data_into_collection():
             metadatas.append({
                 "name": obj["name"],
                 "caption": obj["caption"],
-                "mentions": "\n".join(obj['mentions']) if isinstance(obj['mentions'], list) else obj['mentions'],
+                "mentions": "\n".join(f"{mention}" for mention in obj['mentions']) if isinstance(obj['mentions'], list) else obj['mentions'],
                 "atlusUrl": obj["atlusUrl"],
                 "paper": obj["paper"],
                 "paperName": obj["paperName"],
                 "image_url": obj.get("imageUrls", ""),
-               # "abbrev": 
+               # "abbrev":
               #  "abbrevDefinitions":
               # "maths":
                # "mathsDefinitions":
@@ -69,19 +69,18 @@ def search():
     # Run embedding-based search
     embedding_results = collection.query(query_texts=[query_text], n_results=10)
 
-    print(f"embedding results {embedding_results}")
-
     # Extract embedding-based results
     embedding_data = [
         metadata for sublist in embedding_results['metadatas'] for metadata in sublist
     ]
 
-    # Run keyword-based search on metadata fields (adds to results)
+    #Run keyword-based search on metadata fields (adds to results)
     #keyword_matches = []
     #for obj in collection.get()['metadatas']:
         #text_to_search = f"{obj.get('keywords', '')}".lower()
         #if re.search(r'\b' + re.escape(query_text.lower()) + r'\b', text_to_search):
             #keyword_matches.append(obj)
+    #disabled
 
     # Combine results - using a set to remove duplicates
     combined_results = {obj['paperName']: [] for obj in embedding_data}
@@ -94,7 +93,7 @@ def search():
     # Store search history
     session['search_history'].append({
         'query': query_text,
-        'results': grouped_results[:5]  # Limit displayed results
+        'results': grouped_results[:5]  # Limit displayed result
     })
     session.modified = True
 
