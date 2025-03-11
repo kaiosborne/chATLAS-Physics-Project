@@ -110,30 +110,33 @@ window.addEventListener("scroll", function() {
                 </a>
             </div>
         </div>
-        <form action="/search" method="post">
-            <div class="input-group">
-                <input type="text" id="mainQuery" name="mainQuery" required>
-                <button type="button" id="micBtn" aria-label="Speak" class="mic-btn">
-                    <i class="fas fa-microphone"></i>
-                </button>
-            </div>
-
-            <div class="option-group">
-                <input type="checkbox" id="advancedOption" name="advancedOption">
-                <label for="advancedOption">Advanced Option</label>
-            </div>
-
-            <div id="advancedFields" style="display: none;">
-                <label for="xAxis">X Axis:</label>
-                <input type="text" id="xAxis" name="xAxis">
-
-                <label for="yAxis">Y Axis:</label>
-                <input type="text" id="yAxis" name="yAxis">
-            </div>
-
-            <input type="submit" value="Search">
-            <button type="button" id="pasteLastQueryBtn" style="display: none;">Paste Last Query</button>
-        </form>
+        <div class="search-container">
+            <form action="/search" method="post">
+                <div class="input-group">
+                    <input type="text" id="mainQuery" name="mainQuery" required>
+                    <button type="button" id="micBtn" aria-label="Speak" class="mic-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </div>
+    
+                <div class="option-group">
+                    <input type="checkbox" id="advancedOption" name="advancedOption">
+                    <label for="advancedOption">Advanced Option</label>
+                </div>
+    
+                <div id="advancedFields" style="display: none;">
+                    <label for="xAxis">X Axis:</label>
+                    <input type="text" id="xAxis" name="xAxis">
+    
+                    <label for="yAxis">Y Axis:</label>
+                    <input type="text" id="yAxis" name="yAxis">
+                </div>
+    
+                <input type="submit" value="Search">
+                <button type="button" id="pasteLastQueryBtn" style="display: none;">Paste Last Query</button>
+            </form>
+        </div>
+       
     </header>
 
     <div data-history-node-id="106" class="layout layout--onecol">
@@ -160,7 +163,6 @@ window.addEventListener("scroll", function() {
                         </div>
                     </div>
                 </div>
-                <!-- Additional content can go here -->
             </div>
         </div>
     </div>
@@ -211,6 +213,7 @@ window.addEventListener("scroll", function() {
             </div>
         {% endfor %}
     </div>
+    
     {% endif %}
 </body>
 </html>

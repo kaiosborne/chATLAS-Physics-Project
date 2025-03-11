@@ -77,7 +77,10 @@
                                     {% endif %}
                                 </div>
                                 <p><strong>Caption:</strong> <span class="latex-content">{{ figure.caption|safe }}</span></p>
-                                <p><strong>Mentions:</strong> <span class="latex-content">{{ figure.mentions|safe }}</span></p>
+                                <details open>
+                                    <summary><strong>Mentions</strong></summary>
+                                    <span class="latex-content" style="white-space: pre-wrap;">{{ figure.mentions|safe }}</span>
+                                  </details>
                                 <p><strong>Atlas URL:</strong> <a href="{{ figure.atlusUrl }}">{{ figure.atlusUrl }}</a></p>
                                 <p><strong>Paper ID:</strong> {{ figure.paper }}</p>
                                 <p><strong>Paper Name:</strong> {{ figure.paperName }}</p>
