@@ -30,6 +30,7 @@ def transform_mentions(obj):
         return obj  # If not present, leave the object unchanged.
     
     mentions = obj["mentions"]
+    del obj["mentions"]
     
     # Check if it's a valid non-empty list.
     if not isinstance(mentions, list) or not mentions:
@@ -38,7 +39,7 @@ def transform_mentions(obj):
     
     # Apply transformation rules.
     if len(mentions) == 1:
-        obj["mention"] = mentions[0]
+        obj["mentions"] = []
         obj["caption"] = mentions[0]
     else:
         caption = None
@@ -56,11 +57,11 @@ def transform_mentions(obj):
         # If only one element remains in mention, output it as a string.
         if len(new_mentions) == 1:
             new_mentions = new_mentions[0]
-        obj["mention"] = new_mentions
+        obj["mentions"] = new_mentions
         obj["caption"] = caption
     
     # Remove the original "mentions" key.
-    del obj["mentions"]
+    #del obj["mentions"]
     return obj
 
 def transform_data(data):
