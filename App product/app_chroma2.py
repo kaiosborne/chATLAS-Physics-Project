@@ -3,6 +3,7 @@ import chromadb
 import json
 import os
 from tqdm import tqdm
+import re
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
@@ -17,7 +18,7 @@ def load_data_into_collection():
     with open(db_path, 'r') as file:
         data = json.load(file)
 
-    batch_size = 5000  
+    batch_size = 40000  
     total_documents = len(data)
     num_batches = (total_documents + batch_size - 1) // batch_size  # Calculate the total number of batches
 
@@ -76,16 +77,14 @@ def search():
         #if re.search(r'\b' + re.escape(query_text.lower()) + r'\b', text_to_search):
             #keyword_matches.append(obj)
 
-    # Combine results - using a set to remove duplicates
+    # Combine results - using a set to remove duplicates + keyword matches
     combined_results = {obj['paperName']: [] for obj in embedding_data}
     
     # Grouping results by paperName
     for result in embedding_data:
         combined_results[f'{result['paperName']}'].append(result)
-    print(f"combined results {combined_results}")
     # Convert to a list of tuples to send to the template
     grouped_results = [(paper_name, figures) for paper_name, figures in combined_results.items()]
-    print(f"grouped results {grouped_results}")
     # Store search history
     session['search_history'].append({
         'query': query_text,
