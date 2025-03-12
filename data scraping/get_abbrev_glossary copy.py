@@ -13,9 +13,9 @@ import re
 # outputDir = os.path.abspath(outputDir)
 
 # #set output file name
-inputFilePath = os.path.join("data scraping", 'generated-data6.json')
-#inputFilePath = os.path.join(folderLocation, "testy.json")
-outputFilePath = "C:/Users/carol/OneDrive/Desktop/Group Project/chATLAS-Physics-Project/glossary.json"
+folderLocation = os.path.join("data scraping","Test Paper Data", "ATLASPapers","CDS_Record_2002197")
+inputFilePath = os.path.join(folderLocation, "latex.txt")
+outputFilePath = os.path.join(folderLocation, "output.json")
 
 
 #export OPENAI_API_KEY="apikey" to set api key in environment
@@ -101,7 +101,6 @@ def saveJSON(data, outputPath):
     except Exception as e:
         print("Error saving results:", e)
         
-data = loadJSON(inputFilePath) #load JSON of abbreviations and context
         
 def getLinesFromFile(folderLoc, file):
     """
@@ -141,8 +140,8 @@ def extract_abbreviation(text):
     return glossary
 
 def find_best_long_form(short_form, long_form):
-    glossary = long_form
-    short_form = glossary.items
+    #glossary = long_form
+    #short_form = glossary.items
     s_index = len(short_form) - 1  # Set s_index at the end of the short form
     l_index = len(long_form) - 1    # Set l_index at the end of the long form
 
@@ -175,54 +174,45 @@ def find_best_long_form(short_form, long_form):
     return long_form[l_index:]
 
 
-def get_definitions_from_glossary(glossary, long_form_text):
+def get_definitions_from_glossary(glossary):
     definitions = {}
     
     for abbr, meaning in glossary.items():
-        best_long_form = find_best_long_form(abbr, long_form_text)
+
+        best_long_form = find_best_long_form(abbr, meaning)
         definitions[abbr] = best_long_form if best_long_form else meaning  # Use best long form or original meaning if not found
     
     return definitions
 
-def saveJSON(data, outputPath):
-    """Saves data to a JSON file."""
-    outputJSON = json.dumps(data, indent=4)
-    try:
-        with open(outputPath, 'w', encoding='utf-8') as outputFile:
-            outputFile.write(outputJSON)
-        print(f"Data saved successfully to {outputPath}!")
-    except Exception as e:
-        print("Error saving results:", e)
-
-
 # Read lines and combine them into a JSON structure
-lines = getLinesFromFile(inputFilePath, 'generated-data6.json')
+lines = getLinesFromFile(folderLocation,'latex.txt')
 if lines:
     try:
-        content = json.loads(''.join(lines))  # Joining lines to create a full JSON string
-        
+        content = ''.join(lines)  # Joining lines to create a full JSON string
+        glossary = extract_abbreviation(content)
+
         results = []  # List to store processed entries
-        for entry in tqdm(content, desc="Processing entries", unit="entry"):
+        #for entry in tqdm(content, desc="Processing entries", unit="entry"):
             # Ensure the required keys are present
-            if "abbreviations" in entry and "full_version" in entry:
-                abbrev = entry["abbreviations"]
-                full_version = entry["full_version"]
+            #if "abbreviations" in entry and "full_version" in entry:
+                #abbrev = entry["abbreviations"]
+                #full_version = entry["full_version"]
                 
                 # Generate glossary from the abbreviations
-                glossary = extract_abbreviation(" ".join(full_version))  # Assuming full_version is a list of strings
-                definitions = get_definitions_from_glossary(glossary, " ".join(full_version))
-                
-                results.append({
-                    "name": entry.get("name", ""), 
-                    "mentions": entry.get("mentions", 0), 
-                    "atlusUrl": entry.get("atlusUrl", ""), 
-                    "paper": entry.get("paper", ""), 
-                    "paperName": entry.get("paperName", ""),
-                    "abbreviations": abbrev,
-                    "definitions": definitions  # Add definitions you obtained from get_definitions_from_glossary
-                })
+                #glossary = extract_abbreviation(" ".join(full_version))  # Assuming full_version is a list of strings
+        definitions = get_definitions_from_glossary(glossary)
+
+        results.append({
+            "abbreviations": list(definitions.keys()),
+            "definitions": list(definitions.values()) # Add definitions you obtained from get_definitions_from_glossary
+                 })
     except Exception as e:
         print("An error occurred:", e)
+
+
+print(results)
+
+saveJSON(results,outputFilePath)
 
 #find definition for each abbreviation in json and store result
 #results = []
