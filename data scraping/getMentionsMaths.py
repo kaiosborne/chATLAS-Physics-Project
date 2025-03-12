@@ -124,7 +124,7 @@ def extractPaperName(metaLinesList):
     
     return ' '.join(paperNameLines) if paperNameLines else None
 
-figures = []
+
 # Process each subdirectory in the input directory
 for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
     folderDir = os.path.join(dataDir, f)
@@ -164,7 +164,7 @@ for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
     combinedMentionDic = {**figMentionDic, **tableMentionDic}
 
     # Compile the data for each figure/table into a list of dictionaries
-    
+    figures = []
     for key, mentions in combinedMentionDic.items():
         cleanedMentionsList = []
         for m in mentions:
