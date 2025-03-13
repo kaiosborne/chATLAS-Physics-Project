@@ -214,8 +214,7 @@ for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
     cleanedJoinedLatex = re.sub(tableContentPattern, '', joinedLatex)
     cleanedLatexLinesList = cleanedJoinedLatex.splitlines()
 
-    glossary = extract_abbreviation(cleanedJoinedLatex)
-    definitions = get_definitions_from_glossary(glossary)
+    abbrevAllMentionDic = extract_abbreviation(cleanedJoinedLatex)
 
     mathsAllMentionDic = extractPatternAndMentions(cleanedLatexLinesList, mathsPattern, mathsIdentifier)
 
@@ -225,26 +224,47 @@ for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
     # Compile the data for each figure/table into a list of dictionaries
     figures = []
     for key, mentions in combinedMentionDic.items():
+
         cleanedMentionsList = []
+
+        allAbbrevTermsPresent = {}
+        allMathsTermsPresent = {}
+
         for m in mentions:
             cleanedMention = re.sub(tableContentPattern, '', m) #remove instances of tables from saved mentions
-            #keeps maths terms that are present in cleaned mentions (ignore terms in rest of paper)
+            cleanedMentionsList.append(cleanedMention)
+            #keeps maths terms and abbreviations that are present in current loop cleaned mentions (ignore terms in rest of paper)
+            
             mathsTermsPresent = {
                 key: item
                 for key, item in mathsAllMentionDic.items()
                 if key in cleanedMention
             }
-            cleanedMentionsList.append(cleanedMention)
+            
+            #cleaning maths from mention before abbrev checking
+            cleanedMentionNoMaths = re.sub(r'\\\(.*?\\\)', '', cleanedMention)
+
+            abbrevTermsPresent = {
+                key: item
+                for key, item in abbrevAllMentionDic.items()
+                if key in cleanedMentionNoMaths
+            }
+
+            allAbbrevTermsPresent.update(abbrevTermsPresent) #adds terms present in current mention in loop to overall present
+            allMathsTermsPresent.update(mathsTermsPresent)
+
+        abbrevDefinitions = get_definitions_from_glossary(allAbbrevTermsPresent) #find definitions of abbrev
+
         figures.append({
             "name": key, 
             "mentions": cleanedMentionsList, 
             "atlusUrl": atlusUrl, 
             "paper": f, 
-            "paperName": paperName,  # Include the extracted paper name here
-            "abbreviations": list(definitions.keys()),
-            "definitions": list(definitions.values()),
-            "maths": list(mathsTermsPresent.keys()), 
-            "mathsContext": list([value[0] for value in mathsTermsPresent.values()]),
+            "paperName": paperName,
+            "abbrevs": list(abbrevDefinitions.keys()),
+            "abbrevDefinitions": list(abbrevDefinitions.values()),
+            "maths": list(allMathsTermsPresent.keys()), 
+            "mathsContext": list([value[0] for value in allMathsTermsPresent.values()]),
         })
 
 # Define the path for the output JSON file
