@@ -97,6 +97,62 @@ def extractPatternAndMentions(allLines, pattern, identifier):
             mentions[identifier + index].append(snipSentence(line,m))
     return dict(mentions)
 
+def extract_abbreviation(text):
+    abbreviation_pattern = r'([A-Za-z\s-]+)\s*[\[\d+\]]*\s+\(\b([A-Z][A-Za-z]*)\)'
+
+    abbreviations = re.findall(abbreviation_pattern, text)
+
+    glossary = {}
+
+    for meaning, abbr in abbreviations:
+        glossary[abbr] = meaning.strip()
+
+    return glossary
+
+def find_best_long_form(short_form, long_form):
+    #glossary = long_form
+    #short_form = glossary.items
+    s_index = len(short_form) - 1  # Set s_index at the end of the short form
+    l_index = len(long_form) - 1    # Set l_index at the end of the long form
+
+    while s_index >= 0:  # Scan the short form starting from end to start
+        curr_char = short_form[s_index].lower()  # Get the current character to match (ignore case)
+
+        # Ignore non-alphanumeric characters
+        if not curr_char.isalnum():
+            s_index -= 1
+            continue
+
+        # Decrease l_index while the current character in the long form
+        # does not match the current character in the short form.
+        while (l_index >= 0 and long_form[l_index].lower() != curr_char) or \
+              (s_index == 0 and l_index > 0 and long_form[l_index - 1].isalnum()):
+            l_index -= 1
+
+        # If no match was found in the long form for the current character, return None (no match).
+        if l_index < 0:
+            return None
+
+        # A match was found for the current character. Move to the next character in the long form.
+        l_index -= 1
+        s_index -= 1
+    
+    # Find the beginning of the first word (in case the first character matches the beginning of a hyphenated word).
+    l_index = long_form.rfind(' ', 0, l_index + 1) + 1
+    
+    # Return the best long form, the substring of the original long form, starting from l_index up to the end.
+    return long_form[l_index:]
+
+def get_definitions_from_glossary(glossary):
+    definitions = {}
+    
+    for abbr, meaning in glossary.items():
+
+        best_long_form = find_best_long_form(abbr, meaning)
+        definitions[abbr] = best_long_form if best_long_form else meaning  # Use best long form or original meaning if not found
+    
+    return definitions
+
 def extractPaperName(metaLinesList):
     """
     Extracts the paper name from the meta info file.
@@ -158,6 +214,9 @@ for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
     cleanedJoinedLatex = re.sub(tableContentPattern, '', joinedLatex)
     cleanedLatexLinesList = cleanedJoinedLatex.splitlines()
 
+    glossary = extract_abbreviation(cleanedJoinedLatex)
+    definitions = get_definitions_from_glossary(glossary)
+
     mathsAllMentionDic = extractPatternAndMentions(cleanedLatexLinesList, mathsPattern, mathsIdentifier)
 
     # Combine figure and table mentions into a single dictionary
@@ -182,6 +241,8 @@ for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
             "atlusUrl": atlusUrl, 
             "paper": f, 
             "paperName": paperName,  # Include the extracted paper name here
+            "abbreviations": list(definitions.keys()),
+            "definitions": list(definitions.values()),
             "maths": list(mathsTermsPresent.keys()), 
             "mathsContext": list([value[0] for value in mathsTermsPresent.values()]),
         })
