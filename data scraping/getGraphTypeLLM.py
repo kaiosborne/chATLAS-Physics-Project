@@ -1,4 +1,5 @@
 import json
+import os
 import torch
 from PIL import Image
 import requests
@@ -106,5 +107,12 @@ def process_json_in_batches(input_file, output_file, batch_size=16):
     
     print(f"Transformation completed. Check the file: {output_file}")
 
+dataDir = os.path.join("Data Scraping", "Test Outputs")
+outputDir = os.path.join("Data Scraping", "Test Outputs")
+fileName = 'generated-data7.json'
+outputName = 'generated-data8.json'
+filePath = os.path.join(dataDir, fileName)
+outputPath = os.path.join(outputDir, outputName)
+
 if __name__ == "__main__":
-    process_json_in_batches("DB.json", "DB_new.json", batch_size=16)
+    process_json_in_batches(filePath, outputPath, batch_size=16)

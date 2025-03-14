@@ -99,7 +99,7 @@ def process_directories(data_dir, output_directory):
 
 
 # Configuration
-data_dir = os.path.join("Data Scraping", "Test Paper Data", "ATLASPapers")  # Update this path
+data_dir = os.path.join("Data Scraping", "Paper Data", "ATLASPapers")  # Update this path
 output_directory = os.path.join("Data Scraping", "Test Outputs","Image URLs")  # Update this path
 
 

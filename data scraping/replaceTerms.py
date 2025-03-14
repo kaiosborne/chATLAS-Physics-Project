@@ -44,8 +44,8 @@ def main():
     dataDir = os.path.join("Data Scraping", "Test Outputs")
     outputDir = os.path.join("Data Scraping", "Test Outputs")
 
-    fileName = 'generated-data.json'
-    outputName = 'generated-data-replaced.json'
+    fileName = 'generated-data6.json'
+    outputName = 'generated-data7.json'
 
     input_file = os.path.join(dataDir, fileName)
     output_file = os.path.join(outputDir, outputName)

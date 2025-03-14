@@ -29,8 +29,8 @@ dataDir = os.path.abspath(dataDir)
 outputDir = os.path.abspath(outputDir)
 
 #set output file name
-fileName = "generated-data4.json"
-outputName = "generated-data5.json"
+fileName = "generated-data5.json"
+outputName = "generated-data6.json"
 
 data = loadJSON(dataDir,fileName)
 # Process the data: for each original entry, create new entries for each image URL with a letter suffix.

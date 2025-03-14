@@ -7,9 +7,9 @@ import re
 # image_url_json_directory = '/Users/georgedoumenis-ramos/Documents/MULTIPLE IMAGE URL TEST'  # Directory containing JSON files for image URLs
 # updated_output_data_json_path = '/Users/georgedoumenis-ramos/Documents/MERGED URL MULTIPLE/updated_data.json'  # Ensure this is the file path
 
-output_data_json_path = os.path.join("Data Scraping", "Test Outputs","generated-data3.json")
+output_data_json_path = os.path.join("Data Scraping", "Test Outputs","generated-data4.json")
 image_url_json_directory = os.path.join("Data Scraping", "Test Outputs","Image URLs")  # Directory containing JSON files for image URLs
-updated_output_data_json_path = os.path.join("Data Scraping", "Test Outputs","generated-data4.json")
+updated_output_data_json_path = os.path.join("Data Scraping", "Test Outputs","generated-data5.json")
 
 def load_json_data(file_path):
     """Load JSON data from a file."""

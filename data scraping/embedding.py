@@ -5,7 +5,7 @@ import os
 
 dataDir = os.path.join("Data Scraping", "Test Outputs")
 outputDir = os.path.join("Data Scraping", "Test Outputs")
-fileName = "generated-data6.json"
+fileName = "generated-data8.json"
 
 def loadJSON(dataDir, fileName):
     filePath = os.path.join(dataDir, fileName)
@@ -43,6 +43,7 @@ model = load_model()
 
 for obj in tqdm(data, desc="Generating embeddings"):  # Wrap 'data' with tqdm for the progress bar
     if "embeddedVector" not in obj:
+        #choose what you think is best
         text_to_embed = f"{' '.join(obj.get('mentions', []))}{obj.get('caption', '')}{obj.get('paperName', '')}{obj.get('keywords', '')}{obj.get('mathsDefinitions', '')}"
         embedded_vector = embed_text(text_to_embed, model).tolist()
         obj["embeddedVector"] = embedded_vector

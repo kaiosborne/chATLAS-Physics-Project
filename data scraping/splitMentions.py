@@ -96,8 +96,8 @@ def main():
 
     dataDir = os.path.join("Data Scraping", "Test Outputs")
     outputDir = os.path.join("Data Scraping", "Test Outputs")
-    fileName = 'generated-data5.json'
-    outputName = 'generated-data6.json'
+    fileName = 'generated-data3.json'
+    outputName = 'generated-data4.json'
 
     input_file =  os.path.join(dataDir, fileName)      # Your input file
     output_file = os.path.join(outputDir, outputName)  # Output file for the transformed data
