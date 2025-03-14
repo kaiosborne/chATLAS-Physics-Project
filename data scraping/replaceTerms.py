@@ -1,54 +1,78 @@
-import re
 import json
-import os 
+import re
+import os
 
-
-# Create a function to replace terms to complete forms
-def replace_term(text,glossary):
+def apply_glossary(text, glossary):
     """
-    replace acronyms terms to complete forms
+    Replace abbreviations in a string with the format:
+        LSP -> LSP(Luminosity Signal Process)
+    If a glossary value is a list, it is joined into a single string.
     """
-    # Build a dictionary of compiled regular expressions
-    compiled_glossary = {
-        re.compile(r'\b' + re.escape(k) + r'\b', re.IGNORECASE): v
-        for k, v in glossary.items()
-    }
-
-    # Sort by length in descending order
-    patterns = sorted(compiled_glossary.keys(), key=lambda pat: len(pat.pattern), reverse=True)
-
-    # Replace in order
-    for pattern in patterns:
-        replacement = compiled_glossary[pattern]
-        text = pattern.sub(replacement, text)
+    if not isinstance(text, str):
+        return text
+    
+    for abbr, full in glossary.items():
+        # If 'full' is a list, join its elements into a string.
+        if isinstance(full, list):
+            joined = ", ".join(full)
+        else:
+            joined = full
+        
+        # We create a replacement of the form 'abbr(full)'
+        # e.g. 'LSP (Luminosity Signal Process)'
+        replacement = f"{abbr} ({joined})"
+        
+        # Use lookbehind/lookahead to allow punctuation, parentheses, etc. after 'abbr'
+        pattern = rf'(?<!\w){re.escape(abbr)}(?!\w)'
+        text = re.sub(pattern, replacement, text)
     
     return text
 
+def process_field(field, glossary):
+    """
+    Recursively apply glossary replacements to strings and lists of strings.
+    """
+    if isinstance(field, str):
+        return apply_glossary(field, glossary)
+    elif isinstance(field, list):
+        return [process_field(item, glossary) for item in field]
+    else:
+        return field
 
-# Import jsons with relative path
-# Import glossary 
-with open("acronyms.json", "r") as f:
-    glossary = json.load(f)
-# Import database create by get-mentions.py
-with open("generated-data.json","r",encoding="utf-8") as f: # generated-data.json should be located in the same directory as this script, "r" means read only
-    paper_data = json.load(f)
+def main():
+
+    dataDir = os.path.join("Data Scraping", "Test Outputs")
+    outputDir = os.path.join("Data Scraping", "Test Outputs")
+
+    fileName = 'generated-data.json'
+    outputName = 'generated-data-replaced.json'
+
+    input_file = os.path.join(dataDir, fileName)
+    output_file = os.path.join(outputDir, outputName)
 
 
-# Import jsons with absolute path
-#glossary_path = r"C:\Users\ "
-#paper_data_path = r"C:\Users\ "
-#output_path = r"C:\Users\ "
-# Load JSON files
-#glossary = json.load(glossary_path)
-#paper_data =  json.load(paper_data_path)
+    # Load the glossary from glossary.json.
+    
+    # If the loaded glossary is a list, extract the first element
+    # so 'glossary' becomes a dict, not a list with one dict inside.
+    
+    # Load data from DB_new.json.
+    with open(input_file, "r", encoding="utf-8") as infile:
+        data = json.load(infile)
+    
+    # Process each object's "mention" and "caption" fields.
+    for obj in data:
+        glossary = dict(zip(obj["abbrevs"], obj["abbrevDefinitions"]))
+        if "mentions" in obj:
+            obj["mentions"] = process_field(obj["mentions"], glossary)
+        if "caption" in obj:
+            obj["caption"] = process_field(obj["caption"], glossary)
+    
+    # Write the transformed data to output.json.
+    with open(output_file, "w", encoding="utf-8") as outfile:
+        json.dump(data, outfile, indent=2, ensure_ascii=False)
+    
+    print(f"Transformation completed. Check the file: {output_file}")
 
-# Process the text in all mentions and replace abbreviations
-for paper in paper_data:
-    paper["mentions"] = [
-        replace_term(mention, glossary) 
-        for mention in paper["mentions"]
-    ]
-
-# Save result in another json
-with open("processed_papers.json", "w") as f: # "w" means write mode
-    json.dump(paper_data, f, indent=2)
+if __name__ == "__main__":
+    main()
