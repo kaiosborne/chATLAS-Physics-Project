@@ -211,6 +211,7 @@ for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
 
     #remove tables from data before maths detection
     joinedLatex = '\n'.join(latexLinesList)
+
     cleanedJoinedLatex = re.sub(tableContentPattern, '', joinedLatex)
     cleanedLatexLinesList = cleanedJoinedLatex.splitlines()
 
