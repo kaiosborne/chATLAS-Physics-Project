@@ -37,8 +37,6 @@ def update_figures_with_urls(output_data, image_url_json_directory):
         # Extracts figure or table number from entry name
         indexEntry = re.search(r"(\d+)", entry["name"]).group(1).lstrip("0")
 
-        print(indexEntry)
-
         for name, url in image_urls_dict.items():
             # Skips auxiliary figures
             if re.search("aux", name, re.IGNORECASE):
