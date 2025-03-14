@@ -17,7 +17,7 @@ def load_data_into_collection():
     with open(db_path, 'r') as file:
         data = json.load(file)
 
-    batch_size = 40000  
+    batch_size = 5000  
     total_documents = len(data)
     num_batches = (total_documents + batch_size - 1) // batch_size  # Calculate the total number of batches
 
