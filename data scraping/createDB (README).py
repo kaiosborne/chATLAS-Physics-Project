@@ -28,10 +28,22 @@ Now back with database of figures now with links to images attached (sometimes m
 splitPlots - splits any figures with more than one image into subplots e.g Figure 7 has 4 images - turns into Figure 7 (a)
 Figure 7 (b) etc... 
 
+replaceTerms - replaces abbrevations in mentions and captions with long form
+abbrev ----> abbrev (long form) honestly could run at any time
+
 getGraphTypeLLM - downloads and runs CLIP model locally to determine the plot type from a pre-determined list of options
-(reccommend refining these options)
+(reccommend refining these options, its a proof of concept since results need improvement)
 
 embedding - creates an embedding matrix for each figure and adds to the json, can tailor which parts of each figure
 form part of the embedding matrix, which could effect search results, this completes the database, which can now be loaded by 
 app_chroma in the App Product folder and be vector searched upon.
+
+Final output EmbeddedDB.json
+intermediate steps save files as well
+Look in test outputs folder for example run - which was ran only on ATLASPapers for shorter run time.
+Gives final database and .jsons for all intermediate steps.
+Note also the image urls folder - this might help illustrate how that part of the code functions.
+
+I didnt write those so im not certain - but it seems like the merge code might be basically the same for all - 
+but the url extraction code is definitely distinct for each input type.
 '''
