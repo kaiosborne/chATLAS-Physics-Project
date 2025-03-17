@@ -11,7 +11,7 @@ chroma_client = chromadb.Client()
 collection = chroma_client.create_collection(name="PhysicsFigures")
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(current_dir, './DBTest.json') #sets database path to current directory with name DB.json
+db_path = os.path.join(current_dir, './EmbeddedDB.json') #sets database path to current directory with name DB.json
 
 def load_data_into_collection():
     with open(db_path, 'r') as file:
@@ -43,12 +43,12 @@ def load_data_into_collection():
                 "paper": obj["paper"],
                 "paperName": obj["paperName"],
                 "image_url": obj.get("imageUrls", ""),
-               # "abbrev":
-              #  "abbrevDefinitions":
-              # "maths":
-               # "mathsDefinitions":
-                #"keywords":
-               # "figureType":
+                "abbrevs": obj["abbrevs"],
+                "abbrevDefinitions": obj["abbrevDefinitions"],
+                "maths": ["maths"],
+                "mathsDefinitions": ["mathsDefinitions"],
+                "keywords": ["keywords"],
+                "figureType": ["figureType"],
             })
             ids.append(document_id)
 
