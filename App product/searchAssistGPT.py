@@ -53,10 +53,9 @@ def getSearchSuggestion(user_search):
     systemPrompt = "You are a helpful academic assistant, in a high energy physics context."
     userPrompt = (
         f"""A user has submitted the following search query: '{user_search}'.
-        To help refine this search for better results, please provide one SHORT suggestion to alter the user search. 
-        Your question should guide the user to indicate specific areas and write variables in full for clarity.
-        Frame the question as a suggestion to alter the search prompt.
-        """
+        To help refine this search for better results, please provide one VERY SHORT suggestion/question to the user to suggest how to alter the their search. 
+        Your question should instruct the user how to write a better search query."""
+
     )
     return getOpenAIResponse(systemPrompt, userPrompt, model='gpt-4o-mini', maxTokens=150, numResponse=1, temperature=0.3)
 
@@ -80,7 +79,7 @@ def generateQueries(user_search,num_queries):
         f"""
         A user has submitted the following search query: '{user_search}'. "
         Generate {num_queries} search queries, one on each line, related to the input query: '{user_search}'
-        Do not number the queries, use as many synoyms as possible in your generated searches.
+        Do not number the queries, use as many synoyms as possible in your generated searches. Keep the queries SHORT!
         """
     )
     return getOpenAIResponse(systemPrompt, userPrompt, model='gpt-4o-mini', maxTokens=50, numResponse=1, temperature=0.1)
@@ -92,9 +91,9 @@ if __name__ == "__main__":
     
     # Generate a clarifying question for the search query
     clarifying_question = getSearchSuggestion(user_search)
-    print("\nClarifying question:", clarifying_question)
+    print("\nLLM generated question:\n", clarifying_question)
     
     # Generate multiple related search queries using GPT-3.5-turbo
     generated_queries = generateQueries(user_search, num_queries=3)
-    print("\nGenerated queries:", generated_queries)
+    print("\nLLM generated searches\n", generated_queries)
     
