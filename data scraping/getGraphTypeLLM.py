@@ -84,7 +84,7 @@ def process_batch(objects, model, processor, prompts, categories):
     
     # Update each object in the batch with the classification result.
     for obj, figure_type in zip(objects, batch_results):
-        obj["FigureType"] = figure_type
+        obj["figureType"] = figure_type
 
 def process_json_in_batches(input_file, output_file, batch_size=16):
     """
