@@ -1,105 +1,75 @@
-# Physics-Project
-Group 17a's repository for the group project.
+# Project Pipeline Documentation
 
-The following is the full process in which the data processing team converted the data provided in directories into a fully embeded vector database. Ready for vector searches to be run on it.
+This README explains how to run and understand the scripts provided in this directory.
 
-## Paper Data Extraction
+## Overview
 
-The first part of the code extracts the necessary information, from the directories of paper files. This is done using the following python script: get-mentions.py which is part of the data scraping algorthm of the github.
-This script takes in the directory of the papers of each experiment such as ATLAS or CMS. It then ouptuts the generated data in a file location of your choice. The format should be of the following format:
+The following scripts should be executed in order to achieve correct results. The final goal is to generate an `EmbeddedDB.json` file, containing structured and searchable data for plots and tables extracted from input papers. This .json file can then be loaded by app_chroma to provide the functioning app. 
 
+---
 
-        {
+## Execution Order and Descriptions
 
-        "name": "Figure 1",
-        "mentions": [
-            "Figure 1(a) shows the local \\(p\\)-value as a function of \\(m_{X}\\) for a narrow resonance that decays into a pair of SM Higgs bosons whose decay branching ratios are predicted under \\(m_{h}=125\\,\\mathrm{GeV}\\)",
-            "Figure 1(b) shows the upper limits at the 95% confidence level (CL) on the resonant \\(hh\\) production cross section as a function of \\(m_{X}\\), assuming that \\(h\\) is the SM Higgs boson",
-            "Figure 1: (a) Local \\(p\\)-value and (b) observed and expected upper limits at the 95% CL on the resonant Higgs boson pair production cross section as a function of the resonance mass \\(m_{X}\\)"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2882365",
-        "paper": "CDS_Record_2882365",
-        "paperName": "Combination of searches for resonant Higgs boson pair production using $pp$ collisions at $\\sqrt{s}=13$ TeV with the ATLAS detector"
-    },
+### 1. **`getMentionsMathsAbbrevs`**
+- **Purpose:** Extracts figures and tables from an input folder (containing subfolders with `LATEX.txt` and `META_INFO.txt`).
+- **Outputs:** JSON file with:
+  - Captions for each figure/table.
+  - Sentences mentioning each figure/table.
+  - LaTeX math expressions (first occurrence and context).
+  - Abbreviations along with their long-form definitions derived from the overall context.
 
+### 2. **`getMathsDefinitionsAsyncGPT`**
+- **Purpose:** Uses OpenAI API (model: `4o-mini`) to interpret LaTeX math expressions.
+- **Operation:** Replaces initial contexts with AI-generated definitions in the JSON.
 
-This should therefore extract the name of each figure, its caption and mentions under the heading mentions, the atlas url, which will indicate the paper from which this image came from. Then the CDS_Record name of the paper and the actual scientific paper name from which the image was sourced.
+### 3. **`getKeywordsAsyncGPT`**
+- **Purpose:** Queries OpenAI API to generate keywords (default: 5) describing each plot/table.
+- **Outputs:** Adds generated keywords into the existing JSON.
 
-## Image URL extraction
+### 4. **`splitMentions`**
+- **Purpose:** Separates the mentions of figures from their captions.
+- **Outputs:** Splits existing JSON `mentions` field into distinct `caption` and `mentions` fields.
 
-The next scripts are individually tailored to each experiments format in which the image meta data files were formated. Essentially the code works by looking at the paper directory, then opening each meta data file, finding the url. This leads to an html page on which there should normally be a link leading to the page particular which contains the locations of all the images within that paper. In some cases the image urls are embedded on the initial page without needing to go to another html link.
-The python scripts for this process are found in the image scraping folder on the github repository they are called: ATLAS CONFERENCE NOTES URL EXTRACTION.py, ATLAS IMAGE URL EXTRACTION.py and CMS URL Extraction.py. This should give an output of this : 
+### 5. **Image Scraping Folder**
+- **Purpose:** Scripts here generate JSON files containing image URLs for plots from various input types (CMS, ATLAS Paper, CONF note, etc.).
+- **Note:** Distinct scripts exist for different input data types.
 
+### 6. **Merge Folder**
+- **Purpose:** Merges individual JSON files (containing image URLs) into the overall figure database.
+- **Recommendation:** Consider initially creating separate databases for each input type and merging them later, as scripts are tailored for specific input types.
+  - **Potential improvement area:** Generalize merge scripts to handle all input types uniformly.
 
-    {
-        "name": ".thumb_fig_01.png",
-        "url": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SOFT-2010-01///.thumb_fig_01.png"
-    },
-    {
-        "name": ".thumb_fig_02.png",
-        "url": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SOFT-2010-01///.thumb_fig_02.png"
-    },
-    {
-        "name": ".thumb_fig_03.png",
-        "url": "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SOFT-2010-01///.thumb_fig_03.png"
-    }
-The code takes in the paper directory and returns a directory of JSON files each named after the paper from which the images were extracted.
+### At this stage, figures now have associated image links (some may have multiple images).
 
-## Image URL merging with paper data 
+### 7. **`splitPlots`**
+- **Purpose:** Divides figures containing multiple images into separate subplots.
+- **Example:** Converts "Figure 7" with multiple images  into "Figure 7 (a), Figure 7 (b)," etc.
 
-The following section takes the image url directory for each paper set as well as the output paper data for each section and merges them to the correct image entries.
-The code for this is once again available on the github repository under the folder merge: ATLAS CONFERENCE MERGE.py, ATLAS MERGE.py, CMS MERGE.py.
-This will output something of this format :
+### 8. **`replaceTerms`**
+- **Purpose:** Expands abbreviations in captions and mentions to their long forms.
+- **Note:** This script can be executed anytime in the pipeline after abbreviations are identified.
 
-    {
+### 9. **`getGraphTypeLLM`**
+- **Purpose:** Downloads and executes the CLIP model locally to classify plot types from predefined categories.
+- **Note:** Categories and accuracy are preliminary; refinement is recommended for improved results.
 
-        "name": "Figure 1",
-        "mentions": [
-            "Figure 1(a) shows the local \\(p\\)-value as a function of \\(m_{X}\\) for a narrow resonance that decays into a pair of SM Higgs bosons whose decay branching ratios are predicted under \\(m_{h}=125\\,\\mathrm{GeV}\\)",
-            "Figure 1(b) shows the upper limits at the 95% confidence level (CL) on the resonant \\(hh\\) production cross section as a function of \\(m_{X}\\), assuming that \\(h\\) is the SM Higgs boson",
-            "Figure 1: (a) Local \\(p\\)-value and (b) observed and expected upper limits at the 95% CL on the resonant Higgs boson pair production cross section as a function of the resonance mass \\(m_{X}\\)"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2882365",
-        "paper": "CDS_Record_2882365",
-        "paperName": "Combination of searches for resonant Higgs boson pair production using $pp$ collisions at $\\sqrt{s}=13$ TeV with the ATLAS detector",
-        "imageUrls": [
-            "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HDBS-2023-17///.thumb_fig_01a.png",
-            "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HDBS-2023-17///.thumb_fig_01b.png"
-        ]
-    }
+### 10. **`embedding`**
+- **Purpose:** Generates embedding matrices for each figure for vector-based searching.
+- **Customization:** Embeddings can be tailored to specific aspects (e.g., captions, mentions), impacting search performance.
+- **Final Output:** Creates `EmbeddedDB.json`, which can be used with `app_chroma` (located in the App Product folder) for efficient vector-based searches.
 
-# Merging the JSON databases 
+---
 
-The following code will merge however many JSON databases you have produced, currently it is set to 3 JSON files and merging them into 1 put it can be easily adapted. This code is found in the first section of the Combining and clearing code.py python script.
+## Output Files and Folders
 
-# Embedding the database
+- **Final output:** `EmbeddedDB.json`
+- **Intermediate outputs:** Saved after each step, useful for debugging and verification.
+- **Example outputs:** Refer to `test outputs` folder (run specifically on ATLASPapers for demonstration purposes).
+- **Image URLs Folder:** Illustrates URL extraction processes.
 
-The following code will embed the database with vectors so that the vector search can be run on it. The code for this is called Embedding.py. Having run this the database should have the following output format.
+---
 
-     {
-        "name": "Figure 1",
-        "mentions": [
-            "Figure 1(a) shows the local \\(p\\)-value as a function of \\(m_{X}\\) for a narrow resonance that decays into a pair of SM Higgs bosons whose decay branching ratios are predicted under \\(m_{h}=125\\,\\mathrm{GeV}\\)",
-            "Figure 1(b) shows the upper limits at the 95% confidence level (CL) on the resonant \\(hh\\) production cross section as a function of \\(m_{X}\\), assuming that \\(h\\) is the SM Higgs boson",
-            "Figure 1: (a) Local \\(p\\)-value and (b) observed and expected upper limits at the 95% CL on the resonant Higgs boson pair production cross section as a function of the resonance mass \\(m_{X}\\)"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2882365",
-        "paper": "CDS_Record_2882365",
-        "paperName": "Combination of searches for resonant Higgs boson pair production using $pp$ collisions at $\\sqrt{s}=13$ TeV with the ATLAS detector",
-        "imageUrls": [
-            "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HDBS-2023-17///.thumb_fig_01a.png",
-            "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HDBS-2023-17///.thumb_fig_01b.png"
-        ],
-        "embedded vector": [
-            -0.09764965623617172,
-            0.052059356123209,
-            0.0385596826672554,
-            ....
-        ]
-    }
+## Additional Notes
+- The merge scripts might share similarities across input types, but the URL extraction scripts are distinct and specialized per input type.
 
-# Cleaning up the database
-This code cleans up the database for any sections in which the url entries were found to be empty due to missing images not being available on the corresponding websites.
-This code is the second part of the Combining and clearing code.py python script.
-
-Having run all of this code in this order you should now have succesfully made a vector database.
+---
