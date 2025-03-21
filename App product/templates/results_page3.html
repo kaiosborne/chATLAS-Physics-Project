@@ -78,16 +78,18 @@
                                 </div>
                                 <p><strong>Caption:</strong> <span class="latex-content">{{ figure.caption|safe }}</span></p>
                                 <details>
-                                    <summary><strong>Mentions</strong></summary>
+                                    <summary><strong>Mentions:</strong></summary>
+                                    <br>
                                     <span class="latex-content" style="white-space: pre-wrap;">{{ figure.mentions|safe }}</span>
                                 </details>
                                 <br>
                                 <details>
-                                    <summary><strong>Additional Information</strong></summary>
+                                    <summary><strong>Additional Information:</strong></summary>
                                     <p><strong>Atlas URL:</strong> <a href="{{ figure.atlusUrl }}">{{ figure.atlusUrl }}</a></p>
                                     <p><strong>Paper ID:</strong> {{ figure.paper }}</p>
                                     <p><strong>Paper Name:</strong> {{ figure.paperName }}</p>
-                                    <p><strong>Abbreviations:</strong> {{ figure.abbrev }}</p>
+                                    <p><strong>Detected Abbreviations:</strong></p><div>{{ figure.abbrevs | safe }}</div>
+                                    <p><strong>Detected Maths:</strong><div class="latex-content">{{ figure.maths | safe }}</div>
                                 </details>
                             </div>
                         {% endfor %}
