@@ -87,10 +87,8 @@ async def processEntry(session, entry):
     # Gather results concurrently
     definitions = await asyncio.gather(*tasks)
 
-    definitions = abbrevs, definitions
-
     del entry["mathsContext"]
-    entry["maths"] = definitions
+    entry["mathsDefinitions"] = definitions
 
     return entry
 
