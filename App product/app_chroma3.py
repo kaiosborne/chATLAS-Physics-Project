@@ -30,7 +30,6 @@ def load_data_into_collection():
         documents = []
         metadatas = []
         ids = []
-        #will later have to add abbreviations and defintiions and plot type 
         for i, obj in enumerate(batch_data):
             document_id = f"document_{start_idx + i}"
             embeddings.append(obj.get("embeddedVector", []))
@@ -38,19 +37,18 @@ def load_data_into_collection():
             metadatas.append({
                 "name": obj["name"],
                 "caption": obj["caption"],
-                "mentions": "\n".join(f"{mention}" for mention in obj['mentions']) if isinstance(obj['mentions'], list) else obj['mentions'],
+                "mentions": "\n \n".join(f"{mention}" for mention in obj['mentions']) if isinstance(obj['mentions'], list) else obj['mentions'],
                 "atlusUrl": obj["atlusUrl"],
                 "paper": obj["paper"],
                 "paperName": obj["paperName"],
                 "image_url": obj.get("imageUrls", ""),
-                "abbrevs": obj["abbrevs"],
-                "abbrevDefinitions": obj["abbrevDefinitions"],
-                "maths": ["maths"],
-                "mathsDefinitions": ["mathsDefinitions"],
-                "keywords": ["keywords"],
-                "figureType": ["figureType"],
+                "abbrevs": f"<ul>{''.join(f'<li>{abbrev}, ({definition})</li>' for abbrev, definition in zip(obj['abbrevs'], obj['abbrevDefinitions']))}</ul>",
+                "maths": f"<ul>{''.join(f'<li>{maths}, ({definition})</li>' for maths, definition in zip(obj['maths'], obj['mathsDefinitions']))}</ul>",
+                "figureType": "".join(f"{figType}" for figType in obj['figureType']) if isinstance(obj['figureType'], list) else obj['figureType'],
+                "keywords": obj["keywords"],
             })
             ids.append(document_id)
+            ##
 
         collection.add(embeddings=embeddings, documents=documents, metadatas=metadatas, ids=ids)
 
