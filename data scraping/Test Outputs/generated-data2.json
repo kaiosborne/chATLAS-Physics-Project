@@ -9,10 +9,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Figure 10",
@@ -25,10 +23,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Figure 32",
@@ -40,10 +36,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Table 6",
@@ -55,10 +49,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Figure 28",
@@ -70,10 +62,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Table 7",
@@ -85,10 +75,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Figure 6",
@@ -101,10 +89,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Table 10",
@@ -116,10 +102,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Figure 14",
@@ -131,10 +115,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Table 3",
@@ -147,10 +129,8 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
         "name": "Table 11",
@@ -162,15 +142,13 @@
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
         "abbrevs": [],
         "abbrevDefinitions": [],
-        "maths": [
-            [],
-            []
-        ]
+        "maths": [],
+        "mathsDefinitions": []
     },
     {
-        "name": "Figure 12",
+        "name": "Figure 13",
         "mentions": [
-            "Figure 12: Single-lepton channel: comparison of data and prediction for the discriminant variable used in the (5j, 2b) region **a** before the fit and **b** after the fit, in the (5j, 3b) region **c** before the fit and **d** after the fit, in the (5j, \\(\\geq\\) 4b) region **e** before the fit and **f** after the fit"
+            "Figure 13: Single-lepton channel: comparison of data and prediction for the discriminant variable used in the (\\(\\geq\\)6), 2b) region **a** before the fit and **b** after the fit, in the (\\(\\geq\\)6j, 3b) region **c** before the fit and **d** after the fit, in the (\\(\\geq\\)6j, \\(\\geq\\)4b) region **e** before the fit and **f** after the fit"
         ],
         "atlusUrl": "https://cds.cern.ch/record/2001975",
         "paper": "CDS_Record_2001975",
@@ -178,35 +156,10 @@
         "abbrevs": [],
         "abbrevDefinitions": [],
         "maths": [
-            [
-                [
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "greater than or equal to"
-            ]
-        ]
-    },
-    {
-        "name": "Figure 15",
-        "mentions": [
-            "Figure 15: Dilepton channel: comparison of data and prediction for the discriminant variable used in the (\\(\\geq\\)4j, 2b) region **a** before the fit and **b** after the fit, in the (\\(\\geq\\) 4j, 3b) region **c** before the fit and **d** after the fit, in the (\\(\\geq\\) 4j, \\(\\geq\\) 4b) region **e** before the fit and **f** after the fit"
+            "\\(\\geq\\)"
         ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
-        "maths": [
-            [
-                [
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "greater than or equal to"
-            ]
+        "mathsDefinitions": [
+            "greater than or equal to"
         ]
     },
     {
@@ -220,14 +173,303 @@
         "abbrevs": [],
         "abbrevDefinitions": [],
         "maths": [
-            [
-                [
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "greater than or equal to"
-            ]
+            "\\(\\geq\\)"
+        ],
+        "mathsDefinitions": [
+            "greater than or equal to"
+        ]
+    },
+    {
+        "name": "Figure 31",
+        "mentions": [
+            "Figure 31: Single-lepton channel: post-fit comparison of data and prediction for the four top-ranked input variables in (\\(\\geq\\) 6j, \\(\\geq\\) 4b) region"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(\\geq\\)"
+        ],
+        "mathsDefinitions": [
+            "greater than or equal to"
+        ]
+    },
+    {
+        "name": "Figure 24",
+        "mentions": [
+            "Figure 24: Single-lepton channel: comparison of \\(t\\bar{t}H\\) signal (_dashed_) and background (_solid_) for the four top-ranked input variables in the (\\(\\geq\\) 6j, \\(\\geq\\) 4b) region"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(t\\bar{t}H\\)",
+            "\\(\\geq\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-quark pair associated Higgs boson production.",
+            "greater than or equal to"
+        ]
+    },
+    {
+        "name": "Figure 12",
+        "mentions": [
+            "Figure 12: Single-lepton channel: comparison of data and prediction for the discriminant variable used in the (5j, 2b) region **a** before the fit and **b** after the fit, in the (5j, 3b) region **c** before the fit and **d** after the fit, in the (5j, \\(\\geq\\) 4b) region **e** before the fit and **f** after the fit"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(\\geq\\)"
+        ],
+        "mathsDefinitions": [
+            "greater than or equal to"
+        ]
+    },
+    {
+        "name": "Figure 11",
+        "mentions": [
+            "Figure 11: Single-lepton channel: comparison between data and prediction for the discriminant variable used in the (4j, 2b) region a before the fit and **b** after the fit, in the (4j, 2b) region a before the fit and **d** after the fit, in the (4j, 4b) region **e** before the fit and **f** after the fit",
+            "Figures 11, 12, 13, 14 and 15 show a comparison of data and prediction for the discriminating variables (either \\(H_{\\rm T}\\) had, \\(H_{\\rm T}\\), or NN discriminants) for each of the regions considered in the single-lepton and dilepton channels, respectively, both pre- and post-fit to data"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [
+            "NN",
+            "N"
+        ],
+        "abbrevDefinitions": [
+            "neural network",
+            "cross section and Higgs boson decay branching fractions are taken from"
+        ],
+        "maths": [
+            "\\(H_{\\rm T}\\)"
+        ],
+        "mathsDefinitions": [
+            "Scalar sum of transverse energy of leptons and jets."
+        ]
+    },
+    {
+        "name": "Figure 23",
+        "mentions": [
+            "The plots include \\(\\mathbf{a}\\)\\(m_{\\rm bb}^{\\rm max\\,PT}\\), \\(\\mathbf{b}\\)\\(m_{\\rm uu}^{\\rm min\\,RR}\\), \\(\\mathbf{c}\\)\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\) and \\(\\mathbf{d}\\)\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)Figure 23: Single-lepton channel: comparison of \\(t\\bar{t}H\\) signal (_dashed_) and background (_solid_) for the four top-ranked input variables in the (\\(\\geq\\) 6j, 3b) region"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(t\\bar{t}H\\)",
+            "\\(\\geq\\)",
+            "\\(\\mathbf{a}\\)",
+            "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
+            "\\(\\mathbf{b}\\)",
+            "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
+            "\\(\\mathbf{c}\\)",
+            "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
+            "\\(\\mathbf{d}\\)",
+            "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-quark pair production associated with Higgs boson.",
+            "greater than or equal to",
+            "\\(m_{\\rm bb}^{\\rm max\\,PT}\\): maximum transverse momentum of the \\(b\\bar{b}\\) invariant mass.",
+            "Maximum transverse momentum invariant mass of \\(b\\bar{b}\\) pairs.",
+            "\\(m_{\\rm uu}^{\\rm min\\,RR}\\): minimum invariant mass of the \\(uu\\) pair in the reconstructed region.",
+            "Minimum invariant mass of the \\(uu\\) pair in the reduced resolution (RR) context.",
+            "\\(\\mathbf{c}\\) \\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\): minimum transverse momentum of \\(uu\\) pair in the anti-kT algorithm.",
+            "Minimum transverse momentum of the \\(uu\\) pair in the anti-kT algorithm.",
+            "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\): minimum invariant mass of \\(b\\bar{b}\\) pairs in the anti-kT algorithm.",
+            "Minimum \\(b\\bar{b}\\) invariant mass in the Angular Resolution (A\\,R) context."
+        ]
+    },
+    {
+        "name": "Figure 27",
+        "mentions": [
+            "Figure 27: Dilepton channel: comparison of \\(t\\bar{t}H\\) signal (_dashed_) and background (_solid_) for the four top-ranked input variables in the (\\(\\geq\\)4j, \\(\\geq\\) 4b) region"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(t\\bar{t}H\\)",
+            "\\(\\geq\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-quark pair associated Higgs boson production.",
+            "greater than or equal to"
+        ]
+    },
+    {
+        "name": "Figure 2",
+        "mentions": [
+            "Figure 2a shows the \\(S/\\sqrt{B}\\) and \\(S/B\\) ratios for the different regions under consideration in the single-lepton channel based on the simulations described in Sect",
+            "The expected proportions of different backgrounds in each region are shown in Fig. 2b",
+            "Figure 2: Single-lepton channel: a \\(S/\\sqrt{B}\\) ratio for each of the regions assuming SM cross sections and branching fractions, and \\(m_{H}=125\\,\\mathrm{GeV}\\)"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [
+            "SM"
+        ],
+        "abbrevDefinitions": [
+            "Standard Model"
+        ],
+        "maths": [
+            "\\(S/\\sqrt{B}\\)",
+            "\\(S/B\\)",
+            "\\(m_{H}=125\\,\\mathrm{GeV}\\)"
+        ],
+        "mathsDefinitions": [
+            "Signal-to-background significance ratio.",
+            "Signal-to-background ratio.",
+            "Mass of the Standard Model Higgs boson, approximately 125 GeV."
+        ]
+    },
+    {
+        "name": "Figure 20",
+        "mentions": [
+            "In the most sensitive regions, (\\(\\geq\\) 6j, \\(\\geq\\) 4b) in the single-lepton channel and (\\(\\geq\\) 4j, \\(\\geq\\) 4b) in the dilepton channel, \\(H\\to b\\bar{b}\\) decays are expected to constitute about 90 % of the signal contribution as shown in Fig. 20 of Appendix A.\n"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(H\\to b\\bar{b}\\)",
+            "\\(\\geq\\)"
+        ],
+        "mathsDefinitions": [
+            "Higgs boson decay to a bottom-antibottom quark pair.",
+            "greater than or equal to"
+        ]
+    },
+    {
+        "name": "Table 1",
+        "mentions": [
+            "Table 1: Single-lepton channel: the definitions and rankings of the variables considered in each of the regions where an NN is usedment \\(\\mathrm{d}\\Phi_{N}\\) describe the kinematics of the process"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [
+            "NN",
+            "N"
+        ],
+        "abbrevDefinitions": [
+            "neural network",
+            "cross section and Higgs boson decay branching fractions are taken from"
+        ],
+        "maths": [
+            "\\(\\mathrm{d}\\Phi_{N}\\)"
+        ],
+        "mathsDefinitions": [
+            "\\(\\mathrm{d}\\Phi_{N}\\): Differential phase space for \\(N\\) particles."
+        ]
+    },
+    {
+        "name": "Figure 22",
+        "mentions": [
+            "Figure 22: Single-lepton channel: comparison of \\(t\\bar{t}H\\) signal (_dashed_) and background (_solid_) for the four top-ranked input variables in the (5j, \\(\\geq\\) 4b) region"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(t\\bar{t}H\\)",
+            "\\(\\geq\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-quark pair associated Higgs boson production.",
+            "greater than or equal to"
+        ]
+    },
+    {
+        "name": "Figure 21",
+        "mentions": [
+            "Figure 21: Single-lepton channel: comparison of \\(t\\bar{t}\\)+HF (_dashed_) and \\(t\\bar{t}\\)+light (_solid_) background for the four top-ranked input variables in the (5j, 3b) region where the NN is designed to separate these two backgrounds"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [
+            "NN",
+            "N"
+        ],
+        "abbrevDefinitions": [
+            "neural network",
+            "cross section and Higgs boson decay branching fractions are taken from"
+        ],
+        "maths": [
+            "\\(t\\bar{t}\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-antitop quark pair production."
+        ]
+    },
+    {
+        "name": "Figure 1",
+        "mentions": [
+            "Figure 1a, b show two examples of tree-level diagrams for \\(t\\bar{t}H\\) production with a subsequent \\(H\\to b\\bar{b}\\) decay",
+            "An example is shown in Fig. 1c",
+            "Figure 1: Representative tree-level Feynman diagrams for the production of the Higgs boson in association with a top-quark pair (\\(t\\bar{t}\\)\\(H\\)) and the subsequent decay of the Higgs to \\(b\\bar{b}\\), (**a**, **b**) for the main background \\(t\\bar{t}+b\\bar{b}\\) (**c**)\n",
+            "The signal hypothesis is defined as a SM Higgs boson produced in association with a top-quark pair as shown in Fig. 1a, b"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [
+            "SM"
+        ],
+        "abbrevDefinitions": [
+            "Standard Model"
+        ],
+        "maths": [
+            "\\(t\\bar{t}H\\)",
+            "\\(H\\to b\\bar{b}\\)",
+            "\\(b\\bar{b}\\)",
+            "\\(t\\bar{t}\\)",
+            "\\(t\\bar{t}+b\\bar{b}\\)",
+            "\\(H\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-quark pair associated Higgs boson production.",
+            "Higgs boson decay to a bottom-antibottom quark pair.",
+            "Bottom quark-antiquark pair.",
+            "Top-antitop quark pair production.",
+            "Top-antitop pair production combined with bottom-antibottom pair production.",
+            "Higgs boson"
+        ]
+    },
+    {
+        "name": "Figure 15",
+        "mentions": [
+            "Figure 15: Dilepton channel: comparison of data and prediction for the discriminant variable used in the (\\(\\geq\\)4j, 2b) region **a** before the fit and **b** after the fit, in the (\\(\\geq\\) 4j, 3b) region **c** before the fit and **d** after the fit, in the (\\(\\geq\\) 4j, \\(\\geq\\) 4b) region **e** before the fit and **f** after the fit"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(\\geq\\)"
+        ],
+        "mathsDefinitions": [
+            "greater than or equal to"
         ]
     },
     {
@@ -242,62 +484,35 @@
         "abbrevs": [],
         "abbrevDefinitions": [],
         "maths": [
-            [
-                [
-                    "\\(t\\bar{t}+b\\bar{b}\\)"
-                ]
-            ],
-            [
-                "The combined production of top-antitop (\\(t\\bar{t}\\)) pairs and bottom-antibottom (\\(b\\bar{b}\\)) pairs in high-energy collisions."
-            ]
+            "\\(t\\bar{t}+b\\bar{b}\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-antitop pair production plus bottom-antibottom pair production."
         ]
     },
     {
-        "name": "Table 4",
+        "name": "Table 5",
         "mentions": [
-            "Table 4 shows the observed \\(\\mu\\) values obtained from the individual fits in the single-lepton and dilepton channels, and their combination"
+            "Table 5: Observed and expected (median, for the background-only hypothesis) 95 % CL upper limits on \\(\\sigma\\) (\\(t\\bar{t}H\\)) relative to the SM prediction, for the individual channels as well as their combination, assuming \\(m_{H}=125\\) GeV"
         ],
         "atlusUrl": "https://cds.cern.ch/record/2001975",
         "paper": "CDS_Record_2001975",
         "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
-        "maths": [
-            [
-                [
-                    "\\(\\mu\\)"
-                ]
-            ],
-            [
-                "Signal-strength parameter representing the ratio of observed/expected cross section to the Standard Model cross section."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 22",
-        "mentions": [
-            "Figure 22: Single-lepton channel: comparison of \\(t\\bar{t}H\\) signal (_dashed_) and background (_solid_) for the four top-ranked input variables in the (5j, \\(\\geq\\) 4b) region"
+        "abbrevs": [
+            "SM"
         ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
+        "abbrevDefinitions": [
+            "Standard Model"
+        ],
         "maths": [
-            [
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "Top-quark pair associated Higgs boson production.",
-                "greater than or equal to"
-            ]
+            "\\(t\\bar{t}H\\)",
+            "\\(\\sigma\\)",
+            "\\(m_{H}=125\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-quark pair associated Higgs boson production.",
+            "Cross section.",
+            "Higgs boson mass of 125 GeV."
         ]
     },
     {
@@ -319,26 +534,42 @@
             "cross section and Higgs boson decay branching fractions are taken from"
         ],
         "maths": [
-            [
-                [
-                    "\\(t\\bar{t}\\,H\\)",
-                    "\\(t\\bar{t}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}\\,H\\)",
-                    "\\(t\\bar{t}\\)"
-                ]
-            ],
-            [
-                "Top-antitop Higgs production.",
-                "Top-antitop quark pair production."
-            ]
+            "\\(t\\bar{t}\\,H\\)",
+            "\\(t\\bar{t}\\)"
+        ],
+        "mathsDefinitions": [
+            "Top-antitop Higgs production.",
+            "Top-antitop quark pair production."
         ]
     },
     {
-        "name": "Figure 24",
+        "name": "Table 2",
         "mentions": [
-            "Figure 24: Single-lepton channel: comparison of \\(t\\bar{t}H\\) signal (_dashed_) and background (_solid_) for the four top-ranked input variables in the (\\(\\geq\\) 6j, \\(\\geq\\) 4b) region"
+            "Table 2: Dilepton channel: the definitions and rankings of the variables considered in each of the regions where an NN is used width approximation is applied to the leptonically decaying \\(W\\) boson"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [
+            "NN",
+            "N"
+        ],
+        "abbrevDefinitions": [
+            "neural network",
+            "cross section and Higgs boson decay branching fractions are taken from"
+        ],
+        "maths": [
+            "\\(W\\)"
+        ],
+        "mathsDefinitions": [
+            "\\(W\\) boson: a gauge boson mediating the weak nuclear force, responsible for charged current interactions."
+        ]
+    },
+    {
+        "name": "Figure 9",
+        "mentions": [
+            "The effect of these variations on the contribution of different \\(t\\bar{t}\\)+\\(b\\bar{b}\\) event categories is shown in Fig. 9",
+            "Figure 9: Systematic uncertainties on the \\(t\\bar{t}+b\\bar{b}\\) contribution based on **a** scale variations and **b** PDF choice and shower recoil model of the SherpaOL simulation"
         ],
         "atlusUrl": "https://cds.cern.ch/record/2001975",
         "paper": "CDS_Record_2001975",
@@ -346,49 +577,14 @@
         "abbrevs": [],
         "abbrevDefinitions": [],
         "maths": [
-            [
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "Top-quark pair associated Higgs boson production.",
-                "greater than or equal to"
-            ]
-        ]
-    },
-    {
-        "name": "Figure 19",
-        "mentions": [
-            "Figure 19 demonstrates the effect of various systematic uncertainties on the fitted value of \\(\\mu\\) and the constraints provided by the data",
-            "The \\(t\\bar{t}+c\\bar{c}\\) normalisation uncertainty is ranked third (Fig. 19) and its pull is slightly negative, while the post-fit yields for \\(t\\bar{t}+c\\bar{c}\\) increase significantly in the four- and five-jet regions in the single-lepton channel and in the two- and three-jet regions of the dilepton channel (see Tables 10, 11 of Appendix 1)",
-            "Figure 19: The fitted values of the nuisance parameters with the largest impact on the measured signal strength"
+            "\\(b\\bar{b}\\)",
+            "\\(t\\bar{t}\\)",
+            "\\(t\\bar{t}+b\\bar{b}\\)"
         ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
-        "maths": [
-            [
-                [
-                    "\\(\\mu\\)",
-                    "\\(t\\bar{t}+c\\bar{c}\\)"
-                ],
-                [
-                    "\\(\\mu\\)",
-                    "\\(t\\bar{t}+c\\bar{c}\\)"
-                ]
-            ],
-            [
-                "Signal-strength parameter, ratio of observed/expected cross section to SM cross section.",
-                "A top-antitop pair production event with an additional charm-anticharm pair."
-            ]
+        "mathsDefinitions": [
+            "Bottom quark-antiquark pair.",
+            "Top-antitop quark pair production.",
+            "Top-antitop pair production plus bottom-antibottom pair production."
         ]
     },
     {
@@ -410,125 +606,30 @@
             "cross section and Higgs boson decay branching fractions are taken from"
         ],
         "maths": [
-            [
-                [
-                    "\\(\\log_{10}(S/B)\\)",
-                    "\\(\\geq\\)",
-                    "\\((\\geq\\)",
-                    "\\(H_{\\rm T}\\)",
-                    "\\(S\\)",
-                    "\\(B\\)",
-                    "\\({}^{\\rm had}\\)"
-                ],
-                [
-                    "\\(\\log_{10}(S/B)\\)",
-                    "\\(\\geq\\)",
-                    "\\((\\geq\\)",
-                    "\\(H_{\\rm T}\\)",
-                    "\\(S\\)",
-                    "\\(B\\)",
-                    "\\({}^{\\rm had}\\)"
-                ],
-                [
-                    "\\(\\log_{10}(S/B)\\)",
-                    "\\(\\geq\\)",
-                    "\\((\\geq\\)",
-                    "\\(H_{\\rm T}\\)",
-                    "\\(S\\)",
-                    "\\(B\\)",
-                    "\\({}^{\\rm had}\\)"
-                ],
-                [
-                    "\\(\\log_{10}(S/B)\\)",
-                    "\\(\\geq\\)",
-                    "\\((\\geq\\)",
-                    "\\(H_{\\rm T}\\)",
-                    "\\(S\\)",
-                    "\\(B\\)",
-                    "\\({}^{\\rm had}\\)"
-                ],
-                [
-                    "\\(\\log_{10}(S/B)\\)",
-                    "\\(\\geq\\)",
-                    "\\((\\geq\\)",
-                    "\\(H_{\\rm T}\\)",
-                    "\\(S\\)",
-                    "\\(B\\)",
-                    "\\({}^{\\rm had}\\)"
-                ],
-                [
-                    "\\(\\log_{10}(S/B)\\)",
-                    "\\(\\geq\\)",
-                    "\\((\\geq\\)",
-                    "\\(H_{\\rm T}\\)",
-                    "\\(S\\)",
-                    "\\(B\\)",
-                    "\\({}^{\\rm had}\\)"
-                ],
-                [
-                    "\\(\\log_{10}(S/B)\\)",
-                    "\\(\\geq\\)",
-                    "\\((\\geq\\)",
-                    "\\(H_{\\rm T}\\)",
-                    "\\(S\\)",
-                    "\\(B\\)",
-                    "\\({}^{\\rm had}\\)"
-                ]
-            ],
-            [
-                "The logarithm (base 10) of the signal-to-background ratio.",
-                "greater than or equal to",
-                "greater than or equal to",
-                "Scalar sum of transverse energy of leptons and jets.",
-                "Expected signal for a Standard Model Higgs boson.",
-                "Background.",
-                "Hadronic"
-            ]
+            "\\(\\log_{10}(S/B)\\)",
+            "\\(\\geq\\)",
+            "\\((\\geq\\)",
+            "\\(H_{\\rm T}\\)",
+            "\\(S\\)",
+            "\\(B\\)",
+            "\\({}^{\\rm had}\\)"
+        ],
+        "mathsDefinitions": [
+            "The logarithm (base 10) of the signal-to-background ratio.",
+            "greater than or equal to",
+            "greater than or equal to",
+            "Scalar sum of transverse energy of leptons and jets.",
+            "Expected signal for a SM Higgs boson.",
+            "Background",
+            "Hadronic"
         ]
     },
     {
-        "name": "Table 5",
+        "name": "Figure 19",
         "mentions": [
-            "Table 5: Observed and expected (median, for the background-only hypothesis) 95 % CL upper limits on \\(\\sigma\\) (\\(t\\bar{t}H\\)) relative to the SM prediction, for the individual channels as well as their combination, assuming \\(m_{H}=125\\) GeV"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [
-            "SM"
-        ],
-        "abbrevDefinitions": [
-            "Standard Model"
-        ],
-        "maths": [
-            [
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\sigma\\)",
-                    "\\(m_{H}=125\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\sigma\\)",
-                    "\\(m_{H}=125\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\sigma\\)",
-                    "\\(m_{H}=125\\)"
-                ]
-            ],
-            [
-                "Top-quark pair associated Higgs boson production.",
-                "Cross section.",
-                "Higgs boson mass of 125 GeV."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 27",
-        "mentions": [
-            "Figure 27: Dilepton channel: comparison of \\(t\\bar{t}H\\) signal (_dashed_) and background (_solid_) for the four top-ranked input variables in the (\\(\\geq\\)4j, \\(\\geq\\) 4b) region"
+            "Figure 19 demonstrates the effect of various systematic uncertainties on the fitted value of \\(\\mu\\) and the constraints provided by the data",
+            "The \\(t\\bar{t}+c\\bar{c}\\) normalisation uncertainty is ranked third (Fig. 19) and its pull is slightly negative, while the post-fit yields for \\(t\\bar{t}+c\\bar{c}\\) increase significantly in the four- and five-jet regions in the single-lepton channel and in the two- and three-jet regions of the dilepton channel (see Tables 10, 11 of Appendix 1)",
+            "Figure 19: The fitted values of the nuisance parameters with the largest impact on the measured signal strength"
         ],
         "atlusUrl": "https://cds.cern.ch/record/2001975",
         "paper": "CDS_Record_2001975",
@@ -536,94 +637,18 @@
         "abbrevs": [],
         "abbrevDefinitions": [],
         "maths": [
-            [
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "Top-quark pair associated Higgs boson production.",
-                "greater than or equal to"
-            ]
+            "\\(\\mu\\)",
+            "\\(t\\bar{t}+c\\bar{c}\\)"
+        ],
+        "mathsDefinitions": [
+            "Signal-strength parameter, ratio of observed/expected cross section to SM cross section.",
+            "A top-antitop pair production event with an additional charm-anticharm pair."
         ]
     },
     {
-        "name": "Table 1",
+        "name": "Table 4",
         "mentions": [
-            "Table 1: Single-lepton channel: the definitions and rankings of the variables considered in each of the regions where an NN is usedment \\(\\mathrm{d}\\Phi_{N}\\) describe the kinematics of the process"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [
-            "NN",
-            "N"
-        ],
-        "abbrevDefinitions": [
-            "neural network",
-            "cross section and Higgs boson decay branching fractions are taken from"
-        ],
-        "maths": [
-            [
-                [
-                    "\\(\\mathrm{d}\\Phi_{N}\\)"
-                ]
-            ],
-            [
-                "\\(\\mathrm{d}\\Phi_{N}\\): Differential phase space volume for \\(N\\) particles."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 2",
-        "mentions": [
-            "Figure 2a shows the \\(S/\\sqrt{B}\\) and \\(S/B\\) ratios for the different regions under consideration in the single-lepton channel based on the simulations described in Sect",
-            "The expected proportions of different backgrounds in each region are shown in Fig. 2b",
-            "Figure 2: Single-lepton channel: a \\(S/\\sqrt{B}\\) ratio for each of the regions assuming SM cross sections and branching fractions, and \\(m_{H}=125\\,\\mathrm{GeV}\\)"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [
-            "SM"
-        ],
-        "abbrevDefinitions": [
-            "Standard Model"
-        ],
-        "maths": [
-            [
-                [
-                    "\\(S/\\sqrt{B}\\)",
-                    "\\(S/B\\)",
-                    "\\(m_{H}=125\\,\\mathrm{GeV}\\)"
-                ],
-                [
-                    "\\(S/\\sqrt{B}\\)",
-                    "\\(S/B\\)",
-                    "\\(m_{H}=125\\,\\mathrm{GeV}\\)"
-                ],
-                [
-                    "\\(S/\\sqrt{B}\\)",
-                    "\\(S/B\\)",
-                    "\\(m_{H}=125\\,\\mathrm{GeV}\\)"
-                ]
-            ],
-            [
-                "Signal-to-background significance ratio.",
-                "Signal-to-background ratio.",
-                "Mass of the Standard Model Higgs boson, approximately 125 GeV."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 31",
-        "mentions": [
-            "Figure 31: Single-lepton channel: post-fit comparison of data and prediction for the four top-ranked input variables in (\\(\\geq\\) 6j, \\(\\geq\\) 4b) region"
+            "Table 4 shows the observed \\(\\mu\\) values obtained from the individual fits in the single-lepton and dilepton channels, and their combination"
         ],
         "atlusUrl": "https://cds.cern.ch/record/2001975",
         "paper": "CDS_Record_2001975",
@@ -631,14 +656,36 @@
         "abbrevs": [],
         "abbrevDefinitions": [],
         "maths": [
-            [
-                [
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "greater than or equal to"
-            ]
+            "\\(\\mu\\)"
+        ],
+        "mathsDefinitions": [
+            "Signal-strength parameter representing the ratio of observed/expected cross section to the Standard Model cross section."
+        ]
+    },
+    {
+        "name": "Figure 5",
+        "mentions": [
+            "This can be seen in Fig. 5, where the number of jets and the scalar sum of the jet \\(p_{\\mathrm{T}}\\) (\\(H_{\\mathrm{T}}\\)\\({}^{\\mathrm{had}}\\)) distributions in the exclusive 2-\\(b\\)-tag region are plotted in the single-lepton channel before and after the reweighting is applied.\n",
+            "Figure 5: The exclusive 2-\\(b\\)-tag region of the single-lepton channel before and after the reweighting of the \\(p_{\\mathrm{T}}\\) of the \\(t\\bar{t}\\) system and the \\(p_{\\mathrm{T}}\\) of the top quark of the Powheg+Pythia \\(t\\bar{t}\\) sample"
+        ],
+        "atlusUrl": "https://cds.cern.ch/record/2001975",
+        "paper": "CDS_Record_2001975",
+        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
+        "abbrevs": [],
+        "abbrevDefinitions": [],
+        "maths": [
+            "\\(b\\)",
+            "\\(p_{\\mathrm{T}}\\)",
+            "\\(H_{\\mathrm{T}}\\)",
+            "\\({}^{\\mathrm{had}}\\)",
+            "\\(t\\bar{t}\\)"
+        ],
+        "mathsDefinitions": [
+            "Bottom quark.",
+            "Transverse momentum.",
+            "Scalar sum of transverse momenta of jets.",
+            "Hadronic",
+            "Top-antitop quark pair production."
         ]
     },
     {
@@ -658,463 +705,10 @@
             "cross section and Higgs boson decay branching fractions are taken from"
         ],
         "maths": [
-            [
-                [
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "greater than or equal to"
-            ]
-        ]
-    },
-    {
-        "name": "Figure 5",
-        "mentions": [
-            "This can be seen in Fig. 5, where the number of jets and the scalar sum of the jet \\(p_{\\mathrm{T}}\\) (\\(H_{\\mathrm{T}}\\)\\({}^{\\mathrm{had}}\\)) distributions in the exclusive 2-\\(b\\)-tag region are plotted in the single-lepton channel before and after the reweighting is applied.\n",
-            "Figure 5: The exclusive 2-\\(b\\)-tag region of the single-lepton channel before and after the reweighting of the \\(p_{\\mathrm{T}}\\) of the \\(t\\bar{t}\\) system and the \\(p_{\\mathrm{T}}\\) of the top quark of the Powheg+Pythia \\(t\\bar{t}\\) sample"
+            "\\(\\geq\\)"
         ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
-        "maths": [
-            [
-                [
-                    "\\(b\\)",
-                    "\\(p_{\\mathrm{T}}\\)",
-                    "\\(H_{\\mathrm{T}}\\)",
-                    "\\({}^{\\mathrm{had}}\\)",
-                    "\\(t\\bar{t}\\)"
-                ],
-                [
-                    "\\(b\\)",
-                    "\\(p_{\\mathrm{T}}\\)",
-                    "\\(H_{\\mathrm{T}}\\)",
-                    "\\({}^{\\mathrm{had}}\\)",
-                    "\\(t\\bar{t}\\)"
-                ],
-                [
-                    "\\(b\\)",
-                    "\\(p_{\\mathrm{T}}\\)",
-                    "\\(H_{\\mathrm{T}}\\)",
-                    "\\({}^{\\mathrm{had}}\\)",
-                    "\\(t\\bar{t}\\)"
-                ],
-                [
-                    "\\(b\\)",
-                    "\\(p_{\\mathrm{T}}\\)",
-                    "\\(H_{\\mathrm{T}}\\)",
-                    "\\({}^{\\mathrm{had}}\\)",
-                    "\\(t\\bar{t}\\)"
-                ],
-                [
-                    "\\(b\\)",
-                    "\\(p_{\\mathrm{T}}\\)",
-                    "\\(H_{\\mathrm{T}}\\)",
-                    "\\({}^{\\mathrm{had}}\\)",
-                    "\\(t\\bar{t}\\)"
-                ]
-            ],
-            [
-                "Bottom quark.",
-                "Transverse momentum.",
-                "Scalar sum of transverse momenta of jets.",
-                "Hadronic",
-                "Top-antitop quark pair production."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 1",
-        "mentions": [
-            "Figure 1a, b show two examples of tree-level diagrams for \\(t\\bar{t}H\\) production with a subsequent \\(H\\to b\\bar{b}\\) decay",
-            "An example is shown in Fig. 1c",
-            "Figure 1: Representative tree-level Feynman diagrams for the production of the Higgs boson in association with a top-quark pair (\\(t\\bar{t}\\)\\(H\\)) and the subsequent decay of the Higgs to \\(b\\bar{b}\\), (**a**, **b**) for the main background \\(t\\bar{t}+b\\bar{b}\\) (**c**)\n",
-            "The signal hypothesis is defined as a SM Higgs boson produced in association with a top-quark pair as shown in Fig. 1a, b"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [
-            "SM"
-        ],
-        "abbrevDefinitions": [
-            "Standard Model"
-        ],
-        "maths": [
-            [
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(H\\to b\\bar{b}\\)",
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)",
-                    "\\(H\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(H\\to b\\bar{b}\\)",
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)",
-                    "\\(H\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(H\\to b\\bar{b}\\)",
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)",
-                    "\\(H\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(H\\to b\\bar{b}\\)",
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)",
-                    "\\(H\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(H\\to b\\bar{b}\\)",
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)",
-                    "\\(H\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(H\\to b\\bar{b}\\)",
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)",
-                    "\\(H\\)"
-                ]
-            ],
-            [
-                "Top-quark pair associated Higgs boson production.",
-                "Higgs boson decay to a bottom-antibottom quark pair.",
-                "Bottom quark-antiquark pair.",
-                "Top-antitop quark pair production.",
-                "The combined production of top-antitop (\\(t\\bar{t}\\)) pairs and bottom-antibottom (\\(b\\bar{b}\\)) pairs in high-energy collisions.",
-                "Higgs boson"
-            ]
-        ]
-    },
-    {
-        "name": "Figure 11",
-        "mentions": [
-            "Figure 11: Single-lepton channel: comparison between data and prediction for the discriminant variable used in the (4j, 2b) region a before the fit and **b** after the fit, in the (4j, 2b) region a before the fit and **d** after the fit, in the (4j, 4b) region **e** before the fit and **f** after the fit",
-            "Figures 11, 12, 13, 14 and 15 show a comparison of data and prediction for the discriminating variables (either \\(H_{\\rm T}\\) had, \\(H_{\\rm T}\\), or NN discriminants) for each of the regions considered in the single-lepton and dilepton channels, respectively, both pre- and post-fit to data"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [
-            "NN",
-            "N"
-        ],
-        "abbrevDefinitions": [
-            "neural network",
-            "cross section and Higgs boson decay branching fractions are taken from"
-        ],
-        "maths": [
-            [
-                [
-                    "\\(H_{\\rm T}\\)"
-                ]
-            ],
-            [
-                "Scalar sum of transverse energy of leptons and jets."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 13",
-        "mentions": [
-            "Figure 13: Single-lepton channel: comparison of data and prediction for the discriminant variable used in the (\\(\\geq\\)6), 2b) region **a** before the fit and **b** after the fit, in the (\\(\\geq\\)6j, 3b) region **c** before the fit and **d** after the fit, in the (\\(\\geq\\)6j, \\(\\geq\\)4b) region **e** before the fit and **f** after the fit"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
-        "maths": [
-            [
-                [
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "greater than or equal to"
-            ]
-        ]
-    },
-    {
-        "name": "Figure 9",
-        "mentions": [
-            "The effect of these variations on the contribution of different \\(t\\bar{t}\\)+\\(b\\bar{b}\\) event categories is shown in Fig. 9",
-            "Figure 9: Systematic uncertainties on the \\(t\\bar{t}+b\\bar{b}\\) contribution based on **a** scale variations and **b** PDF choice and shower recoil model of the SherpaOL simulation"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
-        "maths": [
-            [
-                [
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)"
-                ],
-                [
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)"
-                ],
-                [
-                    "\\(b\\bar{b}\\)",
-                    "\\(t\\bar{t}\\)",
-                    "\\(t\\bar{t}+b\\bar{b}\\)"
-                ]
-            ],
-            [
-                "Bottom quark-antiquark pair.",
-                "Top-antitop quark pair production.",
-                "Top-antitop pair production with bottom-antibottom pair production."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 23",
-        "mentions": [
-            "The plots include \\(\\mathbf{a}\\)\\(m_{\\rm bb}^{\\rm max\\,PT}\\), \\(\\mathbf{b}\\)\\(m_{\\rm uu}^{\\rm min\\,RR}\\), \\(\\mathbf{c}\\)\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\) and \\(\\mathbf{d}\\)\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)Figure 23: Single-lepton channel: comparison of \\(t\\bar{t}H\\) signal (_dashed_) and background (_solid_) for the four top-ranked input variables in the (\\(\\geq\\) 6j, 3b) region"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
-        "maths": [
-            [
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ],
-                [
-                    "\\(t\\bar{t}H\\)",
-                    "\\(\\geq\\)",
-                    "\\(\\mathbf{a}\\)",
-                    "\\(m_{\\rm bb}^{\\rm max\\,PT}\\)",
-                    "\\(\\mathbf{b}\\)",
-                    "\\(m_{\\rm uu}^{\\rm min\\,RR}\\)",
-                    "\\(\\mathbf{c}\\)",
-                    "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\)",
-                    "\\(\\mathbf{d}\\)",
-                    "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\)"
-                ]
-            ],
-            [
-                "Top-quark pair associated Higgs boson production.",
-                "greater than or equal to",
-                "\\(m_{\\rm bb}^{\\rm max\\,PT}\\): maximum transverse momentum of the \\(b\\bar{b}\\) invariant mass.",
-                "Maximum transverse mass of a \\(b\\bar{b}\\) pair.",
-                "\\(m_{\\rm uu}^{\\rm min\\,RR}\\): minimum invariant mass of the \\(uu\\) pair in the reconstructed region.",
-                "Minimum invariant mass of the \\(uu\\) pair in the reduced resolution context.",
-                "\\(p_{\\rm T,uu}^{\\rm min\\,A\\,R}\\): Minimum transverse momentum of the \\(uu\\) pair in the angular resolution.",
-                "Minimum transverse momentum of the \\(uu\\) pair in the anti-kT algorithm.",
-                "\\(m_{\\rm bb}^{\\rm min\\,A\\,R}\\): minimum invariant mass of \\(b\\bar{b}\\) pairs in the anti-kT algorithm.",
-                "Minimum \\(b\\bar{b}\\) invariant mass in the angular resolution (AR) context."
-            ]
-        ]
-    },
-    {
-        "name": "Table 2",
-        "mentions": [
-            "Table 2: Dilepton channel: the definitions and rankings of the variables considered in each of the regions where an NN is used width approximation is applied to the leptonically decaying \\(W\\) boson"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [
-            "NN",
-            "N"
-        ],
-        "abbrevDefinitions": [
-            "neural network",
-            "cross section and Higgs boson decay branching fractions are taken from"
-        ],
-        "maths": [
-            [
-                [
-                    "\\(W\\)"
-                ]
-            ],
-            [
-                "\\(W\\) boson: a gauge boson mediating the weak nuclear force, responsible for processes such as beta decay."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 21",
-        "mentions": [
-            "Figure 21: Single-lepton channel: comparison of \\(t\\bar{t}\\)+HF (_dashed_) and \\(t\\bar{t}\\)+light (_solid_) background for the four top-ranked input variables in the (5j, 3b) region where the NN is designed to separate these two backgrounds"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [
-            "NN",
-            "N"
-        ],
-        "abbrevDefinitions": [
-            "neural network",
-            "cross section and Higgs boson decay branching fractions are taken from"
-        ],
-        "maths": [
-            [
-                [
-                    "\\(t\\bar{t}\\)"
-                ]
-            ],
-            [
-                "Top-antitop quark pair production."
-            ]
-        ]
-    },
-    {
-        "name": "Figure 20",
-        "mentions": [
-            "In the most sensitive regions, (\\(\\geq\\) 6j, \\(\\geq\\) 4b) in the single-lepton channel and (\\(\\geq\\) 4j, \\(\\geq\\) 4b) in the dilepton channel, \\(H\\to b\\bar{b}\\) decays are expected to constitute about 90 % of the signal contribution as shown in Fig. 20 of Appendix A.\n"
-        ],
-        "atlusUrl": "https://cds.cern.ch/record/2001975",
-        "paper": "CDS_Record_2001975",
-        "paperName": "Search for the Standard Model Higgs boson produced in association with top quarks and decaying into $b\\bar{b}$ in pp collisions at $\\sqrt{s}$ = 8 TeV with the ATLAS detector",
-        "abbrevs": [],
-        "abbrevDefinitions": [],
-        "maths": [
-            [
-                [
-                    "\\(H\\to b\\bar{b}\\)",
-                    "\\(\\geq\\)"
-                ],
-                [
-                    "\\(H\\to b\\bar{b}\\)",
-                    "\\(\\geq\\)"
-                ]
-            ],
-            [
-                "Higgs boson decay to a bottom-antibottom quark pair.",
-                "greater than or equal to"
-            ]
+        "mathsDefinitions": [
+            "greater than or equal to"
         ]
     }
 ]
