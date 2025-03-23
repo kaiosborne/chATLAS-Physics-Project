@@ -48,7 +48,6 @@ def load_data_into_collection():
                 "keywords": obj["keywords"],
             })
             ids.append(document_id)
-            ##
 
         collection.add(embeddings=embeddings, documents=documents, metadatas=metadatas, ids=ids)
 
@@ -58,7 +57,7 @@ def load_data_into_collection():
 def index():
     if 'search_history' not in session:
         session['search_history'] = []
-    return render_template('query_form2.html', history=session['search_history'])
+    return render_template('query_form3.html', history=session['search_history'])
 
 @app.route('/search', methods=['POST'])
 def search():
