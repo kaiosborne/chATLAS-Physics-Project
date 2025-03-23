@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Query CERN Figures</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/query_styles.css') }}">
+  <style>
+    .video-overlay {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .video-overlay video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .search-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      background: rgba(240, 240, 240, 1);
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 2;
+    }
+    .search-overlay h1 {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 1.6em;
+    }
+    
+    .search-overlay .input-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .search-overlay input[type="text"] {
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    .nav-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    }
+
+  </style>
+  <script>
+    let lastScrollTop = 0; // Keep track of the last scroll position
+
+    window.addEventListener("scroll", function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop) {
+        // Scroll Down
+        document.querySelector('.nav-banner').style.top = "-120px";
+      } else {
+        // Scroll Up
+        document.querySelector('.nav-banner').style.top = "0";
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, false);
+
+    function startDictation() {
+      if (window.hasOwnProperty('webkitSpeechRecognition')) {
+        var recognition = new webkitSpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = "en-US";
+        recognition.start();
+
+        recognition.onresult = function(e) {
+          document.getElementById('mainQuery').value = e.results[0][0].transcript;
+          recognition.stop();
+        };
+
+        recognition.onerror = function(e) {
+          recognition.stop();
+        }
+      }
+    }
+
+    function toggleAdvancedOptions() {
+      var checkBox = document.getElementById("advancedOption");
+      var advancedFields = document.getElementById("advancedFields");
+      advancedFields.style.display = checkBox.checked ? "block" : "none";
+    }
+
+    function pasteLastQuery() {
+      var lastQuery = localStorage.getItem('lastQuery');
+      if (lastQuery) {
+        document.getElementById('mainQuery').value = lastQuery;
+      }
+    }
+
+    function toggleHistory() {
+      var historyDiv = document.getElementById('searchHistory');
+      var containerDiv = document.getElementById('container');
+      var infoArticle = document.getElementById('infoArticle');
+      var miniGame = document.getElementById("miniGame");
+      historyDiv.style.display = historyDiv.style.display === 'none' ? 'block' : 'none';
+      containerDiv.style.display = historyDiv.style.display === 'block' ? 'none' : 'block';
+      infoArticle.style.display = historyDiv.style.display === 'block' ? 'none' : 'block';
+      miniGame.style.display = historyDiv.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var micBtn = document.getElementById("micBtn");
+      micBtn.addEventListener("click", startDictation);
+
+      var advancedOption = document.getElementById("advancedOption");
+      advancedOption.addEventListener("change", toggleAdvancedOptions);
+
+      var pasteLastQueryBtn = document.getElementById("pasteLastQueryBtn");
+      pasteLastQueryBtn.style.display = localStorage.getItem('lastQuery') ? "inline" : "none";
+      
+      pasteLastQueryBtn.addEventListener("click", function() {
+        var lastQuery = localStorage.getItem('lastQuery');
+        if (lastQuery) {
+          document.getElementById('mainQuery').value = lastQuery;
+        }
+      });
+
+      document.querySelector("form").addEventListener("submit", function() {
+        var query = document.getElementById('mainQuery').value;
+        localStorage.setItem('lastQuery', query);
+        pasteLastQueryBtn.style.display = "inline";
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="nav-banner">
+    <div class="site-info">
+      <div class="site-info__logo">
+        <a href="https://atlas.cern/" title="ATLAS Home" rel="home">
+          <img src="https://atlas.cern/sites/default/files/logo/ATLAS-Logowhite-big.png" alt="Home">
+        </a>
+      </div>
+      <div class="site-info__logo ucl-logo">
+        <a href="https://www.ucl.ac.uk/" title="UCL Home" rel="home">
+          <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d1/University_College_London_logo.svg/1024px-University_College_London_logo.svg.png" alt="UCL Home">
+        </a>
+      </div>
+      <div class="site-info__logo chatlas-logo">
+        <a href="/" title="chaATLAS Home" rel="home">
+          <img src="static/images/chaATLAS_logo.png" alt="chaATLAS Home">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Video background with centered search overlay -->
+  <div class="video-overlay">
+    <video autoplay playsinline muted loop>
+      <source src="https://atlas.cern/sites/default/files/2020-01/IntroVid%20Final%20mp4%20-%20fadeblue.mp4" type="video/mp4">
+    </video>
+    <div class="search-overlay">
+      <h1>Search CERN Figures</h1>
+      <form action="/search" method="post">
+        <div class="input-group">
+          <input type="text" id="mainQuery" name="mainQuery" required placeholder="Enter your query...">
+          <button type="button" id="micBtn" aria-label="Speak">
+            <i class="fas fa-microphone"></i>
+          </button>
+        </div>
+        <input type="submit" value="Search">
+        <button type="button" id="pasteLastQueryBtn" style="display: none;">Paste Last Query</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- The rest of your content below -->
+  <div data-history-node-id="106" class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      <div class="field field--name-field-component field--type-entity-reference-revisions field--label-hidden field--items">
+        <div class="field--item">
+          <div class="component-row component-row__display__fluidcenter section-navigation effect_none is_full_height">
+            <div class="background-component background__video" style="height: 100%;">
+              <!-- Video has been moved to the overlay above -->
+            </div>
+            <div class="component-row__row">
+              <div class="component-row__column component-row__sidebar-left col-md-6 col-sm-12 col-xs-12">
+                <div class="text-component text-component-page clearfix">
+                  <div class="text-component-text cern_full_html" style="color:#FFFFFF">
+                    <div id="frontpagewrapper">
+                      <div id="frontpagetitle">ATLAS Experiment</div>
+                      <div id="frontpagesubtitle">Exploring the secrets of the Universe</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional content such as main-content, history, etc. -->
+  <div class="main-content"> 
+    <div class="information-article" id="infoArticle">
+      <h2>About the Search Functionality</h2>
+      <p>This search tool is designed to facilitate the discovery of plots within ATLAS published papers. Our system leverages a sophisticated vector database, constructed by processing a collection of scientific papers. The methodology involves:</p>
+      <ol>
+        <li>Identifying plots within each document.</li>
+        <li>Capturing the captions of these plots to generate embeddings, enriching the vector database's search capability.</li>
+        <li>Extracting mentions of the plots throughout the, further enhancing the context for search queries.</li>
+        <li>Extracting abbreviations, maths variables, definitions, keywords, and figuretypes, to enhance the vector search.</li>
+        <li>Locating the plots on the web and recording their URLs for easy access.</li>
+      </ol>
+      <p>This approach allows researchers and enthusiasts to efficiently find relevant figures and plots by querying our database, streamlining the research process and fostering greater accessibility to scientific information.</p>
+    </div>
+  </div>
+  <div class="game-access" id="miniGame">
+    <a href="{{ url_for('play_invisible_atom') }}" class="btn btn-primary">Find the Particle</a>
+  </div>
+  {% if history %}
+  <div class="history-btn-container">
+    <button id="historyBtn" onclick="toggleHistory()">Toggle Search History</button>
+    <form action="/clear_history" method="post" class="clear-history-form">
+      <button type="submit">Clear Search History</button>
+    </form>
+  </div>
+
+  <div id="searchHistory" style="display: none;">
+    {% for entry in history %}
+      <div class="history-entry">
+        <p>Query: {{ entry.query }}</p>
+        {% for result in entry.results %}
+          <div class="result">
+            {% if result.image_url %}
+              <p>Image: <img src="{{ result.image_url }}" alt="Figure Image" style="max-width:50%;height:auto;"></p>
+            {% endif %}
+            <p>Name: {{ result.name }}</p>
+            <p>Mentions: {{ result.mentions }}</p>
+            <p>Atlas URL: <a href="{{ result.atlusUrl }}" target="_blank">{{ result.atlusUrl }}</a></p>
+            <p>Paper ID: {{ result.paper }}</p>
+            <p>Paper Name: {{ result.paperName }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</body>
+</html>
