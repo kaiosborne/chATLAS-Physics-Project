@@ -36,7 +36,7 @@ The following scripts should be executed in order to achieve correct results. Th
 
 ### 6. **Merge Folder**
 - **Purpose:** Merges individual JSON files (containing image URLs) into the overall figure database.
-- **Recommendation:** Consider initially creating separate databases for each input type and merging them later, as scripts are tailored for specific input types.
+- **Recommendation:** Consider initially creating separate databases / carrying out flow seperately for each input paper type and merging them later, as scripts are tailored for specific input types.
   - **Potential improvement area:** Generalize merge scripts to handle all input types uniformly.
 
 ### At this stage, figures now have associated image links (some may have multiple images).
@@ -64,7 +64,7 @@ The following scripts should be executed in order to achieve correct results. Th
 
 - **Final output:** `EmbeddedDB.json`
 - **Intermediate outputs:** Saved after each step, useful for debugging and verification.
-- **Example outputs:** Refer to `test outputs` folder (run specifically on ATLASPapers for demonstration purposes).
+- **Example outputs:** Refer to `test outputs` folder (run specifically on ATLASPapers subset for demonstration purposes).
 - **Image URLs Folder:** Illustrates URL extraction processes.
 
 ---
