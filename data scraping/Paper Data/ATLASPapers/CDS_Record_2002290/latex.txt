@@ -1,0 +1,738 @@
+Measurement of the top quark mass in the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton channels using \(\sqrt{s}=7\) TeV ATLAS data
+
+ATLAS Collaboration CERN, 1211 Geneva 23, Switzerland
+
+###### Abstract
+
+The top quark mass was measured in the channels \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton (lepton \(=~{}e,\,\mu\)) based on ATLAS data recorded in 2011. The data were taken at the LHC with a proton-proton centre-of-mass energy of \(\sqrt{s}=7\) TeV and correspond to an integrated luminosity of 4.6 fb\({}^{-1}\). The \(t\bar{t}\to\) lepton+jets analysis uses a three-dimensional template technique which determines the top quark mass together with a global jet energy scale factor (JSF), and a relative \(b\)-to-light-jet energy scale factor (bJSF), where the terms \(b\)-jets and light-jets refer to jets originating from \(b\)-quarks and \(u,\,d,\,c,\,s\)-quarks or gluons, respectively. The analysis of the \(t\bar{t}\to\) dilepton channel exploits a one-dimensional template method using the \(m_{\ell b}\) observable, defined as the average invariant mass of the two lepton+\(b\)-jet pairs in each event. The top quark mass is measured to be \(172.33\pm 0.75(\text{stat}+\text{JSF}+\text{bJSF})\pm 1.02(\text{syst})\) GeV, and \(173.79\pm 0.54(\text{stat})\pm 1.30(\text{syst})\) GeV in the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton channels, respectively. The combination of the two results yields \(m_{\text{top}}=172.99\pm 0.48(\text{stat})\pm 0.78(\text{syst})\) GeV, with a total uncertainty of 0.91 GeV.
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: thanks: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cer
+
+## 1 Introduction
+
+The mass of the top quark (\(m_{\rm top}\)) is an important parameter of the Standard Model (SM) of particle physics. Precise measurements of \(m_{\rm top}\) provide critical inputs to fits of global electroweak parameters [1; 2; 3] that help assess the internal consistency of the SM. In addition, the value of \(m_{\rm top}\) affects the stability of the SM Higgs potential, which has cosmological implications [4; 5; 6].
+
+Many measurements of \(m_{\rm top}\) were performed by the CDF and DO collaborations based on Tevatron proton-antiproton collision data corresponding to integrated luminosities of up to 9.7 fb\({}^{-1}\). A selection of these measurements was used in the recent Tevatron \(m_{\rm top}\) combination resulting in \(m_{\rm top}=174.34\pm 0.37\,({\rm stat})\pm 0.52\,({\rm syst})\,{\rm GeV}=174.34\pm 0.64\) GeV [7]. Since 2010, measurements of \(m_{\rm top}\) from the LHC by the ATLAS and CMS collaborations have become available. They are based on proton-proton (\(pp\)) collisions at a centre-of-mass energy of \(\sqrt{s}=7\) TeV, recorded during 2010 and 2011 for integrated luminosities of up to 4.9 fb\({}^{-1}\)[8; 9; 10; 11; 12; 13]. The corresponding LHC combination, based on \(\sqrt{s}=7\) TeV data and including preliminary results, yields \(m_{\rm top}=173.29\pm 0.23\,({\rm stat})\pm 0.92\,({\rm syst})\,{\rm GeV}=173.29\pm 0.95\) GeV [14]. Using the same LHC input measurements and a selection of the \(m_{\rm top}\) results from the Tevatron experiments, the first Tevatron\(+\)LHC \(m_{\rm top}\) combination results in \(m_{\rm top}=173.34\pm 0.27\,({\rm stat})\pm 0.71\,({\rm syst})\) GeV, with a total uncertainty of 0.76 GeV [15]. Recently, improved individual measurements with a total uncertainty compatible with that achieved in the Tevatron\(+\)LHC \(m_{\rm top}\) combination have become available; the most precise single measurement is obtained by the D0 Collaboration using \(t\bar{t}\,\to\,\)lepton+jets events and yields \(m_{\rm top}=174.98\pm 0.76\) GeV [16].
+
+This article presents a measurement of \(m_{\rm top}\) using events with one or two isolated charged leptons (electrons or muons) in the final state (the \(t\bar{t}\,\to\,\)lepton+jets and \(t\bar{t}\,\to\,\) dilepton decay channels), in 4.6 fb\({}^{-1}\) of \(pp\) collision data collected by the ATLAS detector at a centre-of-mass energy of \(\sqrt{s}=7\) TeV during 2011. It supersedes Ref. [8], where, using a two-dimensional fit to reconstructed observables in the \(t\bar{t}\,\to\,\)lepton+jets channel, \(m_{\rm top}\) was determined together with a global jet energy scale factor. The use of this scale factor allows the uncertainty on \(m_{\rm top}\) stemming from imperfect knowledge of the jet energy scale (JES) to be considerably reduced, albeit at the cost of an additional statistical uncertainty component. The single largest systematic uncertainty on \(m_{\rm top}\) in Ref. [8] was due to the relative \(b\)-to-light-jet energy scale (bJES) uncertainty, where the terms \(b\)-jets and light-jets refer to jets originating from \(b\)-quarks and \(u\), \(d\), \(c\), \(s\)-quarks or gluons, respectively. To reduce this uncertainty in the present analysis, a three-dimensional template fit is used for the first time in the \(t\bar{t}\,\to\,\) lepton+jets channel, again replacing the corresponding uncertainty by a statistical uncertainty and a reduced systematic uncertainty. This concept will be even more advantageous with increasing data luminosity. In addition, for the combination of the measurements of \(m_{\rm top}\) in the two decay channels an in-depth investigation of the correlation of the two estimators for all components of the sources of systematic uncertainty is made. This leads to a much smaller total correlation of the two measurements than what is typically assigned, such that their combination yields a very significant improvement in the total uncertainty on \(m_{\rm top}\). To retain this low correlation, the jet energy scale factors measured in the \(t\bar{t}\,\to\,\)lepton+jets channel have not been propagated to the \(t\bar{t}\,\to\,\) dilepton channel.
+
+In the \(t\bar{t}\,\to\,\)lepton+jets channel, one \(W\) boson from the top or antitop quark decays directly or via an intermediate \(\tau\) decay into an electron or muon and at least one neutrino, while the other \(W\) boson decays into a quark-antiquark pair. The \(t\bar{t}\) decay channels with electrons and muons are combined and referred to as the lepton+jets (or as a shorthand \(\ell\)+jets) final state. The \(t\bar{t}\,\to\,\) dilepton channel corresponds to the case where both \(W\) bosons from the top and antitop quarks decay leptonically, directly or via an intermediate \(\tau\) decay, into an electron or muon and at least one neutrino. The \(t\bar{t}\) decay channels \(ee\), \(e\mu\), \(\mu\mu\) are combined and referred to as the dilepton final state. For both the \(\ell\)+jets and dilepton final states, the measurements are based on the template method [17]. In this technique, Monte Carlo (MC) simulated distributions are constructed for a chosen quantity sensitive to the physics parameter under study, using a number of discrete values of that parameter. These templates are fitted to analytical functions that interpolate between different input values of the physics parameter, fixing all other parameters of the functions. In the final step a likelihood fit to the observed distribution in data is used to obtain the value for the physics parameter that best describes the data. In this procedure the top quark mass determined from data corresponds to the mass definition used in the MC simulation. It is expected that the difference between this mass definition and the pole mass is of order 1 GeV [18; 19; 20; 21].
+
+In the \(\ell\)+jets channel, events are reconstructed using a kinematic fit that assumes a \(t\bar{t}\) topology. A three-dimensional template method is used, where \(m_{\rm top}\) is determined simultaneously with a light-jet energy scale factor (JSF), exploiting the information from the hadronic \(W\) decays, and a separate \(b\)-to-light-jet energy scale factor (bJSF). The JSF and bJSF account for residual differences of data and simulation in the light-jet and in the relative \(b\)-to-light-jet energy scale, respectively, thereby mitigating the corresponding systematic uncertainties on \(m_{\rm top}\). The analysis in the dilepton channel is based on a one-dimensional template method, where the templates are constructed for the \(m_{\ell b}\) observable, defined as the per-event average invariant mass of the two lepton\(-b\)-jet systems from the decay of the top quarks. Due to the underconstrained kinematics associated with the dileptonfinal state, no in situ constraint of the jet energy scales is performed.
+
+This article is organised as follows: after a short description of the ATLAS detector in Sect. 2, the data and MC simulation samples are discussed in Sect. 3. Details of the event selection and reconstruction are given in Sect. 4. The template fits are explained in Sect. 5. The measurement of \(m_{\rm top}\) in the two final states is given in Sect. 6, and the evaluation of the associated systematic uncertainties are discussed in Sect. 7. The results of the combination of the \(m_{\rm top}\) measurements from the individual analyses are reported in Sect. 8. Finally, the summary and conclusions are given in Sect. 9.
+
+## 2 The ATLAS detector
+
+The ATLAS detector [22] covers nearly the entire solid angle around the collision point.1 It consists of an inner tracking detector surrounded by a thin superconducting solenoid, electromagnetic and hadronic calorimeters, and a muon spectrometer incorporating three large superconducting toroid magnets. The inner-detector system (ID) is immersed in a 2 T axial magnetic field and provides charged-particle tracking in the range \(|\eta|<2.5\). The high-granularity silicon pixel detector covers the interaction region and typically provides three measurements per track, the first energy deposit being normally in the innermost layer. It is followed by the silicon microstrip tracker designed to provide four two-dimensional measurement points per track. These silicon detectors are complemented by the transition radiation tracker, which enables radially extended track reconstruction up to \(|\eta|=2.0\). The transition radiation tracker also provides electron identification information based on the fraction of energy deposits (typically 30 hits in total) above an energy threshold corresponding to transition radiation. The calorimeter system covers the pseudorapidity range \(|\eta|<4.9\). Within the region \(|\eta|<3.2\), electromagnetic calorimetry is provided by barrel and endcap high-granularity lead/liquid-argon (LAr) electromagnetic calorimeters, with an additional thin LAr presampler covering \(|\eta|<1.8\), to correct for energy loss in material upstream of the calorimeters. Hadronic calorimetry is provided by the steel/scintillator-tile calorimeter, segmented into three barrel structures within \(|\eta|<1.7\), and two copper/LAr hadronic endcap calorimeters. The solid angle coverage is completed with forward copper/LAr and tungsten/LAr calorimeter modules optimised for electromagnetic and hadronic measurements respectively. The muon spectrometer (MS) comprises separate trigger and high-precision tracking chambers measuring the deflection of muons in the magnetic field generated by the toroids. The precision chamber system covers the region \(|\eta|<2.7\) with three layers of monitored drift tubes, complemented by cathode strip chambers in the forward region. The muon trigger system covers the range \(|\eta|<2.4\) with resistive plate chambers in the barrel, and thin gap chambers in the endcap regions. A three-level trigger system is used to select interesting events [23]. The Level-1 trigger is implemented in hardware and uses a subset of detector information to reduce the event rate to at most 75 kHz. This is followed by two software-based trigger levels which together reduce the event rate to about 300 Hz.
+
+Footnote 1: ATLAS uses a right-handed coordinate system with its origin at the nominal interaction point (IP) in the centre of the detector and the \(z\)-axis along the beam pipe. The \(x\)-axis points from the IP to the centre of the LHC ring, and the \(y\)-axis points upwards. Cylindrical coordinates \((r,\phi)\) are used in the transverse plane, \(\phi\) being the azimuthal angle around the beam pipe. The pseudorapidity is defined in terms of the polar angle \(\theta\) as \(\eta=-\ln\tan(\theta/2)\). Angular distances are defined as \(\Delta R\equiv\sqrt{(\Delta\eta)^{2}+(\Delta\phi)^{2}}\).
+
+## 3 Data and Monte Carlo samples
+
+For the measurements described in this document, data from LHC \(pp\) collisions at \(\sqrt{s}=7\) TeV are used. They correspond to an integrated luminosity of 4.6 fb\({}^{-1}\) with an uncertainty of 1.8 % [24], and were recorded during 2011 during stable beam conditions and with all relevant ATLAS sub-detector systems operational.
+
+MC simulations are used to model \(t\bar{t}\) and single top quark processes as well as some of the background contributions. Top quark pair and single top quark production (in the \(s\)- and \(Wt\)-channels) are simulated using the next-to-leading-order (NLO) MC program Powheg-hvq (patch4) [25] with the NLO CT10 [26] parton distribution functions (PDFs). Parton showering, hadronisation and the underlying event are modelled using the Pythia (v6.425) [27] program with the Perugia 2011C (P2011C) MC parameter set (tune) [28] and the corresponding CTEQ6L1 PDFs [29]. The AcerMC (v3.8) generator [30] interfaced with Pythia (v6.425) is used for the simulation of the single top quark \(t\)-channel process. The AcerMC and Pythia programs are used with the CTEQ6L1 PDFs and the corresponding P2011C tune.
+
+For the construction of signal templates, the \(t\bar{t}\) and single top quark production samples are generated for different assumed values of \(m_{\rm top}\), namely 167.5, 170, 172.5, 175, 177.5 GeV. The \(t\bar{t}\) MC samples are normalised to the predicted \(t\bar{t}\) cross section for each \(m_{\rm top}\) value. The \(t\bar{t}\) cross section for \(pp\) collisions at \(\sqrt{s}=7\)TeV is \(\sigma_{t\bar{t}}=177^{+10}_{-11}\) pb for \(m_{\rm top}=172.5\) GeV. It was calculated at next-to-next-to-leading-order (NNLO) in QCD including resummation of next-to-next-to-leading-logarithmic (NNLL) soft gluon terms with Top\(+2.0\)[31, 32, 33, 34, 35, 36]. The PDF\(+\alpha_{s}\) uncertainties on the cross section were calculated using the PDF4LHC prescription [37] with the MSTW2008 68 % CL NNLO [38, 39], CT10 NNLO [40, 26] and NNPDF2.3 5f FFN [41] PDFs, and added in quadrature to the factorisation and renormalisationscale uncertainty. The NNLO+NNLL value, as implemented in Hathor 1.5 [42], is about 3 % larger than the plain NNLO prediction. The single top quark production cross sections are normalised to the approximate NNLO prediction values. For example, for \(m_{\text{top}}=172.5\) GeV, these are 64.6\({}^{+2.7}_{-2.0}\) pb [43], 4.6 \(\pm\) 0.2 pb [44] and 15.7 \(\pm\) 1.1 pb [45] for the \(t\)-, \(s\)- and \(Wt\)-production channels respectively.
+
+The production of \(W\) or \(Z\) bosons in association with jets is simulated using the Alpgen (v2.13) generator [46] interfaced to the Herwig (v6.520) [47; 48] and Jimmy (v4.31) [49] packages. The CTEQ6L1 PDFs and the corresponding AUET2 tune [50] are used for the matrix element and parton shower settings. The \(W\)+jets events containing heavy-flavour quarks (\(Wbb\)+jets, \(Wcc\)+jets, and \(Wc\)+jets) are generated separately using leading-order matrix elements with massive \(b\)- and \(c\)-quarks. An overlap-removal procedure is used to avoid double counting of heavy-flavour quarks between the matrix element and the parton shower evolution. Diboson production processes (\(WW\), \(WZ\) and \(ZZ\)) are produced using the Herwig generator with the AUET2 tune.
+
+Multiple \(pp\) interactions generated with Pythia (v6.425) using the AMBT2B tune [51] are added to all MC samples. These simulated events are re-weighted such that the distribution of the number of interactions per bunch crossing (pile-up) in the simulated samples matches that in the data. The average number of interactions per bunch crossing for the data set considered is 8.7. The samples are processed through a simulation of the ATLAS detector [52] based on GEANT4 [53] and through the same reconstruction software as the data.
+
+## 4 Event selection and reconstruction
+
+### Object selection
+
+In this analysis \(t\bar{t}\) events with one or two isolated charged leptons in the final states are selected. The event selection for both final states is based on the following reconstructed objects in the detector: electron and muon candidates, jets and missing transverse momentum (\(E_{\mathrm{T}}^{\mathrm{miss}}\)).
+
+An electron candidate is defined as an energy deposit in the electromagnetic calorimeter with an associated well-reconstructed track [54]. Electron candidates are required to have transverse energy \(E_{\mathrm{T}}>25\) GeV and \(|\eta_{\mathrm{cluster}}|<2.47\), where \(\eta_{\mathrm{cluster}}\) is the pseudorapidity of the electromagnetic cluster associated with the electron. Candidates in the transition region between the barrel and endcap calorimeter (\(1.37<|\eta_{\mathrm{cluster}}|<1.52\)) are excluded. Muon candidates are reconstructed from track segments in different layers of the MS [55]. These segments are combined starting from the outermost layer, with a procedure that takes effects of detector material into account, and matched with tracks found in the ID. The final candidates are refitted using the complete track information, and are required to satisfy \(p_{\mathrm{T}}>20\) GeV and \(|\eta|<2.5\). Isolation criteria, which restrict the amount of energy deposited near the lepton candidates, are applied to both the electrons and muons to reduce the backgrounds from heavy-flavour decays inside jets or photon conversions, and the background from hadrons mimicking lepton signatures, in the following referred to as non-prompt and fake-lepton background (NP/fake-lepton background). For electrons, the energy not associated with the electron cluster and contained in a cone of \(\Delta R=0.2\) around the electron must not exceed an \(\eta\)-dependent threshold ranging from 1.25 to 3.7 GeV. Similarly, the total transverse momentum of the tracks contained in a cone of \(\Delta R=0.3\) must not exceed a threshold ranging from 1.00 to 1.35 GeV, depending on the electron candidate \(p_{\mathrm{T}}\) and \(\eta\). For muons, the sum of track transverse momenta in a cone of \(\Delta R=0.3\) around the muon is required to be less than 2.5 GeV, and the total energy deposited in a cone of \(\Delta R=0.2\) around the muon is required to be less than 4 GeV. The longitudinal impact parameter of each charged lepton along the beam axis is required to be within 2 mm of the reconstructed primary vertex, defined as the vertex with the highest \(\sum_{\text{trk}}\,p_{\mathrm{T,trk}}^{2}\), among all candidates with at least five associated tracks with \(p_{\mathrm{T,trk}}>0.4\) GeV.
+
+Jets are reconstructed with the anti-\(k_{\mathrm{t}}\) algorithm [56] using a radius parameter of \(R=0.4\), starting from energy clusters of adjacent calorimeter cells called topological clusters [57]. These jets are calibrated first by correcting the jet energy using the scale established for electromagnetic objects (EM scale). They are further corrected to the hadronic energy scale using calibration factors that depend on the jet energy and \(\eta\), obtained from simulation. Finally, a residual in situ calibration derived from both data and MC simulation is applied [58]. Jet quality criteria are applied to identify and reject jets reconstructed from energy deposits in the calorimeters originating from particles not emerging from the bunch crossing under study [59]. To suppress the contribution from low-\(p_{\mathrm{T}}\) jets originating from pile-up interactions, tracks associated with the jet and emerging from the primary vertex are required to account for at least 75 % of the scalar sum of the \(p_{\mathrm{T}}\) of all tracks associated with the jet. Jets with no associated tracks are also accepted.
+
+Muons reconstructed within a \(\Delta R=0.4\) cone around a jet satisfying \(p_{\mathrm{T}}>25\) GeV are removed to reduce the contamination caused by muons from hadron decays within jets. Subsequently, jets within a \(\Delta R=0.2\) cone around an electron candidate are removed to avoid double counting, which can occur because electron clusters are usually also reconstructed as jets. After this jet overlap removal, electrons are rejected if their distance to the closest jet is smaller than \(\Delta R=0.4\).
+
+The reconstruction of \(E_{\mathrm{T}}^{\mathrm{miss}}\) is based on the vector sum of calorimeter energy deposits projected onto the transverse plane. The \(E_{\rm T}^{\rm miss}\) is reconstructed from topological clusters, calibrated at the EM scale and corrected according to the energy scale of the corresponding identified physics objects. Contributions from muons are included by using their momentum as measured by the inner detector and muon spectrometer [60].
+
+The reconstruction of top quark pair events is facilitated by the ability to tag jets originating from \(b\)-quarks. For this purpose the neural-network-based MV1 algorithm is applied [61; 62]. In the following, irrespective of their origin, jets tagged by this algorithm are called \(b\)-tagged jets, whereas those not tagged are called untagged jets. Similarly, whether they are tagged or not, jets originating from \(b\)-quarks and from \(u,d,c,s\)-quarks or gluons are called \(b\)-jets and light-jets, respectively. The MV1 algorithm relies on track impact parameters and the properties of reconstructed secondary vertices such as the decay length significance. The chosen working point corresponds to a \(b\)-tagging efficiency of 75 % for \(b\)-jets in simulated \(t\bar{t}\) events and a light-jet (\(c\)-quark jet) rejection factor of about 60 (4). To match the \(b\)-tagging performance in the data, \(p_{\rm T}\)- and \(\eta\)-dependent scale factors are applied to MC jets depending on their original flavour. The scale factors are obtained from dijet [62] and \(t\bar{t}\to\) dilepton events. The \(t\bar{t}\)-based calibration is obtained using the methodology described in Ref. [63], applied to the 7 TeV data. The scale factors are calculated per jet and finally multiplied to obtain an event weight for any reconstructed distribution.
+
+### Event selection
+
+The \(t\bar{t}\to\) lepton+jets signal is characterised by an isolated charged lepton with relatively high \(p_{\rm T}\), \(E_{\rm T}^{\rm miss}\) arising from the neutrino from the leptonic \(W\) boson decay, two \(b\)-jets and two light-jets from the hadronic \(W\) boson decay. The main contributions to the background stem from \(W\)+jets production and from the NP/fake-lepton background. The normalisation of the \(W\)+jets background is estimated from data, based on the charge-asymmetry method [64], and the shape is obtained from simulation. For the NP/fake-lepton background, both the shape of the distributions and the normalisation are estimated from data by weighting each selected event by the probability of containing a NP/fake lepton. This contribution in both the electron and the muon channel is estimated using a data-driven matrix method based on selecting two categories of events, using loose and tight lepton selection requirements [65]. The contributions from single top quark, \(Z\)+jets, and diboson production are taken from simulation, normalised to the best available theoretical cross sections.
+
+The \(t\bar{t}\to\) dilepton events are characterised by the presence of two isolated and oppositely charged leptons with relatively high \(p_{\rm T}\), \(E_{\rm T}^{\rm miss}\) arising from the neutrinos from the leptonic \(W\) boson decays, and two \(b\)-jets. Background processes with two charged leptons from \(W\)- or \(Z\) decays in the final state, which are similar to the \(t\bar{t}\to\) dilepton events, are dominated by single top quark production in the \(Wt\)-channel. Additional contributions come from \(Z\)+jets processes and diboson production with additional jets. In the analysis, these contributions are estimated directly from the MC simulation normalised to the relevant cross sections. Events may also be wrongly reconstructed as \(t\bar{t}\to\) dilepton events due to the presence of NP/fake leptons together with \(b\)-tagged jets and \(E_{\rm T}^{\rm miss}\). As for the \(t\bar{t}\to\) lepton+jets channel, the NP/fake-lepton background is estimated using a data-driven matrix method [65].
+
+The selection of \(t\bar{t}\) event candidates consists of a series of requirements on the general event quality and the reconstructed objects designed to select events consistent with the above signal topologies. To suppress non-collision background, events are required to have at least one good primary vertex. It is required that the appropriate single-electron or single-muon trigger has fired; the trigger thresholds are 20 or 22 GeV (depending on the data-taking period) for the electrons and 18 GeV for muons. Candidate events in the \(\ell\)+jets final state are required to have exactly one reconstructed charged lepton with \(E_{\rm T}>25\) GeV for electrons, and \(p_{\rm T}>20\) GeV for muons, matching the corresponding trigger object. Exactly two oppositely charged leptons, with at least one matching a trigger object, are required in the dilepton final state. In the \(\mu\)+jets channel, \(E_{\rm T}^{\rm miss}>20\) GeV and \(E_{\rm T}^{\rm miss}+m_{\rm T}^{W}>60\) GeV are required.2 In the \(e\)+jets channel more stringent selections on \(E_{\rm T}^{\rm miss}\) and \(m_{\rm T}^{W}\) (\(E_{\rm T}^{\rm miss}>30\) GeV and \(m_{\rm T}^{W}>30\) GeV) are imposed due to the higher level of NP/fake-lepton background. For the \(ee\) and \(\mu\mu\) channels, in the dilepton final state, \(E_{\rm T}^{\rm miss}>60\) GeV is required. In addition, the invariant mass of the same-flavour charged-lepton pair, \(m_{\ell\ell}\) (\(\ell\ell=ee,\mu\mu\)), is required to exceed 15 GeV, to reduce background from low-mass resonances decaying into charged lepton-antilepton pairs and Drell-Yan production. Similarly, to reduce the \(Z\)+jets background, values of \(m_{\ell\ell}\) compatible with the \(Z\) boson mass are vetoed by requiring \(|m_{\ell\ell}-91\,{\rm GeV}|>10\) GeV. In the \(e\mu\) channel \(H_{\rm T}>130\) GeV is required, where \(H_{\rm T}\) is the scalar sum of the \(p_{\rm T}\) of the two selected charged leptons and the jets. Finally, the event is required to have at least four jets (or at least two jets for the \(t\bar{t}\to\) dilepton channel) with \(p_{\rm T}>25\) GeV and \(|\eta|<2.5\). At least one of these jets must be \(b\)-tagged for the \(t\bar{t}\to\) lepton+jets analysis. In the dilepton final state, events are accepted if they contain exactly one or two \(b\)-tagged jets.
+
+Footnote 2: Here \(m_{\rm T}^{W}\) is the \(W\) boson transverse mass, defined as \(\sqrt{2\,\,p_{\rm T,\,\ell}\,p_{\rm T,\,\nu}[1-\cos(\phi_{\ell}-\phi_{\nu})]}\), where the measured \(E_{\rm T}^{\rm miss}\) vector provides the neutrino (\(\nu\)) information.
+
+These requirements select 61786 and 6661 data events in the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton channels, with expected background fractions of 22 % and 2 %, respectively. Due to their inherent \(m_{\rm top}\) sensitivity, here and in the follow ing, the single top quark processes are accounted for as signal in both analyses, and not included in the quoted background fractions.
+
+### Event reconstruction
+
+After the event selection described in the previous section, the events are further reconstructed according to the decay topology of interest, and are subject to additional requirements.
+
+#### 4.3.1 Kinematic reconstruction of the lepton\(+\)jets final state
+
+A kinematic likelihood fit [8; 66] is used to fully reconstruct the \(t\bar{t}\to\) lepton+jets kinematics. The algorithm relates the measured kinematics of the reconstructed objects to the leading-order representation of the \(t\bar{t}\) system decay. The event likelihood is constructed as the product of Breit-Wigner (BW) distributions and transfer functions (TF). The \(W\) boson BW line-shape functions use the world combined values of the \(W\) boson mass and decay width from Ref. [3]. A common mass parameter, \(m_{\text{top}}^{\text{reco}}\), is used for the BW distributions describing the leptonically and hadronically decaying top quarks, and this is fitted event-by-event. The top quark width varies with \(m_{\text{top}}^{\text{reco}}\) and it is calculated according to the SM prediction [3]. The TF are derived from the Powheg \(+\)Pythia\(t\bar{t}\) signal MC simulation sample at an input mass of \(m_{\text{top}}=172.5\) GeV. They represent the experimental resolutions in terms of the probability that the observed energy at reconstruction level is produced by a given parton-level object for the leading-order decay topology.
+
+The input objects to the likelihood are: the reconstructed charged lepton, the missing transverse momentum and four jets. For the sample with one \(b\)-tagged jet these are the \(b\)-tagged jet and the three untagged jets with the highest \(p_{\text{T}}\). For the sample with at least two \(b\)-tagged jets these are the two highest-\(p_{\text{T}}\)\(b\)-tagged jets, and the two highest-\(p_{\text{T}}\) remaining jets. The \(x\)- and \(y\)-components of the missing transverse momentum are used as starting values for the neutrino transverse momentum components, with its longitudinal component (\(p_{v,z}\)) as a free parameter in the kinematic likelihood fit. Its starting value is computed from the \(W\to\ell v\) mass constraint. If there are no real solutions for \(p_{v,z}\) a starting value of zero is used. If there are two real solutions, the one giving the largest likelihood value is taken.
+
+Maximising the event-by-event likelihood as a function of \(m_{\text{top}}^{\text{reco}}\) establishes the best assignment of reconstructed jets to partons from the \(t\bar{t}\to\) lepton+jets decay. The maximisation is performed by testing all possible permutations, assigning jets to partons. The likelihood is extended by including the probability for a jet to be \(b\)-tagged, given the parton from the top quark decay it is associated with, to construct an event probability. The \(b\)-tagging efficiencies and rejection factors are used to favour permutations for which a \(b\)-tagged jet is assigned to a \(b\)-quark and penalise those where a \(b\)-tagged jet is assigned to a light quark. The permutation of jets with the highest likelihood value is retained.
+
+The value of \(m_{\text{top}}^{\text{reco}}\) obtained from the kinematic likelihood fit is used as the observable primarily sensitive to the underlying \(m_{\text{top}}\). The invariant mass of the hadronically decaying \(W\) boson (\(m_{W}^{\text{reco}}\)) is calculated from the assigned jets of the chosen permutation. Finally, an observable called \(R_{bq}^{\text{reco}}\), designed to be sensitive to the relative \(b\)-to-light-jet energy scale, is computed in the following way. For events with only one \(b\)-tagged jet, \(R_{bq}^{\text{reco}}\) is defined as the ratio of the transverse momentum of the \(b\)-tagged jet to the average transverse momentum of the two jets of the hadronic \(W\) boson decay. For events with two or more \(b\)-tagged jets, \(R_{bq}^{\text{reco}}\) is defined as the scalar sum of the transverse momenta of the \(b\)-tagged jets assigned to the leptonically and hadronically decaying top quarks divided by the scalar sum of the transverse momenta of the two jets associated with the hadronic \(W\) boson decay. The values of \(m_{W}^{\text{reco}}\) and \(R_{bq}^{\text{reco}}\) are computed from the jet four-vectors as given by the jet reconstruction to keep the maximum sensitivity to changes of the jet energy scale for light-jets and \(b\)-jets.
+
+In view of the template parameterisation described in Sect. 5 additional selection criteria are applied. Events in which a \(b\)-tagged jet is assigned to the \(W\) decay by the likelihood fit are discarded. This is needed to prevent mixing effects between the information provided by the \(m_{W}^{\text{reco}}\) and \(R_{bq}^{\text{reco}}\) distributions. The measured \(m_{\text{top}}^{\text{reco}}\) is required to be in the range 125-225 GeV for events with one \(b\)-tagged jet, and in the range 130-220 GeV for events with at least two \(b\)-tagged jets. In addition, \(m_{W}^{\text{reco}}\) is required to be in the range 55-110 GeV and finally, \(R_{bq}^{\text{reco}}\) is required to be in the range 0.3-3.0. The fraction of data events which pass these requirements is 35 %. Although removing a large fraction of data, these requirements remove events in the tails of the three distributions, which are typically poorly reconstructed with small likelihood values and do not contain significant information on \(m_{\text{top}}\). In addition, the templates then have simpler shapes which are easier to model analytically with fewer parameters.
+
+#### 4.3.2 Reconstruction of the dilepton final state
+
+In the \(t\bar{t}\to\) dilepton channel the kinematics are under-constrained due to the presence of at least two undetected neutrinos. Consequently, instead of attempting a full reconstruction, the \(m_{\text{top}}\)-sensitive observable \(m_{\ell b}\) is defined based on the invariant mass of the two charged-lepton\(+b\)-jet pairs.
+
+The preselected events contain two charged leptons, at least two jets, of which either exactly one or exactly two are \(b\)-tagged. For events with exactly two \(b\)-tagged jets the charged-lepton\(+b\)-tagged jet pairs can be built directly. In the case of events with only one \(b\)-tagged jet the missing second \(b\)-jet is identified with the untagged jet carrying the highest MV1 weight. For both classes of events, when using the two selected jets and the two charged leptons, there are two possible assignments for the jet-lepton pairs, each leading to two values for the corresponding pair invariant masses. The assignment resulting in the lowest average mass is retained, and this mass is taken as the \(m_{\ell b}^{\rm reco}\) estimator of the event. The measured \(m_{\ell b}^{\rm reco}\) is required to be in the range 30-170 GeV. This extra selection retains 97 % of the data candidate events.
+
+#### 4.3.3 Event yields
+
+The numbers of events observed and expected after the above selections are reported in Table 1 for the \(\ell\)+jets and dilepton final states. The observed numbers of events are well described by the sum of the signal and background estimates within uncertainties. The latter are estimated as the sum in quadrature of the statistical uncertainty, the uncertainty on the \(b\)-tagging efficiencies, a 1.8 % uncertainty on the integrated luminosity [24], the uncertainties on the \(t\bar{t}\) and single top quark theoretical cross sections, a 30 % uncertainty on the \(W\)+jets and \(Z\)+jets normalisation, and finally a 50 % uncertainty on the NP/fake-lepton background normalisation. The distribution of several kinematic variables in the data were inspected and found to be well described by the signal-plus-background prediction, within uncertainties. As examples, Fig. 1 (left) shows the distribution of the untagged and \(b\)-tagged jets \(p_{\rm T}\) observed in the \(\ell\)+jets final state. Similarly, the \(p_{\rm T}\) distributions for the charged leptons and \(b\)-tagged jets in the dilepton final state are shown on the right of Fig. 1. In all cases the data are compared with the MC predictions, assuming an input top quark mass of 172.5 GeV.
+
+## 5 Analysis method
+
+The observables exploited in the \(m_{\rm top}\) analyses are: \(m_{\rm top}^{\rm reco}\), \(m_{W}^{\rm reco}\), \(R_{bg}^{\rm reco}\) in the \(t\bar{t}\to\) lepton+jets channel and \(m_{\ell b}^{\rm reco}\) in the \(t\bar{t}\to\) dilepton channel.
+
+\begin{table}
+\begin{tabular}{l l l l} \hline Process & One \(b\)-tagged jet & At least two \(b\)-tagged jets & Sum \\ \hline \(\ell\)+jets final state & & & \\ \(t\bar{t}\) signal & 9890 \(\pm\) 630 & 8210 \(\pm\) 560 & 18100 \(\pm\) 1100 \\ Single top quark (signal) & 756 \(\pm\) 41 & 296 \(\pm\) 19 & 1052 \(\pm\) 57 \\ \(W\)+jets (data) & 2250 \(\pm\) 680 & 153 \(\pm\) 49 & 2400 \(\pm\) 730 \\ \(Z\)+jets & 284 \(\pm\) 87 & 18.5 \(\pm\) 6.1 & 303 \(\pm\) 93 \\ \(WW/WZ/ZZ\) & 43.5 \(\pm\) 2.3 & 4.65 \(\pm\) 0.48 & 48.2 \(\pm\) 2.6 \\ NP/fake leptons (data) & 700 \(\pm\) 350 & 80 \(\pm\) 41 & 780 \(\pm\) 390 \\ Signal+background & 13920 \(\pm\) 1000 & 8760 \(\pm\) 560 & 22700 \(\pm\) 1400 \\ Data & 12979 & 8784 & 21763 \\ Exp. Bkg. frac. & 0.25 \(\pm\) 0.02 & 0.03 \(\pm\) 0.00 & 0.16 \(\pm\) 0.01 \\ Data/MC & 0.93 \(\pm\) 0.07 & 1.00 \(\pm\) 0.07 & 0.96 \(\pm\) 0.06 \\ \hline Process & One \(b\)-tagged jet & Two \(b\)-tagged jets & Sum \\ \hline \multicolumn{3}{l}{Dilepton final state} & & \\ \(t\bar{t}\) signal & 2840 \(\pm\) 180 & 2950 \(\pm\) 210 & 5790 \(\pm\) 360 \\ Single top quark (signal) & 181 \(\pm\) 10 & 82.5 \(\pm\) 5.7 & 264 \(\pm\) 15 \\ \(Z\)+jets & 34 \(\pm\) 11 & 4.1 \(\pm\) 1.5 & 38 \(\pm\) 12 \\ \(WW/WZ/ZZ\) & 7.01 \(\pm\) 0.63 & 0.61 \(\pm\) 0.15 & 7.62 \(\pm\) 0.67 \\ NP/fake leptons (data) & 52 \(\pm\) 28 & 2.6 \(\pm\) 8.4 & 55 \(\pm\) 30 \\ Signal+background & 3110 \(\pm\) 180 & 3040 \(\pm\) 210 & 6150 \(\pm\) 360 \\ Data & 3227 & 3249 & 6476 \\ Exp. Bkg. frac. & 0.03 \(\pm\) 0.00 & 0.00 \(\pm\) 0.00 & 0.02 \(\pm\) 0.00 \\ Data/MC & 1.04 \(\pm\) 0.06 & 1.07 \(\pm\) 0.07 & 1.05 \(\pm\) 0.06 \\ \hline \end{tabular}
+\end{table}
+Table 1: The observed numbers of events, according to the \(b\)-tagged jet multiplicity, in the \(\ell\)+jets and dilepton final states in 4.6 fb\({}^{-1}\) of \(\sqrt{s}=7\) TeV data. In addition, the expected numbers of signal and background events corresponding to the integrated luminosity of the data are given. The predictions are quoted using two significant digits for their uncertainty. The MC estimates assume SM cross sections. The \(W\)+jets and NP/fake-lepton background contributions are estimated from data. The uncertainties for the estimates include the components detailed in Sect. 4.3.3. Values smaller than 0.005 are listed as 0.00In the \(t\bar{t}\to\) lepton+jets channel, templates of \(m_{\rm top}^{\rm reco}\) are constructed as a function of the top quark mass used in the MC generation in the range 167.5-177.5 GeV, in steps of 2.5 GeV. In addition, for the central mass point, templates of \(m_{\rm top}^{\rm reco}\) are constructed for an input value of the light-jet energy scale factor (JSF) in the range 0.95-1.05 in steps of 2.5 % and for an input value for the relative \(b\)-to-light-jet energy scale factor (bJSF) in the same range. Independent MC samples are used for the different \(m_{\rm top}\) mass points, and from those samples templates with different values of JSF and bJSF are extracted by appropriately scaling the four-momentum of the jets in each sample. The input value for the JSF is applied to all jets, whilst the input value for the bJSF is applied to all \(b\)-jets according to the information about the generated quark flavour. This scaling is performed after the various correction steps of the jet calibration and before any event selection. This results in different events entering the final selection from one energy scale variation to another. Similarly, templates of \(m_{W}^{\rm reco}\) are constructed as a function of an input JSF combining the samples from all
+
+Figure 1: Distributions of the transverse momentum of the untagged and \(b\)-tagged jets in the \(t\bar{t}\to\) lepton+jets analysis (**a**, **c**) and of the charged lepton and \(b\)-tagged jets \(p_{\rm T}\) in the \(t\bar{t}\to\) dilepton analysis (**b**, **d**). The data are shown by the _points_ and the signal-plus-background prediction
+
+[MISSING_PAGE_FAIL:9]
+
+Figure 2: Distributions of \(m_{\rm top}^{\rm reco}\) in the \(t\bar{t}\to\) lepton+jets channel (_left_) and \(m_{\ell D}^{\rm reco}\) in the \(t\bar{t}\to\) dilepton channel (_right_) and their template parameterisations for the signal, composed of simulated \(t\bar{t}\) and single top quark production events. The expected sensitivities of \(m_{\rm top}^{\rm reco}\) and \(m_{\ell D}^{\rm reco}\) are shown for events with at least two (or exactly two) \(b\)-tagged jets. Figures **a** and **b** report the distributions for different values of the input \(m_{\rm top}\) (167.5, 172.5 and 177.5 GeV). Figures **c**, **d** and **e**, **f** show the \(m_{\rm top}^{\rm reco}\) and \(m_{\ell D}^{\rm reco}\) distribution for \(m_{\rm top}\) = 172.5 GeV, obtained with JSF or bJSF of 0.95, 1.00 and 1.05, respectively. Each distribution is overlaid with the corresponding probability density function that is obtained from the combined fit to all signal templates for all observables.
+
+Figure 3: Distributions of \(m_{\rm W}^{\rm reco}\) (_left_) and \(R_{\rm bq}^{\rm reco}\) (_right_) in the \(t\bar{t}\to\) lepton+jets channel and their template parameterisations for the signal, composed of simulated \(t\bar{t}\) and single top quark production events. The expected sensitivity of \(m_{\rm W}^{\rm reco}\) and \(R_{\rm bq}^{\rm reco}\) are shown for events with at least two \(b\)-tagged jets. Figures **a** and **b** report the distributions for different values of the input \(m_{\rm top}\) (167.5, 172.5 and 177.5 GeV). Figures **c**, **d** and **e**, **f** show the \(m_{\rm W}^{\rm reco}\) and \(R_{\rm bq}^{\rm reco}\) distribution for \(m_{\rm top}=172.5\) GeV, obtained with JSF or bJSF of 0.95, 1.00 and 1.05, respectively. Each distribution is overlaid with the corresponding probability density function that is obtained from the combined fit to all signal templates for all observables
+
+uncertainties. The expected statistical uncertainties on \(m_{\rm top}\) including the statistical contributions from the simultaneous fit of the JSF and bJSF obtained from pseudo-experiments at an input top quark mass of \(m_{\rm top}=172.5\,\mathrm{GeV}\), and for a luminosity of \(4.6\mathrm{fb}^{-1}\), are \(1.50\pm 0.06\) GeV and \(0.89\pm 0.01\) GeV for the case of one \(b\)-tagged jet and for the case of at least two \(b\)-tagged jets, respectively. The results correspond to the mean value and the standard deviation of the distribution of the statistical uncertainties of the fitted masses from the pseudo-experiments. The different expected statistical uncertainties on \(m_{\rm top}\) for the samples with different numbers of \(b\)-tagged jets, which are obtained from samples containing similar numbers of events (see Table 1), are mainly a consequence of the different resolution on \(m_{\rm top}\).
+
+### Templates and fits in the \(t\bar{t}\,\to\,\) dilepton channel
+
+The signal \(m_{\ell b}^{\rm reco}\) templates comprise both the \(t\bar{t}\) and the single top quark production processes, and are fitted to the sum of a Gaussian function and a Landau function, while the background distribution is fitted to a Landau function. Similarly to the \(t\bar{t}\,\to\,\) lepton+jets channel, all template fits are performed separately for events with one \(b\)-tagged jet, and for events with exactly two \(b\)-tagged jets. In Fig. 2b the sensitivity of the \(m_{\ell b}^{\rm reco}\) observable to the input value of the top quark mass is shown for the events with exactly two \(b\)-tagged jets, by the superposition of the signal templates and their fits for three input \(m_{\rm top}\) values. For the signal templates, the parameters of the fitting functions of \(m_{\ell b}^{\rm reco}\) depend linearly on \(m_{\rm top}\).
+
+Signal and background probability density functions for the \(m_{\ell b}^{\rm reco}\) estimator are built, and used in an unbinned likelihood fit to the data for all events, \(i=1,\ldots N\). The likelihood function maximised is:
+
+\[\mathcal{L}_{\rm shape}^{\rm dilepton}(m_{\rm top},\,f_{\rm bkg}) = \prod_{i=1}^{N}[(1-f_{\rm bkg})\cdot P_{\rm top}^{\rm sig}(m_{ \ell b}^{\rm reco,\,i}\mid m_{\rm top}) \tag{2}\] \[+\,f_{\rm bkg}\cdot P_{\rm top}^{\rm bkg}(m_{\ell b}^{\rm reco,\,i })],\]
+
+where, as for the \(t\bar{t}\,\to\,\) lepton+jets case, \(P_{\rm top}^{\rm sig}\) and \(P_{\rm top}^{\rm bkg}\) are the signal and background probability density functions and \(f_{\rm bkg}\) is the fraction of background events in the selected data set.
+
+Using pseudo-experiments, also for this decay channel good linearity is found between the input top quark mass used to perform the pseudo-experiments, and the results of the fits. Within their statistical uncertainties, the mean values and widths of the pull distributions are consistent with the expectations of zero and one, respectively. The expected statistical uncertainties on \(m_{\rm top}\) obtained from pseudo-experiments for an input top quark mass of \(m_{\rm top}=172.5\,\mathrm{GeV}\), and for a luminosity of \(4.6\) fb\({}^{-1}\), are \(0.95\pm 0.04\) GeV and \(0.65\pm 0.02\) GeV for events with exactly one or two \(b\)-tagged jets, respectively. As for the \(\ell\)+jets channel, the different expected statistical uncertainties on \(m_{\rm top}\) for the samples with different numbers of \(b\)-tagged jets, which are obtained from samples containing similar numbers of events (see Table 1), are mainly a consequence of the different resolution on \(m_{\rm top}\).
+
+### Combined likelihood fit to the event samples
+
+The final results for both the \(\ell\)+jets and dilepton final states are obtained combining at the likelihood level the events with one or more \(b\)-tagged jets. The measured \(m_{\rm top}\) is assumed to be the same in these two sub-samples per decay channel. Similarly, the JSF and the bJSF are taken to be the same for the samples of the \(t\bar{t}\,\to\,\) lepton+jets analysis with different \(b\)-tagged jet multiplicities. On the contrary, the background fractions for the two decay channels, and for the samples with different numbers of \(b\)-tagged jets, are kept independent, corresponding to four individual parameters (\(f_{\rm bkg}^{\ell+{\rm jets,\,}1b}\), \(f_{\rm bkg}^{\ell+{\rm jets,\,}2b}\), \(f_{\rm bkg}^{\rm dil,\,1b}\), \(f_{\rm bkg}^{\rm dil,\,2b}\)).
+
+The combined likelihood fit allows the statistical uncertainties on the fitted parameters to be reduced, while mitigating some systematic effects. The expected statistical precision on \(m_{\rm top}\), for an input top quark mass of \(m_{\rm top}=172.5\) GeV, a luminosity of \(4.6\) fb\({}^{-1}\), and in the combined one or more \(b\)-tagged jets event sample, is \(0.76\pm 0.01\) GeV and \(0.54\pm 0.01\) GeV for the \(t\bar{t}\,\to\,\) lepton+jets and \(t\bar{t}\,\to\,\) dilepton analyses, respectively.
+
+## 6 Top quark mass measurements
+
+The results of the fits for the \(t\bar{t}\,\to\,\) lepton+jets and \(t\bar{t}\,\to\,\) dilepton analyses are:
+
+\[m_{\rm top}^{\ell+{\rm jets}} = 172.33\pm 0.75\ (\mathrm{stat}+\mathrm{JSF}+\mathrm{bJSF})\ \mathrm{GeV},\] \[\mathrm{JSF} = 1.019\ \pm 0.003\ (\mathrm{stat}),\] \[\mathrm{bJSF} = 1.003\ \pm 0.008\ (\mathrm{stat}),\] \[m_{\rm top}^{\rm dil} = 173.79\ \pm 0.54\ (\mathrm{stat})\ \mathrm{GeV}.\]
+
+For the \(t\bar{t}\,\to\,\) lepton+jets channel, the fitted background fractions amount to \(18.4\pm 2.2\) % and \(2.4\pm 1.5\) % for one \(b\)-tagged jet and the at least two \(b\)-tagged jets samples respectively. The corresponding values for the \(t\bar{t}\,\to\,\) dilepton analysis are \(3.5\pm 3.7\) % and \(1.4\pm 2.2\) % for one \(b\)-tagged jet and the two \(b\)-tagged jets samples respectively. All quoted uncertainties are statistical only. These fractions are consistent with the expectations given in Table 1. The correlation matrices for the fitted parameters in the \(t\bar{t}\,\to\,\) lepton+jets and \(t\bar{t}\,\to\,\) dilepton analyses are reported in Table 2.
+
+Figure 4 shows the \(m_{\rm top}^{\rm reco}\), \(m_{\rm W}^{\rm reco}\), \(R_{bg}^{\rm reco}\) and \(m_{\ell b}^{\rm reco}\) distributions in the data together with the corresponding fitted probability density functions for the background alone and for the sum of signal and background. The uncertainty bands
+
+are obtained by varying the three fitted parameters \(m_{\rm top}\), JSF, and bJSF within \(\pm 1\sigma\) of their full uncertainties taking into account their correlation, while keeping the background fractions fixed. The individual systematic uncertainties and the correlations are discussed in Sects. 7 and 8, respectively. The band shown is the envelope of all probability density functions obtained from 500 pseudo-experiments varying the parameters. Within this band, the data are well described by the fitted probability density function.
+
+For the \(t\bar{t}\to\) lepton+jets analysis, the measured values of the three observables (\(m_{\rm top}^{\ell+{\rm jets}}\), JSF, and bJSF), together with two-dimensional statistical uncertainty contours (\(\pm 1\sigma\)), including the statistical components from the JSF and bJSF determination, are shown in Fig. 5a-c. Correspondingly, the likelihood profile as a function of \(m_{\rm top}^{\rm dil}\) is reported in Fig. 5d, for the sample with one \(b\)-tagged jet, the sample with two \(b\)-tagged jets and the combined \(t\bar{t}\to\) dilepton result. These background fit obtained from pseudo-experiments as explained in the text. Figures **a**-**c refer to the \(t\bar{t}\to\) lepton+jets analysis, figure **d** to the \(t\bar{t}\to\) dilepton analysis
+
+\begin{table}
+\begin{tabular}{l c c c c c} \hline  & \(m_{\rm top}^{\ell+{\rm jets}}\) & JSF & bJSF & \(f_{\rm bkg}^{\ell+{\rm jets},\,1b}\) & \(f_{\rm bkg}^{\ell+{\rm jets},\,2b}\) \\ \hline \(m_{\rm top}^{\ell+{\rm jets}}\) & \(1.00\) & & & & \\ JSF & \(-0.36\) & \(1.00\) & & & \\ bJSF & \(-0.89\) & \(0.03\) & \(1.00\) & & \\ \(f_{\rm bkg}^{\ell+{\rm jets},\,1b}\) & \(-0.03\) & \(-0.01\) & \(0.06\) & \(1.00\) & \\ \(f_{\rm bkg}^{\ell+{\rm jets},\,2b}\) & \(-0.06\) & \(-0.09\) & \(0.09\) & \(0.01\) & \(1.00\) \\ \hline  & \(m_{\rm top}^{\rm dil}\) & \(f_{\rm bkg}^{\rm dil,\,1b}\) & \(f_{\rm bkg}^{\rm dil,\,2b}\) & & \\ \hline \(m_{\rm top}^{\rm dil}\) & \(1.00\) & & & & \\ \(f_{\rm bkg}^{\rm dil,\,1b}\) & \(0.07\) & \(1.00\) & & & \\ \(f_{\rm bkg}^{\rm dil,\,2b}\) & \(-0.14\) & \(-0.01\) & \(1.00\) & & \\ \hline \end{tabular}
+\end{table}
+Table 2: The correlations of the fitted parameters used in the likelihood maximisation of the \(t\bar{t}\to\) lepton+jets analysis (top) and the \(t\bar{t}\to\) dilepton analysis (bottom)
+
+Figure 4: The fitted distributions in the data, showing **a**\(m_{\rm top}^{\rm reco}\), **b**\(m_{\rm top}^{\rm reco}\), **c**\(R_{\rm bq}^{\rm reco}\), and **d**\(m_{\rm top}^{\rm reco}\). The fitted probability density functions for the background alone and for signal-plus-background are also shown. The uncertainty bands indicate the total uncertainty on the signal-plus-background fit obtained from pseudo-experiments as explained in the text. Figures **a**–**c refer to the \(t\bar{t}\to\) lepton+jets analysis, figure **d** to the \(t\bar{t}\to\) dilepton analysis
+
+results demonstrate the good agreement between the parameter values measured in the samples with different \(b\)-tagged jet multiplicities.
+
+## 7 Uncertainties affecting the \(m_{\text{top}}\) determination
+
+Several sources of systematic uncertainty are considered. Their effects on the \(\ell\)+jets and dilepton measurements are listed in Table 3, together with the result of the combination of the two channels discussed in Sect. 8. Each source of uncertainty considered is investigated, when possible, by varying the relevant quantities by \(\pm 1\sigma\) with respect to their default values. Using the changed parameters, 500 pseudo-experiments are performed using events drawn from the full simulated samples. The difference of the average \(m_{\text{top}}\) computed from pseudo-experiments based on the standard MC sample, and the varied sample under consideration, both evaluated with the original template parameterisations, is used to determine the corresponding uncertainty. Unless stated otherwise, the systematic uncertainties arising from the different modelling sources are calculated as half of the difference of the results of the upward and downward variations. The systematic uncertainties for the measured JSF and bJSF in the \(t\bar{t}\to\) lepton+jets final state are also estimated. Following Ref. [67], the actual observed difference is quoted as the sys
+
+Figure 5: Likelihood contours showing the correlation determined in data of the measured \(m_{\text{top}}^{\ell+\text{jets}}\) to **a** the JSF and **b**the bJSF, and **c** the correlation of the two scales JSF and bJSF, within the \(t\bar{t}\to\) lepton+jets analysis. Figures **a–c** show the results using the events with one \(b\)-tagged jet only (_grey ellipses_), with at least two \(b\)-tagged jets (_red ellipses_) and finally with all selected events, i.e. the ones with at least one \(b\)-tagged jet _coding_ is analogous to figures **a–c**
+
+[MISSING_PAGE_FAIL:15]
+
+\(m_{\rm top}\) estimator for any analysis, irrespective of the number of observables exploited by the fit. In addition, the sensitivity of the estimators for the global jet energy scales can be directly compared. These uncertainties can be treated as uncorrelated uncertainties in \(m_{\rm top}\) combinations. Together with the systematic components of the residual jet energy scale uncertainty discussed in Sect. 7.4 below, they directly replace the uncertainty on \(m_{\rm top}\) from the jet energy scale variations present without the in situ determination.
+
+#### 7.1.2 Method calibration
+
+This uncertainty takes into account the effect of any bias introduced in the fit by the presence of correlations among the observables (neglected in the fit for the \(t\bar{t}\,\rightarrow\,\)lepton+jets analysis) as well as the impact of the limited size of the MC samples (for both analyses). This leads to a systematic uncertainty in the template fit, which is reflected in the residual mass differences of the fitted mass and the input mass for a given MC sample. The largest average difference observed in the pseudo-experiments carried out varying the underlying top quark mass, the JSF and the bJSF with respect to the respective input parameter, is taken as the uncertainty from this source.
+
+### \(t\bar{t}\) modelling
+
+#### 7.2.1 Signal Monte Carlo generator
+
+The systematic uncertainty related to the choice of \(t\bar{t}\) signal generator program is determined by comparing the results of pseudo-experiments performed with either the MC@NLO [68; 69] samples or the Powheg samples, both generated with \(m_{\rm top}=172.5\) GeV and using the Herwig program to perform the hadronisation. This choice is supported by the observation that these MC@NLO and Powheg samples exhibit very different jet multiplicities for the \(t\bar{t}\,\rightarrow\,\)lepton+jets channel which bracket those observed in data [70]. The full difference of the results averaged over all pseudo experiments is quoted as the systematic uncertainty.
+
+The impact of changing the factorisation and renormalisation scales (\(\mu_{\rm F/R}\)) in Powheg was also checked. The resulting \(m_{\rm top}\) systematic uncertainties amount to \(0.15\pm 0.07\) GeV and \(0.14\pm 0.05\) GeV for the \(t\bar{t}\,\rightarrow\,\)lepton+jets channel, and \(t\bar{t}\,\rightarrow\,\)dilepton analysis respectively. Within the quoted statistical uncertainties, the \(\mu_{\rm F/R}\) systematic uncertainties are consistent with those originating from the comparison of MC@NLO and Powheg, which are used here.
+
+#### 7.2.2 Hadronisation
+
+Signal samples for \(m_{\rm top}=172.5\) GeV from the Powheg event generator are produced performing the parton showering and the hadronisation with either Pythia with the P2011C tune or Herwig and Jimmy with the ATLAS AUET2 tune [50]. The full difference of the results averaged over all pseudo experiments is quoted as the systematic uncertainty.
+
+#### 7.2.3 Initial- and final-state QCD radiation
+
+Different amounts of initial- and final-state QCD radiation can alter the jet energies and multiplicities of the events, introducing distortions into the measured \(m_{\rm top}^{\rm reco}\), \(m_{W}^{\rm reco}\), \(R_{bq}^{\rm reco}\) and \(m_{\ell b}^{\rm reco}\) distributions. This effect is evaluated by performing pseudo-experiments using two dedicated signal samples generated with AcerMC [30] in combination with Pythia P2011C for hadronisation and parton showering. In these samples some Pythia P2011C parameters that control the showering are varied in ranges that are compatible with a study of additional jets in \(t\bar{t}\) events [71], and half the difference of these two extremes is used as the systematic uncertainty.
+
+#### 7.2.4 Underlying event and colour reconnection
+
+These systematic uncertainties are estimated using samples simulated with Powheg-hvq and Pythia. The underlying-event uncertainty is obtained by comparing a sample with the Perugia 2012 tune (P2012) to a sample with the P2012 mpiHi tune [28]. The full difference in the fitted mass of the two models is taken as the systematic uncertainty for this source. Similarly, the colour reconnection systematic uncertainty is assigned as the difference in the fitted parameters of samples obtained with the P2012 and P2012 loCR tunes [28]. The same matrix-element-level Powheg-hvq events generated with the CT10 PDFs are used for the three MC samples. The P2012 mpiHi tune is a variation of the P2012 tune with more semi-hard multiple parton interactions. The colour reconnection parameters were kept fixed to the P2012 tune values. Compared to the standard P2012 tune the P2012 loCR tune leads to significantly less activity in the transverse region with respect to the leading charged-particle as measured in Ref. [51]. In addition to assessing the effect of colour reconnection, this tune is therefore also used to estimate the systematic uncertainty associated with the particle spectra in the underlying event.
+
+#### 7.2.5 Parton distribution functions
+
+The signal samples are generated using the CT10 PDFs. These PDFs, obtained from experimental data, have an uncertainty that is reflected in 26 pairs of possible PDF variations provided by the CTEQ group. To evaluate the impact of the PDF uncertainty on the \(t\bar{t}\) signal templates, the events, from a sample generated using MC@NLO with Herwig fragmentation, are re-weighted with the corresponding ratio of PDFs, and 26 pairs of signal templates are constructed, one pair per PDF uncertainty. For each pair, the average measured \(m_{\rm top}\) is obtained from 500 pseudo-experiments each for the upward and downward variations of the PDF uncertainty. The corresponding uncertainty is obtained as half the difference of the two values. From those the CT10 contribution is calculated as the sum in quadrature of the 26 uncertainties and amounts to 0.13 GeV and 0.10 GeV for the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton analysis respectively.
+
+In addition, the signal \(t\bar{t}\) samples are re-weighted to match the central PDFs for either the MSTW2008 [38] or the NNPDF23 [41] PDFs. The corresponding differences, taken as uncertainties, are 0.03 GeV and 0.21 GeV for the \(t\bar{t}\to\) lepton+jets analysis, and 0.01 GeV and 0.01 GeV for the \(t\bar{t}\to\) dilepton analysis. The final PDF systematic uncertainty is the sum in quadrature of the three contributions discussed above.
+
+### Modelling of non-\(t\bar{t}\) processes
+
+The uncertainty in the modelling of non-\(t\bar{t}\) processes is taken into account by varying the normalisation and the shape of the distributions of several contributions.
+
+The uncertainty on the \(W\)+jets background determined from data [64] is dominated by the uncertainty on the heavy-flavour content of these events and amounts to \(\pm 30\) % of the overall normalisation. The same normalisation uncertainty is assigned to the \(Z\)+jets background normalisation. Uncertainties related to the \(W\)+jets background shape are also considered. These stem from the variation of the heavy-flavour composition of the samples and from re-weightings of the distributions to match the predictions of Alpgen. For the re-weighting, parameters are varied which affect the functional form of the factorisation and renormalisation scales, and the threshold for the matching scale used to connect the matrix-element calculation to the parton shower.
+
+The estimate of the background from NP/fake leptons determined from data is varied by \(\pm 50\) % to account for the uncertainty of this background source [65]. Uncertainties affecting the shape of this background are also included. For the NP/fake-electron background, the effects on the shape arising from the efficiency uncertainties for real and fake electrons are evaluated and added in quadrature. For the NP/fake-muon background, two different matrix methods were used and averaged: their difference is taken as the systematic uncertainty.
+
+In addition, the impact of changing the normalisation of the single top quark processes according to the uncertainty on the corresponding theoretical cross sections is considered. This yields a negligible systematic uncertainty in both the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton analyses.
+
+### Detector modelling
+
+#### 7.4.1 Jet energy scale
+
+The JES is derived using information from test-beam data, LHC collision data, and simulation. The relative JES uncertainty varies from about 1 % to 3 % depending on jet \(p_{\rm T}\) and \(\eta\) as given in Ref. [58]. Since the estimation of the jet energy scale involves a number of steps, the JES uncertainty has various components originating from the calibration method, the calorimeter response, the detector simulation, and the specific choice of parameters in the physics model employed in the MC event generator. The total uncertainty is expressed in terms of 21 \(p_{\rm T}\)- and \(\eta\)-dependent components which are considered uncorrelated [58]. The uncertainties for the individual components and their sum are given in Table 4 in Appendix A. Despite the simultaneous fit of \(m_{\rm top}\), JSF and bJSF in the \(t\bar{t}\to\) lepton+jets channel there is a non-negligible residual JES uncertainty. This is introduced by the variation of the jet energy scale corrections and their uncertainties with jet kinematics, which cannot be fully captured by global scale factors (JSF, bJSF). However the overall JES uncertainty is a factor of two smaller than in a one-dimensional analysis exploiting only templates of \(m_{\rm top}^{\rm reco}\). In the \(t\bar{t}\to\) dilepton channel, the contribution from the JES uncertainty constitutes the main component of systematic uncertainty on \(m_{\rm top}\).
+
+#### 7.4.2 \(b\)-Jet energy scale
+
+This uncertainty is uncorrelated with the JES uncertainty and accounts for the remaining differences of \(b\)-jets and light-jets after the global JES was determined. For this, an extra uncertainty ranging from 0.7 % to 1.8 % and depending on jet \(p_{\rm T}\) and \(\eta\) is assigned to \(b\)-jets, due to differences between jets containing \(b\)-hadrons and the inclusive jet sample [58]. This additional systematic uncertainty was obtained from MC simulation and was verified using \(b\)-tagged jets in data. The validation of the \(b\)-jet energy scale uncertainty is based on the comparison of the jet transverse momentum as measured in the calorimeter to the total transverse momentum of charged-particles associated with the jet. These transverse momenta are evaluated in the data and in MC simulated events for all jets and for \(b\)-jets [58]. In addition, a validation using \(t\bar{t}\to\) lepton+jets events was performed. Effects stemming from \(b\)-quark fragmentation, hadronisation and underlying soft radiation were studied using different MC event generation models [58]. Thanks to the simultaneous fit to \(R_{bq}^{\rm reco}\) together with \(m_{W}^{\rm reco}\) and \(m_{\rm top}^{\rm reco}\), the \(t\bar{t}\to\) lepton+jets three-dimensional analysis method mitigates the impact of this uncertainty, and reduces it to 0.06 GeV, instead of 0.88 GeV in a two-dimensional analysis method (exploiting two-dimensional templates of \(m_{\rm top}^{\rm reco}\) and \(m_{W}^{\rm reco}\), as in Ref. [8]), albeit at the cost of an additional statistical component of \(0.67\) GeV. In the \(t\bar{t}\,\rightarrow\,\)dilepton channel, the contribution from the bJES uncertainty represents the second largest component of systematic uncertainty on \(m_{\rm top}\).
+
+#### 7.4.3 Jet energy resolution
+
+To assess the impact of this uncertainty, before performing the event selection, the energy of each reconstructed jet in the simulation is smeared by a Gaussian function such that the width of the resulting Gaussian distribution corresponds to the one including the uncertainty on the jet energy resolution [72]. The fit is performed using smeared jets and the deviation from the central result is assigned as a systematic uncertainty.
+
+#### 7.4.4 Jet reconstruction efficiency
+
+The jet reconstruction efficiency for data and the MC simulation is found to be in agreement with an accuracy of better than \(\pm 2\) % [73]. To account for the residual uncertainties, 2 % of jets with \(p_{\rm T}<30\) GeV are randomly removed from MC simulated events. The event selection and the fit are repeated on the changed sample. The changes in the fitted parameters relative to the nominal MC sample are assigned as systematic uncertainty.
+
+#### 7.4.5 Jet vertex fraction
+
+Residual differences between data and MC in the description of the fraction of the jet momentum associated with tracks from the primary vertex (used to suppress pile-up interactions) is corrected by applying scale factors. These scale factors, varied according to their uncertainty, are applied to MC simulation events as a function of the jet \(p_{\rm T}\). The resulting variation in the measured top quark mass in the \(t\bar{t}\,\rightarrow\,\)lepton+jets analysis is 10 \(\,\)MeV, while it is negligible for the \(t\bar{t}\,\rightarrow\,\)dilepton analysis.
+
+#### 7.4.6 \(b\)-Tagging efficiency and mistag rate
+
+To account for potential mismodelling of the \(b\)-tagging efficiency and the mistag rate, \(b\)-tagging scale factors, together with their uncertainties, are derived per jet [61; 62; 63; 74]. They are applied to the MC events and depend on the jet \(p_{\rm T}\) and \(\eta\) and the underlying quark flavour. In this analysis these correction factors are obtained from dijet [62] and \(t\bar{t}\,\rightarrow\,\)dilepton events. The same \(b\)-tagging calibrations are applied to both the \(\ell\)+jets and dilepton final states. The \(t\bar{t}\)-based calibrations are obtained using the methodology described in Ref. [63], applied to the 7 TeV data. The statistical correlation stemming from the use of partially overlapping data sets for the \(t\bar{t}\,\rightarrow\,\)dilepton \(m_{\rm top}\) analysis and the \(b\)-tagging calibration is estimated to be negligible. The correlation of those systematic uncertainties that are in common for the \(b\)-tagging calibration and the present analyses is taken into account. Similarly to the JES uncertainty, the uncertainty on the correction factors for the \(b\)-tagging efficiency is separated into ten uncorrelated components. The systematic uncertainty is assessed by changing the correction factor central values by \(\pm 1\sigma\) for each component, and performing the fit. The final uncertainty due to the \(b\)-tagging efficiency is calculated as the sum in quadrature of all contributions. A similar procedure is applied for the mistag rates for \(c\)-jets, albeit using four separate components. In addition, the correction factors and mistag rates for light-jets are varied within their uncertainty, and the corresponding shifts in the measured quantities are summed in quadrature. The size of the \(b\)-tagging systematic uncertainty of 0.50 GeV observed in the \(t\bar{t}\,\rightarrow\,\)lepton+jets analysis is mostly driven by the induced change in shape of the \(R_{bq}^{\rm reco}\) distribution.
+
+#### 7.4.7 Lepton momentum and missing transverse momentum
+
+The lepton momentum and the \(E_{\rm T}^{\rm miss}\) are used in the event selection and reconstruction. For the leptons, the momentum scale, resolution and identification efficiency are measured using high-purity \(Z\,\rightarrow\,\ell\ell\) data [54; 55]. The uncertainty due to any possible miscalibration is propagated to the analyses by changing the measured reconstruction efficiency, lepton \(p_{\rm T}\), and the corresponding resolution, within uncertainties.
+
+The uncertainties from the energy scale and resolution corrections for leptons and jets are propagated to the \(E_{\rm T}^{\rm miss}\). The systematic uncertainty related to the \(E_{\rm T}^{\rm miss}\) accounts for uncertainties in the energies of calorimeter cells not associated with the reconstructed objects, and from cells associated with low-\(p_{\rm T}\) jets (7 GeV\(<p_{\rm T}<20\) GeV), as well as for the dependence of their energy on the number of pile-up interactions [60].
+
+#### 7.4.8 Pile-up
+
+The residual systematic uncertainty due to pile-up was assessed by determining the dependence of the fitted top quark mass on the amount of pile-up activity, combined with uncertainties in modelling the amount of pile-up in the sample.
+
+### Summary
+
+The resulting sizes of all uncertainties and their sum in quadrature are given in Table 3. The total uncertainties on \(m_{\rm top}^{\ell+\rm jets}\), JSF, bJSF and \(m_{\rm top}^{\rm dil}\), amount to 1.27GeV, 0.027, 0.024 and 1.41GeV, respectively. Within uncertainties, the fitted values of JSF and bJSF are consistent with unity.
+
+## 8 Combination of the \(m_{\rm top}\) results
+
+The results of the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton analyses listed in Table 3 are combined using the Best Linear Unbiased Estimate (BLUE) method [75; 76], implemented as described in Refs. [77; 78]. The BLUE method determines the coefficients (weights) to be used in a linear combination of the input measurements by minimising the total uncertainty of the combined result. In the algorithm, both the statistical and systematic uncertainties, and the correlations (\(\rho\)) of the measurements, are taken into account, while assuming that all uncertainties are distributed according to Gaussian probability density functions.
+
+### Correlation of the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton measurements
+
+To perform the combination, for each source of systematic uncertainty, the uncertainties as well as the correlation of the measurements of \(m_{\rm top}\) were evaluated.
+
+The measurements are taken as uncorrelated for the statistical, the method calibration and the pile-up uncertainties. For the remaining uncertainty components there are two possible situations. Either the measurements are fully correlated, \(\rho=+1\), i.e. a simultaneous upward variation of the systematic uncertainty results in a positive (or negative) shift of \(m_{\rm top}\) for both measurements, or fully anti-correlated, \(\rho=-1\). In the latter case one measurement exhibits a positive shift and the other a negative one.
+
+Figure 6a shows the two dimensional distribution of the systematic uncertainties, denoted by \(\Delta m_{\rm top}^{\ell+{\rm jets}}\) and \(\Delta m_{\rm top}^{\rm dil}\), obtained in the \(\ell\)+jets and dilepton analyses for all components of the sources of systematic uncertainty for which the measurements are correlated. The points show the estimated size of the uncertainties, and the error bars represent the statistical uncertainties on the estimates. Some uncertainty sources in Table 3, such as the uncertainty related to the choice of MC generator for signal events, contain only a single component. For these type of sources, the correlation is either \(\rho=+1\) (red points) or \(\rho=-1\) (blue points). The size of the uncertainty bars in Fig. 6a indicates that the distinction between \(\rho=+1\) and \(\rho=-1\) can be unambiguously made for all components that significantly contribute to the systematic uncertainty on \(m_{\rm top}\).
+
+For uncertainty sources that contain multiple components such as the JES uncertainty described in Appendix A, the correlations given in Table 3 differ from \(\rho=\pm 1\). For these cases the correlation is obtained by adding the corresponding covariance terms of the components and dividing by the respective total uncertainties of the source.
+
+For each systematic uncertainty, the size of \(\Delta m_{\rm top}^{\ell+{\rm jets}}\) and \(\Delta m_{\rm top}^{\rm dil}\), and the correlation of the measurements depend on the details of the analyses. This can be seen from Fig. 6b and c where the same information as in Fig. 6a is shown, but for different implementations of the \(\ell\)+jets analysis, while leaving the dilepton analysis unchanged. Figure 6b corresponds to a two-dimensional analysis, similar to Ref. [8], which is realised by fixing the bJSF to unity. Finally, Fig. 6c shows the result of a one-dimensional analysis, in which the values of the JSF and bJSF are fixed to unity. For this implementation, as for the dilepton analysis, only \(m_{\rm top}\) is obtained from the fit to data. Compared to the two-dimensional analysis, the three-dimensional analysis reduces some sources of uncertainty on \(m_{\rm top}\). As an example, the rightmost red point in Fig. 6b, which corresponds to the bJES uncertainty, lies close to the vertical line in Fig. 6a, i.e. for the \(\ell\)+jets analysis the impact of this source was considerably reduced by the bJSF determination from data. The change in the correlations of the measurements for specific sources of uncertainty, caused by a variation of the analysis strategy, is apparent from Fig. 6c, where for both analyses only \(m_{\rm top}\) is obtained from the data. In this case the exploited observables are much more sim
+
+Figure 6: The systematic uncertainties of \(m_{\rm top}\) in the \(\ell\)+jets analysis versus those of the dilepton analysis. Figures **a–c** refer to the results evaluated for the three-dimensional analysis (3d), two-dimensional analysis (2d) and one-dimensional analysis (1d). The _points_ show the estimated systematic uncertainties on \(m_{\rm top}\) for the two analyses, and the uncertainty bars reflect the corresponding statistical uncertainties. The _different colours_ reflect the different correlations described in Sect. 8.1ilar and consequently, the measurements of \(m_{\rm top}\) are fully correlated for all sources of uncertainty that significantly contribute to the total uncertainty. This demonstrates that the three-dimensional analysis not only reduces the impact of some sources of uncertainty, mainly the JES and bJES uncertainties, but also makes the two measurements less correlated, thus increasing the gain in the combination of the two estimates of \(m_{\rm top}\).
+
+To best profit from the combination of the two measurements, their correlation should be as small as possible, see Ref. [78]. Consequently, the jet energy scale factors measured in the \(\ell\)+jets analysis have not been propagated to the dilepton analysis, as was first done in Ref. [79]. Transferring the scales would require adding an additional systematic uncertainty to the dilepton analysis to account for the different jet energy scale factors caused by different kinematical selections and jet topologies of the two analyses. The two final states contain either two or four jets that have different distributions in jet \(p_{\rm T}\), and different amounts of final state QCD radiation. Most notably, this would also result in a large correlation of the measurements, similar to that observed for the one-dimensional analyses shown in Fig. 6c. Consequently, the knowledge of \(m_{\rm top}\) from the \(\ell\)+jets analysis would not significantly improve when including a dilepton measurement obtained with transferred jet energy scales. For an example of such a situation see Table VI of Ref. [79].
+
+Using the correlations determined above, the combination of the \(m_{\rm top}\) results of the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton analyses yields:
+
+\[m_{\rm top}^{\rm comb} = 172.99\pm 0.48\ ({\rm stat})\pm 0.78\ ({\rm syst})\ {\rm GeV}\] \[= 172.99\pm 0.91\ {\rm GeV}.\]
+
+This value corresponds to a 28 % gain in precision with respect to the more precise \(\ell\)+jets measurement. The compatibility of the input measurements is very good, and corresponds to 0.75\(\sigma\) (\(m_{\rm top}^{\ell+{\rm jets}}-m_{\rm top}^{\rm dil}=-1.47\pm 1.96\ {\rm GeV}\)). The BLUE weights of the results of the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton analyses are 54.8 % and 45.2 %, respectively. The total correlation of the input measurements is \(-7\) % and the \(\chi^{2}\) probability of the combination is 45.5 %. The list of all uncertainties of the combined result, together with the correlation of the measurements for each group of uncertainties, is provided in Table 3. The current precision is mostly limited by systematic uncertainties related to the MC modelling of \(t\bar{t}\) events, and to the calibration of the jet energy scales.
+
+### Stability of the results
+
+The dependence of the combined result on the statistical uncertainties of the evaluated systematic uncertainties is investigated by performing one thousand BLUE combinations in which all input uncertainties are independently smeared using Gaussian functions centred at the expected values, and with a width corresponding to their statistical uncertainties. Using the smeared uncertainties, the correlations are re-evaluated for each pseudo-experiment. The combined \(m_{\rm top}\) and its total uncertainty are distributed according to Gaussian functions of width 37  MeV and 43  MeV, respectively. Similarly, the BLUE combination weights and the total correlation are Gaussian distributed, with widths of 2.5 % and 6.1 %, respectively. These effects are found to be negligible compared to the total uncertainty of the combined result. Consequently, no additional systematic uncertainty is assigned.
+
+## 9 Conclusion
+
+The top quark mass was measured via a three-dimensional template method in the \(t\bar{t}\to\) lepton+jets final state, and using a one-dimensional template method in the \(t\bar{t}\to\) dilepton channel. Both analyses are based on \(\sqrt{s}=7\) TeV proton-proton collision ATLAS data from the 2011 LHC run corresponding to an integrated luminosity of 4.6 fb\({}^{-1}\). In the \(\ell\)+jets analysis, \(m_{\rm top}\) is determined together with a global jet energy scale factor (JSF) and a residual \(b\)-to-light-jet energy scale factor (bJSF). The measured values are:
+
+\[m_{\rm top}^{\ell+{\rm jets}} = 172.33\pm 0.75\ ({\rm stat}+{\rm JSF}+{\rm bJSF})\] \[\pm 1.02\ ({\rm syst})\ {\rm GeV},\] \[{\rm JSF} = 1.019\ \pm 0.003\ ({\rm stat})\ \pm 0.027\ ({\rm syst}),\] \[{\rm bJSF} = 1.003\ \pm 0.008\ ({\rm stat})\ \pm 0.023\ ({\rm syst}),\] \[m_{\rm top}^{\rm dil} = 173.79\pm 0.54\ ({\rm stat})\pm 1.30\ ({\rm syst})\ {\rm GeV}.\]
+
+These measurements are consistent with the ATLAS measurement in the fully hadronic decay channel [13], and supersede the previous result described in Ref. [8].
+
+A combination of the \(t\bar{t}\to\) lepton+jets and \(t\bar{t}\to\) dilepton results is performed using the BLUE technique, exploiting the full uncertainty breakdown, and taking into account the correlation of the measurements for all sources of the systematic uncertainty. The result is:
+
+\[m_{\rm top}^{\rm comb} = 172.99\pm 0.48\ ({\rm stat})\pm 0.78\ ({\rm syst})\ {\rm GeV}\] \[= 172.99\pm 0.91\ {\rm GeV}.\]
+
+This corresponds to a gain in precision with respect to the more precise \(\ell\)+jets measurement of 28 %. The total uncertainty of the combination corresponds to 0.91 GeV and is currently dominated by systematic uncertainties due to jet calibration and modelling of the \(t\bar{t}\) events.
+
+###### Acknowledgements.
+
+ We thank CERN for the very successful operation of the LHC, as well as the support staff from our institutions without whom ATLAS could not be operated efficiently. We acknowledge the support of ANPCyT, Argentina; YerPhI, Armenia; ARC,Australia; BMWFW and FWE, Austria; ANAS, Azerbaijan; SSTC, Belarus; CNPq and FAPESP, Brazil; NSERC, NRC and CFI, Canada; CERN; CONICYT, Chile; CAS, MOST and NSFC, China; COLCIEN; CIAS, Colombia; MSMT CR, MPO CR and VSC CR, Czech Republic; DNRF, DNSRC and Lundbeck Foundation, Denmark; EPLANET, ERC and NSRF, European Union; IN2P3-CNRS, CEA-DSM/IRFU, France; GNSF, Georgia; BMBF, DFG, HGF, MPG and AvH Foundation, Germany, GSRT and NSRF, Greece; RGC, Hong Kong SAR, China; ISF, MINERVA, GIF, I-CORE and Benoziyo Center, Israel; INFN, Italy; MEXT and JSPS, Japan; CNRSF, Morocco; FOM and NWO, Netherlands; BRF and RCN, Norway; MNiSW and NCN, Poland, GRICES and FCT, Portugal; MNE/IFA, Romania; MES of Russia and NRC KI, Russian Federation; JINR; MSTD, Serbia; MSSR, Slovakia; ARRS and MIZS, Slovenia; DST/NRF, South Africa; MINECO, Spain; SRC and Wallenberg Foundation, Sweden; SER, SNSF and Cantons of Bern and Geneva, Switzerland; NSC, Taiwan; TAEK, Turkey; STFC, the Royal Society and Leverhulme Trust, United Kingdom; DOE and NSF, United States of America. The crucial computing support from all WLCG partners is acknowledged gratefully, in particular from CERN and the ATLAS Tier-1 facilities at TRIUMF (Canada), NDGF (Denmark, Norway, Sweden), CC-IN2P3 (France), KIT/GridKA (Germany), INFN-
+
+\begin{table}
+\begin{tabular}{l r r r r r r} \hline  & \multicolumn{2}{c}{\(t\bar{t}\to\) lepton+jets} & \multicolumn{2}{c}{\(t\bar{t}\to\) dilepton} & \multicolumn{2}{c}{Combination} & \\ \cline{2-7}  & \(\Delta m_{\rm top}^{\ell+\rm jets}\) [GeV] & \(\Delta\)JSF & \(\Delta\)bJSF & \(\Delta m_{\rm top}^{\rm dil}\) [GeV] & \(\Delta m_{\rm top}^{\rm comb}\) [GeV] & \(\rho\) \\ \hline Statistical (total) & \(0.18\pm 0.04\) & \(0.003\) & \(0.001\) & \(0.16\pm 0.03\) & \(0.11\) & \(-0.25\) \\ Statistical NP1 & \(-0.17\pm 0.02\) & \(+0.002\) & \(+0.001\) & \(+0.01\pm 0.02\) & \(0.09\) & \(-1.00\) \\ Statistical NP2 & \(+0.02\pm 0.00\) & \(+0.001\) & \(-0.000\) & \(+0.05\pm 0.00\) & \(0.03\) & \(+1.00\) \\ Statistical NP3 & \(-0.01\pm 0.02\) & \(+0.001\) & \(+0.001\) & \(+0.12\pm 0.02\) & \(0.05\) & \(-1.00\) \\ \(\eta\) inter-calibration (stat.) & \(-0.07\pm 0.02\) & \(+0.001\) & \(+0.001\) & \(+0.10\pm 0.02\) & \(0.01\) & \(-1.00\) \\ Modelling (total) & \(0.31\pm 0.06\) & \(0.009\) & \(0.002\) & \(0.52\pm 0.04\) & \(0.26\) & \(-0.18\) \\ Modelling NP1 & \(-0.30\pm 0.03\) & \(+0.006\) & \(+0.001\) & \(+0.22\pm 0.02\) & \(0.07\) & \(-1.00\) \\ Modelling NP2 & \(+0.03\pm 0.02\) & \(+0.002\) & \(-0.000\) & \(+0.14\pm 0.02\) & \(0.08\) & \(+1.00\) \\ Modelling NP3 & \(-0.01\pm 0.02\) & \(-0.002\) & \(-0.000\) & \(-0.15\pm 0.02\) & \(0.07\) & \(+1.00\) \\ Modelling NP4 & \(-0.01\pm 0.00\) & \(+0.000\) & \(+0.000\) & \(+0.02\pm 0.00\) & \(0.00\) & \(-1.00\) \\ \(\eta\) inter-calibration (model) & \(+0.07\pm 0.04\) & \(+0.007\) & \(-0.001\) & \(+0.43\pm 0.03\) & \(0.23\) & \(+1.00\) \\ Detector (total) & \(0.05\pm 0.03\) & \(0.007\) & \(0.001\) & \(0.45\pm 0.04\) & \(0.20\) & \(-0.19\) \\ Detector NP1 & \(-0.01\pm 0.03\) & \(+0.007\) & \(+0.001\) & \(+0.45\pm 0.02\) & \(0.20\) & \(-1.00\) \\ Detector NP2 & \(-0.05\pm 0.00\) & \(+0.000\) & \(+0.001\) & \(+0.03\pm 0.00\) & \(0.02\) & \(-1.00\) \\ Mixed (total) & \(0.02\pm 0.02\) & \(0.0ties, as described in Section 13.3 of Ref. [58]. The initial sources of nuisance parameters (NP) originating from the in-situ determination of the JES are listed in Table 10 of Ref. [58]. According to their nature, they are categorised into the classes: detector description, physics modelling, statistics and method, mixed detector and modelling. Finally, following Section 13.6 of Ref. [58], a reduction of the number of nuisance parameters is performed for each category giving various components. Their \(p_{\rm T}\) dependences are given in Fig. 42 of Ref. [58]. The total JES uncertainty is provided together with its 21 sub-components in Table 4. Their separate effects on the fitted top quark mass are summed in quadrature to determine the total jet energy scale uncertainty given in Table 3. For further details about each component, see Ref. [58].
+
+## References
+
+* (1) ALEPH, CDF, D0, DELPHI, L3, OPAL, SLD Collaborations, the LEP Electroweak Working Group, the Tevatron Electroweak Working Group and the SLD Electroweak and Heavy Flavour Groups, Precision electroweak measurements and constraints on the Standard Model. arXiv:1012.2367 [hep-ex]
+* (2) M. Baak et al., The global electroweak fit at NNLO and prospects for the LHC and ILC. Eur. Phys. J. C **74**, 3046 (2014). arXiv:1407.3792 [hep-ph]
+* (3) K.A. Olive et al., (Particle Data Group), Review of particle physics. Chin. Phys. C **38**, 090001 (2014)
+* (4) G. Degrassi et al., Higgs mass and vacuum stability in the Standard Model at NNLO. JHEP **1208**, 98 (2012). arXiv:1205.6497 [hep-ex]
+* (5) F. Bezrukov, M. Shaposhnikov, The Standard Model Higgs boson as the inflaton. Phys. Lett. B **659**, 703 (2008). arXiv:0710.3755 [hep-th]
+* (6) A. De Simone, M.P. Herzberg, F. Wilczek, Running inflation in the Standard Model. Phys. Lett. B **678**, 1 (2009). arXiv:0812.4946 [hep-ph]
+* (7) Tevatron Electroweak Working Group, Combination of CDF and D0 results on the mass of the top quark using up to 9.7 fb\({}^{-1}\) at the Tevatron, CDF Note 11105 and D0 Note 6444 (2014). arXiv:1407.2682 [hep-ex]
+* (8) ATLAS Collaboration, Measurement of the top quark mass with the template method in the top antitop \(\to\) lepton \(+\) jets channel using ATLAS data. Eur. Phys. J. C **72**, 2046 (2012). arXiv:1203.5755 [hep-ex]
+* (9) CMS Collaboration, Measurement of the top-quark mass in \(t\bar{t}\) events with lepton+jets final states in pp collisions at \(\sqrt{s}=7\) TeV. JHEP **1212**, 105 (2012). arXiv:1209.2319 [hep-ex]
+* (10) CMS Collaboration, Measurement of the top-quark mass in \(t\bar{t}\) events with dilepton final states in pp collisions at \(\sqrt{s}=7\) TeV. Eur. Phys. J. C **72**, 2202 (2012). arXiv:1209.2393 [hep-ex]
+* (11) CMS Collaboration, Measurement of the mass of the \(t\bar{t}\) system by kinematic endpoints in pp collisions at \(\sqrt{s}=7\)TeV. Eur. Phys. J. C **73**, 2494 (2013). arXiv:1304.5783 [hep-ex]
+* (12) CMS Collaboration, Measurement of the top-quark mass in all-jets \(t\bar{t}\) events in \(pp\) collisions at \(\sqrt{s}=7\) TeV. Eur. Phys. J. C **74**, 2758 (2014). arXiv:1307.4617 [hep-ex]
+* (13) ATLAS Collaboration, Measurement of the top-quark mass in the fully hadronic decay channel from ATLAS data at \(\sqrt{s}=7\) TeV. arXiv:1409.0832 [hep-ex] (submitted to Eur. Phys. J. C)
+* (14) ATLAS and CMS Collaborations, Combination of ATLAS and CMS results on the mass of the top quark using up to 4.9 fb\({}^{-1}\) of data. CMS-PAS-TOP-13-005 and ATLAS-CONF-2013-102 (2013). arXiv:1304.1176 [hep-ex]
+* (15) ATLAS, CDF, CMS and D0 Collaborations, First combination of Tevatron and LHC measurements of the top-quark mass. ATLAS-CONF-2014-008, CDF-NOTE-11071, CMS-PAS-TOP-13-014, D0-NOTE-6416 (2014). arXiv:1403.4427 [hep-ex]
+* (16) D0 Collaboration, V.M. Abazov et al., Precision measurement of the top-quark mass in lepton+jets final states. Phys. Rev. Lett. **113**, 032002 (2014). arXiv:1405.1756 [hep-ex]
+* (17) CDF Collaboration, A. Abulencia et al., Top quark mass measurement using the template method in the lepton+jets channel at CDF II. Phys. Rev. D **73**, 032003 (2006). arXiv:hep-ex/0510048 [hep-ex]
+* (18) A. Buckley et al., General-purpose event generators for LHC physics. Phys. Rep. **504**, 145 (2011). arXiv:1101.2599 [hep-ph]
+* (19) A.H. Hoang, I.W. Stewart, Top-mass measurements from jets and the Tevatron top mass. Nuovo Cim. B **123**, 1092 (2008)
+* (20) A.H. Hoang, The top mass: interpretation and theoretical uncertainties. arXiv:1412.3649 [hep-ph]
+* (21) S. Moch et al., High precision fundamental constants at the TeV scale. arXiv:1405.4781 [hep-ph]
+* (22) ATLAS Collaboration, The ATLAS experiment at the CERN Large Hadron Collider. J. Inst. **3**, S08003 (2008)
+* (23) ATLAS Collaboration, Performance of the ATLAS trigger system in 2010. Eur. Phys. J. C **72**, 1849 (2012). arXiv:1110.1530 [hep-ex]
+* (24) ATLAS Collaboration, Improved luminosity determination in pp collisions at \(\sqrt{s}=7\) TeV using the ATLAS detector at the LHC. Eur. Phys. J. C **73**, 2518 (2013). arXiv:1302.4393 [hep-ex]
+* (25) S. Frixione, P. Nason, C. Oleari, Matching NLO QCD computations with Parton Shower simulations: the POWHEG method. JHEP **0711**, 070 (2007). arXiv:0709.2092 [hep-ph]
+* (26) H.-L. Lai et al., New parton distributions for collider physics. Phys. Rev. D **82**, 074024 (2010). arXiv:1007.2241 [hep-ph]
+* (27) T. Sjostrand, S. Mrenna, P.Z. Skands, PYTHIA 6.4 physics and manual. JHEP **0605**, 026 (2006). arXiv:hep-ph/0603175 [hep-ph]
+* (28) P.Z. Skands, Tuning Monte Carlo generators: the Perugia tunes. Phys. Rev. D **82**, 074018 (2010)
+* (29) J. Pumplin et al., New generation of parton distributions with uncertainties from global QCD analysis. JHEP **0207**, 012 (2002). arXiv:hep-ph/0201195 [hep-ph]
+* (30) B.P. Kresven, E. Richter-Was, The Monte Carlo event generator Acerd oversions \(0.3\) to \(8\) with interfaces to PYTHIA 6.4, HERWIG 6.5 and ARIADNE 4.1. Comput. Phys. Commun. **184**, 919 (2013). arXiv:hep-ph/0405247 [hep-ph]
+* (31) M. Cacciari et al., Top-pair production at hadron colliders with next-to-next-to-leading logarithmic soft-gluon resummation. Phys. Lett. B **710**, 612 (2012). arXiv:1111.5869 [hep-ph]
+* (32) P. Barreuther, M. Czakon, A. Mitov, Percent level precision physics at the Tevatron: first genuine NNLO QCD corrections to \(q\bar{q}\to t\bar{t}+X\). Phys. Rev. Lett. **109**, 132001 (2012). arXiv:1204.5201 [hep-ph]
+* (33) M. Czakon, A. Mitov, NNLO corrections to top-pair production at hadron colliders: the all-fermionic scattering channels. JHEP **1212**, 054 (2012). arXiv:1207.0236 [hep-ph]
+* (34) M. Czakon, A. Mitov, NNLO corrections to top pair production at hadron colliders: the quark-gluon reaction. JHEP **1301**, 080 (2013). arXiv:1210.6832 [hep-ph]
+* (35) M. Czakon, P. Fiedler, A. Mitov, The total top quark pair production cross-section at hadron colliders through \(\mathcal{O}(4^{4}_{S})\). Phys. Rev. Lett. **110**, 252004 (2013). arXiv:1303.6254 [hep-ph]
+* (36) M. Czakon, A. Mitov, Top++: a program for the calculation of the top-pair cross-section at hadron colliders. Comput. Phys. Commun. **185**, 2930 (2014). arXiv:1112.5675 [hep-ph]

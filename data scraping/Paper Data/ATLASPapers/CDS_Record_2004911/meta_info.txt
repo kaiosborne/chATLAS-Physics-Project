@@ -1,0 +1,3 @@
+PAPER NAME : Search for low-scale gravity signatures in multi-jet final states with the ATLAS detector at $\sqrt{s}$ = 8 TeV
+LAST MODIFICATION DATE : 2023-11-30
+URL : https://cds.cern.ch/record/2004911

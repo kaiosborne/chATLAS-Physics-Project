@@ -1,0 +1,3 @@
+PAPER NAME : Search for a new resonance decaying to a $W$ or $Z $ boson and a Higgs boson in the $\ell \ell/ \ell \nu/ \nu \nu + b \bar{b}$ final states with the ATLAS Detector
+LAST MODIFICATION DATE : 2023-11-30
+URL : https://cds.cern.ch/record/2004438

@@ -1,0 +1,219 @@
+Search for a new resonance decaying to a \(W\) or \(Z\) boson and a Higgs boson in the \(\ell\ell/\ell v/vv+b\bar{b}\) final states with the ATLAS detector
+
+ATLAS Collaboration CERN, 1211 Geneva 23, Switzerland
+
+###### Abstract
+
+A search for a new resonance decaying to a \(W\) or \(Z\) boson and a Higgs boson in the \(\ell\ell/\ell v/vv+b\bar{b}\) final states is performed using 20.3 fb\({}^{-1}\) of \(pp\) collision data recorded at \(\sqrt{s}=8\) TeV with the ATLAS detector at the Large Hadron Collider. The search is conducted by examining the \(WH/ZH\) invariant mass distribution for a localized excess. No significant deviation from the Standard Model background prediction is observed. The results are interpreted in terms of constraints on the Minimal Walking Technicolor model and on a simplified approach based on a phenomenological Lagrangian of Heavy Vector Triplets.
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
++
+Footnote †: e-mail: atlas.publications@cern.ch
+
+## 1 Introduction
+
+Although the Higgs boson discovery by the ATLAS [1] and CMS [2] collaborations imposes strong constraints on theories beyond the Standard Model (SM), the extreme fine tuning in quantum corrections required to have a light fundamental Higgs boson [3; 4] suggests that the SM may be incomplete, and not valid beyond a scale of a few TeV. Various dynamical electroweak symmetry breaking scenarios which attempt to solve this naturalness problem, such as Minimal Walking Technicolor [5; 6; 7; 8], Little Higgs [9], or composite Higgs models [10; 11], predict the existence of new resonances decaying to a vector boson plus a Higgs boson.
+
+Using the full dataset collected by the ATLAS detector at 8 TeV centre-of-mass energy at the Large Hadron Collider, a search is performed for a heavy resonance decaying to \(VH\), where \(V\) is a \(W\) or \(Z\) boson and \(H\) is the SM Higgs boson. This analysis looks for the leptonic decay of the \(W\) or \(Z\) boson and the Higgs decay into a \(b\)-quark pair. Therefore the selected final states are: zero charged leptons targeting \(Z(\to v\nu)b\bar{b}\) decays, one charged lepton \(W(\to\ell v)b\bar{b}\), and two oppositely charged leptons \(Z(\to\ell\ell)b\bar{b}\) where \(\ell=e\), \(\mu\). The search is performed by examining the distribution of the reconstructed \(VH\) mass (\(m_{VH}\)) for a localized excess. The signal strength and the background normalization are determined from a likelihood fit to the data distribution in the three channels studied.
+
+As a benchmark, the Minimal Walking Technicolor model (MWT) is used, a model with strongly coupled dynamics. This model predicts two triplets of resonances, \(R_{1}^{\pm,0}\) and \(R_{2}^{\pm,0}\), one of which is a vector and the other an axial-vector, that couple to vector bosons with strength \(\tilde{g}\) and to fermions with \(g/\tilde{g}\), where \(g\) is the weak SU(2) coupling constant. The bare axial-vector mass \(m_{A}\) determines the masses of \(R_{1}\) and \(R_{2}\), with the lower mass resonance \(R_{1}\) having a mass close to \(m_{A}\). Recent lattice simulations in this model [12; 13; 14] predict masses close to 2 TeV. The decay channels \(R_{1,2}^{\pm}\to\ W\ H\) and \(R_{1,2}^{0}\to\ ZH\), lead to \(Wb\bar{b}\) and \(Zb\bar{b}\) final states.
+
+A simplified approach based on a phenomenological Lagrangian [15] that incorporates Heavy Vector Triplets (HVT), which allows the interpretation of the results in a model-independent way, is also used. Here, the new heavy vector bosons, \(V^{\prime\pm,0}\), couple to the Higgs and SM gauge bosons via a combination of parameters \(g_{V}c_{H}\) and to the fermions via the combination \((g^{2}/g_{V})\ c_{F}\). The parameter \(g_{V}\) represents the strength of the new vector boson interaction, while \(c_{H}\) and \(c_{F}\), which represent the couplings to the Higgs and the fermions respectively, are expected to be of order unity in most models. Two benchmark models [15] are used here. In the first model, referred to as _model A_, the branching fractions to fermions and gauge bosons are comparable, as in some extensions of the SM gauge group [16]. For _model B_, fermionic couplings are suppressed, as for example in a composite Higgs model [17].
+
+The three final states presented in this Letter have been extensively studied for non-resonant production in ATLAS [18]. Moreover, a search for a pseudoscalar resonance in the \(\ell\ell b\bar{b}\) and \(vvb\bar{b}\) channels has already been published by ATLAS, setting limits on two-Higgs-doublet models [19]. Other searches for particles occurring in MWT and HVT models have been conducted by the ATLAS [20; 21] and CMS [22] collaborations.
+
+## 2 The ATLAS detector
+
+The ATLAS detector [23] is a general-purpose particle detector used to investigate a broad range of physics processes. It includes inner tracking devices surrounded by a superconducting solenoid, electromagnetic and hadronic calorimeters and a muon spectrometer. The inner detector (ID) provides precision tracking of charged particles with pseudorapidity1\(|\eta|<2.5\). The calorimeter system covers the pseudorapidity range \(|\eta|<4.9\). It is composed of sampling calorimeters with either liquid argon (LAr) or scintillator tiles as the active medium. The muon spectrometer consists of three large superconducting toroids and a system of trigger chambers and precision tracking chambers that provide triggering and tracking capabilities in the ranges of \(|\eta|<2.4\) and \(|\eta|<2.7\) respectively.
+
+Footnote 1: ATLAS uses a right-handed coordinate system with its origin at the nominal interaction point (IP) in the centre of the detector and the \(z\)-axis along the beam pipe. The \(x\)-axis points from the IP to the centre of the LHC ring, and the \(y\)-axis points upward. Cylindrical coordinates (\(r\), \(\phi\)) are used in the transverse plane, \(\phi\) being the azimuthal angle around the beam pipe. The pseudorapidity is defined in terms of the polar angle \(\theta\) as \(\eta=-\ln\tan(\theta/2)\).
+
+The ATLAS detector has a three-level trigger system to select events for offline analysis.
+
+## 3 Data and Monte Carlo samples
+
+This analysis is based on \(\sqrt{s}=8\,\mathrm{TeV}\)\(pp\) collision data corresponding to \(20.3\pm 0.6\,\mathrm{fb}^{-1}\)[24]. The data used in the \(\ell vb\bar{b}\) final state were collected using single-electron and single-muon triggers with transverse momentum (\(p_{\mathrm{T}}\)) thresholds from 24 to 60 GeV. The data used in the \(\ell\ell b\bar{b}\) final state were collected using a combination of single-electron, single-muon, dielectron (\(ee\)) and dimuon (\(\mu\mu\)) triggers. The \(p_{\mathrm{T}}\) thresholds for the \(ee\) and \(\mu\mu\) triggers vary from 12 to 13 GeV. The data used in the \(vvb\bar{b}\) final state were collected using a trigger that requires a missing transverse momentum (\(\mathbf{E_{T}^{miss}}\)) with magnitude \(E_{T}^{\mathrm{miss}}\) greater than 80 GeV.
+
+Simulated Monte Carlo (MC) samples for the MWT benchmark model use the implementation [25] in MadGraph5[26], with the Higgs boson mass set to 126 GeV. The parameter \(\tilde{g}\) is set to 2 for signal generation. Constraints on other values of this parameter can be set using the same samples since the kinematic distributions do not depend on \(\tilde{g}\). The parameter \(S\), which is an approximate value [27] of the Peskin-Takeuchi \(S\) parameter [28] which measures potential new contributions to electroweak radiative corrections, is set to 0.3, in accordance with the recommendations in Ref. [29].
+
+Signal samples for the HVT model are also generated with Madgraph5. The parameter \(c_{F}\) is assumed to be the same for quarks and leptons including third-generation fermions. Other parameters involving more than one heavy vector boson, \(g_{V}c_{VVV}\), \(g_{V}^{2}c_{VVHH}\) and \(c_{VVW}\), have negligible effect on the overall cross sections for the processes of interest here. For all signal events, parton showering and hadronization is performed with Pythia8[30; 31] and the CTEQ6L1[32] parton distribution functions (PDFs) are used. Benchmark signal samples are generated for a range of resonance masses from 300 to 2000 GeV in steps of 100 GeV.
+
+MC samples are used to model the shape and normalization of most SM background processes, although some are later adjusted using data-based corrections extracted from control samples. The production of \(W\) and \(Z\) bosons in association with jets is simulated with Sherpa 1.4.1 [33] using the CT10 PDFs [34]. Top quark pair production is simulated using Powheg[35; 36] with the Powheg- BOX program [37] interfaced to Pythia6, using the CTEQ6L1 PDFs. In this analysis, the final normalizations of these dominant backgrounds are constrained by the data, but theoretical cross sections are used to optimize the selection. The cross sections are calculated at NNLO accuracy for \(W/Z\)+jets [38] and at NNLO+NNLL accuracy for \(t\bar{t}\)[39]. Single top quark production is simulated with Powheg and AcerMC [40] interfaced to Pythia6, using the CTEQ6L1 PDFs, and the cross sections are taken from Ref. [41]. Diboson production (\(WW,WZ,ZZ\)) is simulated using Powheg interfaced to Pythia8, using the CT10 PDFs, and the cross sections are obtained at NLO from mcfm[42]. Finally, SM Higgs boson production in association with a \(W/Z\) boson is simulated using Pythia8 with the CTEQ6L1 PDFs, and considered as a background in this search. It is scaled to the SM cross section [18].
+
+All MC simulated samples include the effect of multiple \(pp\) interactions in the same and neighbouring bunch crossings (pile-up) by overlaying simulated minimum-bias events on each generated signal or background event. The number of overlaid events is such that the distribution of the number of interactions per \(pp\) bunch crossing in the simulation matches that observed in the data, with on average 21 interactions per bunch crossing. The generated samples are processed through the Geant4-based ATLAS detector simulation [43; 44] or a fast simulation using a parameterization of the performance of the calorimetry and Geant4 for the other parts of the detector [45]. Simulated events are reconstructed with the standard ATLAS reconstruction software used for collision data.
+
+## 4 Object reconstruction
+
+The physics objects used in this analysis are electrons, muons, jets and missing transverse momentum.
+
+Electrons are identified for \(|\eta|<2.47\) and \(p_{\rm T}\ >7\) GeV from energy clusters in the electromagnetic calorimeter that are matched to tracks in the inner detector [46]. Quality requirements based on the calorimeter cluster and track are applied to reduce contamination from jets.
+
+Muons are reconstructed in the muon spectrometer in the range \(|\eta|<2.7\) and \(p_{\rm T}\ >4\) GeV [47]. For \(|\eta|<2.5\) the muon spectrometer track must be matched with a track in the inner detector and information from both is used to reconstruct the momentum. Muons considered for this analysis must have \(p_{\rm T}\ >7\) GeV.
+
+Lepton candidates are required to be isolated to reduce the multijet background. The scalar sum of the transverse momenta of tracks with \(p_{\rm T}\ >1\) GeV within a cone of \(\Delta R=\sqrt{(\Delta\eta)^{2}+(\Delta\phi)^{2}}=0.2\) around the lepton track (tracking isolation) is required to be less than 10 % of the lepton \(p_{\rm T}\.\)
+
+Jets are reconstructed using the anti-\(k_{t}\) algorithm [48] with radius parameter \(R=0.4\). The jet transverse momentum is corrected for energy losses in passive material, for the non-compensating response of the calorimeter, and for any additional energy due to multiple \(pp\) interactions [49]. Jets are required to have \(p_{\rm T}\ >30\) GeV and \(|\eta|<4.5\). To reject low-\(p_{\rm T}\ \) jets from pile-up, for jets with \(p_{\rm T}\ <50\) GeV and \(|\eta|<2.5\), the scalar sum of the \(p_{\rm T}\ \) of associated tracks, originating from the reconstructed primary vertex, is required to be at least 50 % of the scalar sum of the \(p_{\rm T}\) of all associated tracks. To avoid double-counting of leptons and jets, an overlap removal procedure is applied [18].
+
+In the pseudorapidity range \(|\eta|<2.5\), jets originating from \(b\)-quarks are identified using a multi-variate \(b\)-tagging algorithm [50]. This has an efficiency of 70 % and a misidentification rate of less than 1 % for selecting jets initiated by light quarks or gluons and of about 20 % for jets initiated by \(c\)-quarks, as determined from \(t\bar{t}\) MC events.
+
+The missing transverse momentum is calculated as the negative of the vectorial sum of the calorimeter-based transverse momenta of all electrons, jets, and calibrated calorimeter clusters within \(|\eta|<4.9\) that are not associated with any other objects [51], as well as muon momenta. In addition, a track-based missing transverse momentum (\(\mathbf{p_{\rm T}^{\rm miss}}\), with magnitude \(p_{\rm T}^{\rm miss}\ ) is used, calculated as the negative vectorial sum of the track-based transverse momenta of objects with \(|\eta|<2.4\) associated with the primary vertex.
+
+## 5 Event selection and reconstruction
+
+Events are categorized into the \(v\nu b\bar{b}\), \(\ell\nu b\bar{b}\) or \(\ell\ell b\bar{b}\) channels if they have zero, one or two reconstructed charged leptons respectively. All categories require at least two jets in the pseudorapidity range \(|\eta|<2.5\) (central jets). The channels are further subdivided into categories of events containing one or two \(b\)-tagged jets; events with zero or \(\geq 3\)\(b\)-tagged jets are rejected. The Higgs boson candidate (and its mass \(m_{b\bar{b}}\)) is reconstructed from the two \(b\)-tagged jets or, for 1-\(b\)-tag events, the \(b\)-tagged jet and the highest-\(p_{\rm T}\ \) remaining central jet. In order to suppress \(W/Z\)+jets background, at least one of the jets must have \(p_{\rm T}\ >45\) GeV and the invariant mass of the dijet pair must be in the range \(105<m_{b\bar{b}}<145\) GeV, consistent with the Higgs mass. In order to reduce the \(t\bar{t}\) background in the \(v\nu b\bar{b}\) and \(\ell\nu b\bar{b}\) channels, events are rejected if they contain four or more jets. To improve the resolution of the \(VH\) mass a constraint to the Higgs boson mass is applied by scaling the Higgs boson candidate jet momenta by \(m_{H}/m_{h\bar{b}}\) (\(m_{H}=125\) GeV). Further channel-specific cuts are applied as outlined below.
+
+### \(v\nu b\bar{b}\) channel
+
+Events are selected with \(E_{\rm T}^{\rm miss}>120\) GeV and \(p_{\rm T}^{\rm miss}>30\) GeV. A requirement is made on \(H_{\rm T}\), defined as the scalar sum of the \(p_{\rm T}\) of all jets, in order to keep a high trigger efficiency: \(H_{\rm T}>120\) GeV (\(>\)150 GeV) for events with two (three) jets. Selections are also applied on the angle between the jets used for reconstructing the Higgs candidate, \(\Delta R_{h\bar{b}}\), to suppress the \(W/Z\)+jets background [18]: for \(120<E_{\rm T}^{\rm miss}<160\) GeV, \(0.7<\Delta R_{h\bar{b}}<1.8\); for \(160<E_{\rm T}^{\rm miss}<200\) GeV, \(\Delta R_{h\bar{b}}<1.8\); for \(E_{\rm T}^{\rm miss}>200\) GeV, \(\Delta R_{h\bar{b}}<1.4\). Events containing an electron or muon passing the selection cuts described in Sect. 4 are removed.
+
+In events with real \(E_{\rm T}^{\rm miss}\) the directions of \(\mathbf{E_{\rm T}^{\rm miss}}\) and \(\mathbf{p_{\rm T}^{\rm miss}}\) are expected to be similar. In events with fake \(E_{\rm T}^{\rm miss}\) arising from a jet energy fluctuation, the direction of \(\mathbf{E_{\rm T}^{\rm miss}}\) should be close to the direction of the poorly measured jet. Therefore additional criteria are imposed on angular quantities in order to suppress the multijet background: the azimuthal angle between \(\mathbf{E_{\rm T}^{\rm miss}}\) and \(\mathbf{p_{\rm T}^{\rm miss}}\), \(\Delta\phi(\mathbf{E_{\rm T}^{\rm miss}}\,\mathbf{p_{\rm T}^{\rm miss}})<\pi/2\); the minimum azimuthal angle between \(\mathbf{E_{\rm T}^{\rm miss}}\) and any jet, \(\min[\Delta\phi(\mathbf{E_{\rm T}^{\rm miss}}\,{\rm jet})]>1.5\); and the azimuthal angle between \(\mathbf{E_{\rm T}^{\rm miss}}\) and the jet pair combination used to reconstruct the Higgs candidate, \(\Delta\phi(\mathbf{E_{\rm T}^{\rm miss}}\,b\bar{b})>2.8\).
+
+It is not possible to accurately reconstruct the invariant mass of the \(ZH\) system due to the missing neutrinos, so the transverse mass is used as the final discriminant: \(m_{VH}^{\rm T}=\sqrt{(E_{T}^{b\bar{b}}+E_{\rm T}^{\rm miss}}\ )^{2}-(\mathbf{p_{\rm T}}^{b\bar{b}}+\mathbf{E_{\rm T}^{\rm miss}}\ )^{2}\), where \(p_{\rm T}\ ^{b\bar{b}}\) is the transverse momentum of the Higgs candidate. The total acceptance times selection efficiency varies from 15 % for \(m_{R_{1}}=400\) GeV, to 30 % for \(m_{R_{1}}=1000\) GeV and down to 2 % for \(m_{R_{1}}=2000\) GeV. The drop at very high masses is due to the merging of the jets.
+
+### \(\ell\nu b\bar{b}\) channel
+
+In order to suppress the multijet background and ensure the single-lepton triggers are fully efficient, tighter identification criteria are placed on the lepton in this channel. The lepton \(p_{\mathrm{T}}\) requirement is raised to \(p_{\mathrm{T}}\)\(>\) 25 GeV and, for the muon channel, the pseudorapidity is restricted to \(|\eta|\)\(<\) 2.5. Moreover, the tracking isolation is tightened and required to be less than 4 % of the lepton \(p_{\mathrm{T}}\). Similarly, the sum of transverse energy deposits in the calorimeter within a cone of \(\Delta R=0.3\) around the lepton, excluding the transverse energy due to the lepton and the correction for the expected pile-up contribution, is required to be less than 4 % of the lepton \(p_{\mathrm{T}}\).
+
+The multijet background is further reduced by requiring \(\Delta\phi(\mathbf{E_{T}^{miss}},\mathrm{jet})\)\(>\) 1.0. \(W\) boson candidates are selected by requiring \(E_{\mathrm{T}}^{miss}\)\(>\) 30 GeV and the transverse mass reconstructed from the lepton and \(E_{\mathrm{T}}^{miss}\), \(m_{W}^{\mathrm{T}}\)\(=\)\(\sqrt{2\times E_{\mathrm{T}}^{\ell}\times E_{\mathrm{T}}^{miss}}\)\(\times\) (1-\(\cos\Delta\phi(\ell,\mathbf{E_{T}^{miss}})\)) \(>\) 20 GeV.
+
+The \(WH\) system mass, \(m_{VH}\), is reconstructed from the lepton, the \(E_{\mathrm{T}}^{miss}\) and the two jets. The momentum of the neutrino in the \(z\)-direction, \(p_{z}\), is obtained by imposing the \(W\) boson mass constraint on the lepton and neutrino system, which leads to a quadratic equation. Here \(p_{z}\) is taken as either the real component of the complex solutions or the smaller of the two real solutions.
+
+In order to reduce the \(W\)+jets background, a requirement is imposed on the transverse momentum of the \(W\) boson, \(p_{\mathrm{T}}^{W}\)\(>\) 0.4 \(\times\)\(m_{VH}\). The cut depends on \(m_{VH}\) since the background is generally produced at low \(p_{\mathrm{T}}^{W}\), whereas for signal the mean \(p_{\mathrm{T}}^{\mathrm{T}}\) increases with \(m_{VH}\). The total acceptance times selection efficiency varies from 8 % for \(m_{R_{1}}\) = 400 GeV, to 20 % for \(m_{R_{1}}\) = 2000 GeV.
+
+### \(\ell\ell b\bar{b}\) channel
+
+Events in this channel are selected by requiring two reconstructed leptons of the same flavour with opposite charge. In order to reduce the multijet background while keeping a high signal acceptance, tighter requirements are placed on one of the leptons. These tighter electrons or muons must have \(p_{\mathrm{T}}\)\(>\) 25 GeV and, in addition, muons are restricted to \(|\eta|\)\(<\) 2.5. A cut on the two-lepton invariant mass of 83 GeV\(<m_{\ell\ell}\)\(<\) 99 GeV is imposed to reduce \(t\bar{t}\) and multijet backgrounds. The \(t\bar{t}\) background is further reduced by requiring \(E_{\mathrm{T}}^{miss}\)\(<\) 60 GeV.
+
+The invariant mass of the two leptons and two jets is used to reconstruct \(m_{VH}\).
+
+In order to reduce the dominant \(Z\)+jets background, a selection, optimized for this channel, is imposed on the transverse momentum of the \(Z\) boson: \(p_{\mathrm{T}}^{Z}\)\(>\) 0.4 \(\times\)\(m_{VH}\)\(-\) 100 GeV. The total acceptance times selection efficiency varies from 18 % for \(m_{R_{1}}\) = 400 GeV, to 30 % for \(m_{R_{1}}\) = 1000 GeV and down to 1 % for \(m_{R_{1}}\) = 2000 GeV.
+
+## 6 Background estimation
+
+All backgrounds except the multijet background are estimated from simulation, with data-based corrections for the dominant \(W/Z\)+jets background as described in the following. The rate and shape of the multijet (MJ) background are estimated with data-driven methods.
+
+The MJ background is estimated in the 0-lepton channel using an "ABCD method" based on two uncorrelated variables: \(\min\)[\(\Delta\phi(\mathbf{E_{T}^{miss}},\mathrm{jet})\)] and \(\Delta\phi(\mathbf{E_{T}^{miss}},\mathbf{p_{T}^{miss}})\). The data are divided into four regions such that three of the regions are dominated by background. The signal region (A) is defined as explained in Sect. 5. The MJ-dominated region C is obtained by reversing the \(\Delta\phi(\mathbf{E_{T}^{miss}},\mathbf{p_{T}^{miss}})\) requirement. An MJ template in region A is obtained using events in region C after subtracting the contribution of other backgrounds, taken from simulation. The template is then normalized by a fit to the regions with \(\min\)[\(\Delta\phi(\mathbf{E_{T}^{miss}},\mathrm{jet})\)] \(<\) 0.4 [18] (regions B and D with orthogonal \(\Delta\phi(\mathbf{E_{T}^{miss}},\mathbf{p_{T}^{miss}})\) requirements).
+
+In the 1-lepton channel, the MJ background is determined separately for the electron and muon sub-channels. An MJ-background template is obtained from an MJ-dominated region after subtracting the small contribution from the other backgrounds. An MJ-dominated region is obtained by loosening the lepton identification requirements and reversing the isolation criteria. A binned fit of the full \(E_{\mathrm{T}}^{miss}\) spectrum of the data to the sum of the MJ contribution, \(W/Z\)+jets and other MC contributions is then used to extract the MJ normalization. The templates are validated in a control region enriched in MJ events, selected by reversing the \(E_{\mathrm{T}}^{miss}\) requirement.
+
+For the 2-lepton channel in the \(eeb\bar{b}\) final state, the MJ background shape is determined by selecting events with reversed electron isolation criteria and its normalization is extracted by fitting the full data \(m_{ee}\) distribution including \(Z\) sidebands. The MJ background in the \(\mu\mu b\bar{b}\) final state is found to be negligible.
+
+The \(W/Z\)+jets simulated samples are split into different components according to the true flavour of the jets, i.e. \(W/Z+qq\), \(W/Z+cq\), where \(q\) denotes a light quark (\(u\), \(d,s\)) or a gluon, and \(W/Z\) plus heavy flavour (hf). The latter includes: \(W/Z+b\bar{b}\), \(W/Z+bq\),\(W/Z+bc\), \(W/Z+cc\). The normalizations of \(W+cq\), \(Z+cq\) and \(W\)+hf, \(Z\)+hf are free parameters of the global likelihood fit. The scale factors after the fit are all consistent with 1, except for the Z+hf normalization that is 15 % higher as seen in previous measurements [18]. The \(W/Z\)+jets modelling is checked in control regions selected by requiring events with no \(b\)-tagged jets or in the \(m_{b\bar{b}}\) sideband region in the 1-tag and 2-tag channels. A difference between data and simulation is observed in the 0-tag control region and a correction is extracted as a function of the azimuthal angle difference between the two leading-\(p_{\mathrm{T}}\) jets, \(\Delta\phi(\mathrm{jet}_{1},\mathrm{jet}_{2})\). This is used to reweight the \(Z+qq\) and \(W+qq\) components. After this correction is applied a discrepancy is observed in the \(p_{\rm T}\,^{\ell\ell}\) distribution in the 2-lepton channel after the requirement of at least one \(b\)-tagged jet. A correction is extracted and used to reweight the \(Z+cq\) and \(Z+\)hf components. The full procedure is described in detail in Ref. [18].
+
+The background contributions from single top quark and diboson production are normalized to the number of background events predicted by simulation while the \(t\bar{t}\) normalization is a free parameter in the likelihood fit. The description of the shape of the \(t\bar{t}\) background from MC simulation has been validated in samples dominated by top pair events. Good agreement within uncertainties is observed between data and expectation in these validation regions.
+
+The \(t\bar{t}\) control region is defined by requiring exactly one electron and one muon, one of which has \(p_{\rm T}\,>\) 25 GeV, and two \(b\)-tagged jets. It is included in the likelihood fit to constrain the \(t\bar{t}\) normalization. The scale factor for the \(t\bar{t}\) normalization is found to be \(1.03\pm 0.04\) after the likelihood fit to the 0- and 2-lepton channel plus the \(t\bar{t}\) control region, and \(0.99\pm 0.09\) from the fit to the 1-lepton channel. The fit procedure is described in more detail in Sect. 8.
+
+## 7 Systematic uncertainties
+
+The most important experimental systematic uncertainties come from the jet energy scale (JES) and \(b\)-tagging efficiency.
+
+The JES systematic uncertainty arises from several sources including uncertainties from the in-situ calibration, the corrections dependent on pile-up and the jet flavour composition [52]. The fractional systematic uncertainty on the JES ranges from 3 % for a 20 GeV jet to 1 % for a 1 TeV jet.
+
+The uncertainty due to the jet energy resolution is also considered. It varies from 20 % for a jet with \(p_{\rm T}\,>\) 20 GeV to 5 % for a jet with \(p_{\rm T}\,>\) 1 TeV. The jet energy scale and resolution uncertainties are propagated to the reconstructed \(\mathbf{E_{T}^{miss}}\). The uncertainty on \(\mathbf{E_{T}^{miss}}\) also has a contribution from hadronic energy that is not included in jets [53].
+
+The \(b\)-tagging efficiency uncertainty depends on jet \(p_{\rm T}\) and comes mainly from the uncertainty on the measurement of the efficiency in \(t\bar{t}\) events [50]. Uncertainties are also derived for \(c\)- and light-flavour jet tagging [54].
+
+Other experimental systematic uncertainties that have a smaller impact are those on the lepton energy scale and identification efficiency and the efficiency of the triggers.
+
+In addition to the experimental systematic uncertainties, uncertainties are taken into account for possible differences between data and the simulation model that is used for each process. For the background modelling uncertainties the procedure described in Ref. [18] is followed. The \(Z+\)jets and \(W+\)jets backgrounds include uncertainties on the relative fraction of the different flavour components, and shape uncertainties on the modelling of \(m_{b\bar{b}}\), \(\Delta\phi\,({\rm jet}_{1},{\rm jet}_{2})\) and \(p_{\rm T}\,^{Z}\) distributions. For \(t\bar{t}\) production, shape uncertainties are included for the modelling of top quark transverse momentum, \(m_{b\bar{b}}\) and \(m_{VH}\) distributions. The uncertainty on the MJ background shape in the 1-lepton channel is evaluated by using alternative templates obtained by changing the definition of the data sidebands. The uncertainty on the MJ background normalization is taken to be 100, 30 and 50 % for the 0-, 1- and 2-lepton channels, respectively. These are extracted from fits using alternative templates.
+
+The dominant uncertainties on the signal acceptance arise from the choice of PDFs (2-5 %) estimated by comparing the default PDFs to other sets, and from the factorization and renormalization scales (5-10 %) obtained by varying these up and down by a factor of two.
+
+## 8 Results and limit extraction
+
+The reconstructed mass distributions for events passing the selection are shown in Fig. 1. The background expectation is shown after the profile likelihood fit to the data. Table 1 shows the number of events expected and observed in each final state.
+
+No significant excess of events is observed in the data compared to the prediction from SM background sources. Exclusion limits at the 95 % confidence level (CL) are set on the production cross section times the branching fraction for MWT and HVT models. The limits for the charged resonance are obtained by performing the likelihood fit over the \(\ell vb\bar{b}\) channel alone, while the \(\ell\ell b\bar{b}\), \(vvb\bar{b}\) channels as well as the \(t\bar{t}\) control region are used for the neutral resonance.
+
+The exclusion limits are calculated with a modified frequentist method [55], also known as \(CL_{s}\), and the profile-likelihood test statistic [56], using the binned \(m_{\rm VH}\) mass distributions for \(\ell vb\bar{b}\), \(\ell\ell b\bar{b}\) and \(vvb\bar{b}\) final states. Systematic uncertainties and their correlations are taken into account as nuisance parameters. None of the systematic uncertainties considered are significantly constrained or pulled in the likelihood fit. Figure 2 shows 95 % CL upper limits on the production cross section multiplied by the branching fraction into \(WH\) and \(ZH\) as a function of the resonance mass separately for the charged \(R_{1}^{\pm}\) and for the neutral \(R_{1}^{0}\). The experimental limits are obtained using samples with a single resonance \(R_{1}\), where the cross section for \(R_{2}\) has been set to zero to be less model-dependent. The theoretical predictions for the HVT benchmark _model A_ with coupling constant \(g_{V}=1\) allow exclusion of \(m_{V^{0}}<1360\) GeV (\(m_{V^{\pm}}<1470\) GeV). For the MWT model, since there are two resonances of different mass, the results are displayed for the first one, \(R_{1}^{0,\pm}\). The excluded regions are \(m_{R_{1}^{0}}<410\) GeV,\(750<m_{R_{1}^{0}}<1200\) GeV (\(700<m_{R_{1}^{\pm}}<1150\) GeV). The dip near 500 GeV in this theory curve is due to the interference between \(R_{1}\) and \(R_{2}\)[7]. To study the scenario in which the masses of charged and neutral resonances are the same, a combined likelihood fit over all signal regions and the \(t\bar{t}\) control region is also performed. The exclusion contours in the \(\{m_{A},\tilde{g}\}\) plane for MWT are presented in Fig. 3. For this result, both resonances predicted by MWT, \(R_{1}\) and \(R_{2}\), are fitted simultaneously and, at each \(\tilde{g}\), the different branching ratios to \(WH\) and \(ZH\) are taken into account. Electroweak precision data, a requirement to remain within the walking technicolor regime and constraints from requiring real-valued physical decay constants exclude a portion of the plane. This analysis is particularly sensitive at high \(\tilde{g}\) values, where the limits exceed those from the dilepton resonance search [21].
+
+The exclusion contours in the HVT parameter space \(\{(g^{2}/g_{V})c_{F},g_{V}c_{H}\}\) for resonances of mass 1, 1.5 and 1.8 TeV are shown in Fig. 4 where all three channels are combined, taking into account the branching ratios to \(WH\) and \(ZH\) from the HVT model. These contours are produced by scanning the parameter space, using the HVT tools provided in a web-interface [15, 57].
+
+\begin{table}
+\begin{tabular}{l c c} \hline \hline \multicolumn{3}{c}{Two \(b\)-tags} \\ \hline  & \(\nu vbb\) & \(\ell vbb\) & \(\ell\bar{t}bb\) \\ \hline \(Z\)+jets & \(224\pm 14\) & \(3.2\pm 0.2\) & \(1198\pm 47\) \\ \(W\)+jets & \(82\pm 29\) & \(61\pm 21\) & – \\ \(t\bar{t}\) & \(166\pm 10\) & \(718\pm 42\) & \(321\pm 14\) \\ Single top & \(23.2\pm 2.6\) & \(71.3\pm 8.1\) & – \\ Diboson & \(10.1\pm 1.1\) & \(2.8\pm 0.6\) & \(25.9\pm 5.8\) \\ SM \(VH\) & \(20.3\pm 8.1\) & \(4.6\pm 1.9\) & \(24.4\pm 6.1\) \\ Multijet & \(<3\) & \(29\pm 13\) & \(12.1\pm 9.1\) \\ \hline Total bkg. & \(524\pm 20\) & \(889\pm 28\) & \(1581\pm 39\) \\ \hline Data & \(511\) & \(879\) & \(1593\) \\ \hline \hline \multicolumn{3}{c}{One \(b\)-tag} \\ \hline \(Z\)+jets & \(2120\pm 150\) & \(53.6\pm 4.7\) & \(9120\pm 550\) \\ \(W\)+jets & \(1450\pm 360\) & \(1892\pm 590\) & – \\ \(t\bar{t}\) & \(928\pm 43\) & \(4650\pm 370\) & \(425\pm 10\) \\ Single top & \(221\pm 25\) & \(832\pm 94\) & – \\ Diboson & \(48.2\pm 3.8\) & \(32.1\pm 2.5\) & \(124\pm 17\) \\ SM \(VH\) & \(13.4\pm 5.2\) & \(6.9\pm 2.7\) & \(17.6\pm 7.0\) \\ Multijet & \(<10\) & \(316\pm 83\) & \(139\pm 70\) \\ \hline Total bkg. & \(4761\pm 69\) & \(7782\pm 97\) & \(9830\pm 100\) \\ \hline Data & \(4758\) & \(7854\) & \(9827\) \\ \hline \hline \end{tabular}
+\end{table}
+Table 1: The number of expected and observed events for the three final states. The expectation is shown after the profile likelihood fit to the data. The quoted uncertainties are the combined systematic and statistical uncertainties. The overall background is more constrained than the individual components, causing the errors of individual components to be anti-correlated
+
+Figure 1: Distributions of the reconstructed, **a** transverse mass \(m_{\nu\bar{t}jj}^{\rm T}\) for the \(vvb\bar{b}\) final state, **b** invariant mass \(m_{\ell\bar{t}jj}\) for the \(\ell vb\bar{b}\) final state and **c** invariant mass \(m_{\ell\bar{t}jj}\) for the \(\ell tb\bar{b}\) final state for the \(1\)-\(b\)-tag (_upper_) and \(2\)-\(b\)-tag (_lower_) channels. The background expectation is shown after the profile likelihood fit to the data. Any overflow is included in the last bin. The signals are shown stacked on top of the background and correspond to the benchmark models MWT with \(m_{\ell B1}=700\) GeV and HVT with \(m_{\nu^{\prime}}=1000\) GeV normalized to the expected cross sections
+
+## 9 Summary
+
+A search for a new heavy resonance decaying to \(WH/ZH\) is presented in this Letter. The search is performed using 20.3 fb\({}^{-1}\) of \(pp\) collision data at 8 TeV centre-of-mass energy collected by the ATLAS detector at the Large Hadron Collider. No significant deviations from the SM background predictions are observed in the three final states considered: \(\ell\ell b\bar{b}\), \(\ell vb\bar{b}\), \(\nu vb\bar{b}\). Upper limits are set at the 95 % confidence level on the production cross sections of \(R_{1}\) and \(V^{\prime}\) for the Minimal Walking Technicolor and Heavy Vector Triplets models respectively. Exclusion contours at 95 % CL in the MWT parameter space \(\{m_{A},\tilde{g}\}\) and in the HVT parameter space \(\{(g^{2}/g_{V})c_{F},\,g_{V}c_{H}\}\) are presented.
+
+###### Acknowledgements.
+
+ We thank CERN for the very successful operation of the LHC, as well as the support staff from our institutions without whom ATLAS could not be operated efficiently. We acknowledge the support of ANPCyT, Argentina, YerPhl, Armenia; ARC, Australia; BMWFW and FWF, Austria; ANAS, Azerbaijan; SSTC, Belarus; CNPq and FAPESP, Brazil; NSERC, NRC and CFI, Canada; CERN; CONICYT, Chile; CAS, MOST and NSFC, China; COLCIENCIAS, Colombia; MSMT CR, MPO CR and VSC CR, Czech Republic;
+
+Figure 4: Observed 95 % CL exclusion contours in the HVT parameter space \(\{(g^{2}/g_{V})c_{F},\,g_{V}c_{H}\}\) for resonances of mass 1 TeV, 1.5 TeV and 1.8 TeV. The areas outside the curves are excluded. Also shown are the benchmark model parameters A\((g_{V}=1)\), A\((g_{V}=3)\) and B\((g_{V}=3)\)
+
+Figure 3: Exclusion contours at 95 % CL in the plane of the Minimal Walking Technicolor parameter space defined by the bare axial-vector mass versus the strength of the spin-1 resonance interaction \(\{m_{A},\,\tilde{g}\}\). Electroweak precision measurements exclude the (_green_) area in the _bottom left corner_. The requirement to stay in the walking regime excludes the (_blue_) area in the _right corner_. The _large (red) area_ (_black dashed line_) shows the observed (expected) exclusion. The _blue dashed line_ shows the observed exclusion from the dilepton resonance search [21]. The _upper region_ is excluded due to non-real axial and axial-vector decay constants. Here both resonances predicted by MWT, \(R_{1}\) and \(R_{2}\), are fitted simultaneously
+
+Figure 2: Combined upper limits at the 95 % CL for **a** the production cross section of \(R_{1}^{0}\,(V^{0})\) times its branching ratio to \(ZH\) and branching ratio of \(H\) to \(b\bar{b}\) and **b** the production cross section of \(R_{1}^{\pm}\,(V^{\prime\pm})\) times its branching ratio to \(WH\) and branching ratio of \(H\) to \(b\bar{b}\). The experimental limits are obtained using samples with a single resonance \(R_{1}\); however, the theory _curve line_ for MWT includes both \(R_{1}\) and \(R_{2}\). The dip near 500 GeV in this theory _curve_ is due to the interference between \(R_{1}\) and \(R_{2}\)[7]DNRF, DNSRC and Lundbeck Foundation, Denmark; EPLANET, ERC and NSRF, European Union; IN2P3-CNRS, CEA-DSM/IRFU, France; GNSF, Georgia; BMBF, DFG, HGF, MPG and AvH Foundation, Germany; GSRT and NSRF, Greece; RGC, Hong Kong SAR, China; ISF, MINERVA, GIF, I-CORE and Benozy Center, Israel; INFN, Italy; MEXT and JSPS, Japan; CNRSF, Morocco; FOM and NWO, Netherlands; BRF and RCN, Norway; MISNW and NCN, Poland, GRICES and FCT, Portugal; MNE/IFA, Romania; MES of Russia and NRC KI, Russian Federation; JINR, MSTD, Serbia; MSSR, Slovakia; ARRS and MIZS, Slovenia; DST/NRF, South Africa; MINECO, Spain; SRC and Wallenberg Foundation, Sweden; SER, SNSF and Cantons of Bern and Geneva, Switzerland; NSC, Taiwan; TAEK, Turkey; STFC, the Royal Society and Leverhulme Trust, United Kingdom; DOE and NSF, United States of America. The crucial computing support from all WLCG partners is acknowledged gratefully, in particular from CERN and the ATLAS Tier-1 facilities at TRIUMF (Canada), NDGF (Denmark, Norway, Sweden), CC-IN2P3 (France), KIT/GridKA (Germany), INFN-CNAF (Italy), NL-T1 (Netherlands), PIC (Spain), ASGC (Taiwan), RAL (UK) and BNL (USA) and in the Tier-2 facilities worldwide.
+
+###### Acknowledgements.
+
+ This work was supported by the National Science Foundation of China under grant number 113300000.
+
+## References
+
+* (1) ATLAS Collaboration, Phys. Lett. B **716**, 1-29 (2012). arXiv:1207.7214 [hep-ex]
+* (2) CMS Collaboration, Phys. Lett. B **716**, 30-61 (2012). arXiv:1207.7235 [hep-ex]
+* (3) Particle Data Group Collaboration, K. Olive et al., Chin. Phys. C **38**, 090001 (2014)
+* (4) K.G. Wilson, Phys. Rev. D **3**, 1818 (1971)
+* (5) F. Sannino, K. Tuominen, Phys. Rev. D **71**, 051901 (2005). arXiv:hep-ph/0405209 [hep-ph]
+* (6) R. Foadi, M.T. Frandsen, T.A. Rytov, F. Sannino, Phys. Rev. D **76**, 055005 (2007). arXiv:0706.1696 [hep-ph]
+* (7) A. Belyaev et al., Phys. Rev. D **79**, 035006 (2009). arXiv:0809.0793 [hep-ph]
+* (8) G. Cacciapaglia, F. Sannino, JHEP **1404**, 111 (2014). arXiv:1402.0233 [hep-ph]
+* (9) M. Schmaltz, D. Tucker-Smith, Ann. Rev. Nucl. Part. Sci. **55**, 229-270 (2005). arXiv:hep-ph/0502182 [hep-ph]
+* (10) M.J. Dugan, H. Georgi, D.B. Kaplan, Nucl. Phys. B **254**, 299 (1985)
+* (11) K. Agashe, R. Contino, A. Pomarol, Nucl. Phys. B **719**, 165-187 (2005). arXiv:hep-ph/0412089 [hep-ph]
+* (12) Z. Fodor et al., Phys. Lett. B **718**, 657-666 (2012). arXiv:1209.0391 [hep-lat]
+* (13) Z. Fodor, K. Holland, J. Kuti, D. Nogradi, C. H. Wong, PoS LATTICE **2013**, 062 (2014). arXiv:1401.2176 [hep-lat]
+* (14) A. Hietanen, R. Lewis, C. Pica, F. Sannino, JHEP **1407**, 116 (2014). arXiv:1404.2794 [hep-lat]
+* (15) D. Pappadopulo, A. Thamm, R. Torre, A. Wulzer, arXiv:1402.4431 [hep-ph]
+* (16) V.D. Barger, W.-Y. Keung, E. Ma, Phys. Rev. D **22**, 727 (1980)
+* (17) R. Contino, D. Marzocca, D. Pappadopulo, R. Rattazzi, JHEP **1110**, 081 (2011). arXiv:1109.1570 [hep-ph]
+* (18) ATLAS Collaboration, JHEP **1501**, 069 (2015). arXiv:1409.6212 [hep-ex]
+* (19) ATLAS Collaboration, arXiv:1502.04478 [hep-ex]
+* (20) ATLAS Collaboration, Phys. Lett. B **737**, 223-243 (2014). arXiv:1406.4456 [hep-ex]
+* (21) ATLAS Collaboration, Phys. Rev. D **90**(5), 052005 (2014). arXiv:1405.4123 [hep-ex]
+* (22) CMS Collaboration, arXiv:1502.04994 [hep-ex]
+* (23) ATLAS Collaboration, JINST **3**, S08003 (2008)
+* (24) ATLAS Collaboration, Eur. Phys. J. C **73**(8), 2518 (2013). arXiv:1302.4393 [hep-ex]
+* (25) MWT Tools, [http://cp3-origins.dk/research/units/tc-tools](http://cp3-origins.dk/research/units/tc-tools)
+* (26) J. Alwall, M. Herquet, F. Maltoni, O. Mattelaer, T. Stelzer, JHEP **1106**, 128 (2011). arXiv:1106.0522 [hep-ph]
+* (27) R. Foadi, F. Sannino, Phys. Rev. D **87**, 015008 (2013). arXiv:1207.1541 [hep-ph]
+* (28) M.E. Peskin, T. Takeuchi, Phys. Rev. D **46**, 381-409 (1992)
+* (29) J.R. Andersen, T. Hapola, F. Sannino, Phys. Rev. D **85**, 055017 (2012). arXiv:1105.1433 [hep-ph]
+* (30) T. Sjostrand, S. Mrenna, P. Z. Skands, JHEP **05**, 026 (2006). arXiv:hep-ph/0603175 [hep-ph]
+* (31) T. Sjostrand, S. Mrenna, P.Z. Skands, Comput. Phys. Commun. **178**, 852-867 (2008). arXiv:0710.3820 [hep-ph]
+* (32) Pumplin, J. et al., JHEP **0207**, 012 (2002). arXiv:hep-ph/0201195 [hep-ph]
+* (33) T. Gleisberg et al., JHEP **0902**, 007 (2009). arXiv:0811.4622 [hep-ph]
+* (34) H.-L. Lai et al., Phys. Rev. D **82**, 074024 (2010). arXiv:1007.2241 [hep-ex]
+* (35) P. Nason, JHEP **11**, 040 (2004). arXiv:hep-ph/0409146
+* (36) S. Frixione, P. Nason, C. Oleari, JHEP **11**, 070 (2007). arXiv:0709.2092 [hep-ph]
+* (37) S. Alioli, P. Nason, C. Oleari, E. Re, JHEP **06**, 043 (2010). arXiv:1002.2581 [hep-ph]
+* (38) K. Melnikov, F. Petriello, Phys. Rev. D **74**, 114017 (2006). arXiv:hep-ph/0609070
+* (39) M. Czakon, P. Fiedler, A. Mitov, Phys. Rev. Lett. **110**, 252004 (2013). arXiv:1303.6254 [hep-ph]
+* (40) B.P. Kersevan, E. Richter-Wgs, arXiv:hep-ph/0405247 [hep-ph]
+* (41) N. Kidonakis, Phys. Rev. D **83**, 091503 (2011). arXiv:1103.2792 [hep-ph]
+* (42) J.M. Campbell, R. Ellis, Nucl. Phys. Proc. Suppl. **205-206**, 10-15 (2010). arXiv:1007.3492 [hep-ph]
+* (43) GEANT4 Collaboration, S. Agostinelli et al., Nucl. Instrum. Meth. A **506**, 250-303 (2003)
+* (44) ATLAS Collaboration, Eur. Phys. J. C **70**, 823-874 (2010). arXiv:1005.4568 [physics.ins-det]
+* (45) ATLAS Collaboration, ATL-PHYS-PUB-2010-013 (2010). [http://cdsweb.cern.ch/record/1300517](http://cdsweb.cern.ch/record/1300517)
+* (46) ATLAS Collaboration, Eur. Phys. J. C **74**(7), 2941 (2014). arXiv:1404.2402 [hep-ex]
+* (47) ATLAS Collaboration, Eur. Phys. J. C **74**(11), 3130 (2014). arXiv:1407.3935 [hep-ex]
+* (48) M. Cacciari, G.P. Salam, G. Soyez, JHEP **04**, 063 (2008). arXiv:0802.1189 [hep-ph]
+* (49) ATLAS Collaboration, Eur. Phys. J. C **73**(3), 2304 (2013). arXiv:1112.6426 [hep-ex]
+* (50) ATLAS Collaboration, ATLAS-CONF-2014-004. [http://cds.cern.ch/record/1664335](http://cds.cern.ch/record/1664335)
+* (51) ATLAS Collaboration, ATLAS-CONF-2010-057. [http://cds.cern.ch/record/1281330](http://cds.cern.ch/record/1281330)
+* (52) ATLAS Collaboration, Eur. Phys. J. C **75**(1), 17 (2015). arXiv:1406.0076 [hep-ex]
+* (53) ATLAS Collaboration, ATLAS Collaboration, ATLAS-CONF-2013-082. [http://cds.cern.ch/record/1570993](http://cds.cern.ch/record/1570993)
+* (54) ATLAS Collaboration, ATLAS-CONF-2014-046. [http://cds.cern.ch/record/1741020](http://cds.cern.ch/record/1741020)
+* (55) A.L. Read, J. Phys. G **28**, 2693-2704 (2002)

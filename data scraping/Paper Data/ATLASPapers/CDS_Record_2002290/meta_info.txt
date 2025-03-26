@@ -1,0 +1,3 @@
+PAPER NAME : Measurement of the top quark mass in the $t\bar t \to {\rm lepton+jets}$ and $t\bar t \to {\rm dilepton}$ channels using $\sqrt{s}=7$ TeV ATLAS data
+LAST MODIFICATION DATE : 2023-11-30
+URL : https://cds.cern.ch/record/2002290
