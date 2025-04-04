@@ -6,7 +6,7 @@ from collections import defaultdict
 from tqdm import tqdm
 
 # Define input and output directories using relative paths
-dataDir = os.path.join("Data Scraping", "Test Paper Data","ATLASPapers") 
+dataDir = os.path.join("Data Scraping", "Paper Data","ATLASPapers") 
 outputDir = os.path.join("Data Scraping", "Test Outputs")  # temporary test file path (remove Test later)
 
 # Convert to absolute paths if needed
@@ -35,10 +35,7 @@ figPattern = re.compile(r"[Ff]ig. (\d+)|[Ff]igures* (\d+)")
 tablePattern = re.compile(r"[Tt]able (\d+)")
 
 
-
 mathsPattern = re.compile(r"(\\\(.*?\\\))")
-
-
 
 
 tableContentPattern = re.compile(r"\\begin\{(?:table|tabular)\}[\s\S]*?\\end\{(?:table|tabular)\}", re.DOTALL)
@@ -187,7 +184,7 @@ def extractPaperName(metaLinesList):
     
     return ' '.join(paperNameLines) if paperNameLines else None
 
-
+figures = []
 # Process each subdirectory in the input directory
 for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
     folderDir = os.path.join(dataDir, f)
@@ -230,7 +227,6 @@ for f in tqdm(os.listdir(dataDir), desc="Processing directories", unit="dir"):
     combinedMentionDic = {**figMentionDic, **tableMentionDic}
 
     # Compile the data for each figure/table into a list of dictionaries
-    figures = []
     for key, mentions in combinedMentionDic.items():
 
         cleanedMentionsList = []

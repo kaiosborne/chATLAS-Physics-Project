@@ -34,7 +34,7 @@ def saveJSON(data, outputDir, outputName):
     except Exception as e:
         print("Error saving JSON:", e)
 
-@backoff.on_exception(backoff.expo, RateLimitError, max_tries=5, jitter=backoff.full_jitter)
+@backoff.on_exception(backoff.expo, RateLimitError, max_tries=10, jitter=backoff.full_jitter)
 async def getOpenAIResponse(session, systemPrompt, userPrompt, model, maxTokens, numResponse, temperature):
     payload = {
         "model": model,
@@ -62,7 +62,7 @@ async def getOpenAIResponse(session, systemPrompt, userPrompt, model, maxTokens,
         else:
             print(f"Error: {response.status}")
             return None
-
+        
 async def getAbbrevDefinitionOpenAI(session, abbrev, context):
 
     systemPrompt = "You are a helpful academic assistant, in a high energy physics (ATLAS) context, return answers using domain specific and technical keywords."
@@ -70,7 +70,6 @@ async def getAbbrevDefinitionOpenAI(session, abbrev, context):
     userPrompt = f"""Provide an EXTREMELY SHORT definition for the abbreviation
                 '{abbrev}' as used in the following context: '{context}'. 
                 Return ONLY the definition of '{abbrev}' without extra explanation or additional words."""
-    
     return await getOpenAIResponse(session, systemPrompt, userPrompt,
                                      model='gpt-4o-mini', maxTokens=50,
                                      numResponse=1, temperature=0.1)
@@ -83,7 +82,7 @@ async def processEntry(session, entry):
     abbrevs = []
     for a, ctx in zip(abbrev, contexts):
         tasks.append(getAbbrevDefinitionOpenAI(session, a, ctx))
-        abbrevs.append(abbrev)
+        abbrevs.append(a)
     # Gather results concurrently
     definitions = await asyncio.gather(*tasks)
 

@@ -113,6 +113,9 @@ def process_directories(data_dir, output_directory):
 data_dir = "/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/CMS/CMS Papers"  # Update this path
 output_directory = "/Users/georgedoumenis-ramos/Documents/DATA SCRAPING/CMS/CMS PAPER IMG URL 2"  # Update this path
 
+data_dir = os.path.join("Data Scraping", "Paper Data", "CMSPapers")  # Update this path
+output_directory = os.path.join("Data Scraping", "Test Outputs","CMSPapers","Image URLs")  # Update this path
+
 os.makedirs(output_directory, exist_ok=True)
 process_directories(data_dir, output_directory)
 
